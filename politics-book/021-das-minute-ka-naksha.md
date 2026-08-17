@@ -5,7 +5,7 @@
 
 ### Yeh chapter kya hai
 
-Ab tak 13 chapters mein humne ek-ek box banaya. Aaj woh poora naksha ek page par aayega.
+Ab tak 20 chapters mein humne ek-ek box banaya. Aaj woh poora naksha ek page par aayega.
 
 Aur uske baad ek method — taaki jab tum kisi bhi neta se milo, ya koi bhi political khabar padho, tumhe **10 minute mein** samajh aa jaye ki woh aadmi kahan khada hai aur kya chahta hai.
 
@@ -173,11 +173,14 @@ sarpanch / corporator  →  chhota base, roz ka sampark,
 MLA                    →  2-4 lakh voters, 250-350 booth,
                           teen darr, machine + sanstha ka khel
 
-MP                     →  Delhi ka khel, ghar par kamzor
-                          (ch.15 — Volume 2)
+MP                     →  ~18 lakh voters, Delhi ka rishta,
+                          ghar par kamzor (roz ka kaam state
+                          ke paas hai), apne MLAs ki machine
+                          par ladta hai → lehar par depend
 
-mantri / CM            →  transfer-posting ki taakat
-                          (ch.16 — Volume 2)
+mantri / CM            →  FILE + POSTING. Asli taakat yahan
+                          hai. Vibhag dekho, naam nahi.
+                          CM ki kamzori: ginti
 ```
 
 **Aur saath mein ek zaroori sub-sawaal: yeh SATTA mein hai ya VIRODH mein?**
@@ -374,4 +377,4 @@ Aur isi wajah se, jab tum kisi neta ke saamne baithoge, tum us kamre mein ek ala
 
 ---
 
-*Yeh Volume 1 ka aakhri chapter hai. Volume 2 mein: MP ka alag khel (ch.15), mantri aur CM ki transfer-posting wali taakat (ch.16), Centre se constituency tak paise ka poora rasta (ch.17), jaati ka ganit khulke (ch.18), lehar/media/WhatsApp aur "kya sach mein jeet dilata hai" ki bahas (ch.19), aur careers ki maut — woh galtiyan jo system ke rules ko ulta karke dikhati hain (ch.20).*
+*Yeh kitab ka aakhri chapter hai. Agar tumne yahan tak padha hai, toh tumhare paas ab woh naksha hai jo shuru mein ek gaon ke jhagde se shuru hua tha aur Delhi tak pahuncha. Isko istemaal karo — khabar padhte waqt, kisi se milte waqt, aur khaas kar tab jab koi tumse kahe ki politics samajhna mushkil hai. Woh mushkil nahi hai. Woh sirf likha hua nahi tha.*
