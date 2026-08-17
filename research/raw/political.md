@@ -1,0 +1,37 @@
+# Raw research: Political campaign software for MLA/MP candidates
+
+Day 1 discovery, Aug 2026. Source: Workflow `four-ideas-discovery`, agents `political:market-numbers`, `political:complaints`, `political:founder-stories`.
+
+## Lens A — Market numbers
+
+- **Pollity (pollity.in)** already markets itself as a "Digital Chief of Staff" for MPs/MLAs — grievance intake/tracking, constituency/staff coordination, MPLADS/MLALADS fund dashboards, auto-generated social content — explicitly positioned against "expensive consultancies only parties can afford," targeting MPs with no institutional support. This is the same pilot product concept. — [pollity.in](https://pollity.in/) (medium, self-reported, no pricing disclosed)
+- 7 states due for assembly elections ~2027 (Goa, Uttarakhand, Punjab, Manipur, UP-403 seats, Himachal Pradesh, Gujarat): 940 seats, 200M+ voters, expected Feb-Mar 2027; exact ECI dates not yet announced as of Aug 2026. — [nexcomm.in](https://nexcomm.in/blog/india-state-assembly-elections-2027-schedule-seats-voters-3) (medium)
+- ECI notifies poll schedules only 4-6 weeks before a state assembly's term expires — most of a term is a non-election period. — [elections.boomlive.in](https://elections.boomlive.in/elections/upcoming) (medium)
+- 2024 Lok Sabha expenditure cap: ₹95 lakh (large states) / ₹75 lakh (smaller states/UTs), up from ₹70 lakh in 2019. — [outlookindia.com](https://www.outlookindia.com/elections/how-much-and-on-what-can-candidates-spend-in-the-2024-lok-sabha-elections) (high)
+- MLA candidate expenditure cap: ₹40 lakh (large states) / ₹28 lakh (smaller states) — hard ceiling any retainer competes against during election windows; excludes uncapped party spending. — [drishtiias.com](https://www.drishtiias.com/daily-updates/daily-news-analysis/limiting-expenditure-on-elections) (high)
+- Delhi 2025 election spend limits were itemized down to specific items (₹25/broom, ₹3,075/horse) — illustrates how constrained/audited legitimate candidate spend accounting is. — [deccanherald.com](https://www.deccanherald.com/amp/story/elections%2Fdelhi%2Fdelhi-assembly-election-2025-rs-25-for-broom-to-rs-3075-for-horse-ec-outlines-campaign-spending-limits-for-candidates-3373616) (high)
+- I-PAC: founded 2013, 500-1,000+ employees, served Modi 2014, Congress, JD(U), AAP, TMC — operates at national/state party leadership scale, not individual first-time MLA candidates. — [influenceindustry.org](https://influenceindustry.org/en/explorer/case-studies/india-sridharan-consulting/) (medium)
+- Varahe Analytics (Chennai/Noida) works with state-level parties and individual candidates in Karnataka, AP, Telangana — tier-2 competitor, still mostly party-backed candidates. — [varahe.com](https://varahe.com/) (medium)
+- Broad industry retainers reportedly range ₹5 lakh to ₹2 crore+ depending on scope/constituency — suggests room to undercut at the low end. — [thinkpolitically.com](https://thinkpolitically.com/top-political-consulting-firms-india/) (low, unsourced aggregator)
+- Ground operations (booth workers, door-to-door) consume ~40% of a disciplined campaign budget vs 25% for digital/media; booth workers paid ₹300-2,000/day for 30-45 days; 54-73% of voter decisions attributed to in-person contact, not digital — evidence candidates prioritize manpower over software. — [campaignmitra.com](https://campaignmitra.com/blog/voter-management-software-india-guide/) (low-medium, vendor-authored)
+- By 2014, India's political consulting industry was ~₹700-800 crore across ~150 firms; firms diversify into post-election governance/policy consulting specifically to cover non-election-year revenue gaps — confirms off-season revenue is a known structural risk. — [leadtech.in](https://leadtech.in/top-10-political-consulting-companies-in-india/) (low, decade-old figure)
+- **No evidence found of any specific MLA/MP paying a standing monthly retainer to a solo/individual developer** (vs a firm or party) for booth/voter-data/war-room software between elections — this is an unvalidated assumption in the business model, to be tested directly. — negative finding (low, absence-of-evidence)
+
+## Lens B — Complaints
+
+- Severe price erosion in political consulting: "quote Rs 100 for an assignment... within time the same service gets offered at Rs 10" due to saturation from many small firms. — [theprint.in](https://theprint.in/politics/i-pac-to-boutique-firms-the-rise-reach-reinvention-of-indias-political-consultancy-market/2940188/), quoting Abbin Theepura, P-MARQ (high, named quote)
+- **Addressable market is much smaller than it looks**: in a 234-constituency state, only ~700 people are viable candidates; only ~20 major leaders and ~100 potential candidates per state actually hire a consultant. — same source, anonymous consultant (high, but anonymous)
+- Candidate/data selection in Indian campaigns remains unscientific, still driven by money/family/influence rather than data-driven merit (Ruchir Sharma). — [forbesindia.com](https://www.forbesindia.com/article/poll-vault/political-strategists-the-campaign-makers/52793/1) (high)
+- No reusable templates exist for winning elections in India — every campaign is unique, making standardized campaign-management products hard to sell as one-size-fits-all (consultant Tushar Panchal). — same source (medium)
+- Campaign war-room work is highly secretive; staff report losing their own identity while working on a campaign. — [aljazeera.com](https://www.aljazeera.com/economy/2024/4/27/jobless-tech-savvy-engineers-mbas-are-problem-solvers-of-indian-elections) (high)
+- Campaign-consultant roles are largely transitional — IIT/IIM grads stay only 1-2 years — high workforce turnover/instability. — same source, quoting Ankit Lal (high)
+- MLAs/MPs privately express frustration over being excluded from decision-making within their own party/government. — [carnegieendowment.org](https://carnegieendowment.org/research/2024/05/india-election-incumbent-candidates?lang=en) (low, paraphrased secondhand)
+
+## Lens C — Founder stories
+
+- Our Democracy (political crowdfunding, founders Bilal Zaidi + Anand Mangnale) raised ₹70 lakh for Kanhaiya Kumar's 2019 campaign; bootstrapped while seeking investors. — [yourstory.com](https://yourstory.com/2019/04/bootstrapped-delhi-startup-our-democracy-indian-elections) (medium)
+- Polymath Solutions (AI campaign content, 9-person Pushkar office) produced content for BJP and Congress within 6 months; Indian parties spent $50M+ on AI-generated election content overall. — [restofworld.org](https://restofworld.org/2024/india-elections-ai-content/) (medium)
+- Political Quotient (Bangalore, founded 2013) connected youth with candidates via internships; closed a ~$250K seed round. — [yourstory.com](https://yourstory.com/2014/04/election-startup) (low)
+- Voxta ("political Siri," founded 2009, Hyderabad) — BJP offered it as an IVR service, projected 3M+ calls/month in election season. — [techcrunch.com](https://techcrunch.com/?p=985293) (low)
+- Neta app (founder Pratham Mittal, Wharton grad) let citizens rate politicians via app/IVR/SMS, aimed to go national by 2019. — [yourstory.com](https://yourstory.com/2019/03/startup-bharat-election-neta-mobile-app-u49wgdyxnf) (medium)
+- Smaller campaign-tech vendors beyond I-PAC exist: Smart Neta (election management/booth software), Chanakyya (consultancy), Stingo (political-party CRM), Political Metrics (war-room/analytics). — company sites (low each)
