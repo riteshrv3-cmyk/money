@@ -1,0 +1,270 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --bg:#EFEDE7; --panel:#FFFFFF; --ink:#182420; --muted:#66736D; --line:#E0DED6;
+    --green:#1E6E54; --green-ink:#FFFFFF; --green-soft:#DFF0E7;
+    --bubble:#E8F5EE; --badge:#1E6E54; --amber:#B8860B;
+    --shadow:0 1px 2px rgba(24,36,32,.10);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#111B17; --panel:#1A2621; --ink:#E9EDEA; --muted:#93A29A; --line:#2A3833;
+      --green:#3DA57E; --green-ink:#0C1512; --green-soft:#1E3329;
+      --bubble:#22352C; --badge:#3DA57E; --amber:#D4A93C;
+      --shadow:0 1px 2px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#111B17; --panel:#1A2621; --ink:#E9EDEA; --muted:#93A29A; --line:#2A3833;
+    --green:#3DA57E; --green-ink:#0C1512; --green-soft:#1E3329;
+    --bubble:#22352C; --badge:#3DA57E; --amber:#D4A93C;
+    --shadow:0 1px 2px rgba(0,0,0,.4);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:'Mukta',system-ui,sans-serif;font-size:16px;line-height:1.45}
+  .app{max-width:480px;margin:0 auto;min-height:100vh;background:var(--bg);display:flex;flex-direction:column}
+  header{background:var(--green);color:var(--green-ink);padding:14px 16px 10px;display:flex;align-items:center;gap:10px}
+  .logo{width:36px;height:36px;border-radius:10px;background:var(--green-ink);color:var(--green);font-weight:700;font-size:1.15rem;display:flex;align-items:center;justify-content:center}
+  header h1{font-size:1.15rem;margin:0;font-weight:700;letter-spacing:.01em}
+  header .sub{font-size:.74rem;opacity:.85}
+  .summary{background:var(--green-soft);color:var(--ink);font-size:.8rem;padding:6px 16px;border-bottom:1px solid var(--line)}
+  .summary b{color:var(--green)}
+  .view{display:none;flex:1;padding-bottom:74px}
+  .view.on{display:block}
+  /* group list */
+  .rowitem{display:flex;align-items:center;gap:12px;padding:11px 14px;background:var(--panel);border-bottom:1px solid var(--line);cursor:pointer}
+  .rowitem:active{background:var(--green-soft)}
+  .av{width:46px;height:46px;border-radius:50%;flex:none;display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;font-size:1rem}
+  .body{flex:1;min-width:0}
+  .l1{display:flex;justify-content:space-between;align-items:baseline;gap:8px}
+  .l1 .name{font-weight:600}
+  .l1 .time{font-size:.72rem;color:var(--muted);flex:none}
+  .l2{display:flex;justify-content:space-between;align-items:center;gap:8px}
+  .l2 .prev{font-size:.85rem;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .unread{background:var(--badge);color:var(--green-ink);font-size:.7rem;font-weight:700;border-radius:999px;min-width:20px;height:20px;display:flex;align-items:center;justify-content:center;padding:0 6px;flex:none}
+  .ticks{color:var(--green);font-size:.8rem}
+  /* chat view */
+  .chat{position:fixed;inset:0;z-index:30;background:var(--bg);max-width:480px;margin:0 auto;display:none;flex-direction:column}
+  .chat.on{display:flex}
+  .chat header{cursor:pointer}
+  .chat .back{background:none;border:0;color:var(--green-ink);font-size:1.3rem;cursor:pointer;padding:0 4px}
+  .msgs{flex:1;overflow-y:auto;padding:14px 12px;display:flex;flex-direction:column;gap:8px}
+  .msg{max-width:82%;background:var(--panel);border-radius:10px;padding:7px 11px;box-shadow:var(--shadow);font-size:.95rem}
+  .msg .who{font-size:.72rem;font-weight:700;color:var(--amber)}
+  .msg .t{font-size:.66rem;color:var(--muted);text-align:right;margin-top:2px}
+  .msg.me{align-self:flex-end;background:var(--bubble)}
+  .chatnote{text-align:center;font-size:.72rem;color:var(--muted);padding:8px}
+  /* broadcast */
+  .pad{padding:16px 14px}
+  .step{font-size:.72rem;letter-spacing:.08em;font-weight:700;color:var(--green);margin:12px 2px 6px}
+  .chips{display:flex;flex-wrap:wrap;gap:8px}
+  .chipbtn{border:1.5px solid var(--line);background:var(--panel);color:var(--ink);font-family:inherit;font-size:.9rem;border-radius:999px;padding:6px 14px;cursor:pointer}
+  .chipbtn.sel{background:var(--green);border-color:var(--green);color:var(--green-ink);font-weight:600}
+  textarea{width:100%;font-family:inherit;font-size:1rem;color:var(--ink);background:var(--panel);border:1.5px solid var(--line);border-radius:10px;padding:10px;min-height:70px;resize:vertical}
+  .sendbtn{width:100%;margin-top:12px;background:var(--green);color:var(--green-ink);border:0;border-radius:10px;font-family:inherit;font-weight:700;font-size:1.05rem;padding:13px;cursor:pointer}
+  .sendbtn:disabled{opacity:.45;cursor:default}
+  .sent{display:none;margin-top:14px;background:var(--panel);border:1.5px solid var(--green);border-radius:10px;padding:14px;text-align:center}
+  .sent.on{display:block;animation:pop .5s ease}
+  @keyframes pop{0%{transform:scale(.95);opacity:0}100%{transform:scale(1);opacity:1}}
+  @media (prefers-reduced-motion:reduce){.sent.on{animation:none}}
+  .sent .big{font-size:1.05rem;font-weight:700;color:var(--green)}
+  .sent .small{font-size:.8rem;color:var(--muted);margin-top:4px}
+  .hint{font-size:.78rem;color:var(--muted);margin-top:10px;text-align:center}
+  /* people */
+  .search{position:sticky;top:0;background:var(--bg);padding:10px 12px;z-index:5}
+  .search input{width:100%;font-family:inherit;font-size:1rem;color:var(--ink);background:var(--panel);border:1.5px solid var(--line);border-radius:999px;padding:9px 18px}
+  .role{font-size:.76rem;color:var(--muted)}
+  .role b{color:var(--amber);font-weight:600}
+  .act{display:flex;gap:8px;flex:none}
+  .act button{width:38px;height:38px;border-radius:50%;border:1.5px solid var(--line);background:var(--panel);color:var(--green);font-size:1rem;cursor:pointer}
+  .none{padding:30px;text-align:center;color:var(--muted);font-size:.9rem}
+  /* bottom nav */
+  nav{position:fixed;bottom:0;left:0;right:0;max-width:480px;margin:0 auto;background:var(--panel);border-top:1px solid var(--line);display:flex;z-index:20}
+  nav button{flex:1;background:none;border:0;font-family:inherit;color:var(--muted);font-size:.8rem;font-weight:600;padding:9px 4px 11px;cursor:pointer}
+  nav button .ic{display:block;font-size:1.25rem}
+  nav button.on{color:var(--green)}
+  nav button:focus-visible,.chipbtn:focus-visible,.sendbtn:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+  footer{font-size:.7rem;color:var(--muted);text-align:center;padding:8px 0 84px}
+</style>
+
+<div class="app">
+<header>
+  <div class="logo">C</div>
+  <div><h1>Connect</h1><div class="sub">Tope Saheb Network &middot; Ghansawangi</div></div>
+</header>
+<div class="summary">This week: <b>5 broadcasts</b> reached <b>34 villages</b></div>
+
+<!-- Groups -->
+<section class="view on" id="v1">
+  <div id="groups"></div>
+  <footer>Demo prototype &middot; sample groups &amp; messages</footer>
+</section>
+
+<!-- Broadcast -->
+<section class="view" id="v2">
+  <div class="pad">
+    <div class="step">STEP 1 &middot; WHO SHOULD GET IT?</div>
+    <div class="chips" id="chips"></div>
+    <div class="step">STEP 2 &middot; TYPE ONCE</div>
+    <textarea id="btext" placeholder="उद्या सकाळी ११ वाजता तीर्थपुरी येथे बैठक आहे. सर्वांनी यावे."></textarea>
+    <button class="sendbtn" id="bsend">Send to selected groups</button>
+    <div class="sent" id="bdone">
+      <div class="big" id="bdone1">Sent ✓✓</div>
+      <div class="small" id="bdone2"></div>
+      <div class="small">Open Groups - the message is already there.</div>
+    </div>
+    <div class="hint">One message. Right villages. No forwarding to 50 groups one by one.</div>
+  </div>
+</section>
+
+<!-- People -->
+<section class="view" id="v3">
+  <div class="search"><input id="psearch" placeholder="Search a village or a name... (try: Ranjani)"></div>
+  <div id="people"></div>
+  <div class="none" id="pnone" style="display:none">No one found. Try a village name like Tirthpuri.</div>
+</section>
+</div>
+
+<!-- Chat overlay -->
+<div class="chat" id="chat">
+  <header><button class="back" id="chatback" aria-label="Back">&larr;</button>
+    <div class="av" id="chatav" style="width:34px;height:34px;font-size:.85rem"></div>
+    <div><h1 id="chattitle" style="font-size:1rem"></h1><div class="sub" id="chatsub"></div></div>
+  </header>
+  <div class="msgs" id="msgs"></div>
+  <div class="chatnote">Demo view &middot; replies shown as samples</div>
+</div>
+
+<nav>
+  <button class="on" data-v="v1"><span class="ic">&#9776;</span>Groups</button>
+  <button data-v="v2"><span class="ic">&#9993;</span>Broadcast</button>
+  <button data-v="v3"><span class="ic">&#9742;</span>People</button>
+</nav>
+
+<script>
+(function(){
+  var colors=['#1E6E54','#B8860B','#5B7DB1','#A05195','#C4652F','#4E7F3A','#8A6BBE','#2E8C8C'];
+  var groups=[
+    {v:'Tirthpuri',n:12,msgs:[
+      {who:'Sandeep Jadhav',t:'साहेब, आज हातपंप दुरुस्तीचे काम पूर्ण झाले 🙏',time:'9:41 AM'},
+      {who:'Ravi Pawar',t:'वस्तीतील लोकांनी धन्यवाद सांगितले',time:'9:52 AM'}]},
+    {v:'Ghansawangi',n:18,msgs:[
+      {who:'Anita More',t:'उद्याच्या बैठकीची तयारी झाली आहे',time:'8:30 AM'}]},
+    {v:'Ranjani',n:9,msgs:[
+      {who:'Balasaheb Shinde',t:'पेन्शन यादी तहसील कार्यालयात दिली',time:'Yesterday'}]},
+    {v:'Wadigodri',n:11,msgs:[
+      {who:'Pravin Kale',t:'नवीन ५ तरुण आपल्यासोबत जोडले 💪',time:'Yesterday'}]},
+    {v:'Antarwali Sarati',n:8,msgs:[
+      {who:'Sunita Pawar',t:'आरोग्य शिबिराला चांगला प्रतिसाद मिळाला',time:'Monday'}]},
+    {v:'Shahagad',n:10,msgs:[
+      {who:'Vijay Rathod',t:'ट्रान्सफॉर्मरचे काम MSEB कडे लावले आहे',time:'Monday'}]}
+  ];
+  var people=[
+    {n:'Sandeep Jadhav',r:'Booth Pramukh',v:'Tirthpuri'},
+    {n:'Ravi Pawar',r:'Karyakarta',v:'Tirthpuri'},
+    {n:'Anita More',r:'Mahila Aghadi',v:'Ghansawangi'},
+    {n:'Dnyaneshwar Patil',r:'Karyakarta',v:'Ghansawangi'},
+    {n:'Balasaheb Shinde',r:'Booth Pramukh',v:'Ranjani'},
+    {n:'Sunil Kadam',r:'Yuva Aghadi',v:'Ranjani'},
+    {n:'Pravin Kale',r:'Booth Pramukh',v:'Wadigodri'},
+    {n:'Sunita Pawar',r:'Mahila Aghadi',v:'Antarwali Sarati'},
+    {n:'Vijay Rathod',r:'Karyakarta',v:'Shahagad'},
+    {n:'Ganesh Ugle',r:'Karyakarta',v:'Gondi'}
+  ];
+  function initials(s){return s.split(' ').map(function(w){return w[0]}).slice(0,2).join('')}
+  function color(s){var h=0;for(var i=0;i<s.length;i++)h=(h*31+s.charCodeAt(i))>>>0;return colors[h%colors.length]}
+
+  // nav
+  var navs=document.querySelectorAll('nav button');
+  navs.forEach(function(b){b.addEventListener('click',function(){
+    navs.forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+    document.querySelectorAll('.view').forEach(function(s){s.classList.remove('on')});
+    document.getElementById(b.dataset.v).classList.add('on');
+    window.scrollTo(0,0);
+  })});
+
+  // groups list
+  var gl=document.getElementById('groups');
+  function renderGroups(){
+    gl.innerHTML='';
+    groups.forEach(function(g,gi){
+      var last=g.msgs[g.msgs.length-1];
+      var el=document.createElement('div');el.className='rowitem';
+      el.innerHTML='<div class="av" style="background:'+color(g.v)+'">'+g.v[0]+'</div>'
+        +'<div class="body"><div class="l1"><span class="name">'+g.v+' Karyakarta</span><span class="time">'+last.time+'</span></div>'
+        +'<div class="l2"><span class="prev">'+(last.who==='You'?'<span class="ticks">&#10003;&#10003;</span> ':'')+(last.who==='You'?'':last.who.split(' ')[0]+': ')+last.t+'</span>'
+        +(g.unread?'<span class="unread">'+g.unread+'</span>':'<span class="time">'+g.n+' members</span>')+'</div></div>';
+      el.addEventListener('click',function(){openChat(gi)});
+      gl.appendChild(el);
+    });
+  }
+  renderGroups();
+
+  // chat overlay
+  var chat=document.getElementById('chat');
+  function openChat(gi){
+    var g=groups[gi];
+    document.getElementById('chattitle').textContent=g.v+' Karyakarta';
+    document.getElementById('chatsub').textContent=g.n+' members';
+    var av=document.getElementById('chatav');av.textContent=g.v[0];av.style.background=color(g.v);
+    var m=document.getElementById('msgs');m.innerHTML='';
+    g.msgs.forEach(function(x){
+      var d=document.createElement('div');d.className='msg'+(x.who==='You'?' me':'');
+      d.innerHTML=(x.who==='You'?'':'<div class="who">'+x.who+'</div>')+x.t+'<div class="t">'+x.time+(x.who==='You'?' &#10003;&#10003;':'')+'</div>';
+      m.appendChild(d);
+    });
+    chat.classList.add('on');m.scrollTop=m.scrollHeight;
+  }
+  document.getElementById('chatback').addEventListener('click',function(){chat.classList.remove('on')});
+
+  // broadcast
+  var chips=document.getElementById('chips'), sel={};
+  var all=document.createElement('button');all.type='button';all.className='chipbtn';all.textContent='All villages';
+  all.addEventListener('click',function(){
+    var on=!all.classList.contains('sel');
+    all.classList.toggle('sel',on);
+    chips.querySelectorAll('.chipbtn').forEach(function(c,i){if(i>0){c.classList.toggle('sel',on)}});
+    groups.forEach(function(g){sel[g.v]=on});
+  });
+  chips.appendChild(all);
+  groups.forEach(function(g){
+    var c=document.createElement('button');c.type='button';c.className='chipbtn';c.textContent=g.v;
+    c.addEventListener('click',function(){sel[g.v]=!sel[g.v];c.classList.toggle('sel',sel[g.v]);all.classList.remove('sel')});
+    chips.appendChild(c);
+  });
+  document.getElementById('bsend').addEventListener('click',function(){
+    var t=document.getElementById('btext').value.trim();
+    var chosen=groups.filter(function(g){return sel[g.v]});
+    if(!t||!chosen.length){alert(!t?'Type the message first.':'Select at least one village.');return}
+    var members=0;
+    chosen.forEach(function(g){members+=g.n;g.msgs.push({who:'You',t:t,time:'Now'});g.unread=null});
+    renderGroups();
+    document.getElementById('bdone1').textContent='Sent ✓✓';
+    document.getElementById('bdone2').textContent=t.slice(0,40)+(t.length>40?'...':'')+' → '+chosen.length+' groups · '+members+' karyakartas';
+    document.getElementById('bdone').classList.add('on');
+    document.getElementById('btext').value='';
+  });
+
+  // people
+  var pl=document.getElementById('people'), pn=document.getElementById('pnone');
+  function renderPeople(q){
+    q=(q||'').toLowerCase();pl.innerHTML='';var found=0;
+    people.forEach(function(p){
+      if(q && p.n.toLowerCase().indexOf(q)<0 && p.v.toLowerCase().indexOf(q)<0 && p.r.toLowerCase().indexOf(q)<0)return;
+      found++;
+      var el=document.createElement('div');el.className='rowitem';
+      el.innerHTML='<div class="av" style="background:'+color(p.n)+'">'+initials(p.n)+'</div>'
+        +'<div class="body"><div class="l1"><span class="name">'+p.n+'</span></div>'
+        +'<div class="role"><b>'+p.r+'</b> &middot; '+p.v+'</div></div>'
+        +'<div class="act"><button aria-label="Call '+p.n+'">&#9742;</button><button aria-label="Message '+p.n+'">&#9993;</button></div>';
+      pl.appendChild(el);
+    });
+    pn.style.display=found?'none':'block';
+  }
+  renderPeople('');
+  document.getElementById('psearch').addEventListener('input',function(e){renderPeople(e.target.value)});
+})();
+</script>
