@@ -1,0 +1,288 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>जनसंपर्क कक्ष</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Marathi:ital@0;1&family=Mukta:wght@400;500;600;700&display=swap">
+<style>
+  :root{
+    --paper:#F6F5F1; --card:#FFFFFF; --ink:#1E2A3E; --muted:#5C6A80; --line:#E2DFD6;
+    --brand:#1B2A44; --brand-ink:#F4EFE4; --gold:#B08A2E; --gold-soft:#F0E6CE;
+    --good:#2E7D46; --good-bg:#E4F0E7; --warn:#C4841D; --warn-bg:#F7EBD4; --bad:#BE3D2A; --bad-bg:#F7E2DD;
+    --new:#2C5FA8; --new-bg:#E2EBF7; --shadow:0 1px 3px rgba(27,42,68,.10);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#131C2E; --card:#1C2740; --ink:#E8E9EC; --muted:#9AA6BB; --line:#2C3A57;
+      --brand:#101827; --brand-ink:#F4EFE4; --gold:#D4AC55; --gold-soft:#3A3324;
+      --good:#5BB878; --good-bg:#1E3327; --warn:#E0A94E; --warn-bg:#38301C; --bad:#E07A66; --bad-bg:#3B2320;
+      --new:#7AA7E0; --new-bg:#1E2C44; --shadow:0 1px 3px rgba(0,0,0,.4);
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#131C2E; --card:#1C2740; --ink:#E8E9EC; --muted:#9AA6BB; --line:#2C3A57;
+    --brand:#101827; --brand-ink:#F4EFE4; --gold:#D4AC55; --gold-soft:#3A3324;
+    --good:#5BB878; --good-bg:#1E3327; --warn:#E0A94E; --warn-bg:#38301C; --bad:#E07A66; --bad-bg:#3B2320;
+    --new:#7AA7E0; --new-bg:#1E2C44; --shadow:0 1px 3px rgba(0,0,0,.4);
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'Mukta',system-ui,sans-serif;font-size:16px;line-height:1.5}
+  .masthead{background:var(--brand);color:var(--brand-ink);padding:18px 16px 14px;text-align:center}
+  .masthead .office{font-family:'Tiro Devanagari Marathi',serif;font-size:1.5rem;line-height:1.3}
+  .masthead .seat{font-size:.85rem;letter-spacing:.06em;color:var(--gold);margin-top:2px}
+  .masthead .tag{display:inline-block;margin-top:8px;font-size:.72rem;border:1px solid var(--gold);color:var(--gold);border-radius:3px;padding:1px 8px;letter-spacing:.08em}
+  .tabs{position:sticky;top:0;z-index:10;display:flex;background:var(--card);border-bottom:2px solid var(--line);box-shadow:var(--shadow)}
+  .tab{flex:1;border:0;background:none;color:var(--muted);font-family:inherit;font-size:.92rem;font-weight:600;padding:11px 2px 9px;cursor:pointer;border-bottom:3px solid transparent}
+  .tab.on{color:var(--ink);border-bottom-color:var(--gold)}
+  .tab small{display:block;font-weight:400;font-size:.66rem;letter-spacing:.04em}
+  main{max-width:760px;margin:0 auto;padding:16px 12px 60px}
+  .screen{display:none}.screen.on{display:block}
+  h2{font-family:'Tiro Devanagari Marathi',serif;font-weight:400;font-size:1.25rem;margin:6px 4px 12px}
+  .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:14px}
+  .kpi{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:10px 6px;text-align:center;box-shadow:var(--shadow)}
+  .kpi b{display:block;font-size:1.35rem;font-variant-numeric:tabular-nums}
+  .kpi span{font-size:.72rem;color:var(--muted)}
+  .kpi.good b{color:var(--good)} .kpi.warn b{color:var(--warn)} .kpi.bad b{color:var(--bad)} .kpi.new b{color:var(--new)}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:12px 14px;margin-bottom:10px;box-shadow:var(--shadow)}
+  .row{display:flex;align-items:baseline;justify-content:space-between;gap:8px;flex-wrap:wrap}
+  .cnum{font-weight:700;font-variant-numeric:tabular-nums}
+  .pill{font-size:.72rem;font-weight:600;border-radius:999px;padding:2px 10px;white-space:nowrap}
+  .pill.new{background:var(--new-bg);color:var(--new)} .pill.run{background:var(--warn-bg);color:var(--warn)}
+  .pill.done{background:var(--good-bg);color:var(--good)} .pill.cold{background:var(--bad-bg);color:var(--bad)}
+  .chip{font-size:.72rem;background:var(--gold-soft);color:var(--gold);border-radius:3px;padding:1px 7px;font-weight:600}
+  .meta{font-size:.8rem;color:var(--muted);margin-top:3px}
+  .ai{margin-top:9px;border-top:1px dashed var(--line);padding-top:8px;font-size:.86rem}
+  .ai .lbl{font-size:.68rem;letter-spacing:.08em;color:var(--gold);font-weight:700}
+  .sample{display:inline-block;font-size:.68rem;color:var(--muted);border:1px dashed var(--muted);border-radius:3px;padding:0 6px;margin:0 4px 10px;letter-spacing:.05em}
+  form.newc{background:var(--card);border:2px solid var(--gold);border-radius:8px;padding:12px 14px;margin-bottom:14px}
+  form.newc .lbl{font-size:.72rem;letter-spacing:.08em;color:var(--gold);font-weight:700}
+  form.newc textarea,form.newc select{width:100%;font-family:inherit;font-size:.95rem;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:8px;margin-top:6px}
+  form.newc textarea{resize:vertical;min-height:54px}
+  form.newc button{margin-top:8px;background:var(--brand);color:var(--brand-ink);border:0;border-radius:6px;font-family:inherit;font-weight:600;font-size:.95rem;padding:9px 18px;cursor:pointer}
+  form.newc button:focus-visible,.tab:focus-visible,.booth:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .flash{animation:flash 1.6s ease-out}
+  @keyframes flash{0%{box-shadow:0 0 0 3px var(--gold)}100%{box-shadow:var(--shadow)}}
+  @media (prefers-reduced-motion:reduce){.flash{animation:none}}
+  table{width:100%;border-collapse:collapse;font-size:.9rem}
+  th{font-size:.72rem;letter-spacing:.05em;color:var(--muted);text-align:left;padding:6px 8px;border-bottom:2px solid var(--line)}
+  td{padding:7px 8px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+  .tablewrap{overflow-x:auto}
+  .verdict{background:var(--brand);color:var(--brand-ink);border-radius:8px;padding:14px 16px;margin-bottom:14px}
+  .verdict b{color:var(--gold);font-size:1.3rem;font-variant-numeric:tabular-nums}
+  .verdict .big{font-family:'Tiro Devanagari Marathi',serif;font-size:1.05rem;margin-top:4px}
+  .legend{display:flex;gap:14px;font-size:.78rem;color:var(--muted);margin:8px 4px}
+  .dot{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:4px;vertical-align:-1px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(30px,1fr));gap:4px}
+  .booth{aspect-ratio:1;border:0;border-radius:3px;cursor:pointer;font-size:.6rem;color:transparent}
+  .booth.g{background:var(--good)} .booth.y{background:var(--warn)} .booth.r{background:var(--bad)}
+  .booth.sel{outline:2px solid var(--ink);outline-offset:1px}
+  #boothinfo{min-height:64px}
+  .bar{display:flex;align-items:center;gap:8px;margin:6px 0;font-size:.88rem}
+  .bar .name{width:120px;flex:none}
+  .bar .track{flex:1;background:var(--line);border-radius:4px;height:14px;overflow:hidden}
+  .bar .fill{height:100%;background:var(--good);border-radius:4px}
+  .bar .val{width:34px;text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+  footer{text-align:center;font-size:.72rem;color:var(--muted);padding:20px 10px 30px}
+</style>
+
+<header class="masthead">
+  <div class="office">राजेश टोपे साहेब &middot; जनसंपर्क कक्ष</div>
+  <div class="seat">घनसावंगी विधानसभा &middot; जि. जालना</div>
+  <span class="tag">खाजगी प्रणाली &middot; PRIVATE</span>
+</header>
+
+<nav class="tabs">
+  <button class="tab on" data-s="s1">तक्रारी<small>Grievances</small></button>
+  <button class="tab" data-s="s2">कार्यकर्ते<small>Workers</small></button>
+  <button class="tab" data-s="s3">बूथ नकाशा<small>Booth Map</small></button>
+  <button class="tab" data-s="s4">मासिक अहवाल<small>Report</small></button>
+</nav>
+
+<main>
+<!-- Screen 1: Grievances -->
+<section class="screen on" id="s1">
+  <h2>तक्रार नोंदवही &mdash; ऑगस्ट २०२६</h2>
+  <span class="sample">नमुना डेटा &mdash; SAMPLE DATA</span>
+  <div class="kpis">
+    <div class="kpi new"><b id="k-total">128</b><span>एकूण या महिन्यात</span></div>
+    <div class="kpi warn"><b id="k-open">41</b><span>चालू</span></div>
+    <div class="kpi good"><b id="k-done">84</b><span>सोडवल्या</span></div>
+    <div class="kpi bad"><b>3</b><span>७ दिवसांवर प्रलंबित</span></div>
+  </div>
+
+  <form class="newc" id="newc">
+    <span class="lbl">नवीन तक्रार नोंदवा (WhatsApp वरून आल्याप्रमाणे)</span>
+    <textarea id="ctext" placeholder="उदा. आमच्या वस्तीत ८ दिवसांपासून पाणी आले नाही..."></textarea>
+    <select id="cvill"></select>
+    <button type="submit">नोंदवा &rarr; AI वर्गीकरण</button>
+  </form>
+
+  <div id="clist"></div>
+</section>
+
+<!-- Screen 2: Workers -->
+<section class="screen" id="s2">
+  <h2>कार्यकर्ता नोंदवही</h2>
+  <span class="sample">नमुना डेटा &mdash; SAMPLE DATA</span>
+  <div class="kpis">
+    <div class="kpi"><b>342</b><span>एकूण बूथ</span></div>
+    <div class="kpi good"><b>214</b><span>सक्रिय कार्यकर्ते</span></div>
+    <div class="kpi warn"><b>87</b><span>थंड (३० दिवस निष्क्रिय)</span></div>
+    <div class="kpi bad"><b>41</b><span>बूथ विना-कार्यकर्ता</span></div>
+  </div>
+  <div class="card">
+    <div class="row"><strong>या महिन्याचे आघाडीचे ५</strong><span class="chip">कामांवरून क्रमवारी</span></div>
+    <div class="tablewrap"><table>
+      <tr><th>कार्यकर्ता</th><th>गाव / बूथ</th><th>कामे</th><th>नागरिक भेटी</th><th>स्थिती</th></tr>
+      <tr><td>संदीप जाधव</td><td>तीर्थपुरी / १०४</td><td>१९</td><td>३४</td><td><span class="pill done">सक्रिय</span></td></tr>
+      <tr><td>अनिता मोरे</td><td>घनसावंगी / १२</td><td>१७</td><td>२९</td><td><span class="pill done">सक्रिय</span></td></tr>
+      <tr><td>बाळासाहेब शिंदे</td><td>रांजणी / ६७</td><td>१४</td><td>२२</td><td><span class="pill done">सक्रिय</span></td></tr>
+      <tr><td>प्रवीण काळे</td><td>वडीगोद्री / १५५</td><td>१२</td><td>१८</td><td><span class="pill done">सक्रिय</span></td></tr>
+      <tr><td>सुनीता पवार</td><td>अंतरवाली सराटी / २०१</td><td>११</td><td>२५</td><td><span class="pill done">सक्रिय</span></td></tr>
+    </table></div>
+  </div>
+  <div class="card">
+    <div class="row"><strong>लक्ष द्या &mdash; थंड पडलेले</strong><span class="pill cold">कारवाई हवी</span></div>
+    <div class="tablewrap"><table>
+      <tr><th>कार्यकर्ता</th><th>गाव / बूथ</th><th>शेवटचे काम</th><th>स्थिती</th></tr>
+      <tr><td>विजय राठोड</td><td>शहागड / २३८</td><td>३८ दिवसांपूर्वी</td><td><span class="pill cold">थंड</span></td></tr>
+      <tr><td>गणेश उगले</td><td>गोंदी / २७०</td><td>४४ दिवसांपूर्वी</td><td><span class="pill cold">थंड</span></td></tr>
+      <tr><td>&mdash; रिक्त &mdash;</td><td>रोहिलागड / २८८-२९३</td><td>कार्यकर्ता नेमलेला नाही</td><td><span class="pill cold">रिक्त बूथ</span></td></tr>
+    </table></div>
+  </div>
+</section>
+
+<!-- Screen 3: Booth map -->
+<section class="screen" id="s3">
+  <h2>बूथ ताकद नकाशा</h2>
+  <div class="verdict">
+    २०२४ निकाल (अधिकृत): उधान ९८,४९६ &mdash; टोपे ९६,१८७
+    <div class="big">फरक फक्त <b>२,३०९</b> मते = बूथमागे सुमारे <b>७</b> मते</div>
+  </div>
+  <span class="sample">बूथ रंग: नमुना डेटा &mdash; प्रत्यक्ष Form-20 डेटा जोडता येईल</span>
+  <div class="legend">
+    <span><span class="dot" style="background:var(--good)"></span>आपले मजबूत</span>
+    <span><span class="dot" style="background:var(--warn)"></span>लढतीचे</span>
+    <span><span class="dot" style="background:var(--bad)"></span>कमकुवत</span>
+  </div>
+  <div class="card"><div class="grid" id="boothgrid"></div></div>
+  <div class="card" id="boothinfo"><span class="meta">कोणत्याही बूथवर बोट ठेवा &mdash; तपशील येथे दिसेल.</span></div>
+</section>
+
+<!-- Screen 4: Monthly report -->
+<section class="screen" id="s4">
+  <h2>मासिक गुडविल अहवाल &mdash; ऑगस्ट २०२६</h2>
+  <span class="sample">नमुना डेटा &mdash; SAMPLE DATA</span>
+  <div class="kpis">
+    <div class="kpi good"><b>84</b><span>कुटुंबांना मदत</span></div>
+    <div class="kpi new"><b>29</b><span>गावे कव्हर</span></div>
+    <div class="kpi"><b>66%</b><span>सोडवण्याचा दर</span></div>
+    <div class="kpi warn"><b>4.2</b><span>सरासरी दिवस</span></div>
+  </div>
+  <div class="card">
+    <strong>गावनिहाय मदत (या महिन्यात)</strong>
+    <div class="bar"><span class="name">तीर्थपुरी</span><div class="track"><div class="fill" style="width:90%"></div></div><span class="val">१८</span></div>
+    <div class="bar"><span class="name">घनसावंगी</span><div class="track"><div class="fill" style="width:75%"></div></div><span class="val">१५</span></div>
+    <div class="bar"><span class="name">रांजणी</span><div class="track"><div class="fill" style="width:60%"></div></div><span class="val">१२</span></div>
+    <div class="bar"><span class="name">वडीगोद्री</span><div class="track"><div class="fill" style="width:50%"></div></div><span class="val">१०</span></div>
+    <div class="bar"><span class="name">अंतरवाली सराटी</span><div class="track"><div class="fill" style="width:45%"></div></div><span class="val">९</span></div>
+    <div class="bar"><span class="name">शहागड</span><div class="track"><div class="fill" style="width:35%"></div></div><span class="val">७</span></div>
+    <div class="bar"><span class="name">इतर २३ गावे</span><div class="track"><div class="fill" style="width:65%"></div></div><span class="val">१३</span></div>
+  </div>
+  <div class="card">
+    <strong>विषयनिहाय</strong>
+    <div class="bar"><span class="name">पाणी</span><div class="track"><div class="fill" style="width:80%;background:var(--new)"></div></div><span class="val">२६</span></div>
+    <div class="bar"><span class="name">रस्ता</span><div class="track"><div class="fill" style="width:62%;background:var(--new)"></div></div><span class="val">२०</span></div>
+    <div class="bar"><span class="name">आरोग्य / अनुदान</span><div class="track"><div class="fill" style="width:48%;background:var(--new)"></div></div><span class="val">१६</span></div>
+    <div class="bar"><span class="name">पेन्शन / दाखले</span><div class="track"><div class="fill" style="width:40%;background:var(--new)"></div></div><span class="val">१३</span></div>
+    <div class="bar"><span class="name">शेती / वीज</span><div class="track"><div class="fill" style="width:28%;background:var(--new)"></div></div><span class="val">९</span></div>
+  </div>
+  <div class="card">
+    <strong>याचा अर्थ</strong>
+    <p class="meta" style="font-size:.9rem">दर महिन्याला ८०+ कुटुंबे साहेबांच्या नावाने मदत अनुभवतात &mdash; निवडणुकीआधी नाही, आत्ता. प्रत्येक नोंद: नाव, गाव, तारीख, पुरावा. ३६ महिने &times; ८० कुटुंबे = निकालाचा फरक भरून काढणारी बँक.</p>
+  </div>
+</section>
+</main>
+
+<footer>Prototype &middot; KodeTalent AI Systems &middot; नमुना आवृत्ती v0.1</footer>
+
+<script>
+(function(){
+  // tabs
+  var tabs=document.querySelectorAll('.tab');
+  tabs.forEach(function(t){t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('on')});t.classList.add('on');
+    document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('on')});
+    document.getElementById(t.dataset.s).classList.add('on');
+  })});
+
+  var villages=['तीर्थपुरी','घनसावंगी','रांजणी','वडीगोद्री','अंतरवाली सराटी','शहागड','रोहिलागड','गोंदी','कुंभार पिंपळगाव','जांबसमर्थ'];
+  var vsel=document.getElementById('cvill');
+  villages.forEach(function(v){var o=document.createElement('option');o.textContent=v;vsel.appendChild(o)});
+
+  // seed complaints
+  var seed=[
+    {n:231,v:'तीर्थपुरी',t:'वस्तीतील हातपंप १५ दिवसांपासून बंद आहे',c:'पाणी',s:'run',d:3,w:'संदीप जाधव'},
+    {n:230,v:'रांजणी',t:'संजय गांधी निराधार योजनेचे पेन्शन ३ महिने आले नाही',c:'पेन्शन',s:'run',d:5,w:'बाळासाहेब शिंदे'},
+    {n:229,v:'घनसावंगी',t:'शाळेजवळील रस्त्यावर मोठे खड्डे, मुलांना धोका',c:'रस्ता',s:'done',d:0,w:'अनिता मोरे'},
+    {n:228,v:'शहागड',t:'शेतीच्या ट्रान्सफॉर्मरमध्ये बिघाड, ८ दिवस वीज नाही',c:'वीज',s:'run',d:8,w:'विजय राठोड'},
+    {n:227,v:'अंतरवाली सराटी',t:'आजीच्या ऑपरेशनसाठी महात्मा फुले योजनेची मदत हवी',c:'आरोग्य',s:'done',d:0,w:'सुनीता पवार'}
+  ];
+  var cats={ 'पाणी':['पाणी','हातपंप','नळ','टँकर','विहीर'], 'रस्ता':['रस्ता','खड्डे','पूल'], 'वीज':['वीज','ट्रान्सफॉर्मर','लाईट','डीपी'], 'आरोग्य':['दवाखाना','ऑपरेशन','आरोग्य','औषध','रुग्ण'], 'पेन्शन':['पेन्शन','निराधार','दाखला','प्रमाणपत्र'], 'शेती':['पीक','शेती','विमा','अनुदान','बियाणे'] };
+  var replies={ 'पाणी':'पंचायत समिती, ग्रामीण पाणीपुरवठा विभागाकडे आजच पत्र क्र. देऊन पाठपुरावा सुरू. ४८ तासांत टँकरची पर्यायी मागणी नोंदवली.',
+    'रस्ता':'सा.बां. विभाग (PWD) उपअभियंता यांना तक्रार क्रमांकासह पत्र. पुढील आढावा ७ दिवसांत.',
+    'वीज':'MSEB उपविभागीय कार्यालयाकडे तक्रार नोंद. ट्रान्सफॉर्मर दुरुस्तीसाठी प्राधान्य यादीत टाकण्याची विनंती.',
+    'आरोग्य':'महात्मा फुले जनआरोग्य योजनेच्या मदत कक्षाशी संपर्क करून कागदपत्रांची यादी पाठवली. रुग्णालय समन्वयकाला फोन.',
+    'पेन्शन':'तहसील कार्यालयात संजय गांधी योजना लिपिकाकडे यादी पाठवली. आधार-बँक जोडणी तपासणी सुरू.',
+    'शेती':'कृषी सहाय्यकांकडे अर्ज पाठवला. विमा कंपनीच्या जिल्हा प्रतिनिधीकडे पाठपुरावा नोंदवला.',
+    'इतर':'संबंधित विभागाकडे अर्ज नोंदवून पोच क्रमांक घेतला. पुढील आढावा ३ दिवसांत.'};
+  function classify(t){for(var c in cats){for(var i=0;i<cats[c].length;i++){if(t.indexOf(cats[c][i])>-1)return c}}return 'इतर'}
+  var statusPill={run:'<span class="pill run">चालू</span>',done:'<span class="pill done">सोडवली</span>',new_:'<span class="pill new">नवीन</span>'};
+
+  var list=document.getElementById('clist');
+  function card(o,isNew){
+    var el=document.createElement('div');el.className='card'+(isNew?' flash':'');
+    el.innerHTML='<div class="row"><span class="cnum">GHW-'+o.n+'</span><span class="chip">'+o.c+'</span>'+(isNew?statusPill.new_:statusPill[o.s])+'</div>'
+      +'<div style="margin-top:5px">'+o.t+'</div>'
+      +'<div class="meta">'+o.v+' &middot; '+(o.s==='done'?'सोडवली':o.d+' दिवस')+' &middot; जबाबदार: '+(o.w||'नेमणूक बाकी')+'</div>'
+      +'<div class="ai"><span class="lbl">AI उत्तर मसुदा</span><div>'+replies[o.c]+'</div></div>';
+    return el;
+  }
+  seed.forEach(function(o){list.appendChild(card(o,false))});
+
+  var num=231, total=128, open=41;
+  document.getElementById('newc').addEventListener('submit',function(e){
+    e.preventDefault();
+    var t=document.getElementById('ctext').value.trim(); if(!t)return;
+    num++; total++; open++;
+    var o={n:num,v:vsel.value,t:t,c:classify(t),s:'new_',d:0,w:null};
+    list.insertBefore(card(o,true),list.firstChild);
+    document.getElementById('k-total').textContent=total;
+    document.getElementById('k-open').textContent=open;
+    document.getElementById('ctext').value='';
+    window.scrollTo({top:document.getElementById('newc').offsetTop,behavior:'smooth'});
+  });
+
+  // booth grid: deterministic pseudo-random
+  var grid=document.getElementById('boothgrid'), info=document.getElementById('boothinfo');
+  function rnd(i){var x=Math.sin(i*127.1)*43758.5453;return x-Math.floor(x)}
+  for(var i=1;i<=120;i++){
+    (function(i){
+      var r=rnd(i), cls=r<0.38?'g':(r<0.72?'y':'r');
+      var b=document.createElement('button');b.type='button';b.className='booth '+cls;b.textContent=i;
+      b.setAttribute('aria-label','बूथ '+i);
+      b.addEventListener('click',function(){
+        document.querySelectorAll('.booth.sel').forEach(function(x){x.classList.remove('sel')});
+        b.classList.add('sel');
+        var vill=villages[i%villages.length];
+        var margin=Math.round((r-0.5)*160);
+        var workers=cls==='g'?2:(cls==='y'?1:0);
+        var opens=Math.floor(r*5);
+        info.innerHTML='<div class="row"><strong>बूथ क्र. '+i+' &middot; '+vill+'</strong>'
+          +(cls==='g'?'<span class="pill done">मजबूत</span>':cls==='y'?'<span class="pill run">लढतीचा</span>':'<span class="pill cold">कमकुवत</span>')+'</div>'
+          +'<div class="meta">२०२४ फरक (नमुना): '+(margin>=0?'+':'')+margin+' मते &middot; सक्रिय कार्यकर्ते: '+workers+' &middot; चालू तक्रारी: '+opens+'</div>'
+          +'<div class="meta">'+(cls!=='g'?'सूचना: येथे ७ मतांचा फरक भरून काढण्यासाठी '+(workers===0?'कार्यकर्ता नेमा आणि ':'')+'चालू तक्रारी आधी सोडवा.':'हा बूथ राखून ठेवा &mdash; इथले कार्यकर्ते शेजारच्या कमकुवत बूथला मदत करू शकतात.')+'</div>';
+      });
+      grid.appendChild(b);
+    })(i);
+  }
+})();
+</script>
