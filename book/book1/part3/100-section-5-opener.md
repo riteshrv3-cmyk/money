@@ -1,11 +1,11 @@
-# SECTION 5: MACHINES CHE AAPSAT BOLNE
+# SECTION 5: MACHINES चं आपसात बोलणं
 
-Aath chapters. Eka machine pasun jagbhar pasarlelya jaalaparyant.
+आठ chapters. एका machine पासून जगभर पसरलेल्या जाळ्यापर्यंत.
 
-**He tumchya business decision madhe kuthe yeil:** "App slow ka
-aahe," "server cha kharcha kiti yeil," "data safe aahe ka," "he
-feature offline chalel ka": he sagle prashna network chya samajni
-shivay sutat nahit. Ani jo founder network samajto, to he pan
-baghto ki darvaje (platforms) kase bantat: internet chya itihasat
-jo jo "sagle ekmekanshi bolu shaktil" asa rasta banvto, to to
-shrimant hoto. Ya section madhe to pattern char vela distil.
+**हे तुमच्या business decision मध्ये कुठे येईल:** "App slow का
+आहे," "server चा खर्च किती येईल," "data safe आहे का," "हे feature
+offline चालेल का": हे सगळे प्रश्न network च्या समजुतीशिवाय सुटत
+नाहीत. आणि जो founder network समजतो, तो हे पण बघतो की दरवाजे
+(platforms) कसे बनतात: internet च्या इतिहासात जो जो "सगळे
+एकमेकांशी बोलू शकतील" असा रस्ता बनवतो, तो तो श्रीमंत होतो. या
+section मध्ये तो pattern चार वेळा दिसेल.

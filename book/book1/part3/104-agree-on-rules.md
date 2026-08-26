@@ -1,117 +1,110 @@
-# Chapter 5.4 [SPINE]: Niyam var aadhich sahmati
+# Chapter 5.4 [SPINE]: नियमांवर आधीच सहमती
 
-Address aahe, packets aahet. Pan ajun ek prashna lapla aahe,
-ani to sagLyat khol aahe.
+Address आहे, packets आहेत. पण अजून एक प्रश्न लपला आहे, आणि तो
+सगळ्यात खोल आहे.
 
-Phone call chi suruvat aathva: "Hello?" "Haan, bola." "Mi
-Ramesh boltoy..." He shabd mahiti det nahit; he KRAM aahe.
-Kon aadhi bolnaar, kasa kalel ki samor koni aahe, "aika ka"
-cha ishara kay. Doghanni ha kram AADHICH manlela asto, mhanun
-call chalte. Ek jan Japani kram ni bolla ani dusra Marathi
-kram ni, tar shabd pohochtil pan bolne honar nahi.
+Phone call ची सुरुवात आठवा: "Hello?" "हां, बोला." "मी रमेश
+बोलतोय..." हे शब्द माहिती देत नाहीत; हा क्रम आहे. कोण आधी
+बोलणार, कसं कळेल की समोर कोणी आहे, "ऐकू येतंय का" चा इशारा काय.
+दोघांनी हा क्रम आधीच मानलेला असतो, म्हणून call चालतो. एकजण
+जपानी क्रमाने बोलला आणि दुसरा मराठी क्रमाने, तर शब्द पोहोचतील पण
+बोलणं होणार नाही.
 
-Machines madhe ha prashna ajun tikat asto, karan machine
-kade "samjun ghene" nahi (Part 2, Chapter 3.1: exact lagta).
-Don machines na bolayche tar SAGLA aadhich tharlela lagta:
+Machines मध्ये हा प्रश्न अजून टोकाचा असतो, कारण machine कडे
+"समजून घेणं" नाही (Part 2, Chapter 3.1: exact लागतं). दोन
+machines ना बोलायचं तर सगळं आधीच ठरलेलं लागतं:
 
-- Kon suruvat karnaar? Kasa mhannaar "mi tayar aahe"?
-- Message cha format kay? Kuthle bits address, kuthle maal?
-- "Pohochla" kasa kalvnaar? Nahi pohochla tar kay?
-- Chuk zali tar kon parat pathavnaar, kiti vela?
+- कोण सुरुवात करणार? कसं म्हणणार "मी तयार आहे"?
+- Message चा format काय? कुठले bits address, कुठले माल?
+- "पोहोचला" कसं कळवणार? नाही पोहोचला तर काय?
+- चूक झाली तर कोण परत पाठवणार, किती वेळा?
 
-Ashya aadhich-tharlelya niyamanchya yaadila protocol mhantat.
-Ani internet mhanje kay, yacha ARDHA uttar he aahe: **internet
-ek vastu nahi, niyamanchi yaadi aahe.** Jo koni te niyam
-paalto, tyachi machine jaalat samil hote. Parvangi konachi
-ghyaychi nahi, fee konala dyaychi nahi. Niyam public aahet,
-darvaja sagLyanna ughada.
+अशा आधीच-ठरलेल्या नियमांच्या यादीला protocol म्हणतात. आणि
+internet म्हणजे काय, याचं अर्धं उत्तर हे आहे: **internet ही
+वस्तू नाही, नियमांची यादी आहे.** जो कोणी ते नियम पाळतो, त्याची
+machine जाळ्यात सामील होते. परवानगी कोणाची घ्यायची नाही, fee
+कोणाला द्यायची नाही. नियम public आहेत, दरवाजा सगळ्यांना उघडा.
 
-Ani niyam EKA thara var nahit, SHIDI var aahet (abstraction,
-parat!): sagLyat khali "taar var current kasa" che niyam,
-tyavar "address ani packets" che (IP), tyavar "harvlela parat
-magva" che (TCP), ani sagLyat var "app la kay have" che niyam.
-Website magvaychya niyamanche naav tumhi roj baghta: **HTTP**.
-Browser chya pattyat "https://..." mhanje "hi baat HTTP chya
-niyamani honar" evdhach. Pratyek thar fakt aaple kaam janto,
-khalcha thar kasa chalto he tyala mahit nasta. (Chapter 0.4:
-har level, khalchya cha fakt handle dharto.)
+आणि नियम एका थरावर नाहीत, शिडीवर आहेत (abstraction, परत!):
+सगळ्यात खाली "तारेवर current कसा" चे नियम, त्यावर "address आणि
+packets" चे (IP), त्यावर "हरवलेला परत मागवा" चे (TCP), आणि
+सगळ्यात वर "app ला काय हवं" चे नियम. Website मागवण्याच्या
+नियमांचं नाव तुम्ही रोज बघता: **HTTP**. Browser च्या पट्टीत
+"https://..." म्हणजे "ही बोलणी HTTP च्या नियमांनी होणार" एवढंच.
+प्रत्येक थर फक्त आपलं काम जाणतो, खालचा थर कसा चालतो हे त्याला
+माहीत नसतं. (Chapter 0.4: प्रत्येक level, खालच्याचं फक्त handle
+धरतो.)
 
-Ata dhandyachi nazar laava. Jithe protocol KHULA asto, tithe
-koni-hi dukan ughdu shakto: email che niyam khule, mhanun
-hazaro email companies. Jithe niyam EKA company che astat,
-tithe tichi hukumat: WhatsApp che niyam Meta chech aahet,
-mhanun WhatsApp la jodnara dusra app banuch shakat nahi.
-Khule niyam = spardha = grahakala swasta. Band niyam = kila.
-Doghanchehi dhande chaltat, pan konta khel khelto aahot he
-kalayla have.
+आता धंद्याची नजर लावा. जिथे protocol खुला असतो, तिथे कोणीही
+दुकान उघडू शकतो: email चे नियम खुले, म्हणून हजारो email
+companies. जिथे नियम एका company चे असतात, तिथे तिची हुकूमत:
+WhatsApp चे नियम Meta चेच आहेत, म्हणून WhatsApp ला जोडणारं
+दुसरं app बनूच शकत नाही. खुले नियम = स्पर्धा = ग्राहकाला स्वस्त.
+बंद नियम = किल्ला. दोघांचेही धंदे चालतात, पण कुठला खेळ खेळतोय हे
+कळायला हवं.
 
-## NAAV
+## नाव
 
-Aadhich-tharlele niyam: **protocol**. Web cha protocol:
-**HTTP** (surakshit roop: HTTPS, Chapter 5.6). Email cha:
-SMTP. Niyamanchi shidi: **protocol stack** ya **layers**.
+आधीच-ठरलेले नियम: **protocol**. Web चा protocol: **HTTP**
+(सुरक्षित रूप: HTTPS, Chapter 5.6). Email चा: SMTP. नियमांची
+शिडी: **protocol stack** किंवा **layers**.
 
-## KHARYA JAGATLA EK EXAMPLE
+## खऱ्या जगातलं एक example
 
-UPI he protocol aahe, app nahi. NPCI ni niyam banavle: paisa
-magnyacha format kay, banks ni kase bolayche, "zala" kasa
-kalvaycha. Niyam KHULE thevle: mhanun GPay, PhonePe, Paytm,
-koni-hi bank, sagle ekmekanshi chaltat. Tumhi GPay varun
-PhonePe walyala paise pathavta ani vichar pan karat nahi,
-he kevdha motha chamatkar aahe: don spardhak companies chya
-apps madhe paisa binadhok vahto, karan protocol samaan aahe.
-Ani parinam jag baghta aahe: mahina 10 arab+ vyavhar. Niyam
-banavnara (NPCI) swataha motha "app" nahi, pan sagLya khela
-cha aadhaar to aahe.
+UPI हे protocol आहे, app नाही. NPCI ने नियम बनवले: पैसे
+मागण्याचा format काय, banks नी कसं बोलायचं, "झालं" कसं कळवायचं.
+नियम खुले ठेवले: म्हणून GPay, PhonePe, Paytm, कोणतीही bank,
+सगळे एकमेकांशी चालतात. तुम्ही GPay वरून PhonePe वाल्याला पैसे
+पाठवता आणि विचारही करत नाही, हे केवढं मोठं आश्चर्य आहे: दोन
+स्पर्धक companies च्या apps मध्ये पैसा बिनधोक वाहतो, कारण
+protocol समान आहे. आणि परिणाम जग बघतं आहे: महिन्याला 10 अब्ज+
+व्यवहार. नियम बनवणारा (NPCI) स्वतः मोठं "app" नाही, पण सगळ्या
+खेळाचा आधार तो आहे.
 
-## ITHE LOK KAY CHUKICHE SAMAJTAT
+## इथे लोक काय चुकीचं समजतात
 
-"Internet chi malak kuthli tari company aahe (Google?
-Microsoft?)." Nahi. Internet konachich malmatta nahi, karan
-to niyamancha samuh aahe, ani niyam sagLyankade aahet.
-Google chya SEVA (search, YouTube) tyachya aahet; RASTA
-tyacha nahi. Ha farak mahatvacha aahe: seva band hou
-shakte, rasta band karayla jagbharche niyam badlave lagtil.
-(Kon niyam banavto, ha prashna Chapter 5.8 madhe.)
+"Internet ची मालक कुठलीतरी company आहे (Google? Microsoft?)."
+नाही. Internet कोणाचीच मालमत्ता नाही, कारण तो नियमांचा समूह
+आहे, आणि नियम सगळ्यांकडे आहेत. Google च्या सेवा (search,
+YouTube) त्याच्या आहेत; रस्ता त्याचा नाही. हा फरक महत्त्वाचा
+आहे: सेवा बंद होऊ शकते, रस्ता बंद करायला जगभरचे नियम बदलावे
+लागतील. (कोण नियम बनवतं, हा प्रश्न Chapter 5.8 मध्ये.)
 
-## MAP VAR
+## MAP वर
 
-N squared cha rakshasa parat aala hota, baghitla ka? UPI
-chya aadhi pratyek app la pratyek bank shi VEGLA jod banvava
-lagla asta: 50 apps x 300 banks = 15,000 jod. Protocol ni
-te 350 kele (pratyekane fakt niyamanshi jodayche). **Jo
-n-squared la protocol ni maarto, to purna bajaracha payabhut
-thar banto.** NPCI ni he payment madhe kele. Tumchya 4-level
-naksha var: jithe pratyekala pratyekashi jodave lagta aahe
-ani sagle metaakle aahet, tithe protocol chi jaaga rikaami
-aahe. Ashi jaaga disli tar neat baghaa: ti arabonchi aahe.
+N squared चा राक्षस परत आला होता, बघितलं का? UPI च्या आधी
+प्रत्येक app ला प्रत्येक bank शी वेगळा जोड बनवावा लागला असता:
+50 apps x 300 banks = 15,000 जोड. Protocol ने ते 350 केले
+(प्रत्येकाने फक्त नियमांशी जोडायचं). **जो n-squared ला protocol
+ने मारतो, तो पूर्ण बाजाराचा पायाभूत थर बनतो.** NPCI ने हे
+payment मध्ये केलं. तुमच्या 4-level नकाशावर: जिथे प्रत्येकाला
+प्रत्येकाशी जोडावं लागतं आहे आणि सगळे मेटाकुटीला आले आहेत, तिथे
+protocol ची जागा रिकामी आहे. अशी जागा दिसली तर नीट बघा: ती
+अब्जांची आहे.
 
-## SWATAHA BAGHA (5 minute)
+## स्वतः बघा (5 minute)
 
-Browser madhe kuthlihi website ughda ani pattyakade LAKSH
-dya: https:// ne suruvat. Ata ek juni goshta: kahi varshan-
-purvi fakt http:// aste (s nahi). Ata browser http varchya
-site la "Not secure" mhanto. Ek akshar (s) mhanje ek purna
-protocol-badal, ani to badal jagbhar ka ghadla he Chapter
-5.6 sangel. Aaj fakt te aksharaa dise ka baghaa.
+Browser मध्ये कुठलीही website उघडा आणि पट्टीकडे लक्ष द्या:
+https:// ने सुरुवात. आता एक जुनी गोष्ट: काही वर्षांपूर्वी फक्त
+http:// असे (s नाही). आता browser http वरच्या site ला "Not
+secure" म्हणतो. एक अक्षर (s) म्हणजे एक पूर्ण protocol-बदल, आणि
+तो बदल जगभर का घडला हे Chapter 5.6 सांगेल. आज फक्त ते अक्षर
+दिसतं का बघा.
 
-## VICHAR KARA
+## विचार करा
 
-1. (derivation) UPI sarkha khula protocol banavnyat NPCI
-la (ani banks na) kay milte? Tyanni band, aaplya-malkicha
-system ka nahi banavla, jasa Visa/Mastercard ni banavla
-hota?
+1. (derivation) UPI सारखा खुला protocol बनवण्यात NPCI ला (आणि
+banks ना) काय मिळतं? त्यांनी बंद, आपल्या-मालकीची system का नाही
+बनवली, जशी Visa/Mastercard ने बनवली होती?
 
-> **Uttar:** Band system ni pratyek vyavhaarat fee milte
-> (Visa cha model: dukandara kadun 1-2%). Khula system ni
-> VAAPAR sphotasarkha vadhto: UPI fukat thevla mhanun
-> chahawalya pasun bhajiwalya paryant sagle aale, ani 10
-> varshat rok-paisa (cash) cha desh digital zala. NPCI
-> sarkari-sahakari aahe, tila fee peksha VYAAPTI havi
-> hoti; ani banks na sagLya deshacha paisa system madhe
-> aala he milala. Dhanda-shikvan: fee-per-vyavhaar ha ek
-> khel aahe, purna bajarachi payabharni dusra. Doosra
-> khel motha asto, pan to khelayla lambi saans lagte, ani
-> kamai thet nahi tar var-chya tharatun yete (data,
-> seva, darvaja). Google ni Android madhe hech kele hote,
-> aathvta? Pattern ekach aahe.
+> **उत्तर:** बंद system मध्ये प्रत्येक व्यवहारात fee मिळते (Visa
+> चा model: दुकानदाराकडून 1-2%). खुल्या system मध्ये वापर
+> स्फोटासारखा वाढतो: UPI फुकट ठेवला म्हणून चहावाल्यापासून
+> भाजीवाल्यापर्यंत सगळे आले, आणि 10 वर्षांत रोख-पैशाचा देश
+> digital झाला. NPCI सरकारी-सहकारी आहे, तिला fee पेक्षा व्याप्ती
+> हवी होती; आणि banks ना सगळ्या देशाचा पैसा system मध्ये आला हे
+> मिळालं. धंद्याची शिकवण: fee-प्रति-व्यवहार हा एक खेळ आहे, पूर्ण
+> बाजाराची पायाभरणी दुसरा. दुसरा खेळ मोठा असतो, पण तो खेळायला
+> लांब श्वास लागतो, आणि कमाई थेट नाही तर वरच्या थरांतून येते
+> (data, सेवा, दरवाजा). Google ने Android मध्ये हेच केलं होतं,
+> आठवतं? Pattern एकच आहे.

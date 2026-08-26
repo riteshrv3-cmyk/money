@@ -1,109 +1,102 @@
-# Chapter 5.5 [SPINE]: Numbers aivaji naav
+# Chapter 5.5 [SPINE]: Numbers ऐवजी नावं
 
-Address zale, niyam zale. Pan ek adchan rahili: server cha
-address 142.250.183.14 aahe. Tumhi "google.com" lihita. He
-jamte kasa? Ani mulat, ASE ka?
+Address झाले, नियम झाले. पण एक अडचण राहिली: server चा address
+142.250.183.14 आहे. तुम्ही "google.com" लिहिता. हे जमतं कसं?
+आणि मुळात, असं का?
 
-Karan sopa aahe: mansana numbers lakshat rahat nahit, naave
-rahtat (tumhi mitranche phone numbers path kelet ka? Naave
-save keli). Pan machines na numbers lagtat. Mhanje madhe ek
-PHONEBOOK lagto: naav dya, number ghya.
+कारण सोपं आहे: माणसांना numbers लक्षात राहत नाहीत, नावं राहतात
+(तुम्ही मित्रांचे phone numbers पाठ केलेत का? नावं save केली).
+पण machines ना numbers लागतात. म्हणजे मध्ये एक PHONEBOOK लागते:
+नाव द्या, number घ्या.
 
-Ata design tumhi kara. Jagbharchya crore website sathi
-phonebook kasa banval?
+आता design तुम्ही करा. जगभरच्या कोटी websites साठी phonebook
+कशी बनवाल?
 
-Pahila vichar: ek motha register, eka jaagi. Chapter 0.1 chi
-ghanta vaajli ka? Tech prashna: (1) to register thevnarya var
-sagLyancha bharosa lagel, (2) jag-bharche prashna eka jaagi
-aale tar ti jaaga marel, (3) ti jaaga padli tar SAGLA internet
-"harvel" (raste chalu, pan pattec nahi).
+पहिला विचार: एक मोठं register, एका जागी. Chapter 0.1 ची घंटा
+वाजली का? तेच प्रश्न: (1) ते register ठेवणाऱ्यावर सगळ्यांचा
+भरवसा लागेल, (2) जगभरचे प्रश्न एका जागी आले तर ती जागा मरेल,
+(3) ती जागा पडली तर सगळं internet "हरवेल" (रस्ते चालू, पण पत्ते
+नाहीत).
 
-Mhanun design vegla nivdla gela, ani to tumhi post-address
-madhe aadhich baghitla (Chapter 5.2): SHIDI. Naav ulta vaacha:
-google.com mhanje "com chya mothya vahit, google chi nond."
-Pratyek tharacha register vegla: sagLyat varche register fakt
-he sangte ki ".com" chi yaadi kon sambhaalto; te register
-sangte "google.com" chi mahiti kuthe; ani tithun number milto.
-Koni-ekakade sagla nahi; pratyekakade aapla thar. (Hierarchy:
-jithe scale, tithe yaadi nahi, shidi.)
+म्हणून design वेगळं निवडलं गेलं, आणि ते तुम्ही post-address
+मध्ये आधीच बघितलं (Chapter 5.2): शिडी. नाव उलटं वाचा:
+google.com म्हणजे "com च्या मोठ्या वहीत, google ची नोंद."
+प्रत्येक थराचं register वेगळं: सगळ्यात वरचं register फक्त हे
+सांगतं की ".com" ची यादी कोण सांभाळतो; ते register सांगतं
+"google.com" ची माहिती कुठे; आणि तिथून number मिळतो. कोणा-एकाकडे
+सगळं नाही; प्रत्येकाकडे आपला थर. (Hierarchy: जिथे scale, तिथे
+यादी नाही, शिडी.)
 
-Ani vega sathi ek yukti: uttar milala ki tumcha phone ani
-javlche servers te LAKSHAT thevtat (thoda vel). Parat parat
-shidi chadhavi lagat nahi. Ya lakshat-thevnyala cache mhantat;
-Part 5 madhe ha shabd motha honar aahe.
+आणि वेगासाठी एक युक्ती: उत्तर मिळालं की तुमचा phone आणि जवळचे
+servers ते लक्षात ठेवतात (थोडा वेळ). परत परत शिडी चढावी लागत
+नाही. या लक्षात-ठेवण्याला cache म्हणतात; Part 5 मध्ये हा शब्द
+मोठा होणार आहे.
 
-Ata sagLyat sundar bhaag: naav ani number VEGLE aslya mule ek
-swatantrya milte. Website chi machine badla, shahar badla,
-cloud badla: NUMBER badlel, pan naav tech rahte. Grahakala
-kalat pan nahi. Dukan chi imarat badlali, pati tich rahili.
-Mhanunach naav (domain) hi dhandyachi malmatta aahe ani
-machine bhadyachi vastu.
+आता सगळ्यात सुंदर भाग: नाव आणि number वेगळे असल्यामुळे एक
+स्वातंत्र्य मिळतं. Website ची machine बदला, शहर बदला, cloud
+बदला: number बदलेल, पण नाव तेच राहतं. ग्राहकाला कळतही नाही.
+दुकानाची इमारत बदलली, पाटी तीच राहिली. म्हणूनच नाव (domain) ही
+धंद्याची मालमत्ता आहे आणि machine भाड्याची वस्तू.
 
-## NAAV
+## नाव
 
-Naav-to-number phonebook yantrana: **DNS** (Domain Name
-System). Website cha naav: **domain**. Lakshat thevne:
-**cache**. Domain vikat ghene: registrar kade (GoDaddy
-vagaire), varshala thodi fee.
+नाव-ते-number phonebook यंत्रणा: **DNS** (Domain Name System).
+Website चं नाव: **domain**. लक्षात ठेवणं: **cache**. Domain
+विकत घेणं: registrar कडे (GoDaddy वगैरे), वर्षाला थोडी fee.
 
-## KHARYA JAGATLA EK EXAMPLE
+## खऱ्या जगातलं एक example
 
-2016 madhe DNS chi seva denari ek moti company (Dyn) var
-halla zala: lakho hacked devices ni tila prashnani budavle.
-Parinam: Twitter, Netflix, Spotify "band" zale, USA chya
-ardhya bhagasathi. Servers chalu hote, raste chalu hote,
-pan PHONEBOOK ughdat navhta, mhanun koni kunala shodhu
-shakat navhte. Tya diwshi jagala kalale ki internet chi
-sagLyat boring disnari yantrana kevdhi mahatvachi aahe.
-Payabhut goshti ashach astat: distat nahit, padlya ki
-sagla dista.
+2016 मध्ये DNS ची सेवा देणाऱ्या एका मोठ्या company वर (Dyn)
+हल्ला झाला: लाखो hacked devices नी तिला प्रश्नांनी बुडवलं.
+परिणाम: Twitter, Netflix, Spotify "बंद" झाले, USA च्या अर्ध्या
+भागासाठी. Servers चालू होते, रस्ते चालू होते, पण phonebook
+उघडत नव्हती, म्हणून कोणी कोणाला शोधू शकत नव्हतं. त्या दिवशी
+जगाला कळलं की internet ची सगळ्यात boring दिसणारी यंत्रणा केवढी
+महत्त्वाची आहे. पायाभूत गोष्टी अशाच असतात: दिसत नाहीत, पडल्या
+की सगळं दिसतं.
 
-## ITHE LOK KAY CHUKICHE SAMAJTAT
+## इथे लोक काय चुकीचं समजतात
 
-"Website mhanje domain." Nahi. Domain fakt PATI aahe;
-dukan (server, code, data) vegLikde aahe. Mhanun: domain
-vikat ghetla mhanje website zali nahi (pati aali, dukan
-nahi). Ani website "band padli" tar karan pati asu shakto
-(domain chi fee bharli nahi: varshakathi hazaro dhande he
-visarun band padtat!) kinva dukan asu shakto (server
-padla). Don vegLya goshti, don vegle bill, don vegle
-prashna.
+"Website म्हणजे domain." नाही. Domain फक्त पाटी आहे; दुकान
+(server, code, data) वेगळीकडे आहे. म्हणून: domain विकत घेतला
+म्हणजे website झाली नाही (पाटी आली, दुकान नाही). आणि website
+"बंद पडली" तर कारण पाटी असू शकते (domain ची fee भरली नाही:
+वर्षाकाठी हजारो धंदे हे विसरून बंद पडतात!) किंवा दुकान असू शकतं
+(server पडला). दोन वेगळ्या गोष्टी, दोन वेगळी bills, दोन वेगळे
+प्रश्न.
 
-## MAP VAR
+## MAP वर
 
-Domain ha itihasa-tla sagLyat swasta satta-kabja tharla:
-1990s madhe kahi doordarshi lokanni sadhi naave (business.com,
-cars.com) kavdimol gheun thevli; pudhe tyach naavanche
-crore-crore rupaye zale (business.com sadharan 345 crore
-rupayala vikla gela). Aaj pan khel chalu aahe: changli
-naave lok aadhich gheun bastat (squatting). Chapter 5.2
-chi shikvan parat: THARLELI ginti + vadhti magni = dharun
-theva. Ani tumchya sathi ek vyavaharik ol: dhandyachi
-kalpana pakki nasel tari tyacha domain 800 rupayat aadhi
-gheun theva; kalpana pakki hoiparyant naav gelela asta.
+Domain हा इतिहासातला सगळ्यात स्वस्त सत्ता-कब्जा ठरला: 1990s
+मध्ये काही दूरदर्शी लोकांनी साधी नावं (business.com, cars.com)
+कवडीमोलात घेऊन ठेवली; पुढे त्याच नावांचे कोटी-कोटी रुपये झाले
+(business.com साधारण 345 कोटी रुपयांना विकला गेला). आज पण खेळ
+चालू आहे: चांगली नावं लोक आधीच घेऊन बसतात (squatting). Chapter
+5.2 ची शिकवण परत: ठरलेली मोजदाद + वाढती मागणी = धरून ठेवा. आणि
+तुमच्यासाठी एक व्यावहारिक ओळ: धंद्याची कल्पना पक्की नसेल तरी
+त्याचा domain 800 रुपयांत आधी घेऊन ठेवा; कल्पना पक्की होईपर्यंत
+नाव गेलेलं असतं.
 
-## SWATAHA BAGHA (5 minute)
+## स्वतः बघा (5 minute)
 
-Aaplya phone chi contact-yaadi ughda. Hich tumchi DNS aahe:
-naave var, numbers aat. Mitrane SIM badlala tari tumhi
-naavach vaparta, number tumhala mahitach nasto. Ata kalpana
-kara contact-yaadi udali: sagle numbers chalu aahet, pan
-tumhi konalach phone lavu shakat nahi. DNS padne mhanje
-HECH, jag-bharasathi. Naave hi aathvan aahe; numbers fakt
-raste.
+आपल्या phone ची contact-यादी उघडा. हीच तुमची DNS आहे: नावं वर,
+numbers आत. मित्राने SIM बदलला तरी तुम्ही नावच वापरता, number
+तुम्हाला माहीतच नसतो. आता कल्पना करा contact-यादी उडाली: सगळे
+numbers चालू आहेत, पण तुम्ही कोणालाच phone लावू शकत नाही. DNS
+पडणं म्हणजे हेच, जगभरासाठी. नावं ही आठवण आहे; numbers फक्त
+रस्ते.
 
-## VICHAR KARA
+## विचार करा
 
-1. (derivation) Domain varshala fakt 800-1500 rupaye ka?
-Evdhi mahatvachi malmatta evdhi swasta ka? (Vichar kara:
-kimmat kashane tharte, ani ithe scarcity nemki kashat aahe?)
+1. (derivation) Domain वर्षाला फक्त 800-1500 रुपये का? एवढी
+महत्त्वाची मालमत्ता एवढी स्वस्त का? (विचार करा: किंमत कशाने
+ठरते, आणि इथे scarcity नेमकी कशात आहे?)
 
-> **Uttar:** Karan NONDNI swasta aahe: register madhe ek ol
-> lihine, jya cha kharcha lagbhag shunya (Part 1: numbers
-> lihine fukat). Scarcity olit nahi, NAAVAT aahe: cars.com
-> ek-ch asu shakta. Mhanun bajar don tharancha zala: nondni
-> fee saglyanna sarkhi (swasta), pan CHANGLE naav jya kade
-> aahe to tyachi vaatel ti kimmat magto: hi scarcity chi
-> khari jaaga. Shikvan parat tich (Chapter 0.2): kimmat
-> mehnati var nahi, durmilte var ubhi aste. Ani durmilta
-> kadhi kadhi fakt "pahile pohochne" evdhich aste.
+> **उत्तर:** कारण नोंदणी स्वस्त आहे: register मध्ये एक ओळ लिहिणं,
+> ज्याचा खर्च जवळजवळ शून्य (Part 1: numbers लिहिणं फुकट).
+> Scarcity ओळीत नाही, नावात आहे: cars.com एकच असू शकतो. म्हणून
+> बाजार दोन थरांचा झाला: नोंदणी fee सगळ्यांना सारखी (स्वस्त), पण
+> चांगलं नाव ज्याच्याकडे आहे तो त्याची वाटेल ती किंमत मागतो: ही
+> scarcity ची खरी जागा. शिकवण परत तीच (Chapter 0.2): किंमत
+> मेहनतीवर नाही, दुर्मिळतेवर उभी असते. आणि दुर्मिळता कधी कधी
+> फक्त "पहिले पोहोचणं" एवढीच असते.

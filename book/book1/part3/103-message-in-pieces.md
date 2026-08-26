@@ -1,115 +1,107 @@
-# Chapter 5.3 [DEPTH]: Message che tukde karne
+# Chapter 5.3 [DEPTH]: Message चे तुकडे करणं
 
-(DEPTH chapter. Vagalla tari goshta pudhe jaeel, pan ha lahaan
-aahe ani yachya nantar "packet" ani "network slow" che khare
-arth ughadtat.)
+(DEPTH chapter. वगळला तरी गोष्ट पुढे जाईल, पण हा लहान आहे आणि
+याच्यानंतर "packet" आणि "network slow" चे खरे अर्थ उघडतात.)
 
-Address zala. Ata message pathvaycha aahe: samja 3 MB cha photo
-(Part 1: mhanje sadharan 2.5 crore bits). Sopa vaatnara rasta:
-sagle bits ek-saath, ek lambach-lamb pravah mhanun pathva.
+Address झाला. आता message पाठवायचा आहे: समजा 3 MB चा photo
+(Part 1: म्हणजे साधारण 2.5 कोटी bits). सोपा वाटणारा रस्ता: सगळे
+bits एकासाथ, एक लांबच लांब प्रवाह म्हणून पाठवा.
 
-Ha design VAIT aahe. Ka, te tumhi truck chya udaharana ne kadhu
-shakta. Samja Mumbai-Pune rasta aahe ani tya varun ek 3 km
-lamba truck jato aahe:
+हे design वाईट आहे. का, ते तुम्ही truck च्या उदाहरणाने काढू
+शकता. समजा Mumbai-Pune रस्ता आहे आणि त्यावरून एक 3 km लांब
+truck जातो आहे:
 
-1. Jya veles to jato, DUSRA konich rasta vapru shakat nahi.
-   Ek motha message = baki saglyanchi thambleli line.
-2. Truck madhe kuthe bighad zala tar? SAGLA parat pathva.
-   3 MB madhla shevatcha bit chukla, tar purna 3 MB parat.
-3. Ani rasta ekach asel tar to padla ki sagla thambla.
+1. जेव्हा तो जातो, तेव्हा दुसरं कोणीच रस्ता वापरू शकत नाही.
+   एक मोठा message = बाकी सगळ्यांची थांबलेली रांग.
+2. Truck मध्ये कुठे बिघाड झाला तर? सगळं परत पाठवा. 3 MB मधला
+   शेवटचा bit चुकला, तरी पूर्ण 3 MB परत.
+3. आणि रस्ता एकच असेल तर तो पडला की सगळं थांबलं.
 
-Mag design tumhi kara. Rasta-yantrana kashi asavi?
+मग design तुम्ही करा. रस्ता-यंत्रणा कशी असावी?
 
-Uttar: **message che LAHAAN tukde kara.** Pratyek tukdyavar
-liha: konala jaycha (address), konakadun aala, ani tukda
-number kiti (1 of 2000, 2 of 2000...). Ata pratyek tukda
-SWATANTRA pravaas karto. Faayde aapoaap yetat:
+उत्तर: **message चे लहान तुकडे करा.** प्रत्येक तुकड्यावर लिहा:
+कोणाला जायचं (address), कोणाकडून आला, आणि तुकडा क्रमांक किती
+(1 of 2000, 2 of 2000...). आता प्रत्येक तुकडा स्वतंत्र प्रवास
+करतो. फायदे आपोआप येतात:
 
-Raste vaatle jatat: tumchya tukdyanchya madhun dusryanche
-tukde pan jaatat, koni rasta adkvat nahi. Tukde VEGVEGLYA
-rastyani pan jau shaktat: ek highway ne, ek gaava-madhun; jo
-mokala tya tya kshani. Ek tukda haravla tar FAKT TOCH parat
-magvaycha, purna message nahi. Ani pohochlyavar number pramane
-lavun message parat jodla jato. (Order ulti-sulti pohochli
-tari chalte: numbers aahet na.)
+रस्ते वाटले जातात: तुमच्या तुकड्यांच्या मधून दुसऱ्यांचे तुकडे पण
+जातात, कोणी रस्ता अडवत नाही. तुकडे वेगवेगळ्या रस्त्यांनी पण जाऊ
+शकतात: एक highway ने, एक गावामधून; जो मोकळा त्या त्या क्षणी. एक
+तुकडा हरवला तर फक्त तोच परत मागवायचा, पूर्ण message नाही. आणि
+पोहोचल्यावर क्रमांकाप्रमाणे लावून message परत जोडला जातो. (क्रम
+उलटासुलटा पोहोचला तरी चालतं: numbers आहेत ना.)
 
-Ekach goshta lakshat theva: tumhala vaatta tumhi "connection"
-ughdla aahe, ek paip, ek dhaga. Prat-yakshat DHAGA NAHI. Fakt
-tukde aahet, swatantra udya maarnare. "Connection" ha ek
-bhaas aahe jo donhi tokanchi software tumhala dakhavte:
-tukde mojun, harvlele parat magvun, order lavun. Bhaas
-sundar aahe, pan to bhaas AAHE he samajlyavar network chya
-sagLya vichitra goshti sopya hotat: video call madhla robotic
-aawaz, adkleli file, "reconnecting..." sagla.
+एकच गोष्ट लक्षात ठेवा: तुम्हाला वाटतं तुम्ही "connection" उघडलं
+आहे, एक pipe, एक धागा. प्रत्यक्षात धागा नाही. फक्त तुकडे आहेत,
+स्वतंत्र उड्या मारणारे. "Connection" हा एक भास आहे जो दोन्ही
+टोकांचं software तुम्हाला दाखवतं: तुकडे मोजून, हरवलेले परत
+मागवून, क्रम लावून. भास सुंदर आहे, पण तो भास आहे हे समजल्यावर
+network च्या सगळ्या विचित्र गोष्टी सोप्या होतात: video call
+मधला robotic आवाज, अडकलेली file, "reconnecting..." सगळं.
 
-## NAAV
+## नाव
 
-Message cha tukda: **packet**. Tukde-karun-pathavnyachi hi
-yantrana: **packet switching** (1960s cha shodh, ani internet
-chi khari payabharni). "Harvlela parat magva, order lava,
-bharosa dya" he kaam karnare niyam: **TCP**. "Parat magvaycha
-nahi, jo pohochla to pohochla, VEGA mahatvacha" he niyam:
-**UDP**. (Donhi naave batmyan-madhe yetat; ata tumhala arth
-mahit aahe.)
+Message चा तुकडा: **packet**. तुकडे-करून-पाठवण्याची ही यंत्रणा:
+**packet switching** (1960s चा शोध, आणि internet ची खरी
+पायाभरणी). "हरवलेला परत मागवा, क्रम लावा, भरवसा द्या" हे काम
+करणारे नियम: **TCP**. "परत मागवायचं नाही, जो पोहोचला तो पोहोचला,
+वेग महत्त्वाचा" हे नियम: **UDP**. (दोन्ही नावं बातम्यांमध्ये
+येतात; आता तुम्हाला अर्थ माहीत आहे.)
 
-## KHARYA JAGATLA EK EXAMPLE
+## खऱ्या जगातलं एक example
 
-File download hotana network 2 second gela: download THAMBTO,
-mag tithunach pudhe chalto. Karan file la TCP: pratyek tukda
-pohochlach pahije, kimmat mhanun vel. Video call madhe network
-2 second gela: aawaz robotic hoto, chehra atakto, pan call
-CHALU rahto. Karan call la UDP-sarkhe niyam: juna tukda parat
-magvun kay upyog? To kshan tar gela. Don design, don dhanda-
-garja: barobar-pana vs vega. Kuthla kadhi nivdaycha he
-samajne mhanje network engineer chi ardhi vidya.
+File download होताना network 2 second गेलं: download थांबतो, मग
+तिथूनच पुढे चालतो. कारण file ला TCP: प्रत्येक तुकडा पोहोचलाच
+पाहिजे, किंमत म्हणून वेळ. Video call मध्ये network 2 second
+गेलं: आवाज robotic होतो, चेहरा अडकतो, पण call चालू राहतो. कारण
+call ला UDP-सारखे नियम: जुना तुकडा परत मागवून काय उपयोग? तो क्षण
+तर गेला. दोन designs, दोन धंद्याच्या गरजा: बरोबरपणा vs वेग.
+कुठला कधी निवडायचा हे समजणं म्हणजे network engineer ची अर्धी
+विद्या.
 
-## ITHE LOK KAY CHUKICHE SAMAJTAT
+## इथे लोक काय चुकीचं समजतात
 
-"Net slow aahe mhanje speed kami aahe." Adhura. Don vegLya
-goshti astat: ek second madhe KITI tukde jaatat (bandwidth)
-ani EKA tukdyala jaun-yeun kiti vel lagto (latency, Chapter
-2.3 madhe bhetleli). Movie baghayla bandwidth lagte; game
-ani video call la latency maarte. Mhanunach "100 Mbps" cha
-plan asun pan game madhe "lag" yeto: tukde khup jaatat, pan
-pratyek tukdyacha pheraa lamba aahe. Dukandar tumhala fakt
-ek number vikto; khela don numbers cha aahe.
+"Net slow आहे म्हणजे speed कमी आहे." अर्धवट. दोन वेगळ्या गोष्टी
+असतात: एका second मध्ये किती तुकडे जातात (bandwidth) आणि एका
+तुकड्याला जाऊन-येऊन किती वेळ लागतो (latency, Chapter 2.3 मध्ये
+भेटलेली). Movie बघायला bandwidth लागते; game आणि video call ला
+latency मारते. म्हणूनच "100 Mbps" चा plan असून पण game मध्ये
+"lag" येतो: तुकडे खूप जातात, पण प्रत्येक तुकड्याचा फेरा लांब
+आहे. दुकानदार तुम्हाला फक्त एक number विकतो; खेळ दोन numbers चा
+आहे.
 
-## MAP VAR
+## MAP वर
 
-Company case: packet switching ni junya telephone jagala
-harvle. Telephone company kade "ek call = ek rakhiv line"
-asa mahag design hota; packets ni tich taar hazaro lokan-
-madhe vaatli. Jo rasta swasta karto to jinkto: he pattern
-parat. Ani aaj packets chya rastyavarchi yantre (routers)
-banavnari Cisco ek kaali jagatli sagLyat moulyavaan company
-hoti. Rasta jithe navin banto, tithe yantre viknara pahila
-shrimant hoto. (AI madhe aaj Nvidia tech kaam karte aahe:
-navin rasta, yantre viknara.)
+Company case: packet switching ने जुन्या telephone जगाला हरवलं.
+Telephone company कडे "एक call = एक राखीव line" असं महाग design
+होतं; packets नी तीच तार हजारो लोकांमध्ये वाटली. जो रस्ता स्वस्त
+करतो तो जिंकतो: हे pattern परत. आणि packets च्या रस्त्यावरची
+यंत्रं (routers) बनवणारी Cisco एका काळी जगातली सगळ्यात मौल्यवान
+company होती. रस्ता जिथे नवीन बनतो, तिथे यंत्रं विकणारा पहिला
+श्रीमंत होतो. (AI मध्ये आज Nvidia तेच काम करते आहे: नवीन रस्ता,
+यंत्रं विकणारा.)
 
-## SWATAHA BAGHA (5 minute)
+## स्वतः बघा (5 minute)
 
-Pudhchya video call chya veles network kharab zala ki
-LAKSH dya: aawaz robotic ka hoto? Karan software harvlele
-packets bharun kadhnyacha prayatna karte aahe. Chehra ka
-"atakto" ani mag udi maarto? Karan madhle frames (packets)
-gele, software ni te sodle ani navin var udi maarli. Tumhi
-ata bighad NAHI, DESIGN baghat aahat: vega sathi barobar-
-pana sodlela.
+पुढच्या video call च्या वेळेस network खराब झालं की लक्ष द्या:
+आवाज robotic का होतो? कारण software हरवलेले packets भरून
+काढण्याचा प्रयत्न करतं आहे. चेहरा का "अडकतो" आणि मग उडी मारतो?
+कारण मधले frames (packets) गेले, software ने ते सोडले आणि नवीन
+वर उडी मारली. तुम्ही आता बिघाड नाही, DESIGN बघत आहात: वेगासाठी
+बरोबरपणा सोडलेला.
 
-## VICHAR KARA
+## विचार करा
 
-1. (derivation) Live cricket match streaming madhe ek packet
-haravla. To parat magvava ka? TCP ka UDP-vichar? Ani bank
-transaction madhe? Donhi uttare ka veg-vegli aahet?
+1. (derivation) Live cricket match streaming मध्ये एक packet
+हरवला. तो परत मागवावा का? TCP की UDP-विचार? आणि bank
+transaction मध्ये? दोन्ही उत्तरं वेगवेगळी का आहेत?
 
-> **Uttar:** Cricket: parat magvu naka. To kshan gela; parat
-> magvun jo tukda yeil to juna asel, ani tya sathi thambne
-> mhanje purna stream ushira. Prekshakala 2 second juna
-> perfect picture nako, AATTACHA thoda kharab chalel. Bank:
-> parat magva, ani jo paryant pakka pohochat nahi to paryant
-> kahihi pudhe jau deu naka. Ek rupaya chukla tari chalnar
-> nahi; vel lagla tari chalel. Niyam asa nighto: jithe
-> KSHAN mahatvacha tithe vega jinkto, jithe BAROBAR-PANA
-> mahatvacha tithe kimmat mhanun vel dyava lagto. Tumchya
-> product madhla pratyek feature ya do rangaat vaatun
-> baghaa; tantra-nivad aapoaap sopa hoto.
+> **उत्तर:** Cricket: परत मागवू नका. तो क्षण गेला; परत मागवून जो
+> तुकडा येईल तो जुना असेल, आणि त्यासाठी थांबणं म्हणजे पूर्ण
+> stream उशिरा. प्रेक्षकाला 2 second जुनं perfect चित्र नको,
+> आत्ताचं थोडं खराब चालेल. Bank: परत मागवा, आणि जोपर्यंत पक्कं
+> पोहोचत नाही तोपर्यंत काहीही पुढे जाऊ देऊ नका. एक रुपया चुकला
+> तरी चालणार नाही; वेळ लागला तरी चालेल. नियम असा निघतो: जिथे
+> क्षण महत्त्वाचा तिथे वेग जिंकतो, जिथे बरोबरपणा महत्त्वाचा तिथे
+> किंमत म्हणून वेळ द्यावा लागतो. तुमच्या product मधलं प्रत्येक
+> feature या दोन रंगांत वाटून बघा; तंत्र-निवड आपोआप सोपी होते.

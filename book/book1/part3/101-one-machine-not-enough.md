@@ -1,113 +1,106 @@
-# Chapter 5.1 [SPINE]: Ek machine puri padat nahi
+# Chapter 5.1 [SPINE]: एक machine पुरी पडत नाही
 
-Part 1 ani 2 ni tumhala ek shaktishali machine dili: universal
-machine, jya var kuthlihi recipe chalte. Mag prashna asa: ekach
-machine puri ka padat nahi? WhatsApp tumchya phone var aahe na?
+Part 1 आणि 2 नी तुम्हाला एक शक्तिशाली machine दिली: universal
+machine, जिच्यावर कुठलीही recipe चालते. मग प्रश्न असा: एकच
+machine पुरी का पडत नाही? WhatsApp तुमच्या phone वर आहे ना?
 
-Nahi. Tumchya phone var WhatsApp cha fakt DARVAJA aahe. Vichar
-kara: tumhi message pathavla ani mitracha phone band aahe. Tari
-message pohochto, to phone chalu kartach. Mhanje message madhe
-kuthe tari THAMBLA hota. Kuthe? Tumchya phone var nahi (tumhi
-pathavla, gela). Tyachya phone var nahi (band hota). Mhanje
-madhye TISRI machine aahe, jya var message vaat baghat basla
-hota.
+नाही. तुमच्या phone वर WhatsApp चा फक्त दरवाजा आहे. विचार करा:
+तुम्ही message पाठवला आणि मित्राचा phone बंद आहे. तरी message
+पोहोचतो, तो phone चालू करताच. म्हणजे message मध्ये कुठेतरी
+थांबला होता. कुठे? तुमच्या phone वर नाही (तुम्ही पाठवला, गेला).
+त्याच्या phone वर नाही (बंद होता). म्हणजे मध्ये तिसरी machine
+आहे, जिच्यावर message वाट बघत बसला होता.
 
-Ti tisri machine WhatsApp chya company chi aahe, ani ashya
-machines lakhoni aahet. Ka lagtat? Teen karana, tinhi tumhi
-swataha kadhu shakta:
+ती तिसरी machine WhatsApp च्या company ची आहे, आणि अशा machines
+लाखोंनी आहेत. का लागतात? तीन कारणं, तिन्ही तुम्ही स्वतः काढू
+शकता:
 
-**Data sagl-yancha ekatra asava lagto.** Tumcha bank balance
-tumchya phone var thevla tar? Phone haravla, paisa gela. Ani
-dukandarala kasa kalel ki tumchyakade paise aahet? Jo data
-DOGHANNA lagto, to doghanchya madhye, tisrya jaagi rahava lagto.
+**Data सगळ्यांचा एकत्र असावा लागतो.** तुमचा bank balance तुमच्या
+phone वर ठेवला तर? Phone हरवला, पैसा गेला. आणि दुकानदाराला कसं
+कळेल की तुमच्याकडे पैसे आहेत? जो data दोघांना लागतो, तो दोघांच्या
+मध्ये, तिसऱ्या जागी राहावा लागतो.
 
-**Ek machine crore lokanna serve karu shakat nahi.** Ek CPU,
-ek second madhe arab kadam (Part 1). Vaatun ghya: crore lok ale
-tar pratyekala kiti? Kaam vaatava lagta, khup machines madhe.
+**एक machine कोटी लोकांना serve करू शकत नाही.** एक CPU, एका
+second मध्ये अब्ज पावलं (Part 1). वाटून घ्या: कोटी लोक आले तर
+प्रत्येकाला किती? काम वाटावं लागतं, खूप machines मध्ये.
 
-**Machines padtat.** Bijli jate, disk jalte. Sagla ekach jaagi
-thevla ani ti jaaga padli, tar sagla gela. Prati (copies)
-veglya jaagi lagtat.
+**Machines पडतात.** वीज जाते, disk जळते. सगळं एकाच जागी ठेवलं
+आणि ती जागा पडली, तर सगळं गेलं. प्रती (copies) वेगळ्या जागी
+लागतात.
 
-Mhanun jag ashya do bhaagat vibhagla gela: tumchya hatatli
-machine (magnaari) ani company chya building madhli machine
-(denari). Ani ata sagLYAT motha prashna: ya machines ekmekashi
-BOLNAR kashya?
+म्हणून जग अशा दोन भागांत विभागलं गेलं: तुमच्या हातातली machine
+(मागणारी) आणि company च्या building मधली machine (देणारी). आणि
+आता सगळ्यात मोठा प्रश्न: या machines एकमेकांशी बोलणार कशा?
 
-Don machines madhe taar odha, current cha pattern pathva (Part
-1, Chapter 1.2: signal mhanje he ch), bits gele. Don machines
-zalya. Pan crore machines? Pratyekala pratyekashi taar jodli
-tar? Ganit kara: 100 machines la 4,950 taara lagtil, crore
-machines la... jamnar nahi. (He "n squared" aahe: sankhya vadhli
-ki jod tya sankhyechya varga ne vadhtat. He naav lakshat theva,
-ya part madhe he rakshasa parat parat yeil, ani pratyek veli
-koni tari tyala harvun shrimant hoil.)
+दोन machines मध्ये तार ओढा, current चा pattern पाठवा (Part 1,
+Chapter 1.2: signal म्हणजे हेच), bits गेले. दोन machines झाल्या.
+पण कोटी machines? प्रत्येकाला प्रत्येकाशी तार जोडली तर? गणित
+करा: 100 machines ला 4,950 तारा लागतील, कोटी machines ला...
+जमणार नाही. (हे "n squared" आहे: संख्या वाढली की जोड त्या
+संख्येच्या वर्गाने वाढतात. हे नाव लक्षात ठेवा, या part मध्ये हा
+राक्षस परत परत येईल, आणि प्रत्येक वेळी कोणीतरी त्याला हरवून
+श्रीमंत होईल.)
 
-Upay tumhi rozchya jagat baghitla aahe: rasta. Pratyek ghara
-pasun pratyek ghara paryant rasta nasto; galli aste, chowk asto,
-highway asto. Tasach machines cha rasta banto: tumchi machine
-javlchya chowkala jodleli, chowk mothya chowkala, ase jod-jodun
-sagla jag. Ha rasta ch NETWORK aahe.
+उपाय तुम्ही रोजच्या जगात बघितला आहे: रस्ता. प्रत्येक घरापासून
+प्रत्येक घरापर्यंत रस्ता नसतो; गल्ली असते, चौक असतो, highway
+असतो. तसंच machines चं: तुमची machine जवळच्या चौकाला जोडलेली,
+चौक मोठ्या चौकाला, असं जोडत जोडत सगळं जग. हा रस्ताच NETWORK आहे.
 
-## NAAV
+## नाव
 
-Magnaari machine: **client**. Denari machine: **server** (serve
-karnari, mhanun). Jodlelya machines cha jaal: **network**. Ani
-"pratyekala pratyekashi jodne jamnar nahi" hi problem: **n
-squared problem**.
+मागणारी machine: **client**. देणारी machine: **server** (serve
+करणारी, म्हणून). जोडलेल्या machines चं जाळं: **network**. आणि
+"प्रत्येकाला प्रत्येकाशी जोडणं जमणार नाही" ही अडचण: **n squared
+problem**.
 
-## KHARYA JAGATLA EK EXAMPLE
+## खऱ्या जगातलं एक example
 
-Tumhi Zomato var order karta. Tumcha phone (client) Zomato chya
-server la magni pathavto. Server tumcha order thevto, restaurant
-chya screen la (dusra client) dakhavto, delivery walyachya phone
-la (tisra client) pathavto. Teen client, ek server, ani sagle
-ekmekanna kadhich thet jodlele nahit: pratyek jan fakt server
-shi bolto. Chowk ek, raste tin. N squared la asech harvtat.
+तुम्ही Zomato वर order करता. तुमचा phone (client) Zomato च्या
+server ला मागणी पाठवतो. Server तुमचा order ठेवतो, restaurant
+च्या screen ला (दुसरा client) दाखवतो, delivery वाल्याच्या phone
+ला (तिसरा client) पाठवतो. तीन clients, एक server, आणि सगळे
+एकमेकांना कधीच थेट जोडलेले नाहीत: प्रत्येकजण फक्त server शी
+बोलतो. चौक एक, रस्ते तीन. N squared ला असंच हरवतात.
 
-## ITHE LOK KAY CHUKICHE SAMAJTAT
+## इथे लोक काय चुकीचं समजतात
 
-"Majha message thet mitrachya phone la jato." Kadhich nahi.
-Pratyek message aadhi company chya server la jato, mag mitrala.
-(End-to-end encryption asel tar company VACHU shakat nahi, pan
-rasta tyanchyach madhun jato: Chapter 5.6 madhe he ughdel.)
-Mhanunach "fukat" apps chya company kade evdhi takat aste:
-sagla traffic tyanchya chowkatun jato.
+"माझा message थेट मित्राच्या phone ला जातो." कधीच नाही. प्रत्येक
+message आधी company च्या server ला जातो, मग मित्राला. (End-to-end
+encryption असेल तर company वाचू शकत नाही, पण रस्ता त्यांच्याच
+मधून जातो: Chapter 5.6 मध्ये हे उघडेल.) म्हणूनच "फुकट" apps च्या
+company कडे एवढी ताकद असते: सगळा traffic त्यांच्या चौकातून जातो.
 
-## MAP VAR
+## MAP वर
 
-Rupayacha rasta: tumhi mahina bharla (Level 1 pasun paisa
-ghusla) -> telecom company (Jio/Airtel) la, ti rasta dete.
-App company chya server cha kharcha ti cloud la dete (Part 5).
-Ani he baghaa: jya business kade SERVER aahe, tyachya kade
-DATA aahe; jya kade data, tyachya kade takat. Client banavne
-sopa ani swasta zala aahe; server chi baju hich khari malmatta
-aahe. Tumhi jo business banval, tyat "server var kay rahnaar"
-ha prashna mhanje "malmatta kay asnaar" ha prashna aahe.
+रुपयाचा रस्ता: तुम्ही महिना भरला (Level 1 पासून पैसा घुसला) ->
+telecom company (Jio/Airtel) ला, ती रस्ता देते. App company च्या
+server चा खर्च ती cloud ला देते (Part 5). आणि हे बघा: ज्या
+business कडे SERVER आहे, त्याच्याकडे DATA आहे; ज्याच्याकडे data,
+त्याच्याकडे ताकद. Client बनवणं सोपं आणि स्वस्त झालं आहे; server
+ची बाजू हीच खरी मालमत्ता आहे. तुम्ही जो business बनवाल, त्यात
+"server वर काय राहणार" हा प्रश्न म्हणजे "मालमत्ता काय असणार" हा
+प्रश्न आहे.
 
-## SWATAHA BAGHA (5 minute)
+## स्वतः बघा (5 minute)
 
-Phone airplane mode var taka. Ata apps ughda: WhatsApp chats
-distat (juna data, phone var sathavlela), pan nave message
-yet nahit. Google Maps cha naksha adhvat ughdto, search chalat
-nahi. Camera purna chalto. Ata tumhala pratyek app che don
-bhaag distil: jo tumchya hatat aahe, ani jo koni-tari-dusrya-
-chya machine var aahe. Hi rekha baghayla shikne mhanje network
-samajne.
+Phone airplane mode वर टाका. आता apps उघडा: WhatsApp chats
+दिसतात (जुना data, phone वर साठवलेला), पण नवे message येत नाहीत.
+Google Maps चा नकाशा अर्धवट उघडतो, search चालत नाही. Camera
+पूर्ण चालतो. आता तुम्हाला प्रत्येक app चे दोन भाग दिसतील: जो
+तुमच्या हातात आहे, आणि जो कोणीतरी-दुसऱ्याच्या machine वर आहे.
+ही रेषा बघायला शिकणं म्हणजे network समजणं.
 
-## VICHAR KARA
+## विचार करा
 
-1. (derivation) 100 lokanchi society aahe. Pratyekane
-pratyekashi thet bolayche tharvle tar 4,950 jod lagtat. Ek
-chowk (server) banavla tar fakt 100. Pan ata ek navin kimmat
-ali, ti kuthli? (Chapter 0.1 chi aathvan kara: register
-thevnarya var kay prashna hota?)
+1. (derivation) 100 लोकांची वस्ती आहे. प्रत्येकाने प्रत्येकाशी
+थेट बोलायचं ठरवलं तर 4,950 जोड लागतात. एक चौक (server) बनवला तर
+फक्त 100. पण आता एक नवी किंमत आली, ती कुठली? (Chapter 0.1 ची
+आठवण करा: register ठेवणाऱ्यावर काय प्रश्न होता?)
 
-> **Uttar:** Bharosa. Sagli bolni eka chowkatun jaate, mhanje
-> chowk cha malak sagla baghto, thambvu shakto, badlu shakto.
-> N squared sutla, pan satta ek jaagi ekavtali. Mhanunach he
-> pattern parat parat disel: sopa rasta = madhla malak. Ani
-> tyachya virudh che prayog pan (blockchain vagaire) yach
-> dukhavar ubhe aahet. Tantradnyan cha pratyek design ek
-> sauda asto: ithe suvidha vs satta ha sauda aahe. Jo he
-> baghto, to batmya nahi, DHANDA vachto.
+> **उत्तर:** भरवसा. सगळं बोलणं एका चौकातून जातं, म्हणजे चौकाचा
+> मालक सगळं बघतो, थांबवू शकतो, बदलू शकतो. N squared सुटला, पण
+> सत्ता एका जागी एकवटली. म्हणूनच हा pattern परत परत दिसेल: सोपा
+> रस्ता = मधला मालक. आणि त्याच्याविरुद्धचे प्रयोग पण (blockchain
+> वगैरे) याच दुखण्यावर उभे आहेत. Technology चं प्रत्येक design
+> एक सौदा असतो: इथे सुविधा vs सत्ता हा सौदा आहे. जो हे बघतो, तो
+> बातम्या नाही, धंदा वाचतो.

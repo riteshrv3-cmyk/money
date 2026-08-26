@@ -1,116 +1,108 @@
-# Chapter 5.6 [SPINE]: Public rastyavar private bolne
+# Chapter 5.6 [SPINE]: Public रस्त्यावर private बोलणं
 
-Ata ek prashna jo tumchya khishala thet bhidto. Chapter 5.3
-ni sangitla: tumcha message tukdyani, DUSRYANCHYA yantran-
-madhun pravaas karto: telecom che routers, madhle carriers,
-kon-kon. Ani tumhi tya rastyane kay pathavta? Bank cha
-password. Card cha number. Khaajgi photo.
+आता एक प्रश्न जो तुमच्या खिशाला थेट भिडतो. Chapter 5.3 ने
+सांगितलं: तुमचा message तुकड्यांनी, दुसऱ्यांच्या यंत्रांमधून
+प्रवास करतो: telecom चे routers, मधले carriers, कोण-कोण. आणि
+तुम्ही त्या रस्त्याने काय पाठवता? Bank चा password. Card चा
+number. खाजगी photo.
 
-Postcard aathva: postman vachu shakto, karan lifafa nahi.
-Tumche packets pan ASECH aahet, jar kahi kele nahi tar: rasta-
-madhla pratyek jan vachu shakto. Mag upay? Lifafa lagto. Pan
-kagdi lifafa nahi; ganitacha.
+Postcard आठवा: postman वाचू शकतो, कारण लिफाफा नाही. तुमचे
+packets पण असेच आहेत, जर काही केलं नाही तर: रस्त्यामधला
+प्रत्येकजण वाचू शकतो. मग उपाय? लिफाफा लागतो. पण कागदी लिफाफा
+नाही; गणिताचा.
 
-Pahila vichar sopa aahe: ek gupt KILLI thareva (samja: pratyek
-akshar 3 ne pudhe sarkva). Mi kulup laavto, tu ughad. Madhla
-manus fakt kachra baghto. He juna tantra aahe (Caesar pasun
-World War paryant), ani he KAAM karta... ek bhayanak adchan
-sodun: **killi tya paryant pohochvaychi kashi?** Rasta tar
-public aahe! Killi rastyane pathavli tar madhla manus tich
-uchlel. Killi sathi bhetavech lagel... pan internet var tumhi
-Amazon la kadhi bhetla aahat ka? Ha prashna 1970s paryant
-ASODHVANIYA manla jaycha.
+पहिला विचार सोपा आहे: एक गुप्त किल्ली ठरवा (समजा: प्रत्येक अक्षर
+3 ने पुढे सरकवा). मी कुलूप लावतो, तू उघड. मधला माणूस फक्त कचरा
+बघतो. हे जुनं तंत्र आहे (Caesar पासून World War पर्यंत), आणि हे
+काम करतं... एक भयानक अडचण सोडून: **किल्ली त्याच्यापर्यंत
+पोहोचवायची कशी?** रस्ता तर public आहे! किल्ली रस्त्याने पाठवली
+तर मधला माणूस तीच उचलेल. किल्लीसाठी भेटावंच लागेल... पण internet
+वर तुम्ही Amazon ला कधी भेटला आहात का? हा प्रश्न 1970s पर्यंत
+न-सुटणारा मानला जायचा.
 
-Mag ek kalpana aali jichya var aaj sagla online jag ubha aahe.
-Ashi kulup-yantrana banvli geli jyat killya DON astat, jodine:
+मग एक कल्पना आली जिच्यावर आज सगळं online जग उभं आहे. अशी
+कुलूप-यंत्रणा बनवली गेली ज्यात किल्ल्या दोन असतात, जोडीने:
 
-**Ek killi KULUP LAAVTE (public killi).** Hi tumhi jagala
-vaatta, orduni sangta: "majhi kulup-killi hi ghya!"
+**एक किल्ली कुलूप लावते (public किल्ली).** ही तुम्ही जगाला
+वाटता, ओरडून सांगता: "माझी कुलूप-किल्ली ही घ्या!"
 
-**Dusri killi UGHADTE (private killi).** Hi FAKT tumchya
-kade. Kadhich, konalach jaat nahi.
+**दुसरी किल्ली उघडते (private किल्ली).** ही फक्त तुमच्याकडे.
+कधीच, कोणालाच जात नाही.
 
-Ata jaadu baghaa: Amazon aapli public killi sagLyanna deto.
-Tumhi tumcha card number tya killine kulup-band karta ani
-pathavta. Rasta-madhle sagle baghtat: kachra. UGHDU fakt
-Amazon shakto, karan ughadnari killi fakt tyachya kade.
-**Killi pathvaychi garajach sampli.** Kulup-killi ughad-killi
-pasun ganitane banvta yete, pan ulta rasta (kulup-killi
-varun ughad-killi kadhne) itka avghad aahe ki jagatlya sagLya
-machines milun pan hazaro varshat jamnar nahi (Part 1 chi
-aathvan: mothe numbers; ithe te dhaal banle aahet).
+आता जादू बघा: Amazon आपली public किल्ली सगळ्यांना देतो. तुम्ही
+तुमचा card number त्या किल्लीने कुलूपबंद करता आणि पाठवता.
+रस्त्यामधले सगळे बघतात: कचरा. उघडू फक्त Amazon शकतो, कारण
+उघडणारी किल्ली फक्त त्याच्याकडे. **किल्ली पाठवायची गरजच संपली.**
+कुलूप-किल्ली उघड-किल्लीपासून गणिताने बनवता येते, पण उलटा रस्ता
+(कुलूप-किल्लीवरून उघड-किल्ली काढणं) इतका अवघड आहे की जगातल्या
+सगळ्या machines मिळून पण हजारो वर्षांत जमणार नाही (Part 1 ची
+आठवण: मोठे numbers; इथे ते ढाल बनले आहेत).
 
-Browser madhla https ani kulup-icon mhanje HECH: tumchya ani
-tya site chya madhe hi yantrana chalu aahe. Ani WhatsApp che
-"end-to-end encrypted" mhanje ek paaul pudhe: killya fakt
-tumchya ani mitrachya phone var; MADHLI COMPANY pan vachu
-shakat nahi. Rasta tyancha, lifafa tumcha.
+Browser मधला https आणि कुलूप-icon म्हणजे हेच: तुमच्या आणि त्या
+site च्या मध्ये ही यंत्रणा चालू आहे. आणि WhatsApp चं "end-to-end
+encrypted" म्हणजे एक पाऊल पुढे: किल्ल्या फक्त तुमच्या आणि
+मित्राच्या phone वर; मधली company पण वाचू शकत नाही. रस्ता
+त्यांचा, लिफाफा तुमचा.
 
-## NAAV
+## नाव
 
-Lifafa-ganitala **encryption** mhantat. Don-killi yantrana:
-**public key encryption**. Web chi surakshit vahtuk: **HTTPS**.
-Fakt-don-tokan-javal-killya: **end-to-end encryption**. Ani
-"hi site kharich ti aahe" he pramanit karnara dakhla:
-**certificate** (kulup-icon chya magcha kagad).
+लिफाफा-गणिताला **encryption** म्हणतात. दोन-किल्ली यंत्रणा:
+**public key encryption**. Web ची सुरक्षित वाहतूक: **HTTPS**.
+फक्त-दोन-टोकांजवळ-किल्ल्या: **end-to-end encryption**. आणि "ही
+site खरीच ती आहे" हे प्रमाणित करणारा दाखला: **certificate**
+(कुलूप-icon च्या मागचा कागद).
 
-## KHARYA JAGATLA EK EXAMPLE
+## खऱ्या जगातलं एक example
 
-UPI chya pratyek vyavharat hi yantrana kaam karte aahe: tumcha
-PIN kadhich ughda pravaas karat nahi. Ani he fakt suraksha
-nahi, ARTHIK PAYA aahe: lok online card/PIN takayla tayar
-zale KARAN he ganit tyanchya bajune ubhe aahe. Encryption
-nasta tar e-commerce nasta, UPI nasta, online banking nasta.
-Bharat chi digital economy ya ek ganiti kalpanevar ubhi aahe
-jichi patent kadhi konich ghetli nahi.
+UPI च्या प्रत्येक व्यवहारात ही यंत्रणा काम करते आहे: तुमचा PIN
+कधीच उघडा प्रवास करत नाही. आणि हे फक्त सुरक्षा नाही, आर्थिक
+पाया आहे: लोक online card/PIN टाकायला तयार झाले कारण हे गणित
+त्यांच्या बाजूने उभं आहे. Encryption नसतं तर e-commerce नसता,
+UPI नसता, online banking नसती. भारताची digital economy या एका
+गणिती कल्पनेवर उभी आहे जिचं patent कधी कोणीच घेतलं नाही.
 
-## ITHE LOK KAY CHUKICHE SAMAJTAT
+## इथे लोक काय चुकीचं समजतात
 
-"Kulup-icon dista mhanje site bharoshachi." NAHI. Kulup evdhach
-sangte ki RASTA surakshit aahe: madhla koni vachu shakat nahi.
-Pan palikadcha manus chor asu shakto! Scammer pan https site
-banavto (fee: 0 rupaye). Kulup mhanje "boli khaajgi aahe";
-"samorcha khara aahe" he vegla prashna, ani to tumhalach
-soDvaycha asto: naav neat vaacha (amaz0n?), ghai karnarya
-var shanka ghya. Rasta surakshit, pravaasi tapasaa.
+"कुलूप-icon दिसतो म्हणजे site भरवशाची." नाही. कुलूप एवढंच सांगतं
+की रस्ता सुरक्षित आहे: मधला कोणी वाचू शकत नाही. पण पलीकडचा
+माणूस चोर असू शकतो! Scammer पण https site बनवतो (fee: 0 रुपये).
+कुलूप म्हणजे "बोलणी खाजगी आहेत"; "समोरचा खरा आहे" हा वेगळा
+प्रश्न, आणि तो तुम्हालाच सोडवायचा असतो: नाव नीट वाचा (amaz0n?),
+घाई करणाऱ्यावर शंका घ्या. रस्ता सुरक्षित, प्रवासी तपासा.
 
-## MAP VAR
+## MAP वर
 
-Kon kamavta: certificates denara ek chhota udyog aahe, pan
-khara paisa ALIKDE aahe: encryption mule jo BHAROSA banla,
-tyavar arabo-kharabon cha e-commerce ubha rahila. He pattern
-neat baghaa, tumchya naksha sathi mahatvacha aahe: **Level 3
-chi ek boring, na-disnari yantrana (encryption) Level 2 chya
-purna nav-ya bajarala (online vikri) janm dete.** Payabhut
-thar kamavto tya-peksha, to VAR kay ubha rahu deto tyat
-mothi kamai aste. AI madhe hech shodha: AI kay navin bharosa
-/ navin bajar ubha karu deto?
+कोण कमावतं: certificates देणारा एक छोटा उद्योग आहे, पण खरा पैसा
+अलीकडे आहे: encryption मुळे जो भरवसा बनला, त्यावर अब्जा-खर्वांचा
+e-commerce उभा राहिला. हे pattern नीट बघा, तुमच्या नकाशासाठी
+महत्त्वाचं आहे: **Level 3 ची एक boring, न-दिसणारी यंत्रणा
+(encryption) Level 2 च्या पूर्ण नव्या बाजाराला (online विक्री)
+जन्म देते.** पायाभूत थर कमावतो त्यापेक्षा, तो वर काय उभं राहू
+देतो त्यात मोठी कमाई असते. AI मध्ये हेच शोधा: AI कुठला नवीन
+भरवसा / नवीन बाजार उभा करू देतो?
 
-## SWATAHA BAGHA (5 minute)
+## स्वतः बघा (5 minute)
 
-Browser madhe bank chi site ughda, pattyat kulup-icon var
-click kara: "Connection is secure" ani certificate chi
-mahiti disel: kunala dila, kadhi sampto. Ata ek http (s
-nahi) site ughdaycha prayatna kara: browser lal ishara deil
-"Not secure". Tumhi ata to ishara VACHU shakta: "ya rastya-
-varche packets ughde aahet, postcard sarkhe."
+Browser मध्ये bank ची site उघडा, पट्टीत कुलूप-icon वर click
+करा: "Connection is secure" आणि certificate ची माहिती दिसेल:
+कोणाला दिला, कधी संपतो. आता एक http (s नाही) site उघडण्याचा
+प्रयत्न करा: browser लाल इशारा देईल "Not secure". तुम्ही आता तो
+इशारा वाचू शकता: "या रस्त्यावरचे packets उघडे आहेत, postcard
+सारखे."
 
-## VICHAR KARA
+## विचार करा
 
-1. (derivation) Sarkarna kadhi kadhi vaatta: "encryption
-madhe amhala ek gupt magcha darvaja (backdoor) dya, fakt
-gunhegar pakadnyasathi." Tantradnyanachya bajune yat kay
-adchan aahe? (Vichar kara: darvaja "fakt changlya lokan-
-sathi" asu shakto ka?)
+1. (derivation) सरकारांना कधी कधी वाटतं: "encryption मध्ये आम्हाला
+एक गुप्त मागचा दरवाजा (backdoor) द्या, फक्त गुन्हेगार
+पकडण्यासाठी." तंत्रज्ञानाच्या बाजूने यात काय अडचण आहे? (विचार
+करा: दरवाजा "फक्त चांगल्या लोकांसाठी" असू शकतो का?)
 
-> **Uttar:** Ganitala hetu kalat nahi. Backdoor mhanje
-> yantranet ek KAMJORI muddam thevne; ti kamjori police
-> la pan ughdte ani chorala pan, ek-da sapdli ki. Ani
-> "fakt sarkar javal killi" mhanje jagatli sagLyat mothi
-> chori-layak vastu ek jaagi: ti jaaga halli honarach.
-> Mhanun tantradnya mhantat: darvaja ardha ughda asu
-> shakat nahi; ughda kinva band. Ha vaad (privacy vs
-> surveillance) jagbhar chalu aahe ani tumhala to ata
-> DONHI bajuni samajto: sarkarchi garaj khari aahe, pan
-> ganiti kimmat pan khari aahe. Ashya jaagi "sopa uttar
-> sangnara" manus ekhadi baju vikto aahe, he olkha.
+> **उत्तर:** गणिताला हेतू कळत नाही. Backdoor म्हणजे यंत्रणेत एक
+> कमजोरी मुद्दाम ठेवणं; ती कमजोरी police ला पण उघडते आणि चोराला
+> पण, एकदा सापडली की. आणि "फक्त सरकारजवळ किल्ली" म्हणजे जगातली
+> सगळ्यात मोठी चोरी-लायक वस्तू एका जागी: ती जागा हल्ली होणारच.
+> म्हणून तंत्रज्ञ म्हणतात: दरवाजा अर्धा उघडा असू शकत नाही; उघडा
+> किंवा बंद. हा वाद (privacy vs surveillance) जगभर चालू आहे आणि
+> तुम्हाला तो आता दोन्ही बाजूंनी समजतो: सरकारची गरज खरी आहे, पण
+> गणिती किंमत पण खरी आहे. अशा जागी "सोपं उत्तर सांगणारा" माणूस
+> एखादी बाजू विकतो आहे, हे ओळखा.

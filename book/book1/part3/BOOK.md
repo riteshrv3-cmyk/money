@@ -1,1074 +1,1004 @@
 # THE MACHINE
 
-## PART 3 OF 5: MACHINES CHE JAAL
+## PART 3 OF 5: MACHINES CHE JAAL (मशीनचं जाळं)
 
-(Ha part Marathi madhe aahe, test mhanun. Part 1 ani 2 Hinglish
-madhe hote. Technical shabd nehmi English madhech rahtil: server,
-network, address. Aavdla tar pudhche parts pan Marathi madhe hotil.)
-
-```
-PAACH PARTS CHA NAKASHA
-
-PART 1  PAISA AUR MACHINE       zala
-PART 2  MACHINE SE BAAT         zala
-[ TUMHI ITHE AAHAT ]
-PART 3  MACHINES CHE JAAL       network, address, internet
-PART 4  DATA AANI AATHAVNI      storage, database, shodhne
-PART 5  JAGALA SERVE KARNE      scale, cloud, kharcha, purna jod
-```
-
-## Aadhi Part 2 chi pariksha
-
-Paach prashna, Part 2 madhle. Aadhi swataha uttar dya, mag khali
-baghaa. Jithe adkal, tithla chapter number sobat aahe, tithe parat ja.
-
-1. iPhone chi app Android var ka chalat nahi? (3.5)
-2. Google Android fukat ka vaatto? (3.5, 3.7)
-3. Mothya software madhe bugs nakki ka astat? (4.1)
-4. "Majhya machine var tar chalat hota" cha khara arth kay? (4.4)
-5. Software banvtana paisa kashavar dyaycha: vachan var ki
-   kashavar? (4.5)
-
-> **Uttar:** 1. App OS sathi lihileli aste, machine sathi nahi;
-> malak (OS) vegla, mhanun app chalat nahi. 2. Vikun kamavnya
-> peksha MALAK hone motha khel aahe: pratyek phone Google chya
-> search, ads ani Play Store cha darvaja hoto. 3. Situations chi
-> sankhya bomb sarkhi vadhte; jo jod lihinaryachya dokyat aalach
-> nahi, toch kadhi tari user la bhetto. Hi ginti aahe, halgarjipana
-> nahi. 4. Software = code + tyacha aaspaas cha mahol (OS,
-> libraries, settings). Code same, mahol vegla = veglach natija.
-> 5. Chaltya tukdyavar. Vachan nahi, demo. Pratyek tukda CHALUN
-> dakhavla pahije.
-
-## Ya part madhe kay aahe
-
-Aata paryant sagli goshta EKA machine chya aat hoti. Pan tumcha
-pratyek message dusrya machine kade jato: shahara palikde, samudra
-palikde, ardhya second madhe. Kasa?
-
-Aath chapters: machines ekmekanna kashya shodhtat (address), message
-kasa pravaas karto (packets), doghanni niyam aadhich ka tharvave
-lagtat (protocols), naav numbers kashe hotat (DNS), public rastyavar
-private goshta kashi lapte (encryption), internet mhanje nakki kay,
-aani tyache niyam kon banavto.
-
-**He tumchya business decision madhe kuthe yeil:** Tumcha pratyek
-product internet var chalel. Tyacha speed, tyacha kharcha, tyachi
-suraksha, he sagle ithlya samajni var ubhe aahe. Ani ek motha
-dhanda-secret ithe lapla aahe: protocols ani networks madhe "n
-squared" naavachi ek problem parat parat yete, ani jo ti sodavto
-to darvajacha malak hoto. UPI he tyache jivant udaharan aahe, ya
-part madhe bhettel.
-
-
-# SECTION 5: MACHINES CHE AAPSAT BOLNE
-
-Aath chapters. Eka machine pasun jagbhar pasarlelya jaalaparyant.
-
-**He tumchya business decision madhe kuthe yeil:** "App slow ka
-aahe," "server cha kharcha kiti yeil," "data safe aahe ka," "he
-feature offline chalel ka": he sagle prashna network chya samajni
-shivay sutat nahit. Ani jo founder network samajto, to he pan
-baghto ki darvaje (platforms) kase bantat: internet chya itihasat
-jo jo "sagle ekmekanshi bolu shaktil" asa rasta banvto, to to
-shrimant hoto. Ya section madhe to pattern char vela distil.
-
-
-# Chapter 5.1 [SPINE]: Ek machine puri padat nahi
-
-Part 1 ani 2 ni tumhala ek shaktishali machine dili: universal
-machine, jya var kuthlihi recipe chalte. Mag prashna asa: ekach
-machine puri ka padat nahi? WhatsApp tumchya phone var aahe na?
-
-Nahi. Tumchya phone var WhatsApp cha fakt DARVAJA aahe. Vichar
-kara: tumhi message pathavla ani mitracha phone band aahe. Tari
-message pohochto, to phone chalu kartach. Mhanje message madhe
-kuthe tari THAMBLA hota. Kuthe? Tumchya phone var nahi (tumhi
-pathavla, gela). Tyachya phone var nahi (band hota). Mhanje
-madhye TISRI machine aahe, jya var message vaat baghat basla
-hota.
-
-Ti tisri machine WhatsApp chya company chi aahe, ani ashya
-machines lakhoni aahet. Ka lagtat? Teen karana, tinhi tumhi
-swataha kadhu shakta:
-
-**Data sagl-yancha ekatra asava lagto.** Tumcha bank balance
-tumchya phone var thevla tar? Phone haravla, paisa gela. Ani
-dukandarala kasa kalel ki tumchyakade paise aahet? Jo data
-DOGHANNA lagto, to doghanchya madhye, tisrya jaagi rahava lagto.
-
-**Ek machine crore lokanna serve karu shakat nahi.** Ek CPU,
-ek second madhe arab kadam (Part 1). Vaatun ghya: crore lok ale
-tar pratyekala kiti? Kaam vaatava lagta, khup machines madhe.
-
-**Machines padtat.** Bijli jate, disk jalte. Sagla ekach jaagi
-thevla ani ti jaaga padli, tar sagla gela. Prati (copies)
-veglya jaagi lagtat.
-
-Mhanun jag ashya do bhaagat vibhagla gela: tumchya hatatli
-machine (magnaari) ani company chya building madhli machine
-(denari). Ani ata sagLYAT motha prashna: ya machines ekmekashi
-BOLNAR kashya?
-
-Don machines madhe taar odha, current cha pattern pathva (Part
-1, Chapter 1.2: signal mhanje he ch), bits gele. Don machines
-zalya. Pan crore machines? Pratyekala pratyekashi taar jodli
-tar? Ganit kara: 100 machines la 4,950 taara lagtil, crore
-machines la... jamnar nahi. (He "n squared" aahe: sankhya vadhli
-ki jod tya sankhyechya varga ne vadhtat. He naav lakshat theva,
-ya part madhe he rakshasa parat parat yeil, ani pratyek veli
-koni tari tyala harvun shrimant hoil.)
-
-Upay tumhi rozchya jagat baghitla aahe: rasta. Pratyek ghara
-pasun pratyek ghara paryant rasta nasto; galli aste, chowk asto,
-highway asto. Tasach machines cha rasta banto: tumchi machine
-javlchya chowkala jodleli, chowk mothya chowkala, ase jod-jodun
-sagla jag. Ha rasta ch NETWORK aahe.
-
-## NAAV
-
-Magnaari machine: **client**. Denari machine: **server** (serve
-karnari, mhanun). Jodlelya machines cha jaal: **network**. Ani
-"pratyekala pratyekashi jodne jamnar nahi" hi problem: **n
-squared problem**.
-
-## KHARYA JAGATLA EK EXAMPLE
-
-Tumhi Zomato var order karta. Tumcha phone (client) Zomato chya
-server la magni pathavto. Server tumcha order thevto, restaurant
-chya screen la (dusra client) dakhavto, delivery walyachya phone
-la (tisra client) pathavto. Teen client, ek server, ani sagle
-ekmekanna kadhich thet jodlele nahit: pratyek jan fakt server
-shi bolto. Chowk ek, raste tin. N squared la asech harvtat.
-
-## ITHE LOK KAY CHUKICHE SAMAJTAT
-
-"Majha message thet mitrachya phone la jato." Kadhich nahi.
-Pratyek message aadhi company chya server la jato, mag mitrala.
-(End-to-end encryption asel tar company VACHU shakat nahi, pan
-rasta tyanchyach madhun jato: Chapter 5.6 madhe he ughdel.)
-Mhanunach "fukat" apps chya company kade evdhi takat aste:
-sagla traffic tyanchya chowkatun jato.
-
-## MAP VAR
-
-Rupayacha rasta: tumhi mahina bharla (Level 1 pasun paisa
-ghusla) -> telecom company (Jio/Airtel) la, ti rasta dete.
-App company chya server cha kharcha ti cloud la dete (Part 5).
-Ani he baghaa: jya business kade SERVER aahe, tyachya kade
-DATA aahe; jya kade data, tyachya kade takat. Client banavne
-sopa ani swasta zala aahe; server chi baju hich khari malmatta
-aahe. Tumhi jo business banval, tyat "server var kay rahnaar"
-ha prashna mhanje "malmatta kay asnaar" ha prashna aahe.
-
-## SWATAHA BAGHA (5 minute)
-
-Phone airplane mode var taka. Ata apps ughda: WhatsApp chats
-distat (juna data, phone var sathavlela), pan nave message
-yet nahit. Google Maps cha naksha adhvat ughdto, search chalat
-nahi. Camera purna chalto. Ata tumhala pratyek app che don
-bhaag distil: jo tumchya hatat aahe, ani jo koni-tari-dusrya-
-chya machine var aahe. Hi rekha baghayla shikne mhanje network
-samajne.
-
-## VICHAR KARA
-
-1. (derivation) 100 lokanchi society aahe. Pratyekane
-pratyekashi thet bolayche tharvle tar 4,950 jod lagtat. Ek
-chowk (server) banavla tar fakt 100. Pan ata ek navin kimmat
-ali, ti kuthli? (Chapter 0.1 chi aathvan kara: register
-thevnarya var kay prashna hota?)
-
-> **Uttar:** Bharosa. Sagli bolni eka chowkatun jaate, mhanje
-> chowk cha malak sagla baghto, thambvu shakto, badlu shakto.
-> N squared sutla, pan satta ek jaagi ekavtali. Mhanunach he
-> pattern parat parat disel: sopa rasta = madhla malak. Ani
-> tyachya virudh che prayog pan (blockchain vagaire) yach
-> dukhavar ubhe aahet. Tantradnyan cha pratyek design ek
-> sauda asto: ithe suvidha vs satta ha sauda aahe. Jo he
-> baghto, to batmya nahi, DHANDA vachto.
-
-
-# Chapter 5.2 [SPINE]: Pratyek machine la ek address
-
-Network banla, raste zale. Ata post office cha juna prashna
-ubha rahto: patra pohochvayche tar POTTA (address) lagto. "Ram
-la dya" ne kaam hot nahi; Ram lakho aahet. Machines chya jagat
-pan tech: message pathvaycha tar tya machine cha nemka address
-lagto.
-
-Address kasa asava? Part 1 ne uttar aadhich dila aahe: machine
-la fakt numbers samajtat. Mhanun machine cha address ek NUMBER
-aahe. Sadharan roop: char numbers, pratyek 0 te 255 madhla
-(olakhicha vaatla? 8 bits = 256 sthiti, Chapter 1.4):
+(हा part मराठीत आहे. Part 1 आणि 2 Hinglish मध्ये होते. Technical
+शब्द नेहमी English मध्येच राहतील: server, network, address. हा
+भाग आवडला तर पुढचे parts पण मराठीत होतील.)
 
 ```
-142.250.183.14     (he Google chya eka server cha address)
-192.168.1.5        (he tumchya ghartlya phone cha asu shakta)
+पाच PARTS चा नकाशा
+
+PART 1  पैसा आणि MACHINE         झाला
+PART 2  MACHINE शी बोलणं         झाला
+[ तुम्ही इथे आहात ]
+PART 3  MACHINES चं जाळं         network, address, internet
+PART 4  DATA आणि आठवणी           storage, database, शोधणं
+PART 5  जगाला SERVE करणं         scale, cloud, खर्च, पूर्ण जोड
 ```
 
-Ata ek ganit kara. Char numbers, pratyek 256 prakarcha: ekun
-kiti address? 256 x 256 x 256 x 256 = sadharan 430 crore. 1980
-madhe he "kadhich sampnar nahit" vaatle. Aaj jagat arabo phones,
-TVs, gadya, ghadyala... address SAMPLE. Ha kharokhar ghadlela
-prasang aahe: internet chya designers ni jag kevdha hoil he
-kami andajle. (Upay pan aala: navin lamb address, IPv6, jya
-madhe address sampuch shakat nahit. Pan juna system ajun
-sagLikde aahe.)
-
-Sampat aalele address jag ni kase vaparle? Ithun ek sundar
-yukti nighali, jee tumchya gharat aahe: tumchya WiFi router la
-EKACH public address milto (building la ek post-box). Ghartlya
-sagLya devices na router aatlya-aat aaple chhote private
-address deto (khli number 1, 2, 3...). Baherun sagle ekach
-distat; aat router hishob thevto ki kuthla jawab kuthlya
-device cha aahe. Ek address, dahaa machines. (Building cha
-watchman jasa: patra building chya naavavar yeto, watchman
-flat baghun pohochvto.)
-
-## NAAV
-
-Machine cha number-address: **IP address** (Internet Protocol
-cha address). Juna char-number roop: **IPv4**, nava lamb roop:
-**IPv6**. Ghartla vaatnara-watchman: **router**. Router chya
-aatle address: **private IP**, jagala disnara: **public IP**.
-
-## KHARYA JAGATLA EK EXAMPLE
-
-Cyber crime chya batmya madhe "police ni IP address varun
-aaropi shodhla" he vakya asta. Ata tumhala te vachta yeta:
-pratyek internet connection chya magey ek public IP asto, ani
-telecom company kade register asto ki tya veles to IP konala
-dila hota (Chapter 0.1 cha ledger, parat!). Mhanunach VPN
-naavachi cheez vikli jate: ti tumcha khara IP lapavte, dusrya
-deshatla dakhavte. Suraksha ani lapan-chhapan, donhi ek
-address chya bhovti firtat.
-
-## ITHE LOK KAY CHUKICHE SAMAJTAT
-
-"IP address mhanje majhi kayamchi olakh." Nahi. Tumcha public
-IP telecom company ROJ badlu shakte (bhadyane dilela number
-aahe, malkicha nahi). Ani ek IP magey shambhar lok asu
-shaktat (router!). Mhanun IP fakt "tya veles, tya jaagecha"
-pattaa aahe, aadhaar card nahi. Donhi disha ni chuk hote:
-lok ghabartaat "majha IP disla, sagla sampla" (nahi), ani
-lok nishchint pan astat "IP badalte mhanje mi lapla" (nahi:
-register aahe na).
-
-## MAP VAR
-
-Kon kamavta: address SWATAHA ek malmatta zali. IPv4 address
-sample, mhanun juna saatha asnaryanni te VIKAYLA kadhle: ek
-IPv4 address aaj hazaro rupayala jato, companies chya kade
-lakho address che block aahet, tyanchi kimmat arabo madhe.
-1990 madhe fukat vaatlele numbers aaj sona zale. Dhanda
-shikvan: jya cheez chi ginti THARLELI aahe ani magni vadhnaar
-aahe, ti cheez lavkar dharun theva. (Domains madhe he parat
-yeil, Chapter 5.5.)
-
-## SWATAHA BAGHA (5 minute)
-
-Phone chya Settings madhe WiFi ughda, jodlelya network var
-tap kara: tithe "IP address" disel, sadharan 192.168.x.x asa.
-Ha tumcha PRIVATE address. Ata browser madhe search kara:
-"what is my IP". Vegla number disel! Ha tumchya router cha
-PUBLIC address. Don address, don duniya: aat ani baher.
-Watchman-system tumhi swataha baghitli.
-
-## VICHAR KARA
-
-1. (derivation) Postman la "Mumbai, Andheri, XYZ building,
-flat 402" asa address TUKDYA-TUKDYANI kaam karto: aadhi
-shahar, mag bhaag, mag building. IP address pan asach
-tukdyani vachla jato (aadhi motha bhaag, mag aatla). Sagle
-routers jagatlya SAGLYA machines chi yaadi ka thevat nahit,
-ha design ka nivadla?
-
-> **Uttar:** Karan yaadi arabo entries chi hoil ani ROJ
-> badlel; pratyek chowkat ti thevne ani taji rakhne ashakya.
-> Tukdya-tukdyancha design mhanje: pratyek router la fakt
-> evdhach mahit lagta ki "ha bhaag tya dishela." Mumbai cha
-> postman flat 402 janat nahi, fakt Andheri kuthe te janto.
-> Kaam vaatle gele, koni-ekala sagla janave lagat nahi. He
-> design-tattva (hierarchy) tantradnyanat sagLikde aahe:
-> DNS madhe (5.5), company chya sanghatnet, ani AI chya
-> aat pan. Jithe scale motha, tithe yaadi nahi, SHIDI aste.
-
-
-# Chapter 5.3 [DEPTH]: Message che tukde karne
-
-(DEPTH chapter. Vagalla tari goshta pudhe jaeel, pan ha lahaan
-aahe ani yachya nantar "packet" ani "network slow" che khare
-arth ughadtat.)
-
-Address zala. Ata message pathvaycha aahe: samja 3 MB cha photo
-(Part 1: mhanje sadharan 2.5 crore bits). Sopa vaatnara rasta:
-sagle bits ek-saath, ek lambach-lamb pravah mhanun pathva.
-
-Ha design VAIT aahe. Ka, te tumhi truck chya udaharana ne kadhu
-shakta. Samja Mumbai-Pune rasta aahe ani tya varun ek 3 km
-lamba truck jato aahe:
-
-1. Jya veles to jato, DUSRA konich rasta vapru shakat nahi.
-   Ek motha message = baki saglyanchi thambleli line.
-2. Truck madhe kuthe bighad zala tar? SAGLA parat pathva.
-   3 MB madhla shevatcha bit chukla, tar purna 3 MB parat.
-3. Ani rasta ekach asel tar to padla ki sagla thambla.
-
-Mag design tumhi kara. Rasta-yantrana kashi asavi?
-
-Uttar: **message che LAHAAN tukde kara.** Pratyek tukdyavar
-liha: konala jaycha (address), konakadun aala, ani tukda
-number kiti (1 of 2000, 2 of 2000...). Ata pratyek tukda
-SWATANTRA pravaas karto. Faayde aapoaap yetat:
-
-Raste vaatle jatat: tumchya tukdyanchya madhun dusryanche
-tukde pan jaatat, koni rasta adkvat nahi. Tukde VEGVEGLYA
-rastyani pan jau shaktat: ek highway ne, ek gaava-madhun; jo
-mokala tya tya kshani. Ek tukda haravla tar FAKT TOCH parat
-magvaycha, purna message nahi. Ani pohochlyavar number pramane
-lavun message parat jodla jato. (Order ulti-sulti pohochli
-tari chalte: numbers aahet na.)
-
-Ekach goshta lakshat theva: tumhala vaatta tumhi "connection"
-ughdla aahe, ek paip, ek dhaga. Prat-yakshat DHAGA NAHI. Fakt
-tukde aahet, swatantra udya maarnare. "Connection" ha ek
-bhaas aahe jo donhi tokanchi software tumhala dakhavte:
-tukde mojun, harvlele parat magvun, order lavun. Bhaas
-sundar aahe, pan to bhaas AAHE he samajlyavar network chya
-sagLya vichitra goshti sopya hotat: video call madhla robotic
-aawaz, adkleli file, "reconnecting..." sagla.
-
-## NAAV
-
-Message cha tukda: **packet**. Tukde-karun-pathavnyachi hi
-yantrana: **packet switching** (1960s cha shodh, ani internet
-chi khari payabharni). "Harvlela parat magva, order lava,
-bharosa dya" he kaam karnare niyam: **TCP**. "Parat magvaycha
-nahi, jo pohochla to pohochla, VEGA mahatvacha" he niyam:
-**UDP**. (Donhi naave batmyan-madhe yetat; ata tumhala arth
-mahit aahe.)
-
-## KHARYA JAGATLA EK EXAMPLE
-
-File download hotana network 2 second gela: download THAMBTO,
-mag tithunach pudhe chalto. Karan file la TCP: pratyek tukda
-pohochlach pahije, kimmat mhanun vel. Video call madhe network
-2 second gela: aawaz robotic hoto, chehra atakto, pan call
-CHALU rahto. Karan call la UDP-sarkhe niyam: juna tukda parat
-magvun kay upyog? To kshan tar gela. Don design, don dhanda-
-garja: barobar-pana vs vega. Kuthla kadhi nivdaycha he
-samajne mhanje network engineer chi ardhi vidya.
-
-## ITHE LOK KAY CHUKICHE SAMAJTAT
-
-"Net slow aahe mhanje speed kami aahe." Adhura. Don vegLya
-goshti astat: ek second madhe KITI tukde jaatat (bandwidth)
-ani EKA tukdyala jaun-yeun kiti vel lagto (latency, Chapter
-2.3 madhe bhetleli). Movie baghayla bandwidth lagte; game
-ani video call la latency maarte. Mhanunach "100 Mbps" cha
-plan asun pan game madhe "lag" yeto: tukde khup jaatat, pan
-pratyek tukdyacha pheraa lamba aahe. Dukandar tumhala fakt
-ek number vikto; khela don numbers cha aahe.
-
-## MAP VAR
-
-Company case: packet switching ni junya telephone jagala
-harvle. Telephone company kade "ek call = ek rakhiv line"
-asa mahag design hota; packets ni tich taar hazaro lokan-
-madhe vaatli. Jo rasta swasta karto to jinkto: he pattern
-parat. Ani aaj packets chya rastyavarchi yantre (routers)
-banavnari Cisco ek kaali jagatli sagLyat moulyavaan company
-hoti. Rasta jithe navin banto, tithe yantre viknara pahila
-shrimant hoto. (AI madhe aaj Nvidia tech kaam karte aahe:
-navin rasta, yantre viknara.)
-
-## SWATAHA BAGHA (5 minute)
-
-Pudhchya video call chya veles network kharab zala ki
-LAKSH dya: aawaz robotic ka hoto? Karan software harvlele
-packets bharun kadhnyacha prayatna karte aahe. Chehra ka
-"atakto" ani mag udi maarto? Karan madhle frames (packets)
-gele, software ni te sodle ani navin var udi maarli. Tumhi
-ata bighad NAHI, DESIGN baghat aahat: vega sathi barobar-
-pana sodlela.
-
-## VICHAR KARA
-
-1. (derivation) Live cricket match streaming madhe ek packet
-haravla. To parat magvava ka? TCP ka UDP-vichar? Ani bank
-transaction madhe? Donhi uttare ka veg-vegli aahet?
-
-> **Uttar:** Cricket: parat magvu naka. To kshan gela; parat
-> magvun jo tukda yeil to juna asel, ani tya sathi thambne
-> mhanje purna stream ushira. Prekshakala 2 second juna
-> perfect picture nako, AATTACHA thoda kharab chalel. Bank:
-> parat magva, ani jo paryant pakka pohochat nahi to paryant
-> kahihi pudhe jau deu naka. Ek rupaya chukla tari chalnar
-> nahi; vel lagla tari chalel. Niyam asa nighto: jithe
-> KSHAN mahatvacha tithe vega jinkto, jithe BAROBAR-PANA
-> mahatvacha tithe kimmat mhanun vel dyava lagto. Tumchya
-> product madhla pratyek feature ya do rangaat vaatun
-> baghaa; tantra-nivad aapoaap sopa hoto.
-
-
-# Chapter 5.4 [SPINE]: Niyam var aadhich sahmati
-
-Address aahe, packets aahet. Pan ajun ek prashna lapla aahe,
-ani to sagLyat khol aahe.
-
-Phone call chi suruvat aathva: "Hello?" "Haan, bola." "Mi
-Ramesh boltoy..." He shabd mahiti det nahit; he KRAM aahe.
-Kon aadhi bolnaar, kasa kalel ki samor koni aahe, "aika ka"
-cha ishara kay. Doghanni ha kram AADHICH manlela asto, mhanun
-call chalte. Ek jan Japani kram ni bolla ani dusra Marathi
-kram ni, tar shabd pohochtil pan bolne honar nahi.
-
-Machines madhe ha prashna ajun tikat asto, karan machine
-kade "samjun ghene" nahi (Part 2, Chapter 3.1: exact lagta).
-Don machines na bolayche tar SAGLA aadhich tharlela lagta:
-
-- Kon suruvat karnaar? Kasa mhannaar "mi tayar aahe"?
-- Message cha format kay? Kuthle bits address, kuthle maal?
-- "Pohochla" kasa kalvnaar? Nahi pohochla tar kay?
-- Chuk zali tar kon parat pathavnaar, kiti vela?
-
-Ashya aadhich-tharlelya niyamanchya yaadila protocol mhantat.
-Ani internet mhanje kay, yacha ARDHA uttar he aahe: **internet
-ek vastu nahi, niyamanchi yaadi aahe.** Jo koni te niyam
-paalto, tyachi machine jaalat samil hote. Parvangi konachi
-ghyaychi nahi, fee konala dyaychi nahi. Niyam public aahet,
-darvaja sagLyanna ughada.
-
-Ani niyam EKA thara var nahit, SHIDI var aahet (abstraction,
-parat!): sagLyat khali "taar var current kasa" che niyam,
-tyavar "address ani packets" che (IP), tyavar "harvlela parat
-magva" che (TCP), ani sagLyat var "app la kay have" che niyam.
-Website magvaychya niyamanche naav tumhi roj baghta: **HTTP**.
-Browser chya pattyat "https://..." mhanje "hi baat HTTP chya
-niyamani honar" evdhach. Pratyek thar fakt aaple kaam janto,
-khalcha thar kasa chalto he tyala mahit nasta. (Chapter 0.4:
-har level, khalchya cha fakt handle dharto.)
-
-Ata dhandyachi nazar laava. Jithe protocol KHULA asto, tithe
-koni-hi dukan ughdu shakto: email che niyam khule, mhanun
-hazaro email companies. Jithe niyam EKA company che astat,
-tithe tichi hukumat: WhatsApp che niyam Meta chech aahet,
-mhanun WhatsApp la jodnara dusra app banuch shakat nahi.
-Khule niyam = spardha = grahakala swasta. Band niyam = kila.
-Doghanchehi dhande chaltat, pan konta khel khelto aahot he
-kalayla have.
-
-## NAAV
-
-Aadhich-tharlele niyam: **protocol**. Web cha protocol:
-**HTTP** (surakshit roop: HTTPS, Chapter 5.6). Email cha:
-SMTP. Niyamanchi shidi: **protocol stack** ya **layers**.
-
-## KHARYA JAGATLA EK EXAMPLE
-
-UPI he protocol aahe, app nahi. NPCI ni niyam banavle: paisa
-magnyacha format kay, banks ni kase bolayche, "zala" kasa
-kalvaycha. Niyam KHULE thevle: mhanun GPay, PhonePe, Paytm,
-koni-hi bank, sagle ekmekanshi chaltat. Tumhi GPay varun
-PhonePe walyala paise pathavta ani vichar pan karat nahi,
-he kevdha motha chamatkar aahe: don spardhak companies chya
-apps madhe paisa binadhok vahto, karan protocol samaan aahe.
-Ani parinam jag baghta aahe: mahina 10 arab+ vyavhar. Niyam
-banavnara (NPCI) swataha motha "app" nahi, pan sagLya khela
-cha aadhaar to aahe.
-
-## ITHE LOK KAY CHUKICHE SAMAJTAT
-
-"Internet chi malak kuthli tari company aahe (Google?
-Microsoft?)." Nahi. Internet konachich malmatta nahi, karan
-to niyamancha samuh aahe, ani niyam sagLyankade aahet.
-Google chya SEVA (search, YouTube) tyachya aahet; RASTA
-tyacha nahi. Ha farak mahatvacha aahe: seva band hou
-shakte, rasta band karayla jagbharche niyam badlave lagtil.
-(Kon niyam banavto, ha prashna Chapter 5.8 madhe.)
-
-## MAP VAR
-
-N squared cha rakshasa parat aala hota, baghitla ka? UPI
-chya aadhi pratyek app la pratyek bank shi VEGLA jod banvava
-lagla asta: 50 apps x 300 banks = 15,000 jod. Protocol ni
-te 350 kele (pratyekane fakt niyamanshi jodayche). **Jo
-n-squared la protocol ni maarto, to purna bajaracha payabhut
-thar banto.** NPCI ni he payment madhe kele. Tumchya 4-level
-naksha var: jithe pratyekala pratyekashi jodave lagta aahe
-ani sagle metaakle aahet, tithe protocol chi jaaga rikaami
-aahe. Ashi jaaga disli tar neat baghaa: ti arabonchi aahe.
-
-## SWATAHA BAGHA (5 minute)
-
-Browser madhe kuthlihi website ughda ani pattyakade LAKSH
-dya: https:// ne suruvat. Ata ek juni goshta: kahi varshan-
-purvi fakt http:// aste (s nahi). Ata browser http varchya
-site la "Not secure" mhanto. Ek akshar (s) mhanje ek purna
-protocol-badal, ani to badal jagbhar ka ghadla he Chapter
-5.6 sangel. Aaj fakt te aksharaa dise ka baghaa.
-
-## VICHAR KARA
-
-1. (derivation) UPI sarkha khula protocol banavnyat NPCI
-la (ani banks na) kay milte? Tyanni band, aaplya-malkicha
-system ka nahi banavla, jasa Visa/Mastercard ni banavla
-hota?
-
-> **Uttar:** Band system ni pratyek vyavhaarat fee milte
-> (Visa cha model: dukandara kadun 1-2%). Khula system ni
-> VAAPAR sphotasarkha vadhto: UPI fukat thevla mhanun
-> chahawalya pasun bhajiwalya paryant sagle aale, ani 10
-> varshat rok-paisa (cash) cha desh digital zala. NPCI
-> sarkari-sahakari aahe, tila fee peksha VYAAPTI havi
-> hoti; ani banks na sagLya deshacha paisa system madhe
-> aala he milala. Dhanda-shikvan: fee-per-vyavhaar ha ek
-> khel aahe, purna bajarachi payabharni dusra. Doosra
-> khel motha asto, pan to khelayla lambi saans lagte, ani
-> kamai thet nahi tar var-chya tharatun yete (data,
-> seva, darvaja). Google ni Android madhe hech kele hote,
-> aathvta? Pattern ekach aahe.
-
-
-# Chapter 5.5 [SPINE]: Numbers aivaji naav
-
-Address zale, niyam zale. Pan ek adchan rahili: server cha
-address 142.250.183.14 aahe. Tumhi "google.com" lihita. He
-jamte kasa? Ani mulat, ASE ka?
-
-Karan sopa aahe: mansana numbers lakshat rahat nahit, naave
-rahtat (tumhi mitranche phone numbers path kelet ka? Naave
-save keli). Pan machines na numbers lagtat. Mhanje madhe ek
-PHONEBOOK lagto: naav dya, number ghya.
-
-Ata design tumhi kara. Jagbharchya crore website sathi
-phonebook kasa banval?
-
-Pahila vichar: ek motha register, eka jaagi. Chapter 0.1 chi
-ghanta vaajli ka? Tech prashna: (1) to register thevnarya var
-sagLyancha bharosa lagel, (2) jag-bharche prashna eka jaagi
-aale tar ti jaaga marel, (3) ti jaaga padli tar SAGLA internet
-"harvel" (raste chalu, pan pattec nahi).
-
-Mhanun design vegla nivdla gela, ani to tumhi post-address
-madhe aadhich baghitla (Chapter 5.2): SHIDI. Naav ulta vaacha:
-google.com mhanje "com chya mothya vahit, google chi nond."
-Pratyek tharacha register vegla: sagLyat varche register fakt
-he sangte ki ".com" chi yaadi kon sambhaalto; te register
-sangte "google.com" chi mahiti kuthe; ani tithun number milto.
-Koni-ekakade sagla nahi; pratyekakade aapla thar. (Hierarchy:
-jithe scale, tithe yaadi nahi, shidi.)
-
-Ani vega sathi ek yukti: uttar milala ki tumcha phone ani
-javlche servers te LAKSHAT thevtat (thoda vel). Parat parat
-shidi chadhavi lagat nahi. Ya lakshat-thevnyala cache mhantat;
-Part 5 madhe ha shabd motha honar aahe.
-
-Ata sagLyat sundar bhaag: naav ani number VEGLE aslya mule ek
-swatantrya milte. Website chi machine badla, shahar badla,
-cloud badla: NUMBER badlel, pan naav tech rahte. Grahakala
-kalat pan nahi. Dukan chi imarat badlali, pati tich rahili.
-Mhanunach naav (domain) hi dhandyachi malmatta aahe ani
-machine bhadyachi vastu.
-
-## NAAV
-
-Naav-to-number phonebook yantrana: **DNS** (Domain Name
-System). Website cha naav: **domain**. Lakshat thevne:
-**cache**. Domain vikat ghene: registrar kade (GoDaddy
-vagaire), varshala thodi fee.
-
-## KHARYA JAGATLA EK EXAMPLE
-
-2016 madhe DNS chi seva denari ek moti company (Dyn) var
-halla zala: lakho hacked devices ni tila prashnani budavle.
-Parinam: Twitter, Netflix, Spotify "band" zale, USA chya
-ardhya bhagasathi. Servers chalu hote, raste chalu hote,
-pan PHONEBOOK ughdat navhta, mhanun koni kunala shodhu
-shakat navhte. Tya diwshi jagala kalale ki internet chi
-sagLyat boring disnari yantrana kevdhi mahatvachi aahe.
-Payabhut goshti ashach astat: distat nahit, padlya ki
-sagla dista.
-
-## ITHE LOK KAY CHUKICHE SAMAJTAT
-
-"Website mhanje domain." Nahi. Domain fakt PATI aahe;
-dukan (server, code, data) vegLikde aahe. Mhanun: domain
-vikat ghetla mhanje website zali nahi (pati aali, dukan
-nahi). Ani website "band padli" tar karan pati asu shakto
-(domain chi fee bharli nahi: varshakathi hazaro dhande he
-visarun band padtat!) kinva dukan asu shakto (server
-padla). Don vegLya goshti, don vegle bill, don vegle
-prashna.
-
-## MAP VAR
-
-Domain ha itihasa-tla sagLyat swasta satta-kabja tharla:
-1990s madhe kahi doordarshi lokanni sadhi naave (business.com,
-cars.com) kavdimol gheun thevli; pudhe tyach naavanche
-crore-crore rupaye zale (business.com sadharan 345 crore
-rupayala vikla gela). Aaj pan khel chalu aahe: changli
-naave lok aadhich gheun bastat (squatting). Chapter 5.2
-chi shikvan parat: THARLELI ginti + vadhti magni = dharun
-theva. Ani tumchya sathi ek vyavaharik ol: dhandyachi
-kalpana pakki nasel tari tyacha domain 800 rupayat aadhi
-gheun theva; kalpana pakki hoiparyant naav gelela asta.
-
-## SWATAHA BAGHA (5 minute)
-
-Aaplya phone chi contact-yaadi ughda. Hich tumchi DNS aahe:
-naave var, numbers aat. Mitrane SIM badlala tari tumhi
-naavach vaparta, number tumhala mahitach nasto. Ata kalpana
-kara contact-yaadi udali: sagle numbers chalu aahet, pan
-tumhi konalach phone lavu shakat nahi. DNS padne mhanje
-HECH, jag-bharasathi. Naave hi aathvan aahe; numbers fakt
-raste.
-
-## VICHAR KARA
-
-1. (derivation) Domain varshala fakt 800-1500 rupaye ka?
-Evdhi mahatvachi malmatta evdhi swasta ka? (Vichar kara:
-kimmat kashane tharte, ani ithe scarcity nemki kashat aahe?)
-
-> **Uttar:** Karan NONDNI swasta aahe: register madhe ek ol
-> lihine, jya cha kharcha lagbhag shunya (Part 1: numbers
-> lihine fukat). Scarcity olit nahi, NAAVAT aahe: cars.com
-> ek-ch asu shakta. Mhanun bajar don tharancha zala: nondni
-> fee saglyanna sarkhi (swasta), pan CHANGLE naav jya kade
-> aahe to tyachi vaatel ti kimmat magto: hi scarcity chi
-> khari jaaga. Shikvan parat tich (Chapter 0.2): kimmat
-> mehnati var nahi, durmilte var ubhi aste. Ani durmilta
-> kadhi kadhi fakt "pahile pohochne" evdhich aste.
-
-
-# Chapter 5.6 [SPINE]: Public rastyavar private bolne
-
-Ata ek prashna jo tumchya khishala thet bhidto. Chapter 5.3
-ni sangitla: tumcha message tukdyani, DUSRYANCHYA yantran-
-madhun pravaas karto: telecom che routers, madhle carriers,
-kon-kon. Ani tumhi tya rastyane kay pathavta? Bank cha
-password. Card cha number. Khaajgi photo.
-
-Postcard aathva: postman vachu shakto, karan lifafa nahi.
-Tumche packets pan ASECH aahet, jar kahi kele nahi tar: rasta-
-madhla pratyek jan vachu shakto. Mag upay? Lifafa lagto. Pan
-kagdi lifafa nahi; ganitacha.
-
-Pahila vichar sopa aahe: ek gupt KILLI thareva (samja: pratyek
-akshar 3 ne pudhe sarkva). Mi kulup laavto, tu ughad. Madhla
-manus fakt kachra baghto. He juna tantra aahe (Caesar pasun
-World War paryant), ani he KAAM karta... ek bhayanak adchan
-sodun: **killi tya paryant pohochvaychi kashi?** Rasta tar
-public aahe! Killi rastyane pathavli tar madhla manus tich
-uchlel. Killi sathi bhetavech lagel... pan internet var tumhi
-Amazon la kadhi bhetla aahat ka? Ha prashna 1970s paryant
-ASODHVANIYA manla jaycha.
-
-Mag ek kalpana aali jichya var aaj sagla online jag ubha aahe.
-Ashi kulup-yantrana banvli geli jyat killya DON astat, jodine:
-
-**Ek killi KULUP LAAVTE (public killi).** Hi tumhi jagala
-vaatta, orduni sangta: "majhi kulup-killi hi ghya!"
-
-**Dusri killi UGHADTE (private killi).** Hi FAKT tumchya
-kade. Kadhich, konalach jaat nahi.
-
-Ata jaadu baghaa: Amazon aapli public killi sagLyanna deto.
-Tumhi tumcha card number tya killine kulup-band karta ani
-pathavta. Rasta-madhle sagle baghtat: kachra. UGHDU fakt
-Amazon shakto, karan ughadnari killi fakt tyachya kade.
-**Killi pathvaychi garajach sampli.** Kulup-killi ughad-killi
-pasun ganitane banvta yete, pan ulta rasta (kulup-killi
-varun ughad-killi kadhne) itka avghad aahe ki jagatlya sagLya
-machines milun pan hazaro varshat jamnar nahi (Part 1 chi
-aathvan: mothe numbers; ithe te dhaal banle aahet).
-
-Browser madhla https ani kulup-icon mhanje HECH: tumchya ani
-tya site chya madhe hi yantrana chalu aahe. Ani WhatsApp che
-"end-to-end encrypted" mhanje ek paaul pudhe: killya fakt
-tumchya ani mitrachya phone var; MADHLI COMPANY pan vachu
-shakat nahi. Rasta tyancha, lifafa tumcha.
-
-## NAAV
-
-Lifafa-ganitala **encryption** mhantat. Don-killi yantrana:
-**public key encryption**. Web chi surakshit vahtuk: **HTTPS**.
-Fakt-don-tokan-javal-killya: **end-to-end encryption**. Ani
-"hi site kharich ti aahe" he pramanit karnara dakhla:
-**certificate** (kulup-icon chya magcha kagad).
-
-## KHARYA JAGATLA EK EXAMPLE
-
-UPI chya pratyek vyavharat hi yantrana kaam karte aahe: tumcha
-PIN kadhich ughda pravaas karat nahi. Ani he fakt suraksha
-nahi, ARTHIK PAYA aahe: lok online card/PIN takayla tayar
-zale KARAN he ganit tyanchya bajune ubhe aahe. Encryption
-nasta tar e-commerce nasta, UPI nasta, online banking nasta.
-Bharat chi digital economy ya ek ganiti kalpanevar ubhi aahe
-jichi patent kadhi konich ghetli nahi.
-
-## ITHE LOK KAY CHUKICHE SAMAJTAT
-
-"Kulup-icon dista mhanje site bharoshachi." NAHI. Kulup evdhach
-sangte ki RASTA surakshit aahe: madhla koni vachu shakat nahi.
-Pan palikadcha manus chor asu shakto! Scammer pan https site
-banavto (fee: 0 rupaye). Kulup mhanje "boli khaajgi aahe";
-"samorcha khara aahe" he vegla prashna, ani to tumhalach
-soDvaycha asto: naav neat vaacha (amaz0n?), ghai karnarya
-var shanka ghya. Rasta surakshit, pravaasi tapasaa.
-
-## MAP VAR
-
-Kon kamavta: certificates denara ek chhota udyog aahe, pan
-khara paisa ALIKDE aahe: encryption mule jo BHAROSA banla,
-tyavar arabo-kharabon cha e-commerce ubha rahila. He pattern
-neat baghaa, tumchya naksha sathi mahatvacha aahe: **Level 3
-chi ek boring, na-disnari yantrana (encryption) Level 2 chya
-purna nav-ya bajarala (online vikri) janm dete.** Payabhut
-thar kamavto tya-peksha, to VAR kay ubha rahu deto tyat
-mothi kamai aste. AI madhe hech shodha: AI kay navin bharosa
-/ navin bajar ubha karu deto?
-
-## SWATAHA BAGHA (5 minute)
-
-Browser madhe bank chi site ughda, pattyat kulup-icon var
-click kara: "Connection is secure" ani certificate chi
-mahiti disel: kunala dila, kadhi sampto. Ata ek http (s
-nahi) site ughdaycha prayatna kara: browser lal ishara deil
-"Not secure". Tumhi ata to ishara VACHU shakta: "ya rastya-
-varche packets ughde aahet, postcard sarkhe."
-
-## VICHAR KARA
-
-1. (derivation) Sarkarna kadhi kadhi vaatta: "encryption
-madhe amhala ek gupt magcha darvaja (backdoor) dya, fakt
-gunhegar pakadnyasathi." Tantradnyanachya bajune yat kay
-adchan aahe? (Vichar kara: darvaja "fakt changlya lokan-
-sathi" asu shakto ka?)
-
-> **Uttar:** Ganitala hetu kalat nahi. Backdoor mhanje
-> yantranet ek KAMJORI muddam thevne; ti kamjori police
-> la pan ughdte ani chorala pan, ek-da sapdli ki. Ani
-> "fakt sarkar javal killi" mhanje jagatli sagLyat mothi
-> chori-layak vastu ek jaagi: ti jaaga halli honarach.
-> Mhanun tantradnya mhantat: darvaja ardha ughda asu
-> shakat nahi; ughda kinva band. Ha vaad (privacy vs
-> surveillance) jagbhar chalu aahe ani tumhala to ata
-> DONHI bajuni samajto: sarkarchi garaj khari aahe, pan
-> ganiti kimmat pan khari aahe. Ashya jaagi "sopa uttar
-> sangnara" manus ekhadi baju vikto aahe, he olkha.
-
-
-# Chapter 5.7 [SPINE]: Internet mhanje nakki kay
-
-Ata sagle tukde jodta yetat. "Internet" ha shabd roj hazar
-vela vaparta; aaj tyala DOLYANNI baghu.
-
-Suruvat tumchya gharatun. Tumcha phone WiFi ne router la
-jodlela (Chapter 5.2). Router telecom company chya (Jio/
-Airtel chya) jaalala: tumchya bhagatlya khambya-varchya kinva
-jaminitlya fibre taarela. Ti taar shaharachya mothya kendrala.
-Tithun deshbharchya mothya rastyanna. He zala ek company cha
-JAAL.
-
-Pan Jio cha grahak Airtel chya grahakala message pathavto,
-tevha? Doghanchi jaale VEGLI aahet. Uttar: companies ni
-aapli jaale thravik jaagi EKMEKANNA jodli aahet (mothya
-shahara-madhli "exchange" kendre), ani tithe saudebaji aahe:
-kadhi "tu majha traffic ne, mi tujha" (barabari), kadhi
-lahaan jaal mothyala bhade dete. **Internet mhanje HEC: hazaro
-veg-veglya malkanchi jaale, ekmekanna jodleli, samaan niyamani
-(protocols, Chapter 5.4) bolnari.** Naav pan tech sangta:
-inter-net, jaalan-madhla-jod. Malak konich nahi; sahbhagi
-sagle.
-
-Ani deshabaher? Ithe ek dhakka basel: samudrakhali. Jagatla
-99% aantar-deshiy data SAMUDRATLYA KEBALI-madhun jato: bota-
-evdhya jaad kachechya taara, lakho km, samudra-talashi
-pasarlelya. (Satellite? 1% peksha kami: mahag ani dur, mhanje
-latency, Chapter 2.3.) Bharatat ya kebali kinaryavar yetat:
-Mumbai ani Chennai hi mothi "landing" thikane. Ek kebal
-katli (jahajacha nangar, bhukamp) ki purna deshacha internet
-mand hoto: he ghadlela aahe, parat ghadel.
-
-Ekada he disla ki "cloud" ani "WiFi" chi hawa-havi bhasha
-udte: internet mhanje kach, taamba, khambe, samudri kebali,
-buildings madhle routers. VASTU aahe, jaadu nahi. Ani vastu
-aahe mhanun tichi malki aahe, kimmat aahe, rajkaran aahe:
-kebali kon taakto, exchange kuthe aahe, he sagle satta-
-prashna aahet.
-
-## NAAV
-
-Internet cha rasta viknari company: **ISP** (Internet Service
-Provider: Jio, Airtel, BSNL). Samudri taar: **undersea cable**
-(ya submarine cable). Jaale jodnyachi saudebaji: **peering**.
-Tumchya ghara-paryantcha shevatcha tukda: **last mile** (ha
-sagLyat mahag tukda asto: pratyek gharala vegli taar!).
-
-## KHARYA JAGATLA EK EXAMPLE
-
-Jio chi goshta parat ghya, ata purna nazrene. 2016 chya aadhi
-Bharatat data mahag hota karan jaal LAHAAN hote. Jio ni kay
-kele: 2.5 lakh crore laavun NAVE jaal banavle: fibre, towers,
-samudri kebalinche hisse. Mag data lagbhag fukat kela (Chapter
-3.7: darvaja-chaal). Parinaam: desh online aala, ani Jio
-darvajacha malak. Pan mul-baat hi: tyanni SEVA nahi, RASTA
-banavla. Rasta banavnyala vel ani arabo lagtat, mhanunach
-to kabja itka tikto: spardhakala parat sagle khamb ubhe
-karave lagtil.
-
-## ITHE LOK KAY CHUKICHE SAMAJTAT
-
-"Internet satellite ni chalte" (nahi: 99% samudri kebali).
-"Cloud mhanje hawa" (nahi: cloud mhanje dusryachya buildings
-madhle computers, Part 5 madhe purna). "WiFi mhanje internet"
-(nahi: WiFi fakt tumchya ghara-atla shevatcha 10 meter cha
-bin-taari tukda aahe; pudhe sagla taar aahe). Teenhi chuka
-ekach mulatun: internet DISAT nahi, mhanun lok tyala hawa
-samajtat. Ata tumhala to dista: kach ani taamba.
-
-## MAP VAR
-
-Rupayacha rasta, purna chain: tumche mahine 300 (Level 1
-pasun ghusla) -> Jio (ISP) -> Jio kebali-companies na ani
-yantra-viknaryanna (Nokia, Ericsson, Cisco) -> te chip-
-walyanna (TSMC!). Ani ulat disha pan aahe: Google/Meta ATA
-SWATAHA samudri kebali taaktaat (2Africa, Blue-Raman:
-Bharatala jodnarya), karan bhade dene mahag padte ani rasta
-aaplya hatat asava vaatta. Jevha SEVA-company RASTA vikat
-ghete, tevha samajaa: rasta hich khari satta hoti. (AI madhe
-aaj hech: model-companies chips ani data-centers vikat
-ghetayat. Pattern olkhaa.)
-
-## SWATAHA BAGHA (5 minute)
-
-Laptop var ughda: submarinecablemap.com (fukat aahe). Mumbai
-var zoom kara: dahaa-pandhra kebali kinaryala yetana distil,
-naavansahit. Pratyek rekha mhanje samudra-talashi padleli
-khari kach aahe, ani tumcha kalcha WhatsApp message kadachit
-tyach rekhene Amerika la gela hota. Ekda ha naksha baghitla
-ki "internet" shabd kadhich purvisarkha vatnar nahi.
-
-## VICHAR KARA
-
-1. (derivation) Ek desh aaplya deshapurte internet BAND karu
-shakto (he ghadle aahe). Pan purna jagacha internet koni-hi
-band karu shakat nahi. Design madhli kuthli goshta he don-hi
-sangte?
-
-> **Uttar:** Desha-atla band shakya aahe karan desha-baher
-> jaanare raste MOJKE astat: kinaryavarchi landing thikane
-> ani mothe ISP; sarkar ni tya mojak-ya gala-ya aavaLlya ki
-> desh vegla padto. Pan jagacha band ashakya, karan KENDRA
-> NAHIC: hazaro jaale, hazaro malak, koni-ek switch nahi.
-> He apghaataane nahi, DESIGN ne aahe: internet chi payabharni
-> ashya yantranesathi zali hoti ji ek bhaag padla tari chalel
-> (packets navya rastyani jaatat, Chapter 5.3). Shikvan
-> tumchya naksha sathi: vikendrit (decentralized) yantrana
-> maarayla avghad aste, pan tichyavar hukumat pan avghad
-> aste. Kendrit yantrana kamvayla sopi, maarayla pan sopi.
-> Pratyek platform ha sauda karto; tumhi pan karal.
-
-
-# Chapter 5.8 [DEPTH]: Internet che niyam kon banavto
-
-(DEPTH chapter. Ha shevatcha aahe ani lahaan aahe. Yachya
-nantar "standard" ha shabd batmyan-madhe disla ki tumhala
-tyachya magcha satta-khel disel.)
-
-Chapter 5.4 ni sangitla: internet mhanje niyam. Chapter 5.7
-ni sangitla: malak konich nahi. Mag ek vichitra prashna urla:
-**niyam aahet, pan raja nahi. He chalta kasa? Niyam BANAVTO
-kon?**
-
-Uttar ajab aahe: kahi boring sansthaa, jagbharche engineers,
-ani khup saarya meetings. Mukhya teen naave:
-
-**IETF**: internet che mul niyam (TCP, HTTP vagaire) ithe
-ghadtat. Ani yachi paddhat sundar aahe: KONI-HI ek prastav
-(proposal) lihu shakto, tyala RFC mhantat. Charcha hote,
-DON goshtinni prastav jinkto: sahmati ani CHALNARA code.
-Sadasyata nahi, fee nahi, deshacha veto nahi. 1969 pasun
-he ase chalta aahe.
-
-**ICANN**: naave ani numbers chi vaatni (domains, IP blocks)
-sambhaalnari sanstha. .com kon chalvel, nave TLDs (.shop,
-.ai) kadhi yetil, he ithe tharte.
-
-**W3C ani browser-companies**: web che niyam (HTML vagaire).
-Ani ithe ek khara sach: kaagdavar niyam samiti banavte, pan
-VYAVHARAT niyam te hotat je mothe browsers (Chrome!) khare
-laagu kartat. Google chya browser kade 60%+ vaata aahe,
-mhanje Google chya nirnayanna niyamanchi takat aapoaap yete.
-
-Mhanje chitra ase: niyam khule aahet, prakriya lokshahi-
-sarkhi aahe, PAN takat barabar vaatleli nahi: jya company
-kade vaapar-kartya (users) jaast, tichya aawajala vajan
-jaast. Mhanun mothya companies ya boring meetings madhe
-aaple pagaari engineers pathavtat: standard chya table var
-basne mhanje bhavishyacha bajar aakhne.
-
-He lamb vaatla tar ek Bharatiy udaharan sagla sangel: UPI
-che niyam NPCI banavte: ani mhanunach Bharat ne "aapla
-protocol aapan banavne" (DPI: UPI, Aadhaar-stack, ONDC) ha
-rashtriya khel kela aahe. Niyam banavnara bajar aakhto;
-niyam gheNARA bajarat fakt khelto.
-
-## NAAV
-
-Sarva-manya niyam: **standard**. Prastavachi paddhat: **RFC**.
-Sanstha: **IETF** (mul niyam), **ICANN** (naave/numbers),
-**W3C** (web). Bharatacha sarkari-protocol khel: **DPI**
-(Digital Public Infrastructure).
-
-## KHARYA JAGATLA EK EXAMPLE
-
-SMS aathva: to pan ek standard hota, telecom-walyanni banav-
-lela. WhatsApp aala ani SMS la khaun taakla: karan WhatsApp
-cha "standard" ek-companycha hota, vegane badalta yet hota,
-ani fukat hota. Mag Google ni SMS cha varasdaar (RCS) pudhe
-dhakalla, Apple ne varsha-n-varshe to NAKARLA (iMessage cha
-kila!), ani 2024 madhe akher ghetla. Ya purna ladhait grahak
-kuthech navhta; ladhai standards chi hoti, karan jo standard
-jinkto tyachi seva "default" hote, ani default hone mhanje
-arabo grahak fukat milne.
-
-## ITHE LOK KAY CHUKICHE SAMAJTAT
-
-"Kuthli tari jagtik sanstha (UN sarkhi) internet chalavte."
-Nahi. UN chi ek sanstha (ITU) juni telecom sambhaalte, pan
-internet che khare niyam varchya khulya sansthaan-madhe
-ghadtat, ani kahi desh (jyanna kendrit niyantran have) he
-badlaycha prayatna satat kartat: "internet ITU khali aana"
-he tyanche magne asta. Mhanje "kon niyam banavto" ha prashna
-samplela nahi; ti ek CHALU ladhai aahe, ani tichyat Bharat
-ek motha aawaj aahe (arabo users + swataha che DPI).
-
-## MAP VAR
-
-Tumchya 4-level naksha var hi shevatchi ol: **Level 3 chya
-khaali ajun ek maala aahe: NIYAM. Jo niyam banavto, to
-Level 3 chya sagLya khelanchi zameen aakhto.** Ani niyam
-banavnyat paisa THET nahi (IETF fukat, NPCI na-nafa), pan
-niyamanchya var ubhe rahnare bajar arabonche astat, ani
-niyam-banavnaryachya deshala/companyla tya bajarat ghar-cha
-maidaan milte. Mhanun: batmyan-madhe "standard", "protocol",
-"regulation" he shabd disle ki thamba ani vaacha. Kantalvane
-vaattat, pan tithe pudhchya dashakachi malki tharte aahe.
-AI madhe HICH ladhai aatta chalu aahe: AI che niyam kon
-banavnaar? (Book 2 madhe bhetel.)
-
-## SWATAHA BAGHA (5 minute)
-
-Google madhe search kara: "RFC 1149". Ughdel to ek KHARA,
-adhikrut RFC aahe: kabutaran-varun internet packets pathav-
-nyacha (vinodi) prastav, 1 April la lihilela. Ani lok ni to
-2001 madhe KHARA karun pan dakhavla (9 packets, 1 kabutar).
-He baghnyacha uddesh: RFC kiti khule aahet he janavne: vinod
-pan chaltoy, ani tya-ach paddhatine jagacha sagla internet
-pan ghadla aahe. Khuli prakriya ashi diste.
-
-## VICHAR KARA
-
-1. (derivation) Bharatane UPI banavla ani to Singapore,
-UAE, France ashya deshan-madhe pan neto aahe. "Protocol
-niryaat karne" (export) madhe Bharatala kay milte? Paisa
-tar thet milat nahi. (Chapter 5.4 chi NPCI-shikvan pudhe
-nya.)
-
-> **Uttar:** Zameen milte. Jya deshat UPI-dhartiche niyam
-> laagle, tithe Bharatiy banks, apps, ani kaushalya (jya
-> lokanna he chalvta yeta) ghar-chya maidanavar kheltat.
-> Ani jagtik vyavhaarat vajan milte: aaj paise-pathavnyache
-> jagtik niyam Visa/Mastercard/SWIFT (paschimi) aakhtat;
-> pratyek desh jo UPI gheto, to tya ekadhikarala thoda
-> kamjor karto ani niyam-tablavar Bharatachi khurchi
-> mothi karto. He Level 3 che bhu-rajkaran (geopolitics)
-> aahe: 20vya shatakat desh TEL ani bandaran-sathi ladhle;
-> 21vya madhe kebali, chips ani PROTOCOLS sathi ladhtat.
-> Tumhi jo naksha banavla aahe (4 levels), to deshanchya
-> pattlivar pan tantotant laagto: hich tyachi shevatchi
-> pariksha.
-
-
-# PART 3 CHA SHEVAT: NAKASHA ANI PUDHCHA PAAUL
-
-## Je tumchya-kade ata aahe
+## आधी Part 2 ची परीक्षा
+
+पाच प्रश्न, Part 2 मधले. आधी स्वतः उत्तर द्या, मग खाली बघा.
+जिथे अडाल, तिथला chapter number सोबत आहे, तिथे परत जा.
+
+1. iPhone चं app Android वर का चालत नाही? (3.5)
+2. Google Android फुकट का वाटतं? (3.5, 3.7)
+3. मोठ्या software मध्ये bugs नक्की का असतात? (4.1)
+4. "माझ्या machine वर तर चालत होतं" चा खरा अर्थ काय? (4.4)
+5. Software बनवताना पैसा कशावर द्यायचा: वचनावर की कशावर? (4.5)
+
+> **उत्तर:** 1. App हे OS साठी लिहिलेलं असतं, machine साठी नाही;
+> मालक (OS) वेगळा, म्हणून app चालत नाही. 2. विकून कमावण्यापेक्षा
+> मालक होणं मोठा खेळ आहे: प्रत्येक phone हा Google च्या search,
+> ads आणि Play Store चा दरवाजा होतो. 3. Situations ची संख्या
+> स्फोटासारखी वाढते; जो जोड लिहिणाऱ्याच्या डोक्यात आलाच नाही,
+> तोच कधीतरी एखाद्या user ला भेटतो. ही गणिताची गोष्ट आहे,
+> हलगर्जीपणा नाही. 4. Software = code + त्याचा आजूबाजूचा माहोल
+> (OS, libraries, settings). Code तोच, माहोल वेगळा = निकाल
+> वेगळाच. 5. चालत्या तुकड्यावर. वचन नाही, demo. प्रत्येक तुकडा
+> चालवून दाखवला पाहिजे.
+
+## या part मध्ये काय आहे
+
+आतापर्यंतची सगळी गोष्ट एका machine च्या आत होती. पण तुमचा
+प्रत्येक message दुसऱ्या machine कडे जातो: शहरापलीकडे,
+समुद्रापलीकडे, अर्ध्या second मध्ये. कसा?
+
+आठ chapters: machines एकमेकांना कशा शोधतात (address), message
+कसा प्रवास करतो (packets), दोघांनी नियम आधीच का ठरवावे लागतात
+(protocols), नावांचे numbers कसे होतात (DNS), public रस्त्यावर
+private गोष्ट कशी लपते (encryption), internet म्हणजे नक्की काय,
+आणि त्याचे नियम कोण बनवतं.
+
+**हे तुमच्या business decision मध्ये कुठे येईल:** तुमचं प्रत्येक
+product internet वर चालेल. त्याचा वेग, त्याचा खर्च, त्याची
+सुरक्षा, हे सगळं इथल्या समजुतीवर उभं आहे. आणि एक मोठं धंद्याचं
+गुपित इथे लपलं आहे: networks मध्ये "n squared" नावाची एक अडचण
+परत परत येते, आणि जो ती सोडवतो तो दरवाजाचा मालक होतो. UPI हे
+त्याचं जिवंत उदाहरण आहे, या part मध्ये भेटेल.
+
+
+# SECTION 5: MACHINES चं आपसात बोलणं
+
+आठ chapters. एका machine पासून जगभर पसरलेल्या जाळ्यापर्यंत.
+
+**हे तुमच्या business decision मध्ये कुठे येईल:** "App slow का
+आहे," "server चा खर्च किती येईल," "data safe आहे का," "हे feature
+offline चालेल का": हे सगळे प्रश्न network च्या समजुतीशिवाय सुटत
+नाहीत. आणि जो founder network समजतो, तो हे पण बघतो की दरवाजे
+(platforms) कसे बनतात: internet च्या इतिहासात जो जो "सगळे
+एकमेकांशी बोलू शकतील" असा रस्ता बनवतो, तो तो श्रीमंत होतो. या
+section मध्ये तो pattern चार वेळा दिसेल.
+
+
+# Chapter 5.1 [SPINE]: एक machine पुरी पडत नाही
+
+Part 1 आणि 2 नी तुम्हाला एक शक्तिशाली machine दिली: universal
+machine, जिच्यावर कुठलीही recipe चालते. मग प्रश्न असा: एकच
+machine पुरी का पडत नाही? WhatsApp तुमच्या phone वर आहे ना?
+
+नाही. तुमच्या phone वर WhatsApp चा फक्त दरवाजा आहे. विचार करा:
+तुम्ही message पाठवला आणि मित्राचा phone बंद आहे. तरी message
+पोहोचतो, तो phone चालू करताच. म्हणजे message मध्ये कुठेतरी
+थांबला होता. कुठे? तुमच्या phone वर नाही (तुम्ही पाठवला, गेला).
+त्याच्या phone वर नाही (बंद होता). म्हणजे मध्ये तिसरी machine
+आहे, जिच्यावर message वाट बघत बसला होता.
+
+ती तिसरी machine WhatsApp च्या company ची आहे, आणि अशा machines
+लाखोंनी आहेत. का लागतात? तीन कारणं, तिन्ही तुम्ही स्वतः काढू
+शकता:
+
+**Data सगळ्यांचा एकत्र असावा लागतो.** तुमचा bank balance तुमच्या
+phone वर ठेवला तर? Phone हरवला, पैसा गेला. आणि दुकानदाराला कसं
+कळेल की तुमच्याकडे पैसे आहेत? जो data दोघांना लागतो, तो दोघांच्या
+मध्ये, तिसऱ्या जागी राहावा लागतो.
+
+**एक machine कोटी लोकांना serve करू शकत नाही.** एक CPU, एका
+second मध्ये अब्ज पावलं (Part 1). वाटून घ्या: कोटी लोक आले तर
+प्रत्येकाला किती? काम वाटावं लागतं, खूप machines मध्ये.
+
+**Machines पडतात.** वीज जाते, disk जळते. सगळं एकाच जागी ठेवलं
+आणि ती जागा पडली, तर सगळं गेलं. प्रती (copies) वेगळ्या जागी
+लागतात.
+
+म्हणून जग अशा दोन भागांत विभागलं गेलं: तुमच्या हातातली machine
+(मागणारी) आणि company च्या building मधली machine (देणारी). आणि
+आता सगळ्यात मोठा प्रश्न: या machines एकमेकांशी बोलणार कशा?
+
+दोन machines मध्ये तार ओढा, current चा pattern पाठवा (Part 1,
+Chapter 1.2: signal म्हणजे हेच), bits गेले. दोन machines झाल्या.
+पण कोटी machines? प्रत्येकाला प्रत्येकाशी तार जोडली तर? गणित
+करा: 100 machines ला 4,950 तारा लागतील, कोटी machines ला...
+जमणार नाही. (हे "n squared" आहे: संख्या वाढली की जोड त्या
+संख्येच्या वर्गाने वाढतात. हे नाव लक्षात ठेवा, या part मध्ये हा
+राक्षस परत परत येईल, आणि प्रत्येक वेळी कोणीतरी त्याला हरवून
+श्रीमंत होईल.)
+
+उपाय तुम्ही रोजच्या जगात बघितला आहे: रस्ता. प्रत्येक घरापासून
+प्रत्येक घरापर्यंत रस्ता नसतो; गल्ली असते, चौक असतो, highway
+असतो. तसंच machines चं: तुमची machine जवळच्या चौकाला जोडलेली,
+चौक मोठ्या चौकाला, असं जोडत जोडत सगळं जग. हा रस्ताच NETWORK आहे.
+
+## नाव
+
+मागणारी machine: **client**. देणारी machine: **server** (serve
+करणारी, म्हणून). जोडलेल्या machines चं जाळं: **network**. आणि
+"प्रत्येकाला प्रत्येकाशी जोडणं जमणार नाही" ही अडचण: **n squared
+problem**.
+
+## खऱ्या जगातलं एक example
+
+तुम्ही Zomato वर order करता. तुमचा phone (client) Zomato च्या
+server ला मागणी पाठवतो. Server तुमचा order ठेवतो, restaurant
+च्या screen ला (दुसरा client) दाखवतो, delivery वाल्याच्या phone
+ला (तिसरा client) पाठवतो. तीन clients, एक server, आणि सगळे
+एकमेकांना कधीच थेट जोडलेले नाहीत: प्रत्येकजण फक्त server शी
+बोलतो. चौक एक, रस्ते तीन. N squared ला असंच हरवतात.
+
+## इथे लोक काय चुकीचं समजतात
+
+"माझा message थेट मित्राच्या phone ला जातो." कधीच नाही. प्रत्येक
+message आधी company च्या server ला जातो, मग मित्राला. (End-to-end
+encryption असेल तर company वाचू शकत नाही, पण रस्ता त्यांच्याच
+मधून जातो: Chapter 5.6 मध्ये हे उघडेल.) म्हणूनच "फुकट" apps च्या
+company कडे एवढी ताकद असते: सगळा traffic त्यांच्या चौकातून जातो.
+
+## MAP वर
+
+रुपयाचा रस्ता: तुम्ही महिना भरला (Level 1 पासून पैसा घुसला) ->
+telecom company (Jio/Airtel) ला, ती रस्ता देते. App company च्या
+server चा खर्च ती cloud ला देते (Part 5). आणि हे बघा: ज्या
+business कडे SERVER आहे, त्याच्याकडे DATA आहे; ज्याच्याकडे data,
+त्याच्याकडे ताकद. Client बनवणं सोपं आणि स्वस्त झालं आहे; server
+ची बाजू हीच खरी मालमत्ता आहे. तुम्ही जो business बनवाल, त्यात
+"server वर काय राहणार" हा प्रश्न म्हणजे "मालमत्ता काय असणार" हा
+प्रश्न आहे.
+
+## स्वतः बघा (5 minute)
+
+Phone airplane mode वर टाका. आता apps उघडा: WhatsApp chats
+दिसतात (जुना data, phone वर साठवलेला), पण नवे message येत नाहीत.
+Google Maps चा नकाशा अर्धवट उघडतो, search चालत नाही. Camera
+पूर्ण चालतो. आता तुम्हाला प्रत्येक app चे दोन भाग दिसतील: जो
+तुमच्या हातात आहे, आणि जो कोणीतरी-दुसऱ्याच्या machine वर आहे.
+ही रेषा बघायला शिकणं म्हणजे network समजणं.
+
+## विचार करा
+
+1. (derivation) 100 लोकांची वस्ती आहे. प्रत्येकाने प्रत्येकाशी
+थेट बोलायचं ठरवलं तर 4,950 जोड लागतात. एक चौक (server) बनवला तर
+फक्त 100. पण आता एक नवी किंमत आली, ती कुठली? (Chapter 0.1 ची
+आठवण करा: register ठेवणाऱ्यावर काय प्रश्न होता?)
+
+> **उत्तर:** भरवसा. सगळं बोलणं एका चौकातून जातं, म्हणजे चौकाचा
+> मालक सगळं बघतो, थांबवू शकतो, बदलू शकतो. N squared सुटला, पण
+> सत्ता एका जागी एकवटली. म्हणूनच हा pattern परत परत दिसेल: सोपा
+> रस्ता = मधला मालक. आणि त्याच्याविरुद्धचे प्रयोग पण (blockchain
+> वगैरे) याच दुखण्यावर उभे आहेत. Technology चं प्रत्येक design
+> एक सौदा असतो: इथे सुविधा vs सत्ता हा सौदा आहे. जो हे बघतो, तो
+> बातम्या नाही, धंदा वाचतो.
+
+
+# Chapter 5.2 [SPINE]: प्रत्येक machine ला एक address
+
+Network बनलं, रस्ते झाले. आता post office चा जुना प्रश्न उभा
+राहतो: पत्र पोहोचवायचं तर पत्ता लागतो. "राम ला द्या" ने काम होत
+नाही; राम लाखो आहेत. Machines च्या जगात पण तेच: message पाठवायचा
+तर त्या machine चा नेमका address लागतो.
+
+Address कसा असावा? Part 1 ने उत्तर आधीच दिलं आहे: machine ला
+फक्त numbers समजतात. म्हणून machine चा address एक NUMBER आहे.
+साधं रूप: चार numbers, प्रत्येक 0 ते 255 मधला (ओळखीचं वाटलं?
+8 bits = 256 स्थिती, Chapter 1.4):
 
 ```
-CLIENT / SERVER   magnari machine / denari machine; malmatta
-                  server chya bajula aste
-N SQUARED         pratyekala pratyekashi jodne ashakya; jo he
-                  chowk/protocol ni sodavto to malak hoto
-IP ADDRESS        machine cha number-pattaa; public vs private
-                  (router = building cha watchman)
-PACKETS           message che numbered tukde, swatantra pravaas;
-                  "connection" ha fakt bhaas aahe
-TCP vs UDP        barobar-pana vs vega: file vs video call
-PROTOCOL          aadhich tharlele niyam; internet mhanje vastu
-                  nahi, niyamancha samuh (UPI = protocol!)
-DNS               naav -> number cha phonebook; shidi + cache;
-                  domain = pati, server = dukan
-ENCRYPTION        public rastyavar ganiti lifafa; don killya
-                  (public kulup laavte, private ughadte);
-                  kulup = rasta surakshit, manus nahi!
-INTERNET          hazaro malkanchi jaale, jodleli; 99% samudri
-                  kebali; kendra nahi, malak nahi
-NIYAM             IETF/ICANN/W3C + mothya companies; standard
-                  banavnara bajar aakhto (Bharatacha DPI)
+142.250.183.14     (हा Google च्या एका server चा address)
+192.168.1.5        (हा तुमच्या घरातल्या phone चा असू शकतो)
 ```
 
-## Ek pariksha, swataha sathi
+आता एक गणित करा. चार numbers, प्रत्येक 256 प्रकारचा: एकूण किती
+address? 256 x 256 x 256 x 256 = साधारण 430 कोटी. 1980 मध्ये हे
+"कधीच संपणार नाहीत" वाटले. आज जगात अब्जावधी phones, TVs, गाड्या,
+घड्याळं... address संपले. हा खरोखर घडलेला प्रसंग आहे: internet
+च्या designers नी जग केवढं होईल हे कमी अंदाजलं. (उपाय पण आला:
+नवा लांब address, IPv6, ज्यात address संपूच शकत नाहीत. पण जुनी
+system अजून सगळीकडे आहे.)
 
-Pustak na ughadta, bolun uttar dya:
+संपत आलेले address जगाने कसे वापरले? इथून एक सुंदर युक्ती
+निघाली, जी तुमच्या घरात आहे: तुमच्या WiFi router ला एकच public
+address मिळतो (building ला एक post-box). घरातल्या सगळ्या devices
+ना router आतल्या-आत आपले छोटे private address देतो (खोली क्रमांक
+1, 2, 3...). बाहेरून सगळे एकच दिसतात; आत router हिशोब ठेवतो की
+कुठलं उत्तर कुठल्या device चं आहे. एक address, दहा machines.
+(Building चा watchman जसा: पत्र building च्या नावावर येतं,
+watchman flat बघून पोहोचवतो.)
 
-1. WhatsApp message thet mitrachya phone la ka jaat nahi?
-2. Video call madhe aawaz robotic ka hoto, pan file download
-   madhe file kadhich adhuri ka yet nahi?
-3. Kulup-icon (https) kay SANGTO ani kay SANGAT NAHI?
-4. UPI la "protocol" ka mhanave, app ka nahi? Ani tyane
-   Bharatala kay dile?
+## नाव
 
-Adkal tar: 1 -> 5.1, 2 -> 5.3, 3 -> 5.6, 4 -> 5.4/5.8.
+Machine चा number-पत्ता: **IP address** (Internet Protocol चा
+address). जुनं चार-number रूप: **IPv4**, नवं लांब रूप: **IPv6**.
+घरातला वाटणारा-watchman: **router**. Router च्या आतले address:
+**private IP**, जगाला दिसणारा: **public IP**.
 
-## Part 4 madhe kay aahe
+## खऱ्या जगातलं एक example
 
-Server la crore lokancha data milto. To THEVAYCHA kuthe?
-Ek crore madhun EK nond shodhaychi kashi, dolyachya pheratit?
-Don lok EKAACH veles ek goshta badaltat tevha kay hote?
-Ani sagla data udala tar? Part 4: DATA AANI AATHAVNI: database
-che jag, jithe pratyek mothya company chi khari sampatti
-padleli aste.
+Cyber crime च्या बातम्यांमध्ये "police नी IP address वरून आरोपी
+शोधला" हे वाक्य असतं. आता तुम्हाला ते वाचता येतं: प्रत्येक
+internet connection च्या मागे एक public IP असतो, आणि telecom
+company कडे register असतो की त्या वेळेस तो IP कोणाला दिला होता
+(Chapter 0.1 चा ledger, परत!). म्हणूनच VPN नावाची गोष्ट विकली
+जाते: ती तुमचा खरा IP लपवते, दुसऱ्या देशातला दाखवते. सुरक्षा
+आणि लपाछपी, दोन्ही एका address भोवती फिरतात.
 
-# PART 3 CHA MINI-GLOSSARY
+## इथे लोक काय चुकीचं समजतात
+
+"IP address म्हणजे माझी कायमची ओळख." नाही. तुमचा public IP
+telecom company रोज बदलू शकते (भाड्याने दिलेला number आहे,
+मालकीचा नाही). आणि एका IP मागे शंभर लोक असू शकतात (router!).
+म्हणून IP फक्त "त्या वेळेचा, त्या जागेचा" पत्ता आहे, Aadhaar
+card नाही. दोन्ही दिशांनी चूक होते: लोक घाबरतात "माझा IP दिसला,
+सगळं संपलं" (नाही), आणि लोक निश्चिंत पण असतात "IP बदलतो म्हणजे
+मी लपलो" (नाही: register आहे ना).
+
+## MAP वर
+
+कोण कमावतं: address स्वतः एक मालमत्ता झाली. IPv4 addresses
+संपले, म्हणून जुना साठा असणाऱ्यांनी ते विकायला काढले: एक IPv4
+address आज हजारो रुपयांना जातो, companies कडे लाखो address चे
+blocks आहेत, त्यांची किंमत अब्जांमध्ये. 1990 मध्ये फुकट वाटलेले
+numbers आज सोनं झाले. धंद्याची शिकवण: जिची मोजदाद ठरलेली आहे
+आणि मागणी वाढणार आहे, ती गोष्ट लवकर धरून ठेवा. (Domains मध्ये
+हे परत येईल, Chapter 5.5.)
+
+## स्वतः बघा (5 minute)
+
+Phone च्या Settings मध्ये WiFi उघडा, जोडलेल्या network वर tap
+करा: तिथे "IP address" दिसेल, साधारण 192.168.x.x असा. हा तुमचा
+PRIVATE address. आता browser मध्ये search करा: "what is my IP".
+वेगळा number दिसेल! हा तुमच्या router चा PUBLIC address. दोन
+address, दोन जगं: आत आणि बाहेर. Watchman-system तुम्ही स्वतः
+बघितली.
+
+## विचार करा
+
+1. (derivation) Postman ला "Mumbai, Andheri, XYZ building, flat
+402" असा पत्ता तुकड्या-तुकड्यांनी काम करतो: आधी शहर, मग भाग, मग
+building. IP address पण असाच तुकड्यांनी वाचला जातो (आधी मोठा
+भाग, मग आतला). सगळे routers जगातल्या सगळ्या machines ची यादी का
+ठेवत नाहीत, हे design का निवडलं?
+
+> **उत्तर:** कारण यादी अब्जावधी नोंदींची होईल आणि रोज बदलेल;
+> प्रत्येक चौकात ती ठेवणं आणि ताजी राखणं अशक्य. तुकड्यांचं
+> design म्हणजे: प्रत्येक router ला फक्त एवढंच माहीत लागतं की
+> "हा भाग त्या दिशेला." Mumbai चा postman flat 402 जाणत नाही,
+> फक्त Andheri कुठे ते जाणतो. काम वाटलं गेलं, कोणा-एकाला सगळं
+> जाणावं लागत नाही. हे design-तत्त्व (hierarchy) technology त
+> सगळीकडे आहे: DNS मध्ये (5.5), company च्या संघटनेत, आणि AI
+> च्या आत पण. जिथे scale मोठा, तिथे यादी नाही, शिडी असते.
+
+
+# Chapter 5.3 [DEPTH]: Message चे तुकडे करणं
+
+(DEPTH chapter. वगळला तरी गोष्ट पुढे जाईल, पण हा लहान आहे आणि
+याच्यानंतर "packet" आणि "network slow" चे खरे अर्थ उघडतात.)
+
+Address झाला. आता message पाठवायचा आहे: समजा 3 MB चा photo
+(Part 1: म्हणजे साधारण 2.5 कोटी bits). सोपा वाटणारा रस्ता: सगळे
+bits एकासाथ, एक लांबच लांब प्रवाह म्हणून पाठवा.
+
+हे design वाईट आहे. का, ते तुम्ही truck च्या उदाहरणाने काढू
+शकता. समजा Mumbai-Pune रस्ता आहे आणि त्यावरून एक 3 km लांब
+truck जातो आहे:
+
+1. जेव्हा तो जातो, तेव्हा दुसरं कोणीच रस्ता वापरू शकत नाही.
+   एक मोठा message = बाकी सगळ्यांची थांबलेली रांग.
+2. Truck मध्ये कुठे बिघाड झाला तर? सगळं परत पाठवा. 3 MB मधला
+   शेवटचा bit चुकला, तरी पूर्ण 3 MB परत.
+3. आणि रस्ता एकच असेल तर तो पडला की सगळं थांबलं.
+
+मग design तुम्ही करा. रस्ता-यंत्रणा कशी असावी?
+
+उत्तर: **message चे लहान तुकडे करा.** प्रत्येक तुकड्यावर लिहा:
+कोणाला जायचं (address), कोणाकडून आला, आणि तुकडा क्रमांक किती
+(1 of 2000, 2 of 2000...). आता प्रत्येक तुकडा स्वतंत्र प्रवास
+करतो. फायदे आपोआप येतात:
+
+रस्ते वाटले जातात: तुमच्या तुकड्यांच्या मधून दुसऱ्यांचे तुकडे पण
+जातात, कोणी रस्ता अडवत नाही. तुकडे वेगवेगळ्या रस्त्यांनी पण जाऊ
+शकतात: एक highway ने, एक गावामधून; जो मोकळा त्या त्या क्षणी. एक
+तुकडा हरवला तर फक्त तोच परत मागवायचा, पूर्ण message नाही. आणि
+पोहोचल्यावर क्रमांकाप्रमाणे लावून message परत जोडला जातो. (क्रम
+उलटासुलटा पोहोचला तरी चालतं: numbers आहेत ना.)
+
+एकच गोष्ट लक्षात ठेवा: तुम्हाला वाटतं तुम्ही "connection" उघडलं
+आहे, एक pipe, एक धागा. प्रत्यक्षात धागा नाही. फक्त तुकडे आहेत,
+स्वतंत्र उड्या मारणारे. "Connection" हा एक भास आहे जो दोन्ही
+टोकांचं software तुम्हाला दाखवतं: तुकडे मोजून, हरवलेले परत
+मागवून, क्रम लावून. भास सुंदर आहे, पण तो भास आहे हे समजल्यावर
+network च्या सगळ्या विचित्र गोष्टी सोप्या होतात: video call
+मधला robotic आवाज, अडकलेली file, "reconnecting..." सगळं.
+
+## नाव
+
+Message चा तुकडा: **packet**. तुकडे-करून-पाठवण्याची ही यंत्रणा:
+**packet switching** (1960s चा शोध, आणि internet ची खरी
+पायाभरणी). "हरवलेला परत मागवा, क्रम लावा, भरवसा द्या" हे काम
+करणारे नियम: **TCP**. "परत मागवायचं नाही, जो पोहोचला तो पोहोचला,
+वेग महत्त्वाचा" हे नियम: **UDP**. (दोन्ही नावं बातम्यांमध्ये
+येतात; आता तुम्हाला अर्थ माहीत आहे.)
+
+## खऱ्या जगातलं एक example
+
+File download होताना network 2 second गेलं: download थांबतो, मग
+तिथूनच पुढे चालतो. कारण file ला TCP: प्रत्येक तुकडा पोहोचलाच
+पाहिजे, किंमत म्हणून वेळ. Video call मध्ये network 2 second
+गेलं: आवाज robotic होतो, चेहरा अडकतो, पण call चालू राहतो. कारण
+call ला UDP-सारखे नियम: जुना तुकडा परत मागवून काय उपयोग? तो क्षण
+तर गेला. दोन designs, दोन धंद्याच्या गरजा: बरोबरपणा vs वेग.
+कुठला कधी निवडायचा हे समजणं म्हणजे network engineer ची अर्धी
+विद्या.
+
+## इथे लोक काय चुकीचं समजतात
+
+"Net slow आहे म्हणजे speed कमी आहे." अर्धवट. दोन वेगळ्या गोष्टी
+असतात: एका second मध्ये किती तुकडे जातात (bandwidth) आणि एका
+तुकड्याला जाऊन-येऊन किती वेळ लागतो (latency, Chapter 2.3 मध्ये
+भेटलेली). Movie बघायला bandwidth लागते; game आणि video call ला
+latency मारते. म्हणूनच "100 Mbps" चा plan असून पण game मध्ये
+"lag" येतो: तुकडे खूप जातात, पण प्रत्येक तुकड्याचा फेरा लांब
+आहे. दुकानदार तुम्हाला फक्त एक number विकतो; खेळ दोन numbers चा
+आहे.
+
+## MAP वर
+
+Company case: packet switching ने जुन्या telephone जगाला हरवलं.
+Telephone company कडे "एक call = एक राखीव line" असं महाग design
+होतं; packets नी तीच तार हजारो लोकांमध्ये वाटली. जो रस्ता स्वस्त
+करतो तो जिंकतो: हे pattern परत. आणि packets च्या रस्त्यावरची
+यंत्रं (routers) बनवणारी Cisco एका काळी जगातली सगळ्यात मौल्यवान
+company होती. रस्ता जिथे नवीन बनतो, तिथे यंत्रं विकणारा पहिला
+श्रीमंत होतो. (AI मध्ये आज Nvidia तेच काम करते आहे: नवीन रस्ता,
+यंत्रं विकणारा.)
+
+## स्वतः बघा (5 minute)
+
+पुढच्या video call च्या वेळेस network खराब झालं की लक्ष द्या:
+आवाज robotic का होतो? कारण software हरवलेले packets भरून
+काढण्याचा प्रयत्न करतं आहे. चेहरा का "अडकतो" आणि मग उडी मारतो?
+कारण मधले frames (packets) गेले, software ने ते सोडले आणि नवीन
+वर उडी मारली. तुम्ही आता बिघाड नाही, DESIGN बघत आहात: वेगासाठी
+बरोबरपणा सोडलेला.
+
+## विचार करा
+
+1. (derivation) Live cricket match streaming मध्ये एक packet
+हरवला. तो परत मागवावा का? TCP की UDP-विचार? आणि bank
+transaction मध्ये? दोन्ही उत्तरं वेगवेगळी का आहेत?
+
+> **उत्तर:** Cricket: परत मागवू नका. तो क्षण गेला; परत मागवून जो
+> तुकडा येईल तो जुना असेल, आणि त्यासाठी थांबणं म्हणजे पूर्ण
+> stream उशिरा. प्रेक्षकाला 2 second जुनं perfect चित्र नको,
+> आत्ताचं थोडं खराब चालेल. Bank: परत मागवा, आणि जोपर्यंत पक्कं
+> पोहोचत नाही तोपर्यंत काहीही पुढे जाऊ देऊ नका. एक रुपया चुकला
+> तरी चालणार नाही; वेळ लागला तरी चालेल. नियम असा निघतो: जिथे
+> क्षण महत्त्वाचा तिथे वेग जिंकतो, जिथे बरोबरपणा महत्त्वाचा तिथे
+> किंमत म्हणून वेळ द्यावा लागतो. तुमच्या product मधलं प्रत्येक
+> feature या दोन रंगांत वाटून बघा; तंत्र-निवड आपोआप सोपी होते.
+
+
+# Chapter 5.4 [SPINE]: नियमांवर आधीच सहमती
+
+Address आहे, packets आहेत. पण अजून एक प्रश्न लपला आहे, आणि तो
+सगळ्यात खोल आहे.
+
+Phone call ची सुरुवात आठवा: "Hello?" "हां, बोला." "मी रमेश
+बोलतोय..." हे शब्द माहिती देत नाहीत; हा क्रम आहे. कोण आधी
+बोलणार, कसं कळेल की समोर कोणी आहे, "ऐकू येतंय का" चा इशारा काय.
+दोघांनी हा क्रम आधीच मानलेला असतो, म्हणून call चालतो. एकजण
+जपानी क्रमाने बोलला आणि दुसरा मराठी क्रमाने, तर शब्द पोहोचतील पण
+बोलणं होणार नाही.
+
+Machines मध्ये हा प्रश्न अजून टोकाचा असतो, कारण machine कडे
+"समजून घेणं" नाही (Part 2, Chapter 3.1: exact लागतं). दोन
+machines ना बोलायचं तर सगळं आधीच ठरलेलं लागतं:
+
+- कोण सुरुवात करणार? कसं म्हणणार "मी तयार आहे"?
+- Message चा format काय? कुठले bits address, कुठले माल?
+- "पोहोचला" कसं कळवणार? नाही पोहोचला तर काय?
+- चूक झाली तर कोण परत पाठवणार, किती वेळा?
+
+अशा आधीच-ठरलेल्या नियमांच्या यादीला protocol म्हणतात. आणि
+internet म्हणजे काय, याचं अर्धं उत्तर हे आहे: **internet ही
+वस्तू नाही, नियमांची यादी आहे.** जो कोणी ते नियम पाळतो, त्याची
+machine जाळ्यात सामील होते. परवानगी कोणाची घ्यायची नाही, fee
+कोणाला द्यायची नाही. नियम public आहेत, दरवाजा सगळ्यांना उघडा.
+
+आणि नियम एका थरावर नाहीत, शिडीवर आहेत (abstraction, परत!):
+सगळ्यात खाली "तारेवर current कसा" चे नियम, त्यावर "address आणि
+packets" चे (IP), त्यावर "हरवलेला परत मागवा" चे (TCP), आणि
+सगळ्यात वर "app ला काय हवं" चे नियम. Website मागवण्याच्या
+नियमांचं नाव तुम्ही रोज बघता: **HTTP**. Browser च्या पट्टीत
+"https://..." म्हणजे "ही बोलणी HTTP च्या नियमांनी होणार" एवढंच.
+प्रत्येक थर फक्त आपलं काम जाणतो, खालचा थर कसा चालतो हे त्याला
+माहीत नसतं. (Chapter 0.4: प्रत्येक level, खालच्याचं फक्त handle
+धरतो.)
+
+आता धंद्याची नजर लावा. जिथे protocol खुला असतो, तिथे कोणीही
+दुकान उघडू शकतो: email चे नियम खुले, म्हणून हजारो email
+companies. जिथे नियम एका company चे असतात, तिथे तिची हुकूमत:
+WhatsApp चे नियम Meta चेच आहेत, म्हणून WhatsApp ला जोडणारं
+दुसरं app बनूच शकत नाही. खुले नियम = स्पर्धा = ग्राहकाला स्वस्त.
+बंद नियम = किल्ला. दोघांचेही धंदे चालतात, पण कुठला खेळ खेळतोय हे
+कळायला हवं.
+
+## नाव
+
+आधीच-ठरलेले नियम: **protocol**. Web चा protocol: **HTTP**
+(सुरक्षित रूप: HTTPS, Chapter 5.6). Email चा: SMTP. नियमांची
+शिडी: **protocol stack** किंवा **layers**.
+
+## खऱ्या जगातलं एक example
+
+UPI हे protocol आहे, app नाही. NPCI ने नियम बनवले: पैसे
+मागण्याचा format काय, banks नी कसं बोलायचं, "झालं" कसं कळवायचं.
+नियम खुले ठेवले: म्हणून GPay, PhonePe, Paytm, कोणतीही bank,
+सगळे एकमेकांशी चालतात. तुम्ही GPay वरून PhonePe वाल्याला पैसे
+पाठवता आणि विचारही करत नाही, हे केवढं मोठं आश्चर्य आहे: दोन
+स्पर्धक companies च्या apps मध्ये पैसा बिनधोक वाहतो, कारण
+protocol समान आहे. आणि परिणाम जग बघतं आहे: महिन्याला 10 अब्ज+
+व्यवहार. नियम बनवणारा (NPCI) स्वतः मोठं "app" नाही, पण सगळ्या
+खेळाचा आधार तो आहे.
+
+## इथे लोक काय चुकीचं समजतात
+
+"Internet ची मालक कुठलीतरी company आहे (Google? Microsoft?)."
+नाही. Internet कोणाचीच मालमत्ता नाही, कारण तो नियमांचा समूह
+आहे, आणि नियम सगळ्यांकडे आहेत. Google च्या सेवा (search,
+YouTube) त्याच्या आहेत; रस्ता त्याचा नाही. हा फरक महत्त्वाचा
+आहे: सेवा बंद होऊ शकते, रस्ता बंद करायला जगभरचे नियम बदलावे
+लागतील. (कोण नियम बनवतं, हा प्रश्न Chapter 5.8 मध्ये.)
+
+## MAP वर
+
+N squared चा राक्षस परत आला होता, बघितलं का? UPI च्या आधी
+प्रत्येक app ला प्रत्येक bank शी वेगळा जोड बनवावा लागला असता:
+50 apps x 300 banks = 15,000 जोड. Protocol ने ते 350 केले
+(प्रत्येकाने फक्त नियमांशी जोडायचं). **जो n-squared ला protocol
+ने मारतो, तो पूर्ण बाजाराचा पायाभूत थर बनतो.** NPCI ने हे
+payment मध्ये केलं. तुमच्या 4-level नकाशावर: जिथे प्रत्येकाला
+प्रत्येकाशी जोडावं लागतं आहे आणि सगळे मेटाकुटीला आले आहेत, तिथे
+protocol ची जागा रिकामी आहे. अशी जागा दिसली तर नीट बघा: ती
+अब्जांची आहे.
+
+## स्वतः बघा (5 minute)
+
+Browser मध्ये कुठलीही website उघडा आणि पट्टीकडे लक्ष द्या:
+https:// ने सुरुवात. आता एक जुनी गोष्ट: काही वर्षांपूर्वी फक्त
+http:// असे (s नाही). आता browser http वरच्या site ला "Not
+secure" म्हणतो. एक अक्षर (s) म्हणजे एक पूर्ण protocol-बदल, आणि
+तो बदल जगभर का घडला हे Chapter 5.6 सांगेल. आज फक्त ते अक्षर
+दिसतं का बघा.
+
+## विचार करा
+
+1. (derivation) UPI सारखा खुला protocol बनवण्यात NPCI ला (आणि
+banks ना) काय मिळतं? त्यांनी बंद, आपल्या-मालकीची system का नाही
+बनवली, जशी Visa/Mastercard ने बनवली होती?
+
+> **उत्तर:** बंद system मध्ये प्रत्येक व्यवहारात fee मिळते (Visa
+> चा model: दुकानदाराकडून 1-2%). खुल्या system मध्ये वापर
+> स्फोटासारखा वाढतो: UPI फुकट ठेवला म्हणून चहावाल्यापासून
+> भाजीवाल्यापर्यंत सगळे आले, आणि 10 वर्षांत रोख-पैशाचा देश
+> digital झाला. NPCI सरकारी-सहकारी आहे, तिला fee पेक्षा व्याप्ती
+> हवी होती; आणि banks ना सगळ्या देशाचा पैसा system मध्ये आला हे
+> मिळालं. धंद्याची शिकवण: fee-प्रति-व्यवहार हा एक खेळ आहे, पूर्ण
+> बाजाराची पायाभरणी दुसरा. दुसरा खेळ मोठा असतो, पण तो खेळायला
+> लांब श्वास लागतो, आणि कमाई थेट नाही तर वरच्या थरांतून येते
+> (data, सेवा, दरवाजा). Google ने Android मध्ये हेच केलं होतं,
+> आठवतं? Pattern एकच आहे.
+
+
+# Chapter 5.5 [SPINE]: Numbers ऐवजी नावं
+
+Address झाले, नियम झाले. पण एक अडचण राहिली: server चा address
+142.250.183.14 आहे. तुम्ही "google.com" लिहिता. हे जमतं कसं?
+आणि मुळात, असं का?
+
+कारण सोपं आहे: माणसांना numbers लक्षात राहत नाहीत, नावं राहतात
+(तुम्ही मित्रांचे phone numbers पाठ केलेत का? नावं save केली).
+पण machines ना numbers लागतात. म्हणजे मध्ये एक PHONEBOOK लागते:
+नाव द्या, number घ्या.
+
+आता design तुम्ही करा. जगभरच्या कोटी websites साठी phonebook
+कशी बनवाल?
+
+पहिला विचार: एक मोठं register, एका जागी. Chapter 0.1 ची घंटा
+वाजली का? तेच प्रश्न: (1) ते register ठेवणाऱ्यावर सगळ्यांचा
+भरवसा लागेल, (2) जगभरचे प्रश्न एका जागी आले तर ती जागा मरेल,
+(3) ती जागा पडली तर सगळं internet "हरवेल" (रस्ते चालू, पण पत्ते
+नाहीत).
+
+म्हणून design वेगळं निवडलं गेलं, आणि ते तुम्ही post-address
+मध्ये आधीच बघितलं (Chapter 5.2): शिडी. नाव उलटं वाचा:
+google.com म्हणजे "com च्या मोठ्या वहीत, google ची नोंद."
+प्रत्येक थराचं register वेगळं: सगळ्यात वरचं register फक्त हे
+सांगतं की ".com" ची यादी कोण सांभाळतो; ते register सांगतं
+"google.com" ची माहिती कुठे; आणि तिथून number मिळतो. कोणा-एकाकडे
+सगळं नाही; प्रत्येकाकडे आपला थर. (Hierarchy: जिथे scale, तिथे
+यादी नाही, शिडी.)
+
+आणि वेगासाठी एक युक्ती: उत्तर मिळालं की तुमचा phone आणि जवळचे
+servers ते लक्षात ठेवतात (थोडा वेळ). परत परत शिडी चढावी लागत
+नाही. या लक्षात-ठेवण्याला cache म्हणतात; Part 5 मध्ये हा शब्द
+मोठा होणार आहे.
+
+आता सगळ्यात सुंदर भाग: नाव आणि number वेगळे असल्यामुळे एक
+स्वातंत्र्य मिळतं. Website ची machine बदला, शहर बदला, cloud
+बदला: number बदलेल, पण नाव तेच राहतं. ग्राहकाला कळतही नाही.
+दुकानाची इमारत बदलली, पाटी तीच राहिली. म्हणूनच नाव (domain) ही
+धंद्याची मालमत्ता आहे आणि machine भाड्याची वस्तू.
+
+## नाव
+
+नाव-ते-number phonebook यंत्रणा: **DNS** (Domain Name System).
+Website चं नाव: **domain**. लक्षात ठेवणं: **cache**. Domain
+विकत घेणं: registrar कडे (GoDaddy वगैरे), वर्षाला थोडी fee.
+
+## खऱ्या जगातलं एक example
+
+2016 मध्ये DNS ची सेवा देणाऱ्या एका मोठ्या company वर (Dyn)
+हल्ला झाला: लाखो hacked devices नी तिला प्रश्नांनी बुडवलं.
+परिणाम: Twitter, Netflix, Spotify "बंद" झाले, USA च्या अर्ध्या
+भागासाठी. Servers चालू होते, रस्ते चालू होते, पण phonebook
+उघडत नव्हती, म्हणून कोणी कोणाला शोधू शकत नव्हतं. त्या दिवशी
+जगाला कळलं की internet ची सगळ्यात boring दिसणारी यंत्रणा केवढी
+महत्त्वाची आहे. पायाभूत गोष्टी अशाच असतात: दिसत नाहीत, पडल्या
+की सगळं दिसतं.
+
+## इथे लोक काय चुकीचं समजतात
+
+"Website म्हणजे domain." नाही. Domain फक्त पाटी आहे; दुकान
+(server, code, data) वेगळीकडे आहे. म्हणून: domain विकत घेतला
+म्हणजे website झाली नाही (पाटी आली, दुकान नाही). आणि website
+"बंद पडली" तर कारण पाटी असू शकते (domain ची fee भरली नाही:
+वर्षाकाठी हजारो धंदे हे विसरून बंद पडतात!) किंवा दुकान असू शकतं
+(server पडला). दोन वेगळ्या गोष्टी, दोन वेगळी bills, दोन वेगळे
+प्रश्न.
+
+## MAP वर
+
+Domain हा इतिहासातला सगळ्यात स्वस्त सत्ता-कब्जा ठरला: 1990s
+मध्ये काही दूरदर्शी लोकांनी साधी नावं (business.com, cars.com)
+कवडीमोलात घेऊन ठेवली; पुढे त्याच नावांचे कोटी-कोटी रुपये झाले
+(business.com साधारण 345 कोटी रुपयांना विकला गेला). आज पण खेळ
+चालू आहे: चांगली नावं लोक आधीच घेऊन बसतात (squatting). Chapter
+5.2 ची शिकवण परत: ठरलेली मोजदाद + वाढती मागणी = धरून ठेवा. आणि
+तुमच्यासाठी एक व्यावहारिक ओळ: धंद्याची कल्पना पक्की नसेल तरी
+त्याचा domain 800 रुपयांत आधी घेऊन ठेवा; कल्पना पक्की होईपर्यंत
+नाव गेलेलं असतं.
+
+## स्वतः बघा (5 minute)
+
+आपल्या phone ची contact-यादी उघडा. हीच तुमची DNS आहे: नावं वर,
+numbers आत. मित्राने SIM बदलला तरी तुम्ही नावच वापरता, number
+तुम्हाला माहीतच नसतो. आता कल्पना करा contact-यादी उडाली: सगळे
+numbers चालू आहेत, पण तुम्ही कोणालाच phone लावू शकत नाही. DNS
+पडणं म्हणजे हेच, जगभरासाठी. नावं ही आठवण आहे; numbers फक्त
+रस्ते.
+
+## विचार करा
+
+1. (derivation) Domain वर्षाला फक्त 800-1500 रुपये का? एवढी
+महत्त्वाची मालमत्ता एवढी स्वस्त का? (विचार करा: किंमत कशाने
+ठरते, आणि इथे scarcity नेमकी कशात आहे?)
+
+> **उत्तर:** कारण नोंदणी स्वस्त आहे: register मध्ये एक ओळ लिहिणं,
+> ज्याचा खर्च जवळजवळ शून्य (Part 1: numbers लिहिणं फुकट).
+> Scarcity ओळीत नाही, नावात आहे: cars.com एकच असू शकतो. म्हणून
+> बाजार दोन थरांचा झाला: नोंदणी fee सगळ्यांना सारखी (स्वस्त), पण
+> चांगलं नाव ज्याच्याकडे आहे तो त्याची वाटेल ती किंमत मागतो: ही
+> scarcity ची खरी जागा. शिकवण परत तीच (Chapter 0.2): किंमत
+> मेहनतीवर नाही, दुर्मिळतेवर उभी असते. आणि दुर्मिळता कधी कधी
+> फक्त "पहिले पोहोचणं" एवढीच असते.
+
+
+# Chapter 5.6 [SPINE]: Public रस्त्यावर private बोलणं
+
+आता एक प्रश्न जो तुमच्या खिशाला थेट भिडतो. Chapter 5.3 ने
+सांगितलं: तुमचा message तुकड्यांनी, दुसऱ्यांच्या यंत्रांमधून
+प्रवास करतो: telecom चे routers, मधले carriers, कोण-कोण. आणि
+तुम्ही त्या रस्त्याने काय पाठवता? Bank चा password. Card चा
+number. खाजगी photo.
+
+Postcard आठवा: postman वाचू शकतो, कारण लिफाफा नाही. तुमचे
+packets पण असेच आहेत, जर काही केलं नाही तर: रस्त्यामधला
+प्रत्येकजण वाचू शकतो. मग उपाय? लिफाफा लागतो. पण कागदी लिफाफा
+नाही; गणिताचा.
+
+पहिला विचार सोपा आहे: एक गुप्त किल्ली ठरवा (समजा: प्रत्येक अक्षर
+3 ने पुढे सरकवा). मी कुलूप लावतो, तू उघड. मधला माणूस फक्त कचरा
+बघतो. हे जुनं तंत्र आहे (Caesar पासून World War पर्यंत), आणि हे
+काम करतं... एक भयानक अडचण सोडून: **किल्ली त्याच्यापर्यंत
+पोहोचवायची कशी?** रस्ता तर public आहे! किल्ली रस्त्याने पाठवली
+तर मधला माणूस तीच उचलेल. किल्लीसाठी भेटावंच लागेल... पण internet
+वर तुम्ही Amazon ला कधी भेटला आहात का? हा प्रश्न 1970s पर्यंत
+न-सुटणारा मानला जायचा.
+
+मग एक कल्पना आली जिच्यावर आज सगळं online जग उभं आहे. अशी
+कुलूप-यंत्रणा बनवली गेली ज्यात किल्ल्या दोन असतात, जोडीने:
+
+**एक किल्ली कुलूप लावते (public किल्ली).** ही तुम्ही जगाला
+वाटता, ओरडून सांगता: "माझी कुलूप-किल्ली ही घ्या!"
+
+**दुसरी किल्ली उघडते (private किल्ली).** ही फक्त तुमच्याकडे.
+कधीच, कोणालाच जात नाही.
+
+आता जादू बघा: Amazon आपली public किल्ली सगळ्यांना देतो. तुम्ही
+तुमचा card number त्या किल्लीने कुलूपबंद करता आणि पाठवता.
+रस्त्यामधले सगळे बघतात: कचरा. उघडू फक्त Amazon शकतो, कारण
+उघडणारी किल्ली फक्त त्याच्याकडे. **किल्ली पाठवायची गरजच संपली.**
+कुलूप-किल्ली उघड-किल्लीपासून गणिताने बनवता येते, पण उलटा रस्ता
+(कुलूप-किल्लीवरून उघड-किल्ली काढणं) इतका अवघड आहे की जगातल्या
+सगळ्या machines मिळून पण हजारो वर्षांत जमणार नाही (Part 1 ची
+आठवण: मोठे numbers; इथे ते ढाल बनले आहेत).
+
+Browser मधला https आणि कुलूप-icon म्हणजे हेच: तुमच्या आणि त्या
+site च्या मध्ये ही यंत्रणा चालू आहे. आणि WhatsApp चं "end-to-end
+encrypted" म्हणजे एक पाऊल पुढे: किल्ल्या फक्त तुमच्या आणि
+मित्राच्या phone वर; मधली company पण वाचू शकत नाही. रस्ता
+त्यांचा, लिफाफा तुमचा.
+
+## नाव
+
+लिफाफा-गणिताला **encryption** म्हणतात. दोन-किल्ली यंत्रणा:
+**public key encryption**. Web ची सुरक्षित वाहतूक: **HTTPS**.
+फक्त-दोन-टोकांजवळ-किल्ल्या: **end-to-end encryption**. आणि "ही
+site खरीच ती आहे" हे प्रमाणित करणारा दाखला: **certificate**
+(कुलूप-icon च्या मागचा कागद).
+
+## खऱ्या जगातलं एक example
+
+UPI च्या प्रत्येक व्यवहारात ही यंत्रणा काम करते आहे: तुमचा PIN
+कधीच उघडा प्रवास करत नाही. आणि हे फक्त सुरक्षा नाही, आर्थिक
+पाया आहे: लोक online card/PIN टाकायला तयार झाले कारण हे गणित
+त्यांच्या बाजूने उभं आहे. Encryption नसतं तर e-commerce नसता,
+UPI नसता, online banking नसती. भारताची digital economy या एका
+गणिती कल्पनेवर उभी आहे जिचं patent कधी कोणीच घेतलं नाही.
+
+## इथे लोक काय चुकीचं समजतात
+
+"कुलूप-icon दिसतो म्हणजे site भरवशाची." नाही. कुलूप एवढंच सांगतं
+की रस्ता सुरक्षित आहे: मधला कोणी वाचू शकत नाही. पण पलीकडचा
+माणूस चोर असू शकतो! Scammer पण https site बनवतो (fee: 0 रुपये).
+कुलूप म्हणजे "बोलणी खाजगी आहेत"; "समोरचा खरा आहे" हा वेगळा
+प्रश्न, आणि तो तुम्हालाच सोडवायचा असतो: नाव नीट वाचा (amaz0n?),
+घाई करणाऱ्यावर शंका घ्या. रस्ता सुरक्षित, प्रवासी तपासा.
+
+## MAP वर
+
+कोण कमावतं: certificates देणारा एक छोटा उद्योग आहे, पण खरा पैसा
+अलीकडे आहे: encryption मुळे जो भरवसा बनला, त्यावर अब्जा-खर्वांचा
+e-commerce उभा राहिला. हे pattern नीट बघा, तुमच्या नकाशासाठी
+महत्त्वाचं आहे: **Level 3 ची एक boring, न-दिसणारी यंत्रणा
+(encryption) Level 2 च्या पूर्ण नव्या बाजाराला (online विक्री)
+जन्म देते.** पायाभूत थर कमावतो त्यापेक्षा, तो वर काय उभं राहू
+देतो त्यात मोठी कमाई असते. AI मध्ये हेच शोधा: AI कुठला नवीन
+भरवसा / नवीन बाजार उभा करू देतो?
+
+## स्वतः बघा (5 minute)
+
+Browser मध्ये bank ची site उघडा, पट्टीत कुलूप-icon वर click
+करा: "Connection is secure" आणि certificate ची माहिती दिसेल:
+कोणाला दिला, कधी संपतो. आता एक http (s नाही) site उघडण्याचा
+प्रयत्न करा: browser लाल इशारा देईल "Not secure". तुम्ही आता तो
+इशारा वाचू शकता: "या रस्त्यावरचे packets उघडे आहेत, postcard
+सारखे."
+
+## विचार करा
+
+1. (derivation) सरकारांना कधी कधी वाटतं: "encryption मध्ये आम्हाला
+एक गुप्त मागचा दरवाजा (backdoor) द्या, फक्त गुन्हेगार
+पकडण्यासाठी." तंत्रज्ञानाच्या बाजूने यात काय अडचण आहे? (विचार
+करा: दरवाजा "फक्त चांगल्या लोकांसाठी" असू शकतो का?)
+
+> **उत्तर:** गणिताला हेतू कळत नाही. Backdoor म्हणजे यंत्रणेत एक
+> कमजोरी मुद्दाम ठेवणं; ती कमजोरी police ला पण उघडते आणि चोराला
+> पण, एकदा सापडली की. आणि "फक्त सरकारजवळ किल्ली" म्हणजे जगातली
+> सगळ्यात मोठी चोरी-लायक वस्तू एका जागी: ती जागा हल्ली होणारच.
+> म्हणून तंत्रज्ञ म्हणतात: दरवाजा अर्धा उघडा असू शकत नाही; उघडा
+> किंवा बंद. हा वाद (privacy vs surveillance) जगभर चालू आहे आणि
+> तुम्हाला तो आता दोन्ही बाजूंनी समजतो: सरकारची गरज खरी आहे, पण
+> गणिती किंमत पण खरी आहे. अशा जागी "सोपं उत्तर सांगणारा" माणूस
+> एखादी बाजू विकतो आहे, हे ओळखा.
+
+
+# Chapter 5.7 [SPINE]: Internet म्हणजे नक्की काय
+
+आता सगळे तुकडे जोडता येतात. "Internet" हा शब्द रोज हजार वेळा
+वापरता; आज त्याला डोळ्यांनी बघू.
+
+सुरुवात तुमच्या घरातून. तुमचा phone WiFi ने router ला जोडलेला
+(Chapter 5.2). Router telecom company च्या (Jio/Airtel च्या)
+जाळ्याला: तुमच्या भागातल्या खांबावरच्या किंवा जमिनीतल्या fibre
+तारेला. ती तार शहराच्या मोठ्या केंद्राला. तिथून देशभरच्या
+मोठ्या रस्त्यांना. हे झालं एका company चं जाळं.
+
+पण Jio चा ग्राहक Airtel च्या ग्राहकाला message पाठवतो, तेव्हा?
+दोघांची जाळी वेगळी आहेत. उत्तर: companies नी आपली जाळी ठरावीक
+जागी एकमेकांना जोडली आहेत (मोठ्या शहरांमधली "exchange" केंद्रं),
+आणि तिथे सौदेबाजी आहे: कधी "तू माझा traffic ने, मी तुझा"
+(बरोबरी), कधी लहान जाळं मोठ्याला भाडं देतं. **Internet म्हणजे
+हेच: हजारो वेगवेगळ्या मालकांची जाळी, एकमेकांना जोडलेली, समान
+नियमांनी (protocols, Chapter 5.4) बोलणारी.** नाव पण तेच सांगतं:
+inter-net, जाळ्यांमधला-जोड. मालक कोणीच नाही; सहभागी सगळे.
+
+आणि देशाबाहेर? इथे एक धक्का बसेल: समुद्राखाली. जगातला 99%
+आंतरदेशीय data समुद्रातल्या cables मधून जातो: बोटा-एवढ्या जाड
+काचेच्या तारा, लाखो km, समुद्रतळाशी पसरलेल्या. (Satellite? 1%
+पेक्षा कमी: महाग आणि दूर, म्हणजे latency, Chapter 2.3.) भारतात
+या cables किनाऱ्यावर येतात: Mumbai आणि Chennai ही मोठी
+"landing" ठिकाणं. एक cable कापली गेली (जहाजाचा नांगर, भूकंप) की
+पूर्ण देशाचं internet मंद होतं: हे घडलेलं आहे, परत घडेल.
+
+एकदा हे दिसलं की "cloud" आणि "WiFi" ची हवा-हवाई भाषा उडते:
+internet म्हणजे काच, तांबं, खांब, समुद्री cables, buildings
+मधले routers. वस्तू आहे, जादू नाही. आणि वस्तू आहे म्हणून तिची
+मालकी आहे, किंमत आहे, राजकारण आहे: cables कोण टाकतो, exchange
+कुठे आहे, हे सगळे सत्तेचे प्रश्न आहेत.
+
+## नाव
+
+Internet चा रस्ता विकणारी company: **ISP** (Internet Service
+Provider: Jio, Airtel, BSNL). समुद्री तार: **undersea cable**
+(किंवा submarine cable). जाळी जोडण्याची सौदेबाजी: **peering**.
+तुमच्या घरापर्यंतचा शेवटचा तुकडा: **last mile** (हा सगळ्यात
+महाग तुकडा असतो: प्रत्येक घराला वेगळी तार!).
+
+## खऱ्या जगातलं एक example
+
+Jio ची गोष्ट परत घ्या, आता पूर्ण नजरेने. 2016 च्या आधी भारतात
+data महाग होता कारण जाळं लहान होतं. Jio ने काय केलं: 2.5 लाख
+कोटी लावून नवं जाळं बनवलं: fibre, towers, समुद्री cables चे
+हिस्से. मग data जवळजवळ फुकट केला (Chapter 3.7: दरवाजा-चाल).
+परिणाम: देश online आला, आणि Jio दरवाजाचा मालक. पण मूळ गोष्ट ही:
+त्यांनी सेवा नाही, रस्ता बनवला. रस्ता बनवायला वेळ आणि अब्जावधी
+लागतात, म्हणूनच तो कब्जा इतका टिकतो: स्पर्धकाला परत सगळे खांब
+उभे करावे लागतील.
+
+## इथे लोक काय चुकीचं समजतात
+
+"Internet satellite ने चालतं" (नाही: 99% समुद्री cables).
+"Cloud म्हणजे हवा" (नाही: cloud म्हणजे दुसऱ्याच्या buildings
+मधले computers, Part 5 मध्ये पूर्ण). "WiFi म्हणजे internet"
+(नाही: WiFi फक्त तुमच्या घरातला शेवटचा 10 meter चा बिनतारी
+तुकडा आहे; पुढे सगळं तार आहे). तिन्ही चुका एकाच मुळातून:
+internet दिसत नाही, म्हणून लोक त्याला हवा समजतात. आता तुम्हाला
+ते दिसतं: काच आणि तांबं.
+
+## MAP वर
+
+रुपयाचा रस्ता, पूर्ण साखळी: तुमचे महिन्याचे 300 (Level 1 पासून
+घुसले) -> Jio (ISP) -> Jio cable-companies ना आणि यंत्र-
+विकणाऱ्यांना (Nokia, Ericsson, Cisco) -> ते chip वाल्यांना
+(TSMC!). आणि उलटी दिशा पण आहे: Google/Meta आता स्वतः समुद्री
+cables टाकतात (2Africa, Blue-Raman: भारताला जोडणाऱ्या), कारण
+भाडं देणं महाग पडतं आणि रस्ता आपल्या हातात असावा वाटतो. जेव्हा
+सेवा-company रस्ता विकत घेते, तेव्हा समजा: रस्ता हीच खरी सत्ता
+होती. (AI मध्ये आज हेच: model-companies chips आणि data-centers
+विकत घेतायत. Pattern ओळखा.)
+
+## स्वतः बघा (5 minute)
+
+Laptop वर उघडा: submarinecablemap.com (फुकट आहे). Mumbai वर
+zoom करा: दहा-पंधरा cables किनाऱ्याला येताना दिसतील, नावांसहित.
+प्रत्येक रेषा म्हणजे समुद्रतळाशी पडलेली खरी काच आहे, आणि तुमचा
+कालचा WhatsApp message कदाचित त्याच रेषेने America ला गेला
+होता. एकदा हा नकाशा बघितला की "internet" शब्द कधीच पूर्वीसारखा
+वाटणार नाही.
+
+## विचार करा
+
+1. (derivation) एक देश आपल्या देशापुरतं internet बंद करू शकतो
+(हे घडलं आहे). पण पूर्ण जगाचं internet कोणीही बंद करू शकत नाही.
+Design मधली कुठली गोष्ट हे दोन्ही सांगते?
+
+> **उत्तर:** देशातलं बंद शक्य आहे कारण देशाबाहेर जाणारे रस्ते
+> मोजके असतात: किनाऱ्यावरची landing ठिकाणं आणि मोठे ISPs;
+> सरकारने त्या मोजक्या गळ्या आवळल्या की देश वेगळा पडतो. पण
+> जगाचं बंद अशक्य, कारण केंद्रच नाही: हजारो जाळी, हजारो मालक,
+> कोणी-एक switch नाही. हे अपघाताने नाही, design ने आहे: internet
+> ची पायाभरणी अशा यंत्रणेसाठी झाली होती जी एक भाग पडला तरी चालेल
+> (packets नव्या रस्त्यांनी जातात, Chapter 5.3). शिकवण तुमच्या
+> नकाशासाठी: विकेंद्रित (decentralized) यंत्रणा मारायला अवघड
+> असते, पण तिच्यावर हुकूमत पण अवघड असते. केंद्रित यंत्रणा
+> कमवायला सोपी, मारायला पण सोपी. प्रत्येक platform हा सौदा करतो;
+> तुम्ही पण कराल.
+
+
+# Chapter 5.8 [DEPTH]: Internet चे नियम कोण बनवतं
+
+(DEPTH chapter. हा शेवटचा आहे आणि लहान आहे. याच्यानंतर
+"standard" हा शब्द बातम्यांमध्ये दिसला की तुम्हाला त्याच्या
+मागचा सत्ता-खेळ दिसेल.)
+
+Chapter 5.4 ने सांगितलं: internet म्हणजे नियम. Chapter 5.7 ने
+सांगितलं: मालक कोणीच नाही. मग एक विचित्र प्रश्न उरला: **नियम
+आहेत, पण राजा नाही. हे चालतं कसं? नियम बनवतं कोण?**
+
+उत्तर अजब आहे: काही boring संस्था, जगभरचे engineers, आणि खूप
+साऱ्या meetings. मुख्य तीन नावं:
+
+**IETF**: internet चे मूळ नियम (TCP, HTTP वगैरे) इथे घडतात.
+आणि याची पद्धत सुंदर आहे: कोणीही एक प्रस्ताव (proposal) लिहू
+शकतो, त्याला RFC म्हणतात. चर्चा होते, दोन गोष्टींनी प्रस्ताव
+जिंकतो: सहमती आणि चालणारा code. सदस्यता नाही, fee नाही, देशाचा
+veto नाही. 1969 पासून हे असं चालतं आहे.
+
+**ICANN**: नावं आणि numbers ची वाटणी (domains, IP blocks)
+सांभाळणारी संस्था. .com कोण चालवेल, नवे TLDs (.shop, .ai) कधी
+येतील, हे इथे ठरतं.
+
+**W3C आणि browser-companies**: web चे नियम (HTML वगैरे). आणि
+इथे एक खरं सत्य: कागदावर नियम समिती बनवते, पण व्यवहारात नियम ते
+होतात जे मोठे browsers (Chrome!) खरे लागू करतात. Google च्या
+browser कडे 60%+ वाटा आहे, म्हणजे Google च्या निर्णयांना
+नियमांची ताकद आपोआप येते.
+
+म्हणजे चित्र असं: नियम खुले आहेत, प्रक्रिया लोकशाहीसारखी आहे,
+पण ताकद बरोबर वाटलेली नाही: ज्या company कडे वापरकर्ते (users)
+जास्त, तिच्या आवाजाला वजन जास्त. म्हणून मोठ्या companies या
+boring meetings मध्ये आपले पगारी engineers पाठवतात: standard
+च्या table वर बसणं म्हणजे भविष्याचा बाजार आखणं.
+
+हे लांब वाटलं तर एक भारतीय उदाहरण सगळं सांगेल: UPI चे नियम NPCI
+बनवते: आणि म्हणूनच भारताने "आपला protocol आपण बनवणं" (DPI: UPI,
+Aadhaar-stack, ONDC) हा राष्ट्रीय खेळ केला आहे. नियम बनवणारा
+बाजार आखतो; नियम घेणारा बाजारात फक्त खेळतो.
+
+## नाव
+
+सर्वमान्य नियम: **standard**. प्रस्तावाची पद्धत: **RFC**.
+संस्था: **IETF** (मूळ नियम), **ICANN** (नावं/numbers), **W3C**
+(web). भारताचा सरकारी-protocol खेळ: **DPI** (Digital Public
+Infrastructure).
+
+## खऱ्या जगातलं एक example
+
+SMS आठवा: तो पण एक standard होता, telecom वाल्यांनी बनवलेला.
+WhatsApp आलं आणि SMS ला खाऊन टाकलं: कारण WhatsApp चं "standard"
+एका-company चं होतं, वेगाने बदलता येत होतं, आणि फुकट होतं. मग
+Google ने SMS चा वारसदार (RCS) पुढे ढकलला, Apple ने वर्षानुवर्षं
+तो नाकारला (iMessage चा किल्ला!), आणि 2024 मध्ये अखेर घेतला. या
+पूर्ण लढाईत ग्राहक कुठेच नव्हता; लढाई standards ची होती, कारण जो
+standard जिंकतो त्याची सेवा "default" होते, आणि default होणं
+म्हणजे अब्जावधी ग्राहक फुकट मिळणं.
+
+## इथे लोक काय चुकीचं समजतात
+
+"कुठलीतरी जागतिक संस्था (UN सारखी) internet चालवते." नाही. UN
+ची एक संस्था (ITU) जुनं telecom सांभाळते, पण internet चे खरे
+नियम वरच्या खुल्या संस्थांमध्ये घडतात, आणि काही देश (ज्यांना
+केंद्रित नियंत्रण हवं) हे बदलण्याचा प्रयत्न सतत करतात: "internet
+ITU खाली आणा" हे त्यांचं मागणं असतं. म्हणजे "कोण नियम बनवतं" हा
+प्रश्न संपलेला नाही; ती एक चालू लढाई आहे, आणि तिच्यात भारत एक
+मोठा आवाज आहे (अब्जावधी users + स्वतःचं DPI).
+
+## MAP वर
+
+तुमच्या 4-level नकाशावर ही शेवटची ओळ: **Level 3 च्या खाली अजून
+एक माळा आहे: नियम. जो नियम बनवतो, तो Level 3 च्या सगळ्या
+खेळांची जमीन आखतो.** आणि नियम बनवण्यात पैसा थेट नाही (IETF
+फुकट, NPCI ना-नफा), पण नियमांच्या वर उभे राहणारे बाजार अब्जांचे
+असतात, आणि नियम-बनवणाऱ्याच्या देशाला/company ला त्या बाजारात
+घरचं मैदान मिळतं. म्हणून: बातम्यांमध्ये "standard", "protocol",
+"regulation" हे शब्द दिसले की थांबा आणि वाचा. कंटाळवाणे वाटतात,
+पण तिथे पुढच्या दशकाची मालकी ठरते आहे. AI मध्ये हीच लढाई आत्ता
+चालू आहे: AI चे नियम कोण बनवणार? (Book 2 मध्ये भेटेल.)
+
+## स्वतः बघा (5 minute)
+
+Google मध्ये search करा: "RFC 1149". उघडेल तो एक खरा, अधिकृत
+RFC आहे: कबुतरांवरून internet packets पाठवण्याचा (विनोदी)
+प्रस्ताव, 1 April ला लिहिलेला. आणि लोकांनी तो 2001 मध्ये खरा
+करूनही दाखवला (9 packets, 1 कबुतर). हे बघण्याचा उद्देश: RFC
+किती खुले आहेत हे जाणवणं: विनोद पण चालतोय, आणि त्याच पद्धतीने
+जगाचं सगळं internet पण घडलं आहे. खुली प्रक्रिया अशी दिसते.
+
+## विचार करा
+
+1. (derivation) भारताने UPI बनवला आणि तो Singapore, UAE, France
+अशा देशांमध्ये पण नेतो आहे. "Protocol निर्यात करणं" (export)
+मध्ये भारताला काय मिळतं? पैसा तर थेट मिळत नाही. (Chapter 5.4 ची
+NPCI-शिकवण पुढे न्या.)
+
+> **उत्तर:** जमीन मिळते. ज्या देशात UPI-धर्तीचे नियम लागले, तिथे
+> भारतीय banks, apps, आणि कौशल्य (ज्या लोकांना हे चालवता येतं)
+> घरच्या मैदानावर खेळतात. आणि जागतिक व्यवहारात वजन मिळतं: आज
+> पैसे पाठवण्याचे जागतिक नियम Visa/Mastercard/SWIFT (पश्चिमी)
+> आखतात; प्रत्येक देश जो UPI घेतो, तो त्या एकाधिकाराला थोडा
+> कमजोर करतो आणि नियम-table वर भारताची खुर्ची मोठी करतो. हे
+> Level 3 चं भू-राजकारण (geopolitics) आहे: 20व्या शतकात देश तेल
+> आणि बंदरांसाठी लढले; 21व्या मध्ये cables, chips आणि protocols
+> साठी लढतात. तुम्ही जो नकाशा बनवला आहे (4 levels), तो देशांच्या
+> पातळीवर पण तंतोतंत लागतो: हीच त्याची शेवटची परीक्षा.
+
+
+# PART 3 चा शेवट: नकाशा आणि पुढचं पाऊल
+
+## जे तुमच्याकडे आता आहे
 
 ```
-cache             uttar lakshat thevne, parat shidi na chadhnyasathi (5.5)
-certificate       "hi site kharich ti aahe" cha dakhla (5.6)
-client / server   magnari / denari machine (5.1)
-DNS               naav-to-number phonebook, shidi-rachnecha (5.5)
-domain            website che naav; bhadyachi nond, malmatta pati (5.5)
-DPI               Bharatacha sarkari-protocol khel: UPI, Aadhaar (5.8)
-encryption        ganiti lifafa; vachu fakt killi-wala shakto (5.6)
-end-to-end        killya fakt don tokanvar; madhli company pan andhali (5.6)
-HTTP / HTTPS      web cha protocol / tyache surakshit roop (5.4, 5.6)
-ICANN             naave ani numbers vaatnari sanstha (5.8)
-IETF / RFC        mul niyam banavnari sanstha / khula prastav (5.8)
-IP address        machine cha number-pattaa (IPv4 june, IPv6 nave) (5.2)
-ISP               internet-rasta viknari company: Jio, Airtel (5.7)
-last mile         tumchya ghara-paryantcha shevatcha (mahag) tukda (5.7)
-latency           ek pheraa kiti vel; bandwidth peksha vegli goshta (5.3)
-n squared         jod sankhyechya vargane vadhtat hi problem (5.1)
-network           jodlelya machines cha jaal (5.1)
-packet            message cha numbered, swatantra tukda (5.3)
-peering           don jaalanchi "tu majha, mi tujha" saudebaji (5.7)
-private key       ughadnari killi; kadhich konala nahi (5.6)
-protocol          aadhich tharlele bolnyanche niyam (5.4)
-public key        kulup laavnari killi; jagala vaatleli (5.6)
-router            packets pudhe dhakalnara chowk; gharcha watchman (5.2)
-standard          sarva-manya niyam; banavnara bajar aakhto (5.8)
-TCP / UDP         barobar-pana-wale / vega-wale niyam (5.3)
-undersea cable    samudri kach-taar; jagacha 99% data ithun (5.7)
+CLIENT / SERVER   मागणारी machine / देणारी machine;
+                  मालमत्ता server च्या बाजूला असते
+N SQUARED         प्रत्येकाला प्रत्येकाशी जोडणं अशक्य; जो हे
+                  चौक/protocol ने सोडवतो तो मालक होतो
+IP ADDRESS        machine चा number-पत्ता; public vs private
+                  (router = building चा watchman)
+PACKETS           message चे numbered तुकडे, स्वतंत्र प्रवास;
+                  "connection" हा फक्त भास आहे
+TCP vs UDP        बरोबरपणा vs वेग: file vs video call
+PROTOCOL          आधीच ठरलेले नियम; internet म्हणजे वस्तू
+                  नाही, नियमांचा समूह (UPI = protocol!)
+DNS               नाव -> number ची phonebook; शिडी + cache;
+                  domain = पाटी, server = दुकान
+ENCRYPTION        public रस्त्यावर गणिती लिफाफा; दोन किल्ल्या
+                  (public कुलूप लावते, private उघडते);
+                  कुलूप = रस्ता सुरक्षित, माणूस नाही!
+INTERNET          हजारो मालकांची जाळी, जोडलेली; 99% समुद्री
+                  cables; केंद्र नाही, मालक नाही
+NIYAM             IETF/ICANN/W3C + मोठ्या companies; standard
+                  बनवणारा बाजार आखतो (भारताचं DPI)
+```
+
+## एक परीक्षा, स्वतःसाठी
+
+पुस्तक न उघडता, बोलून उत्तर द्या:
+
+1. WhatsApp message थेट मित्राच्या phone ला का जात नाही?
+2. Video call मध्ये आवाज robotic का होतो, पण file download
+   मध्ये file कधीच अर्धवट का येत नाही?
+3. कुलूप-icon (https) काय सांगतो आणि काय सांगत नाही?
+4. UPI ला "protocol" का म्हणावं, app का नाही? आणि त्याने
+   भारताला काय दिलं?
+
+अडाल तर: 1 -> 5.1, 2 -> 5.3, 3 -> 5.6, 4 -> 5.4/5.8.
+
+## Part 4 मध्ये काय आहे
+
+Server ला कोटी लोकांचा data मिळतो. तो ठेवायचा कुठे? एका
+कोटीमधून एक नोंद शोधायची कशी, डोळ्याच्या पापणी लवण्याच्या आत?
+दोन लोक एकाच वेळेस एक गोष्ट बदलतात तेव्हा काय होतं? आणि सगळा
+data उडाला तर? Part 4: DATA आणि आठवणी: database चं जग, जिथे
+प्रत्येक मोठ्या company ची खरी संपत्ती पडलेली असते.
+
+# PART 3 चा MINI-GLOSSARY
+
+```
+cache             उत्तर लक्षात ठेवणं, परत शिडी न चढण्यासाठी (5.5)
+certificate       "ही site खरीच ती आहे" चा दाखला (5.6)
+client / server   मागणारी / देणारी machine (5.1)
+DNS               नाव-ते-number phonebook, शिडी-रचनेची (5.5)
+domain            website चं नाव; भाड्याची नोंद, मालमत्ता-पाटी (5.5)
+DPI               भारताचा सरकारी-protocol खेळ: UPI, Aadhaar (5.8)
+encryption        गणिती लिफाफा; वाचू फक्त किल्लीवाला शकतो (5.6)
+end-to-end        किल्ल्या फक्त दोन टोकांवर; मधली company पण आंधळी (5.6)
+HTTP / HTTPS      web चा protocol / त्याचं सुरक्षित रूप (5.4, 5.6)
+ICANN             नावं आणि numbers वाटणारी संस्था (5.8)
+IETF / RFC        मूळ नियम बनवणारी संस्था / खुला प्रस्ताव (5.8)
+IP address        machine चा number-पत्ता (IPv4 जुना, IPv6 नवा) (5.2)
+ISP               internet-रस्ता विकणारी company: Jio, Airtel (5.7)
+last mile         तुमच्या घरापर्यंतचा शेवटचा (महाग) तुकडा (5.7)
+latency           एक फेरा किती वेळ; bandwidth पेक्षा वेगळी गोष्ट (5.3)
+n squared         जोड संख्येच्या वर्गाने वाढतात ही अडचण (5.1)
+network           जोडलेल्या machines चं जाळं (5.1)
+packet            message चा numbered, स्वतंत्र तुकडा (5.3)
+peering           दोन जाळ्यांची "तू माझा, मी तुझा" सौदेबाजी (5.7)
+private key       उघडणारी किल्ली; कधीच कोणाला नाही (5.6)
+protocol          आधीच ठरलेले बोलण्याचे नियम (5.4)
+public key        कुलूप लावणारी किल्ली; जगाला वाटलेली (5.6)
+router            packets पुढे ढकलणारा चौक; घरचा watchman (5.2)
+standard          सर्वमान्य नियम; बनवणारा बाजार आखतो (5.8)
+TCP / UDP         बरोबरपणा-वाले / वेग-वाले नियम (5.3)
+undersea cable    समुद्री काच-तार; जगाचा 99% data इथून (5.7)
 ```

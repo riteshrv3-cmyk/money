@@ -1,119 +1,106 @@
-# Chapter 5.8 [DEPTH]: Internet che niyam kon banavto
+# Chapter 5.8 [DEPTH]: Internet चे नियम कोण बनवतं
 
-(DEPTH chapter. Ha shevatcha aahe ani lahaan aahe. Yachya
-nantar "standard" ha shabd batmyan-madhe disla ki tumhala
-tyachya magcha satta-khel disel.)
+(DEPTH chapter. हा शेवटचा आहे आणि लहान आहे. याच्यानंतर
+"standard" हा शब्द बातम्यांमध्ये दिसला की तुम्हाला त्याच्या
+मागचा सत्ता-खेळ दिसेल.)
 
-Chapter 5.4 ni sangitla: internet mhanje niyam. Chapter 5.7
-ni sangitla: malak konich nahi. Mag ek vichitra prashna urla:
-**niyam aahet, pan raja nahi. He chalta kasa? Niyam BANAVTO
-kon?**
+Chapter 5.4 ने सांगितलं: internet म्हणजे नियम. Chapter 5.7 ने
+सांगितलं: मालक कोणीच नाही. मग एक विचित्र प्रश्न उरला: **नियम
+आहेत, पण राजा नाही. हे चालतं कसं? नियम बनवतं कोण?**
 
-Uttar ajab aahe: kahi boring sansthaa, jagbharche engineers,
-ani khup saarya meetings. Mukhya teen naave:
+उत्तर अजब आहे: काही boring संस्था, जगभरचे engineers, आणि खूप
+साऱ्या meetings. मुख्य तीन नावं:
 
-**IETF**: internet che mul niyam (TCP, HTTP vagaire) ithe
-ghadtat. Ani yachi paddhat sundar aahe: KONI-HI ek prastav
-(proposal) lihu shakto, tyala RFC mhantat. Charcha hote,
-DON goshtinni prastav jinkto: sahmati ani CHALNARA code.
-Sadasyata nahi, fee nahi, deshacha veto nahi. 1969 pasun
-he ase chalta aahe.
+**IETF**: internet चे मूळ नियम (TCP, HTTP वगैरे) इथे घडतात.
+आणि याची पद्धत सुंदर आहे: कोणीही एक प्रस्ताव (proposal) लिहू
+शकतो, त्याला RFC म्हणतात. चर्चा होते, दोन गोष्टींनी प्रस्ताव
+जिंकतो: सहमती आणि चालणारा code. सदस्यता नाही, fee नाही, देशाचा
+veto नाही. 1969 पासून हे असं चालतं आहे.
 
-**ICANN**: naave ani numbers chi vaatni (domains, IP blocks)
-sambhaalnari sanstha. .com kon chalvel, nave TLDs (.shop,
-.ai) kadhi yetil, he ithe tharte.
+**ICANN**: नावं आणि numbers ची वाटणी (domains, IP blocks)
+सांभाळणारी संस्था. .com कोण चालवेल, नवे TLDs (.shop, .ai) कधी
+येतील, हे इथे ठरतं.
 
-**W3C ani browser-companies**: web che niyam (HTML vagaire).
-Ani ithe ek khara sach: kaagdavar niyam samiti banavte, pan
-VYAVHARAT niyam te hotat je mothe browsers (Chrome!) khare
-laagu kartat. Google chya browser kade 60%+ vaata aahe,
-mhanje Google chya nirnayanna niyamanchi takat aapoaap yete.
+**W3C आणि browser-companies**: web चे नियम (HTML वगैरे). आणि
+इथे एक खरं सत्य: कागदावर नियम समिती बनवते, पण व्यवहारात नियम ते
+होतात जे मोठे browsers (Chrome!) खरे लागू करतात. Google च्या
+browser कडे 60%+ वाटा आहे, म्हणजे Google च्या निर्णयांना
+नियमांची ताकद आपोआप येते.
 
-Mhanje chitra ase: niyam khule aahet, prakriya lokshahi-
-sarkhi aahe, PAN takat barabar vaatleli nahi: jya company
-kade vaapar-kartya (users) jaast, tichya aawajala vajan
-jaast. Mhanun mothya companies ya boring meetings madhe
-aaple pagaari engineers pathavtat: standard chya table var
-basne mhanje bhavishyacha bajar aakhne.
+म्हणजे चित्र असं: नियम खुले आहेत, प्रक्रिया लोकशाहीसारखी आहे,
+पण ताकद बरोबर वाटलेली नाही: ज्या company कडे वापरकर्ते (users)
+जास्त, तिच्या आवाजाला वजन जास्त. म्हणून मोठ्या companies या
+boring meetings मध्ये आपले पगारी engineers पाठवतात: standard
+च्या table वर बसणं म्हणजे भविष्याचा बाजार आखणं.
 
-He lamb vaatla tar ek Bharatiy udaharan sagla sangel: UPI
-che niyam NPCI banavte: ani mhanunach Bharat ne "aapla
-protocol aapan banavne" (DPI: UPI, Aadhaar-stack, ONDC) ha
-rashtriya khel kela aahe. Niyam banavnara bajar aakhto;
-niyam gheNARA bajarat fakt khelto.
+हे लांब वाटलं तर एक भारतीय उदाहरण सगळं सांगेल: UPI चे नियम NPCI
+बनवते: आणि म्हणूनच भारताने "आपला protocol आपण बनवणं" (DPI: UPI,
+Aadhaar-stack, ONDC) हा राष्ट्रीय खेळ केला आहे. नियम बनवणारा
+बाजार आखतो; नियम घेणारा बाजारात फक्त खेळतो.
 
-## NAAV
+## नाव
 
-Sarva-manya niyam: **standard**. Prastavachi paddhat: **RFC**.
-Sanstha: **IETF** (mul niyam), **ICANN** (naave/numbers),
-**W3C** (web). Bharatacha sarkari-protocol khel: **DPI**
-(Digital Public Infrastructure).
+सर्वमान्य नियम: **standard**. प्रस्तावाची पद्धत: **RFC**.
+संस्था: **IETF** (मूळ नियम), **ICANN** (नावं/numbers), **W3C**
+(web). भारताचा सरकारी-protocol खेळ: **DPI** (Digital Public
+Infrastructure).
 
-## KHARYA JAGATLA EK EXAMPLE
+## खऱ्या जगातलं एक example
 
-SMS aathva: to pan ek standard hota, telecom-walyanni banav-
-lela. WhatsApp aala ani SMS la khaun taakla: karan WhatsApp
-cha "standard" ek-companycha hota, vegane badalta yet hota,
-ani fukat hota. Mag Google ni SMS cha varasdaar (RCS) pudhe
-dhakalla, Apple ne varsha-n-varshe to NAKARLA (iMessage cha
-kila!), ani 2024 madhe akher ghetla. Ya purna ladhait grahak
-kuthech navhta; ladhai standards chi hoti, karan jo standard
-jinkto tyachi seva "default" hote, ani default hone mhanje
-arabo grahak fukat milne.
+SMS आठवा: तो पण एक standard होता, telecom वाल्यांनी बनवलेला.
+WhatsApp आलं आणि SMS ला खाऊन टाकलं: कारण WhatsApp चं "standard"
+एका-company चं होतं, वेगाने बदलता येत होतं, आणि फुकट होतं. मग
+Google ने SMS चा वारसदार (RCS) पुढे ढकलला, Apple ने वर्षानुवर्षं
+तो नाकारला (iMessage चा किल्ला!), आणि 2024 मध्ये अखेर घेतला. या
+पूर्ण लढाईत ग्राहक कुठेच नव्हता; लढाई standards ची होती, कारण जो
+standard जिंकतो त्याची सेवा "default" होते, आणि default होणं
+म्हणजे अब्जावधी ग्राहक फुकट मिळणं.
 
-## ITHE LOK KAY CHUKICHE SAMAJTAT
+## इथे लोक काय चुकीचं समजतात
 
-"Kuthli tari jagtik sanstha (UN sarkhi) internet chalavte."
-Nahi. UN chi ek sanstha (ITU) juni telecom sambhaalte, pan
-internet che khare niyam varchya khulya sansthaan-madhe
-ghadtat, ani kahi desh (jyanna kendrit niyantran have) he
-badlaycha prayatna satat kartat: "internet ITU khali aana"
-he tyanche magne asta. Mhanje "kon niyam banavto" ha prashna
-samplela nahi; ti ek CHALU ladhai aahe, ani tichyat Bharat
-ek motha aawaj aahe (arabo users + swataha che DPI).
+"कुठलीतरी जागतिक संस्था (UN सारखी) internet चालवते." नाही. UN
+ची एक संस्था (ITU) जुनं telecom सांभाळते, पण internet चे खरे
+नियम वरच्या खुल्या संस्थांमध्ये घडतात, आणि काही देश (ज्यांना
+केंद्रित नियंत्रण हवं) हे बदलण्याचा प्रयत्न सतत करतात: "internet
+ITU खाली आणा" हे त्यांचं मागणं असतं. म्हणजे "कोण नियम बनवतं" हा
+प्रश्न संपलेला नाही; ती एक चालू लढाई आहे, आणि तिच्यात भारत एक
+मोठा आवाज आहे (अब्जावधी users + स्वतःचं DPI).
 
-## MAP VAR
+## MAP वर
 
-Tumchya 4-level naksha var hi shevatchi ol: **Level 3 chya
-khaali ajun ek maala aahe: NIYAM. Jo niyam banavto, to
-Level 3 chya sagLya khelanchi zameen aakhto.** Ani niyam
-banavnyat paisa THET nahi (IETF fukat, NPCI na-nafa), pan
-niyamanchya var ubhe rahnare bajar arabonche astat, ani
-niyam-banavnaryachya deshala/companyla tya bajarat ghar-cha
-maidaan milte. Mhanun: batmyan-madhe "standard", "protocol",
-"regulation" he shabd disle ki thamba ani vaacha. Kantalvane
-vaattat, pan tithe pudhchya dashakachi malki tharte aahe.
-AI madhe HICH ladhai aatta chalu aahe: AI che niyam kon
-banavnaar? (Book 2 madhe bhetel.)
+तुमच्या 4-level नकाशावर ही शेवटची ओळ: **Level 3 च्या खाली अजून
+एक माळा आहे: नियम. जो नियम बनवतो, तो Level 3 च्या सगळ्या
+खेळांची जमीन आखतो.** आणि नियम बनवण्यात पैसा थेट नाही (IETF
+फुकट, NPCI ना-नफा), पण नियमांच्या वर उभे राहणारे बाजार अब्जांचे
+असतात, आणि नियम-बनवणाऱ्याच्या देशाला/company ला त्या बाजारात
+घरचं मैदान मिळतं. म्हणून: बातम्यांमध्ये "standard", "protocol",
+"regulation" हे शब्द दिसले की थांबा आणि वाचा. कंटाळवाणे वाटतात,
+पण तिथे पुढच्या दशकाची मालकी ठरते आहे. AI मध्ये हीच लढाई आत्ता
+चालू आहे: AI चे नियम कोण बनवणार? (Book 2 मध्ये भेटेल.)
 
-## SWATAHA BAGHA (5 minute)
+## स्वतः बघा (5 minute)
 
-Google madhe search kara: "RFC 1149". Ughdel to ek KHARA,
-adhikrut RFC aahe: kabutaran-varun internet packets pathav-
-nyacha (vinodi) prastav, 1 April la lihilela. Ani lok ni to
-2001 madhe KHARA karun pan dakhavla (9 packets, 1 kabutar).
-He baghnyacha uddesh: RFC kiti khule aahet he janavne: vinod
-pan chaltoy, ani tya-ach paddhatine jagacha sagla internet
-pan ghadla aahe. Khuli prakriya ashi diste.
+Google मध्ये search करा: "RFC 1149". उघडेल तो एक खरा, अधिकृत
+RFC आहे: कबुतरांवरून internet packets पाठवण्याचा (विनोदी)
+प्रस्ताव, 1 April ला लिहिलेला. आणि लोकांनी तो 2001 मध्ये खरा
+करूनही दाखवला (9 packets, 1 कबुतर). हे बघण्याचा उद्देश: RFC
+किती खुले आहेत हे जाणवणं: विनोद पण चालतोय, आणि त्याच पद्धतीने
+जगाचं सगळं internet पण घडलं आहे. खुली प्रक्रिया अशी दिसते.
 
-## VICHAR KARA
+## विचार करा
 
-1. (derivation) Bharatane UPI banavla ani to Singapore,
-UAE, France ashya deshan-madhe pan neto aahe. "Protocol
-niryaat karne" (export) madhe Bharatala kay milte? Paisa
-tar thet milat nahi. (Chapter 5.4 chi NPCI-shikvan pudhe
-nya.)
+1. (derivation) भारताने UPI बनवला आणि तो Singapore, UAE, France
+अशा देशांमध्ये पण नेतो आहे. "Protocol निर्यात करणं" (export)
+मध्ये भारताला काय मिळतं? पैसा तर थेट मिळत नाही. (Chapter 5.4 ची
+NPCI-शिकवण पुढे न्या.)
 
-> **Uttar:** Zameen milte. Jya deshat UPI-dhartiche niyam
-> laagle, tithe Bharatiy banks, apps, ani kaushalya (jya
-> lokanna he chalvta yeta) ghar-chya maidanavar kheltat.
-> Ani jagtik vyavhaarat vajan milte: aaj paise-pathavnyache
-> jagtik niyam Visa/Mastercard/SWIFT (paschimi) aakhtat;
-> pratyek desh jo UPI gheto, to tya ekadhikarala thoda
-> kamjor karto ani niyam-tablavar Bharatachi khurchi
-> mothi karto. He Level 3 che bhu-rajkaran (geopolitics)
-> aahe: 20vya shatakat desh TEL ani bandaran-sathi ladhle;
-> 21vya madhe kebali, chips ani PROTOCOLS sathi ladhtat.
-> Tumhi jo naksha banavla aahe (4 levels), to deshanchya
-> pattlivar pan tantotant laagto: hich tyachi shevatchi
-> pariksha.
+> **उत्तर:** जमीन मिळते. ज्या देशात UPI-धर्तीचे नियम लागले, तिथे
+> भारतीय banks, apps, आणि कौशल्य (ज्या लोकांना हे चालवता येतं)
+> घरच्या मैदानावर खेळतात. आणि जागतिक व्यवहारात वजन मिळतं: आज
+> पैसे पाठवण्याचे जागतिक नियम Visa/Mastercard/SWIFT (पश्चिमी)
+> आखतात; प्रत्येक देश जो UPI घेतो, तो त्या एकाधिकाराला थोडा
+> कमजोर करतो आणि नियम-table वर भारताची खुर्ची मोठी करतो. हे
+> Level 3 चं भू-राजकारण (geopolitics) आहे: 20व्या शतकात देश तेल
+> आणि बंदरांसाठी लढले; 21व्या मध्ये cables, chips आणि protocols
+> साठी लढतात. तुम्ही जो नकाशा बनवला आहे (4 levels), तो देशांच्या
+> पातळीवर पण तंतोतंत लागतो: हीच त्याची शेवटची परीक्षा.

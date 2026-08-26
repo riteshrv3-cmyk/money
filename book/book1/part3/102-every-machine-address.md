@@ -1,104 +1,96 @@
-# Chapter 5.2 [SPINE]: Pratyek machine la ek address
+# Chapter 5.2 [SPINE]: प्रत्येक machine ला एक address
 
-Network banla, raste zale. Ata post office cha juna prashna
-ubha rahto: patra pohochvayche tar POTTA (address) lagto. "Ram
-la dya" ne kaam hot nahi; Ram lakho aahet. Machines chya jagat
-pan tech: message pathvaycha tar tya machine cha nemka address
-lagto.
+Network बनलं, रस्ते झाले. आता post office चा जुना प्रश्न उभा
+राहतो: पत्र पोहोचवायचं तर पत्ता लागतो. "राम ला द्या" ने काम होत
+नाही; राम लाखो आहेत. Machines च्या जगात पण तेच: message पाठवायचा
+तर त्या machine चा नेमका address लागतो.
 
-Address kasa asava? Part 1 ne uttar aadhich dila aahe: machine
-la fakt numbers samajtat. Mhanun machine cha address ek NUMBER
-aahe. Sadharan roop: char numbers, pratyek 0 te 255 madhla
-(olakhicha vaatla? 8 bits = 256 sthiti, Chapter 1.4):
+Address कसा असावा? Part 1 ने उत्तर आधीच दिलं आहे: machine ला
+फक्त numbers समजतात. म्हणून machine चा address एक NUMBER आहे.
+साधं रूप: चार numbers, प्रत्येक 0 ते 255 मधला (ओळखीचं वाटलं?
+8 bits = 256 स्थिती, Chapter 1.4):
 
 ```
-142.250.183.14     (he Google chya eka server cha address)
-192.168.1.5        (he tumchya ghartlya phone cha asu shakta)
+142.250.183.14     (हा Google च्या एका server चा address)
+192.168.1.5        (हा तुमच्या घरातल्या phone चा असू शकतो)
 ```
 
-Ata ek ganit kara. Char numbers, pratyek 256 prakarcha: ekun
-kiti address? 256 x 256 x 256 x 256 = sadharan 430 crore. 1980
-madhe he "kadhich sampnar nahit" vaatle. Aaj jagat arabo phones,
-TVs, gadya, ghadyala... address SAMPLE. Ha kharokhar ghadlela
-prasang aahe: internet chya designers ni jag kevdha hoil he
-kami andajle. (Upay pan aala: navin lamb address, IPv6, jya
-madhe address sampuch shakat nahit. Pan juna system ajun
-sagLikde aahe.)
+आता एक गणित करा. चार numbers, प्रत्येक 256 प्रकारचा: एकूण किती
+address? 256 x 256 x 256 x 256 = साधारण 430 कोटी. 1980 मध्ये हे
+"कधीच संपणार नाहीत" वाटले. आज जगात अब्जावधी phones, TVs, गाड्या,
+घड्याळं... address संपले. हा खरोखर घडलेला प्रसंग आहे: internet
+च्या designers नी जग केवढं होईल हे कमी अंदाजलं. (उपाय पण आला:
+नवा लांब address, IPv6, ज्यात address संपूच शकत नाहीत. पण जुनी
+system अजून सगळीकडे आहे.)
 
-Sampat aalele address jag ni kase vaparle? Ithun ek sundar
-yukti nighali, jee tumchya gharat aahe: tumchya WiFi router la
-EKACH public address milto (building la ek post-box). Ghartlya
-sagLya devices na router aatlya-aat aaple chhote private
-address deto (khli number 1, 2, 3...). Baherun sagle ekach
-distat; aat router hishob thevto ki kuthla jawab kuthlya
-device cha aahe. Ek address, dahaa machines. (Building cha
-watchman jasa: patra building chya naavavar yeto, watchman
-flat baghun pohochvto.)
+संपत आलेले address जगाने कसे वापरले? इथून एक सुंदर युक्ती
+निघाली, जी तुमच्या घरात आहे: तुमच्या WiFi router ला एकच public
+address मिळतो (building ला एक post-box). घरातल्या सगळ्या devices
+ना router आतल्या-आत आपले छोटे private address देतो (खोली क्रमांक
+1, 2, 3...). बाहेरून सगळे एकच दिसतात; आत router हिशोब ठेवतो की
+कुठलं उत्तर कुठल्या device चं आहे. एक address, दहा machines.
+(Building चा watchman जसा: पत्र building च्या नावावर येतं,
+watchman flat बघून पोहोचवतो.)
 
-## NAAV
+## नाव
 
-Machine cha number-address: **IP address** (Internet Protocol
-cha address). Juna char-number roop: **IPv4**, nava lamb roop:
-**IPv6**. Ghartla vaatnara-watchman: **router**. Router chya
-aatle address: **private IP**, jagala disnara: **public IP**.
+Machine चा number-पत्ता: **IP address** (Internet Protocol चा
+address). जुनं चार-number रूप: **IPv4**, नवं लांब रूप: **IPv6**.
+घरातला वाटणारा-watchman: **router**. Router च्या आतले address:
+**private IP**, जगाला दिसणारा: **public IP**.
 
-## KHARYA JAGATLA EK EXAMPLE
+## खऱ्या जगातलं एक example
 
-Cyber crime chya batmya madhe "police ni IP address varun
-aaropi shodhla" he vakya asta. Ata tumhala te vachta yeta:
-pratyek internet connection chya magey ek public IP asto, ani
-telecom company kade register asto ki tya veles to IP konala
-dila hota (Chapter 0.1 cha ledger, parat!). Mhanunach VPN
-naavachi cheez vikli jate: ti tumcha khara IP lapavte, dusrya
-deshatla dakhavte. Suraksha ani lapan-chhapan, donhi ek
-address chya bhovti firtat.
+Cyber crime च्या बातम्यांमध्ये "police नी IP address वरून आरोपी
+शोधला" हे वाक्य असतं. आता तुम्हाला ते वाचता येतं: प्रत्येक
+internet connection च्या मागे एक public IP असतो, आणि telecom
+company कडे register असतो की त्या वेळेस तो IP कोणाला दिला होता
+(Chapter 0.1 चा ledger, परत!). म्हणूनच VPN नावाची गोष्ट विकली
+जाते: ती तुमचा खरा IP लपवते, दुसऱ्या देशातला दाखवते. सुरक्षा
+आणि लपाछपी, दोन्ही एका address भोवती फिरतात.
 
-## ITHE LOK KAY CHUKICHE SAMAJTAT
+## इथे लोक काय चुकीचं समजतात
 
-"IP address mhanje majhi kayamchi olakh." Nahi. Tumcha public
-IP telecom company ROJ badlu shakte (bhadyane dilela number
-aahe, malkicha nahi). Ani ek IP magey shambhar lok asu
-shaktat (router!). Mhanun IP fakt "tya veles, tya jaagecha"
-pattaa aahe, aadhaar card nahi. Donhi disha ni chuk hote:
-lok ghabartaat "majha IP disla, sagla sampla" (nahi), ani
-lok nishchint pan astat "IP badalte mhanje mi lapla" (nahi:
-register aahe na).
+"IP address म्हणजे माझी कायमची ओळख." नाही. तुमचा public IP
+telecom company रोज बदलू शकते (भाड्याने दिलेला number आहे,
+मालकीचा नाही). आणि एका IP मागे शंभर लोक असू शकतात (router!).
+म्हणून IP फक्त "त्या वेळेचा, त्या जागेचा" पत्ता आहे, Aadhaar
+card नाही. दोन्ही दिशांनी चूक होते: लोक घाबरतात "माझा IP दिसला,
+सगळं संपलं" (नाही), आणि लोक निश्चिंत पण असतात "IP बदलतो म्हणजे
+मी लपलो" (नाही: register आहे ना).
 
-## MAP VAR
+## MAP वर
 
-Kon kamavta: address SWATAHA ek malmatta zali. IPv4 address
-sample, mhanun juna saatha asnaryanni te VIKAYLA kadhle: ek
-IPv4 address aaj hazaro rupayala jato, companies chya kade
-lakho address che block aahet, tyanchi kimmat arabo madhe.
-1990 madhe fukat vaatlele numbers aaj sona zale. Dhanda
-shikvan: jya cheez chi ginti THARLELI aahe ani magni vadhnaar
-aahe, ti cheez lavkar dharun theva. (Domains madhe he parat
-yeil, Chapter 5.5.)
+कोण कमावतं: address स्वतः एक मालमत्ता झाली. IPv4 addresses
+संपले, म्हणून जुना साठा असणाऱ्यांनी ते विकायला काढले: एक IPv4
+address आज हजारो रुपयांना जातो, companies कडे लाखो address चे
+blocks आहेत, त्यांची किंमत अब्जांमध्ये. 1990 मध्ये फुकट वाटलेले
+numbers आज सोनं झाले. धंद्याची शिकवण: जिची मोजदाद ठरलेली आहे
+आणि मागणी वाढणार आहे, ती गोष्ट लवकर धरून ठेवा. (Domains मध्ये
+हे परत येईल, Chapter 5.5.)
 
-## SWATAHA BAGHA (5 minute)
+## स्वतः बघा (5 minute)
 
-Phone chya Settings madhe WiFi ughda, jodlelya network var
-tap kara: tithe "IP address" disel, sadharan 192.168.x.x asa.
-Ha tumcha PRIVATE address. Ata browser madhe search kara:
-"what is my IP". Vegla number disel! Ha tumchya router cha
-PUBLIC address. Don address, don duniya: aat ani baher.
-Watchman-system tumhi swataha baghitli.
+Phone च्या Settings मध्ये WiFi उघडा, जोडलेल्या network वर tap
+करा: तिथे "IP address" दिसेल, साधारण 192.168.x.x असा. हा तुमचा
+PRIVATE address. आता browser मध्ये search करा: "what is my IP".
+वेगळा number दिसेल! हा तुमच्या router चा PUBLIC address. दोन
+address, दोन जगं: आत आणि बाहेर. Watchman-system तुम्ही स्वतः
+बघितली.
 
-## VICHAR KARA
+## विचार करा
 
-1. (derivation) Postman la "Mumbai, Andheri, XYZ building,
-flat 402" asa address TUKDYA-TUKDYANI kaam karto: aadhi
-shahar, mag bhaag, mag building. IP address pan asach
-tukdyani vachla jato (aadhi motha bhaag, mag aatla). Sagle
-routers jagatlya SAGLYA machines chi yaadi ka thevat nahit,
-ha design ka nivadla?
+1. (derivation) Postman ला "Mumbai, Andheri, XYZ building, flat
+402" असा पत्ता तुकड्या-तुकड्यांनी काम करतो: आधी शहर, मग भाग, मग
+building. IP address पण असाच तुकड्यांनी वाचला जातो (आधी मोठा
+भाग, मग आतला). सगळे routers जगातल्या सगळ्या machines ची यादी का
+ठेवत नाहीत, हे design का निवडलं?
 
-> **Uttar:** Karan yaadi arabo entries chi hoil ani ROJ
-> badlel; pratyek chowkat ti thevne ani taji rakhne ashakya.
-> Tukdya-tukdyancha design mhanje: pratyek router la fakt
-> evdhach mahit lagta ki "ha bhaag tya dishela." Mumbai cha
-> postman flat 402 janat nahi, fakt Andheri kuthe te janto.
-> Kaam vaatle gele, koni-ekala sagla janave lagat nahi. He
-> design-tattva (hierarchy) tantradnyanat sagLikde aahe:
-> DNS madhe (5.5), company chya sanghatnet, ani AI chya
-> aat pan. Jithe scale motha, tithe yaadi nahi, SHIDI aste.
+> **उत्तर:** कारण यादी अब्जावधी नोंदींची होईल आणि रोज बदलेल;
+> प्रत्येक चौकात ती ठेवणं आणि ताजी राखणं अशक्य. तुकड्यांचं
+> design म्हणजे: प्रत्येक router ला फक्त एवढंच माहीत लागतं की
+> "हा भाग त्या दिशेला." Mumbai चा postman flat 402 जाणत नाही,
+> फक्त Andheri कुठे ते जाणतो. काम वाटलं गेलं, कोणा-एकाला सगळं
+> जाणावं लागत नाही. हे design-तत्त्व (hierarchy) technology त
+> सगळीकडे आहे: DNS मध्ये (5.5), company च्या संघटनेत, आणि AI
+> च्या आत पण. जिथे scale मोठा, तिथे यादी नाही, शिडी असते.

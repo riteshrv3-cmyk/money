@@ -1,61 +1,59 @@
 # THE MACHINE
 
-## PART 3 OF 5: MACHINES CHE JAAL
+## PART 3 OF 5: MACHINES CHE JAAL (मशीनचं जाळं)
 
-(Ha part Marathi madhe aahe, test mhanun. Part 1 ani 2 Hinglish
-madhe hote. Technical shabd nehmi English madhech rahtil: server,
-network, address. Aavdla tar pudhche parts pan Marathi madhe hotil.)
+(हा part मराठीत आहे. Part 1 आणि 2 Hinglish मध्ये होते. Technical
+शब्द नेहमी English मध्येच राहतील: server, network, address. हा
+भाग आवडला तर पुढचे parts पण मराठीत होतील.)
 
 ```
-PAACH PARTS CHA NAKASHA
+पाच PARTS चा नकाशा
 
-PART 1  PAISA AUR MACHINE       zala
-PART 2  MACHINE SE BAAT         zala
-[ TUMHI ITHE AAHAT ]
-PART 3  MACHINES CHE JAAL       network, address, internet
-PART 4  DATA AANI AATHAVNI      storage, database, shodhne
-PART 5  JAGALA SERVE KARNE      scale, cloud, kharcha, purna jod
+PART 1  पैसा आणि MACHINE         झाला
+PART 2  MACHINE शी बोलणं         झाला
+[ तुम्ही इथे आहात ]
+PART 3  MACHINES चं जाळं         network, address, internet
+PART 4  DATA आणि आठवणी           storage, database, शोधणं
+PART 5  जगाला SERVE करणं         scale, cloud, खर्च, पूर्ण जोड
 ```
 
-## Aadhi Part 2 chi pariksha
+## आधी Part 2 ची परीक्षा
 
-Paach prashna, Part 2 madhle. Aadhi swataha uttar dya, mag khali
-baghaa. Jithe adkal, tithla chapter number sobat aahe, tithe parat ja.
+पाच प्रश्न, Part 2 मधले. आधी स्वतः उत्तर द्या, मग खाली बघा.
+जिथे अडाल, तिथला chapter number सोबत आहे, तिथे परत जा.
 
-1. iPhone chi app Android var ka chalat nahi? (3.5)
-2. Google Android fukat ka vaatto? (3.5, 3.7)
-3. Mothya software madhe bugs nakki ka astat? (4.1)
-4. "Majhya machine var tar chalat hota" cha khara arth kay? (4.4)
-5. Software banvtana paisa kashavar dyaycha: vachan var ki
-   kashavar? (4.5)
+1. iPhone चं app Android वर का चालत नाही? (3.5)
+2. Google Android फुकट का वाटतं? (3.5, 3.7)
+3. मोठ्या software मध्ये bugs नक्की का असतात? (4.1)
+4. "माझ्या machine वर तर चालत होतं" चा खरा अर्थ काय? (4.4)
+5. Software बनवताना पैसा कशावर द्यायचा: वचनावर की कशावर? (4.5)
 
-> **Uttar:** 1. App OS sathi lihileli aste, machine sathi nahi;
-> malak (OS) vegla, mhanun app chalat nahi. 2. Vikun kamavnya
-> peksha MALAK hone motha khel aahe: pratyek phone Google chya
-> search, ads ani Play Store cha darvaja hoto. 3. Situations chi
-> sankhya bomb sarkhi vadhte; jo jod lihinaryachya dokyat aalach
-> nahi, toch kadhi tari user la bhetto. Hi ginti aahe, halgarjipana
-> nahi. 4. Software = code + tyacha aaspaas cha mahol (OS,
-> libraries, settings). Code same, mahol vegla = veglach natija.
-> 5. Chaltya tukdyavar. Vachan nahi, demo. Pratyek tukda CHALUN
-> dakhavla pahije.
+> **उत्तर:** 1. App हे OS साठी लिहिलेलं असतं, machine साठी नाही;
+> मालक (OS) वेगळा, म्हणून app चालत नाही. 2. विकून कमावण्यापेक्षा
+> मालक होणं मोठा खेळ आहे: प्रत्येक phone हा Google च्या search,
+> ads आणि Play Store चा दरवाजा होतो. 3. Situations ची संख्या
+> स्फोटासारखी वाढते; जो जोड लिहिणाऱ्याच्या डोक्यात आलाच नाही,
+> तोच कधीतरी एखाद्या user ला भेटतो. ही गणिताची गोष्ट आहे,
+> हलगर्जीपणा नाही. 4. Software = code + त्याचा आजूबाजूचा माहोल
+> (OS, libraries, settings). Code तोच, माहोल वेगळा = निकाल
+> वेगळाच. 5. चालत्या तुकड्यावर. वचन नाही, demo. प्रत्येक तुकडा
+> चालवून दाखवला पाहिजे.
 
-## Ya part madhe kay aahe
+## या part मध्ये काय आहे
 
-Aata paryant sagli goshta EKA machine chya aat hoti. Pan tumcha
-pratyek message dusrya machine kade jato: shahara palikde, samudra
-palikde, ardhya second madhe. Kasa?
+आतापर्यंतची सगळी गोष्ट एका machine च्या आत होती. पण तुमचा
+प्रत्येक message दुसऱ्या machine कडे जातो: शहरापलीकडे,
+समुद्रापलीकडे, अर्ध्या second मध्ये. कसा?
 
-Aath chapters: machines ekmekanna kashya shodhtat (address), message
-kasa pravaas karto (packets), doghanni niyam aadhich ka tharvave
-lagtat (protocols), naav numbers kashe hotat (DNS), public rastyavar
-private goshta kashi lapte (encryption), internet mhanje nakki kay,
-aani tyache niyam kon banavto.
+आठ chapters: machines एकमेकांना कशा शोधतात (address), message
+कसा प्रवास करतो (packets), दोघांनी नियम आधीच का ठरवावे लागतात
+(protocols), नावांचे numbers कसे होतात (DNS), public रस्त्यावर
+private गोष्ट कशी लपते (encryption), internet म्हणजे नक्की काय,
+आणि त्याचे नियम कोण बनवतं.
 
-**He tumchya business decision madhe kuthe yeil:** Tumcha pratyek
-product internet var chalel. Tyacha speed, tyacha kharcha, tyachi
-suraksha, he sagle ithlya samajni var ubhe aahe. Ani ek motha
-dhanda-secret ithe lapla aahe: protocols ani networks madhe "n
-squared" naavachi ek problem parat parat yete, ani jo ti sodavto
-to darvajacha malak hoto. UPI he tyache jivant udaharan aahe, ya
-part madhe bhettel.
+**हे तुमच्या business decision मध्ये कुठे येईल:** तुमचं प्रत्येक
+product internet वर चालेल. त्याचा वेग, त्याचा खर्च, त्याची
+सुरक्षा, हे सगळं इथल्या समजुतीवर उभं आहे. आणि एक मोठं धंद्याचं
+गुपित इथे लपलं आहे: networks मध्ये "n squared" नावाची एक अडचण
+परत परत येते, आणि जो ती सोडवतो तो दरवाजाचा मालक होतो. UPI हे
+त्याचं जिवंत उदाहरण आहे, या part मध्ये भेटेल.

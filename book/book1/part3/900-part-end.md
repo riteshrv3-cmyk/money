@@ -1,79 +1,78 @@
-# PART 3 CHA SHEVAT: NAKASHA ANI PUDHCHA PAAUL
+# PART 3 चा शेवट: नकाशा आणि पुढचं पाऊल
 
-## Je tumchya-kade ata aahe
-
-```
-CLIENT / SERVER   magnari machine / denari machine; malmatta
-                  server chya bajula aste
-N SQUARED         pratyekala pratyekashi jodne ashakya; jo he
-                  chowk/protocol ni sodavto to malak hoto
-IP ADDRESS        machine cha number-pattaa; public vs private
-                  (router = building cha watchman)
-PACKETS           message che numbered tukde, swatantra pravaas;
-                  "connection" ha fakt bhaas aahe
-TCP vs UDP        barobar-pana vs vega: file vs video call
-PROTOCOL          aadhich tharlele niyam; internet mhanje vastu
-                  nahi, niyamancha samuh (UPI = protocol!)
-DNS               naav -> number cha phonebook; shidi + cache;
-                  domain = pati, server = dukan
-ENCRYPTION        public rastyavar ganiti lifafa; don killya
-                  (public kulup laavte, private ughadte);
-                  kulup = rasta surakshit, manus nahi!
-INTERNET          hazaro malkanchi jaale, jodleli; 99% samudri
-                  kebali; kendra nahi, malak nahi
-NIYAM             IETF/ICANN/W3C + mothya companies; standard
-                  banavnara bajar aakhto (Bharatacha DPI)
-```
-
-## Ek pariksha, swataha sathi
-
-Pustak na ughadta, bolun uttar dya:
-
-1. WhatsApp message thet mitrachya phone la ka jaat nahi?
-2. Video call madhe aawaz robotic ka hoto, pan file download
-   madhe file kadhich adhuri ka yet nahi?
-3. Kulup-icon (https) kay SANGTO ani kay SANGAT NAHI?
-4. UPI la "protocol" ka mhanave, app ka nahi? Ani tyane
-   Bharatala kay dile?
-
-Adkal tar: 1 -> 5.1, 2 -> 5.3, 3 -> 5.6, 4 -> 5.4/5.8.
-
-## Part 4 madhe kay aahe
-
-Server la crore lokancha data milto. To THEVAYCHA kuthe?
-Ek crore madhun EK nond shodhaychi kashi, dolyachya pheratit?
-Don lok EKAACH veles ek goshta badaltat tevha kay hote?
-Ani sagla data udala tar? Part 4: DATA AANI AATHAVNI: database
-che jag, jithe pratyek mothya company chi khari sampatti
-padleli aste.
-
-# PART 3 CHA MINI-GLOSSARY
+## जे तुमच्याकडे आता आहे
 
 ```
-cache             uttar lakshat thevne, parat shidi na chadhnyasathi (5.5)
-certificate       "hi site kharich ti aahe" cha dakhla (5.6)
-client / server   magnari / denari machine (5.1)
-DNS               naav-to-number phonebook, shidi-rachnecha (5.5)
-domain            website che naav; bhadyachi nond, malmatta pati (5.5)
-DPI               Bharatacha sarkari-protocol khel: UPI, Aadhaar (5.8)
-encryption        ganiti lifafa; vachu fakt killi-wala shakto (5.6)
-end-to-end        killya fakt don tokanvar; madhli company pan andhali (5.6)
-HTTP / HTTPS      web cha protocol / tyache surakshit roop (5.4, 5.6)
-ICANN             naave ani numbers vaatnari sanstha (5.8)
-IETF / RFC        mul niyam banavnari sanstha / khula prastav (5.8)
-IP address        machine cha number-pattaa (IPv4 june, IPv6 nave) (5.2)
-ISP               internet-rasta viknari company: Jio, Airtel (5.7)
-last mile         tumchya ghara-paryantcha shevatcha (mahag) tukda (5.7)
-latency           ek pheraa kiti vel; bandwidth peksha vegli goshta (5.3)
-n squared         jod sankhyechya vargane vadhtat hi problem (5.1)
-network           jodlelya machines cha jaal (5.1)
-packet            message cha numbered, swatantra tukda (5.3)
-peering           don jaalanchi "tu majha, mi tujha" saudebaji (5.7)
-private key       ughadnari killi; kadhich konala nahi (5.6)
-protocol          aadhich tharlele bolnyanche niyam (5.4)
-public key        kulup laavnari killi; jagala vaatleli (5.6)
-router            packets pudhe dhakalnara chowk; gharcha watchman (5.2)
-standard          sarva-manya niyam; banavnara bajar aakhto (5.8)
-TCP / UDP         barobar-pana-wale / vega-wale niyam (5.3)
-undersea cable    samudri kach-taar; jagacha 99% data ithun (5.7)
+CLIENT / SERVER   मागणारी machine / देणारी machine;
+                  मालमत्ता server च्या बाजूला असते
+N SQUARED         प्रत्येकाला प्रत्येकाशी जोडणं अशक्य; जो हे
+                  चौक/protocol ने सोडवतो तो मालक होतो
+IP ADDRESS        machine चा number-पत्ता; public vs private
+                  (router = building चा watchman)
+PACKETS           message चे numbered तुकडे, स्वतंत्र प्रवास;
+                  "connection" हा फक्त भास आहे
+TCP vs UDP        बरोबरपणा vs वेग: file vs video call
+PROTOCOL          आधीच ठरलेले नियम; internet म्हणजे वस्तू
+                  नाही, नियमांचा समूह (UPI = protocol!)
+DNS               नाव -> number ची phonebook; शिडी + cache;
+                  domain = पाटी, server = दुकान
+ENCRYPTION        public रस्त्यावर गणिती लिफाफा; दोन किल्ल्या
+                  (public कुलूप लावते, private उघडते);
+                  कुलूप = रस्ता सुरक्षित, माणूस नाही!
+INTERNET          हजारो मालकांची जाळी, जोडलेली; 99% समुद्री
+                  cables; केंद्र नाही, मालक नाही
+NIYAM             IETF/ICANN/W3C + मोठ्या companies; standard
+                  बनवणारा बाजार आखतो (भारताचं DPI)
+```
+
+## एक परीक्षा, स्वतःसाठी
+
+पुस्तक न उघडता, बोलून उत्तर द्या:
+
+1. WhatsApp message थेट मित्राच्या phone ला का जात नाही?
+2. Video call मध्ये आवाज robotic का होतो, पण file download
+   मध्ये file कधीच अर्धवट का येत नाही?
+3. कुलूप-icon (https) काय सांगतो आणि काय सांगत नाही?
+4. UPI ला "protocol" का म्हणावं, app का नाही? आणि त्याने
+   भारताला काय दिलं?
+
+अडाल तर: 1 -> 5.1, 2 -> 5.3, 3 -> 5.6, 4 -> 5.4/5.8.
+
+## Part 4 मध्ये काय आहे
+
+Server ला कोटी लोकांचा data मिळतो. तो ठेवायचा कुठे? एका
+कोटीमधून एक नोंद शोधायची कशी, डोळ्याच्या पापणी लवण्याच्या आत?
+दोन लोक एकाच वेळेस एक गोष्ट बदलतात तेव्हा काय होतं? आणि सगळा
+data उडाला तर? Part 4: DATA आणि आठवणी: database चं जग, जिथे
+प्रत्येक मोठ्या company ची खरी संपत्ती पडलेली असते.
+
+# PART 3 चा MINI-GLOSSARY
+
+```
+cache             उत्तर लक्षात ठेवणं, परत शिडी न चढण्यासाठी (5.5)
+certificate       "ही site खरीच ती आहे" चा दाखला (5.6)
+client / server   मागणारी / देणारी machine (5.1)
+DNS               नाव-ते-number phonebook, शिडी-रचनेची (5.5)
+domain            website चं नाव; भाड्याची नोंद, मालमत्ता-पाटी (5.5)
+DPI               भारताचा सरकारी-protocol खेळ: UPI, Aadhaar (5.8)
+encryption        गणिती लिफाफा; वाचू फक्त किल्लीवाला शकतो (5.6)
+end-to-end        किल्ल्या फक्त दोन टोकांवर; मधली company पण आंधळी (5.6)
+HTTP / HTTPS      web चा protocol / त्याचं सुरक्षित रूप (5.4, 5.6)
+ICANN             नावं आणि numbers वाटणारी संस्था (5.8)
+IETF / RFC        मूळ नियम बनवणारी संस्था / खुला प्रस्ताव (5.8)
+IP address        machine चा number-पत्ता (IPv4 जुना, IPv6 नवा) (5.2)
+ISP               internet-रस्ता विकणारी company: Jio, Airtel (5.7)
+last mile         तुमच्या घरापर्यंतचा शेवटचा (महाग) तुकडा (5.7)
+latency           एक फेरा किती वेळ; bandwidth पेक्षा वेगळी गोष्ट (5.3)
+n squared         जोड संख्येच्या वर्गाने वाढतात ही अडचण (5.1)
+network           जोडलेल्या machines चं जाळं (5.1)
+packet            message चा numbered, स्वतंत्र तुकडा (5.3)
+peering           दोन जाळ्यांची "तू माझा, मी तुझा" सौदेबाजी (5.7)
+private key       उघडणारी किल्ली; कधीच कोणाला नाही (5.6)
+protocol          आधीच ठरलेले बोलण्याचे नियम (5.4)
+public key        कुलूप लावणारी किल्ली; जगाला वाटलेली (5.6)
+router            packets पुढे ढकलणारा चौक; घरचा watchman (5.2)
+standard          सर्वमान्य नियम; बनवणारा बाजार आखतो (5.8)
+TCP / UDP         बरोबरपणा-वाले / वेग-वाले नियम (5.3)
+undersea cable    समुद्री काच-तार; जगाचा 99% data इथून (5.7)
 ```

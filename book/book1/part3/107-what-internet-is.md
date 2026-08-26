@@ -1,110 +1,101 @@
-# Chapter 5.7 [SPINE]: Internet mhanje nakki kay
+# Chapter 5.7 [SPINE]: Internet म्हणजे नक्की काय
 
-Ata sagle tukde jodta yetat. "Internet" ha shabd roj hazar
-vela vaparta; aaj tyala DOLYANNI baghu.
+आता सगळे तुकडे जोडता येतात. "Internet" हा शब्द रोज हजार वेळा
+वापरता; आज त्याला डोळ्यांनी बघू.
 
-Suruvat tumchya gharatun. Tumcha phone WiFi ne router la
-jodlela (Chapter 5.2). Router telecom company chya (Jio/
-Airtel chya) jaalala: tumchya bhagatlya khambya-varchya kinva
-jaminitlya fibre taarela. Ti taar shaharachya mothya kendrala.
-Tithun deshbharchya mothya rastyanna. He zala ek company cha
-JAAL.
+सुरुवात तुमच्या घरातून. तुमचा phone WiFi ने router ला जोडलेला
+(Chapter 5.2). Router telecom company च्या (Jio/Airtel च्या)
+जाळ्याला: तुमच्या भागातल्या खांबावरच्या किंवा जमिनीतल्या fibre
+तारेला. ती तार शहराच्या मोठ्या केंद्राला. तिथून देशभरच्या
+मोठ्या रस्त्यांना. हे झालं एका company चं जाळं.
 
-Pan Jio cha grahak Airtel chya grahakala message pathavto,
-tevha? Doghanchi jaale VEGLI aahet. Uttar: companies ni
-aapli jaale thravik jaagi EKMEKANNA jodli aahet (mothya
-shahara-madhli "exchange" kendre), ani tithe saudebaji aahe:
-kadhi "tu majha traffic ne, mi tujha" (barabari), kadhi
-lahaan jaal mothyala bhade dete. **Internet mhanje HEC: hazaro
-veg-veglya malkanchi jaale, ekmekanna jodleli, samaan niyamani
-(protocols, Chapter 5.4) bolnari.** Naav pan tech sangta:
-inter-net, jaalan-madhla-jod. Malak konich nahi; sahbhagi
-sagle.
+पण Jio चा ग्राहक Airtel च्या ग्राहकाला message पाठवतो, तेव्हा?
+दोघांची जाळी वेगळी आहेत. उत्तर: companies नी आपली जाळी ठरावीक
+जागी एकमेकांना जोडली आहेत (मोठ्या शहरांमधली "exchange" केंद्रं),
+आणि तिथे सौदेबाजी आहे: कधी "तू माझा traffic ने, मी तुझा"
+(बरोबरी), कधी लहान जाळं मोठ्याला भाडं देतं. **Internet म्हणजे
+हेच: हजारो वेगवेगळ्या मालकांची जाळी, एकमेकांना जोडलेली, समान
+नियमांनी (protocols, Chapter 5.4) बोलणारी.** नाव पण तेच सांगतं:
+inter-net, जाळ्यांमधला-जोड. मालक कोणीच नाही; सहभागी सगळे.
 
-Ani deshabaher? Ithe ek dhakka basel: samudrakhali. Jagatla
-99% aantar-deshiy data SAMUDRATLYA KEBALI-madhun jato: bota-
-evdhya jaad kachechya taara, lakho km, samudra-talashi
-pasarlelya. (Satellite? 1% peksha kami: mahag ani dur, mhanje
-latency, Chapter 2.3.) Bharatat ya kebali kinaryavar yetat:
-Mumbai ani Chennai hi mothi "landing" thikane. Ek kebal
-katli (jahajacha nangar, bhukamp) ki purna deshacha internet
-mand hoto: he ghadlela aahe, parat ghadel.
+आणि देशाबाहेर? इथे एक धक्का बसेल: समुद्राखाली. जगातला 99%
+आंतरदेशीय data समुद्रातल्या cables मधून जातो: बोटा-एवढ्या जाड
+काचेच्या तारा, लाखो km, समुद्रतळाशी पसरलेल्या. (Satellite? 1%
+पेक्षा कमी: महाग आणि दूर, म्हणजे latency, Chapter 2.3.) भारतात
+या cables किनाऱ्यावर येतात: Mumbai आणि Chennai ही मोठी
+"landing" ठिकाणं. एक cable कापली गेली (जहाजाचा नांगर, भूकंप) की
+पूर्ण देशाचं internet मंद होतं: हे घडलेलं आहे, परत घडेल.
 
-Ekada he disla ki "cloud" ani "WiFi" chi hawa-havi bhasha
-udte: internet mhanje kach, taamba, khambe, samudri kebali,
-buildings madhle routers. VASTU aahe, jaadu nahi. Ani vastu
-aahe mhanun tichi malki aahe, kimmat aahe, rajkaran aahe:
-kebali kon taakto, exchange kuthe aahe, he sagle satta-
-prashna aahet.
+एकदा हे दिसलं की "cloud" आणि "WiFi" ची हवा-हवाई भाषा उडते:
+internet म्हणजे काच, तांबं, खांब, समुद्री cables, buildings
+मधले routers. वस्तू आहे, जादू नाही. आणि वस्तू आहे म्हणून तिची
+मालकी आहे, किंमत आहे, राजकारण आहे: cables कोण टाकतो, exchange
+कुठे आहे, हे सगळे सत्तेचे प्रश्न आहेत.
 
-## NAAV
+## नाव
 
-Internet cha rasta viknari company: **ISP** (Internet Service
-Provider: Jio, Airtel, BSNL). Samudri taar: **undersea cable**
-(ya submarine cable). Jaale jodnyachi saudebaji: **peering**.
-Tumchya ghara-paryantcha shevatcha tukda: **last mile** (ha
-sagLyat mahag tukda asto: pratyek gharala vegli taar!).
+Internet चा रस्ता विकणारी company: **ISP** (Internet Service
+Provider: Jio, Airtel, BSNL). समुद्री तार: **undersea cable**
+(किंवा submarine cable). जाळी जोडण्याची सौदेबाजी: **peering**.
+तुमच्या घरापर्यंतचा शेवटचा तुकडा: **last mile** (हा सगळ्यात
+महाग तुकडा असतो: प्रत्येक घराला वेगळी तार!).
 
-## KHARYA JAGATLA EK EXAMPLE
+## खऱ्या जगातलं एक example
 
-Jio chi goshta parat ghya, ata purna nazrene. 2016 chya aadhi
-Bharatat data mahag hota karan jaal LAHAAN hote. Jio ni kay
-kele: 2.5 lakh crore laavun NAVE jaal banavle: fibre, towers,
-samudri kebalinche hisse. Mag data lagbhag fukat kela (Chapter
-3.7: darvaja-chaal). Parinaam: desh online aala, ani Jio
-darvajacha malak. Pan mul-baat hi: tyanni SEVA nahi, RASTA
-banavla. Rasta banavnyala vel ani arabo lagtat, mhanunach
-to kabja itka tikto: spardhakala parat sagle khamb ubhe
-karave lagtil.
+Jio ची गोष्ट परत घ्या, आता पूर्ण नजरेने. 2016 च्या आधी भारतात
+data महाग होता कारण जाळं लहान होतं. Jio ने काय केलं: 2.5 लाख
+कोटी लावून नवं जाळं बनवलं: fibre, towers, समुद्री cables चे
+हिस्से. मग data जवळजवळ फुकट केला (Chapter 3.7: दरवाजा-चाल).
+परिणाम: देश online आला, आणि Jio दरवाजाचा मालक. पण मूळ गोष्ट ही:
+त्यांनी सेवा नाही, रस्ता बनवला. रस्ता बनवायला वेळ आणि अब्जावधी
+लागतात, म्हणूनच तो कब्जा इतका टिकतो: स्पर्धकाला परत सगळे खांब
+उभे करावे लागतील.
 
-## ITHE LOK KAY CHUKICHE SAMAJTAT
+## इथे लोक काय चुकीचं समजतात
 
-"Internet satellite ni chalte" (nahi: 99% samudri kebali).
-"Cloud mhanje hawa" (nahi: cloud mhanje dusryachya buildings
-madhle computers, Part 5 madhe purna). "WiFi mhanje internet"
-(nahi: WiFi fakt tumchya ghara-atla shevatcha 10 meter cha
-bin-taari tukda aahe; pudhe sagla taar aahe). Teenhi chuka
-ekach mulatun: internet DISAT nahi, mhanun lok tyala hawa
-samajtat. Ata tumhala to dista: kach ani taamba.
+"Internet satellite ने चालतं" (नाही: 99% समुद्री cables).
+"Cloud म्हणजे हवा" (नाही: cloud म्हणजे दुसऱ्याच्या buildings
+मधले computers, Part 5 मध्ये पूर्ण). "WiFi म्हणजे internet"
+(नाही: WiFi फक्त तुमच्या घरातला शेवटचा 10 meter चा बिनतारी
+तुकडा आहे; पुढे सगळं तार आहे). तिन्ही चुका एकाच मुळातून:
+internet दिसत नाही, म्हणून लोक त्याला हवा समजतात. आता तुम्हाला
+ते दिसतं: काच आणि तांबं.
 
-## MAP VAR
+## MAP वर
 
-Rupayacha rasta, purna chain: tumche mahine 300 (Level 1
-pasun ghusla) -> Jio (ISP) -> Jio kebali-companies na ani
-yantra-viknaryanna (Nokia, Ericsson, Cisco) -> te chip-
-walyanna (TSMC!). Ani ulat disha pan aahe: Google/Meta ATA
-SWATAHA samudri kebali taaktaat (2Africa, Blue-Raman:
-Bharatala jodnarya), karan bhade dene mahag padte ani rasta
-aaplya hatat asava vaatta. Jevha SEVA-company RASTA vikat
-ghete, tevha samajaa: rasta hich khari satta hoti. (AI madhe
-aaj hech: model-companies chips ani data-centers vikat
-ghetayat. Pattern olkhaa.)
+रुपयाचा रस्ता, पूर्ण साखळी: तुमचे महिन्याचे 300 (Level 1 पासून
+घुसले) -> Jio (ISP) -> Jio cable-companies ना आणि यंत्र-
+विकणाऱ्यांना (Nokia, Ericsson, Cisco) -> ते chip वाल्यांना
+(TSMC!). आणि उलटी दिशा पण आहे: Google/Meta आता स्वतः समुद्री
+cables टाकतात (2Africa, Blue-Raman: भारताला जोडणाऱ्या), कारण
+भाडं देणं महाग पडतं आणि रस्ता आपल्या हातात असावा वाटतो. जेव्हा
+सेवा-company रस्ता विकत घेते, तेव्हा समजा: रस्ता हीच खरी सत्ता
+होती. (AI मध्ये आज हेच: model-companies chips आणि data-centers
+विकत घेतायत. Pattern ओळखा.)
 
-## SWATAHA BAGHA (5 minute)
+## स्वतः बघा (5 minute)
 
-Laptop var ughda: submarinecablemap.com (fukat aahe). Mumbai
-var zoom kara: dahaa-pandhra kebali kinaryala yetana distil,
-naavansahit. Pratyek rekha mhanje samudra-talashi padleli
-khari kach aahe, ani tumcha kalcha WhatsApp message kadachit
-tyach rekhene Amerika la gela hota. Ekda ha naksha baghitla
-ki "internet" shabd kadhich purvisarkha vatnar nahi.
+Laptop वर उघडा: submarinecablemap.com (फुकट आहे). Mumbai वर
+zoom करा: दहा-पंधरा cables किनाऱ्याला येताना दिसतील, नावांसहित.
+प्रत्येक रेषा म्हणजे समुद्रतळाशी पडलेली खरी काच आहे, आणि तुमचा
+कालचा WhatsApp message कदाचित त्याच रेषेने America ला गेला
+होता. एकदा हा नकाशा बघितला की "internet" शब्द कधीच पूर्वीसारखा
+वाटणार नाही.
 
-## VICHAR KARA
+## विचार करा
 
-1. (derivation) Ek desh aaplya deshapurte internet BAND karu
-shakto (he ghadle aahe). Pan purna jagacha internet koni-hi
-band karu shakat nahi. Design madhli kuthli goshta he don-hi
-sangte?
+1. (derivation) एक देश आपल्या देशापुरतं internet बंद करू शकतो
+(हे घडलं आहे). पण पूर्ण जगाचं internet कोणीही बंद करू शकत नाही.
+Design मधली कुठली गोष्ट हे दोन्ही सांगते?
 
-> **Uttar:** Desha-atla band shakya aahe karan desha-baher
-> jaanare raste MOJKE astat: kinaryavarchi landing thikane
-> ani mothe ISP; sarkar ni tya mojak-ya gala-ya aavaLlya ki
-> desh vegla padto. Pan jagacha band ashakya, karan KENDRA
-> NAHIC: hazaro jaale, hazaro malak, koni-ek switch nahi.
-> He apghaataane nahi, DESIGN ne aahe: internet chi payabharni
-> ashya yantranesathi zali hoti ji ek bhaag padla tari chalel
-> (packets navya rastyani jaatat, Chapter 5.3). Shikvan
-> tumchya naksha sathi: vikendrit (decentralized) yantrana
-> maarayla avghad aste, pan tichyavar hukumat pan avghad
-> aste. Kendrit yantrana kamvayla sopi, maarayla pan sopi.
-> Pratyek platform ha sauda karto; tumhi pan karal.
+> **उत्तर:** देशातलं बंद शक्य आहे कारण देशाबाहेर जाणारे रस्ते
+> मोजके असतात: किनाऱ्यावरची landing ठिकाणं आणि मोठे ISPs;
+> सरकारने त्या मोजक्या गळ्या आवळल्या की देश वेगळा पडतो. पण
+> जगाचं बंद अशक्य, कारण केंद्रच नाही: हजारो जाळी, हजारो मालक,
+> कोणी-एक switch नाही. हे अपघाताने नाही, design ने आहे: internet
+> ची पायाभरणी अशा यंत्रणेसाठी झाली होती जी एक भाग पडला तरी चालेल
+> (packets नव्या रस्त्यांनी जातात, Chapter 5.3). शिकवण तुमच्या
+> नकाशासाठी: विकेंद्रित (decentralized) यंत्रणा मारायला अवघड
+> असते, पण तिच्यावर हुकूमत पण अवघड असते. केंद्रित यंत्रणा
+> कमवायला सोपी, मारायला पण सोपी. प्रत्येक platform हा सौदा करतो;
+> तुम्ही पण कराल.
