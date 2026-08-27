@@ -1,90 +1,82 @@
-# Chapter 2.5 [SPINE]: Yaad rakhna aur bhool jaana
+# Chapter 2.5 [SPINE]: लक्षात ठेवणं आणि विसरणं
 
-Ek paheli se shuru karo. Phone pe game khel rahe the, battery achanak
-khatam. Charge karke on kiya: game wahin ka wahin nahi hai, dobara
-kholna pada, lekin aapki photos sab salaamat hain. Ek hi machine mein
-kuch cheezein bijli jaane se mit gayin, kuch nahi mitin. Kyun?
+एका कोड्याने सुरुवात. Phone वर game खेळत होतात, battery अचानक
+संपली. Charge करून चालू केला: game जिथे होता तिथे नाही, परत उघडावा
+लागला; पण तुमचे photos सगळे सुखरूप. एकाच machine मध्ये काही गोष्टी
+वीज गेल्यावर पुसल्या गेल्या, काही नाही. का?
 
-Kyunki machine mein yaadaasht EK nahi, DO hain, aur dono ka sauda
-alag hai:
+कारण machine मध्ये स्मरणशक्ती **एक** नाही, **दोन** आहेत, आणि
+दोघींचा सौदा वेगळा:
 
-**Tez wali, bhulakkad.** Switchon se bani yaadaasht (Chapter 1.4
-wali). Bijli hai toh haalat hai; bijli gayi, sab 0. Lekin raftaar?
-CPU ke kadmon ke saath bhaag sakti hai. Yahan woh sab rehta hai jo
-ABHI chal raha hai: khula hua app, game ki abhi wali haalat.
+**वेगवान, विसराळू.** Switches पासून बनलेली (Chapter 1.4 वाली). वीज
+आहे तोवर स्थिती आहे; वीज गेली, सगळं 0. पण वेग? CPU च्या पावलांसोबत
+धावू शकते. इथे ते राहतं जे **आत्ता** चालू आहे: उघडलेलं app, game
+ची आत्ताची स्थिती. हिचं नाव **RAM** (नुसतं memory पण म्हणतात).
 
-**Dheemi wali, pakki.** Aisi jagah jahan bits bijli ke bina bhi tike
-rehte hain (chumbak ya phanse hue charge se). Bijli jaao ya aao,
-data wahin. Lekin dheemi: tez wali se sau-hazaar guna. Yahan photos,
-apps, files rehti hain.
+**हळू, पक्की.** अशी जागा जिथे bits विजेशिवायही टिकतात. वीज जा किंवा
+या, data तिथेच. पण हळू: वेगवानपेक्षा शंभर-हजारपट. इथे photos, apps,
+files राहतात. हिचं नाव **storage** (disk, SSD).
 
-Ab poochho: dono ke faayde wali ek cheez kyun nahi bana lete, tez
-bhi, pakki bhi, sasti bhi? Engineers 70 saal se koshish kar rahe
-hain. Physics ka sauda hai: **tez, sasta, pakka: teeno mein se do
-chun lo.** Isliye machine dono rakhti hai aur beech mein data ka
-aana jaana chalta rehta hai:
+ढाब्याची उपमा सगळं सांगते: **मेज आणि गोदाम.** Cook च्या मेजावर
+आत्ताच्या order चं सामान असतं: चिरलेला कांदा, हाताशी मसाले. मेज
+छोटं आणि महाग (जागा मर्यादित), पण हात लगेच पोहोचतो. गोदाम मोठं आणि
+स्वस्त, पण फेरी लागते. रात्री ढाबा बंद झाला की मेज पुसलं जातं;
+गोदाम तसंच राहतं.
 
-App "kholna" = pakki wali se tez wali mein recipe copy karna. Isliye
-kholne mein waqt lagta hai. File "save karna" = tez wali se pakki
-wali mein likhna. Isliye save ka matlab hai "ab bijli jaaye toh bhi
-bacha rahega." Phone "hang by memory" = tez wali bhar gayi, ab
-machine har kadam pe dheemi wali se kaam chala rahi hai.
+आता विचारा: दोन्हींचे फायदे असलेली एक गोष्ट का नाही बनवत? वेगवान
+पण, पक्की पण, स्वस्त पण? Engineers 70 वर्षं प्रयत्न करतायत.
+Physics चा सौदा आहे: **वेगवान, स्वस्त, पक्की: तिन्हींपैकी दोनच
+निवडा.** म्हणून machine दोन्ही ठेवते आणि मध्ये data ची ने-आण चालू
+राहते:
 
-## NAAM
+App "उघडणं" = गोदामातून मेजावर recipe copy करणं. म्हणून उघडायला
+वेळ लागतो. File "save करणं" = मेजावरून गोदामात लिहिणं. म्हणून save
+चा अर्थ: "आता वीज गेली तरी वाचेल." Phone "hang" = मेज भरलं, आता
+machine प्रत्येक पावलाला गोदामाच्या फेऱ्या मारते आहे.
 
-Tez bhulakkad ka naam **RAM** (ya bas memory). Dheemi pakki ka naam
-**storage** (disk, SSD). Dibbe pe "8 GB RAM, 128 GB storage" ka
-matlab ab poora khulta hai: 8 GB ka tez kaam-karne-ka mez, 128 GB ki
-pakki almaari. Mez chhota aur mehnga, almaari badi aur sasti. Yehi
-anupaat har machine mein milega, phone se datacenter tak.
+खोक्यावरची ओळ आता पूर्ण उघडते: "8 GB RAM, 128 GB storage" म्हणजे
+8 GB चं कामाचं मेज, 128 GB चं पक्कं गोदाम. आणि दुकानदाराची चाल पण
+दिसते: स्वस्त phone वर तो storage चा मोठा आकडा दाखवतो (128 GB!)
+आणि RAM लपवतो (4 GB). Phone अडखळतो तो RAM कमी म्हणून, storage
+मुळे नाही. आता तुम्ही खोका वाचून खरा प्रश्न विचारू शकता: मेज केवढं
+आहे? हे छोटं ज्ञान हजारो रुपयांच्या चुकीच्या खरेदीपासून वाचवतं.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## इथे लोक काय चुकीचं समजतात
 
-Sasta phone "12 GB storage full" nahi bolta, woh chalte chalte
-atakta hai: wajah RAM kam hai, mez chhota hai, har app switch pe
-almaari ke chakkar lag rahe hain. Dukaan wala aapko storage ka bada
-number dikhata hai (128 GB!), RAM chhupa deta hai (4 GB). Ab aap
-dibba padh kar asli sawal pooch sakte ho: mez kitna bada hai? Yeh
-chhota sa gyaan hazaaron rupaye ki galat khareed se bachata hai.
+"Memory full झाली, जुने photos delete करा." दोन वेगळ्या गोष्टी
+मिसळल्या: photos गोदामात (storage) आहेत, hang होणं मेजाचं (RAM)
+आहे. Photos हटवल्याने hang बरा होत नाही (गोदाम अगदी ठासून भरलं
+असेल तरच थोडा फरक). आणि उलटंही: "8 GB RAM आहे तर 8 GB ची file
+आरामात उघडेल" पण सरळ नाही; मेजावर आधीच इतर गोष्टी मांडलेल्या असतात.
+दोन नावं, दोन कामं; आता कायम वेगळी ठेवा.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## MAP वर
 
-"Memory full ho gayi, purani photos delete karo." Do alag cheezein
-mix ho gayin: photos storage mein hain, hang hona RAM ka hai. Photos
-hataane se hang theek nahi hota (jab tak storage bilkul hi thasa na
-ho). Aur ulta bhi: "8 GB RAM hai toh 8 GB ki file aaraam se khulegi"
-bhi seedha nahi hai, mez pe aur cheezein bhi rakhi hain. Do naam, do
-kaam, ab hamesha alag rakhna.
+Company case: memory chips चा बाजार (Samsung, SK Hynix, Micron)
+~150 billion dollars चा आहे, आणि AI ने त्याला आग लावली आहे, कारण
+AI recipes चं मेज (RAM) राक्षसी आकाराचं लागतं. 2024-25 मध्ये AI
+वाल्या memory chips ची (HBM नावाच्या) इतकी टंचाई झाली की भाव
+आभाळाला गेले. Chapter 0.2 चं सूत्र: scarcity चा काटा. जेव्हा नवी
+technology येते, तेव्हा तिच्या खालच्या कुठल्यातरी भागाची टंचाई
+कोणाचं तरी सोनं बनते. हा pattern ओळखणं म्हणजेच संधी ओळखणं.
 
-## MAP PE
+## स्वतः बघा (5 मिनिटं)
 
-Company case: memory chips ka bazaar (Samsung, SK Hynix, Micron)
-~150 arab dollar ka hai, aur AI ne use aag laga di hai, kyunki AI
-recipes ka mez (RAM) rakshasi size ka chahiye. 2024-25 mein AI wale
-memory chips (HBM naam ke) ki itni kami hui ki daam aasman pe chale
-gaye. Chapter 0.2 ka formula: scarcity ka dial. Jab bhi koi nayi
-technology aati hai, uske neeche wale kisi purze ki scarcity kisi ka
-sona ban jaati hai. Yeh pattern pehchaanna hi mauka pehchaanna hai.
+एखादं जड app उघडा (game किंवा editor): किती seconds लागले? हा
+गोदाम-ते-मेज copy चा वेळ होता. आता ते बंद करून **लगेच** परत उघडा:
+यावेळेस पटकन उघडलं ना? कारण system ने ते मेजाजवळच ठेवलं होतं.
+तुम्ही आत्ता दोन्ही स्मरणशक्तींमधला फरक स्वतःच्या घड्याळाने मोजला.
 
-## KHUD DEKHO (5 minute)
+## विचार करा
 
-Koi bhaari app kholo (game ya editor): kitne second lage? Yeh pakki
-almaari se tez mez tak copy ka waqt tha. Ab use band karke TURANT
-dobara kholo: is baar tez khula na? Kyunki system ne use mez ke paas
-hi rakha tha. Aapne abhi dono yaadaashton ka farq apni ghadi se naap
-liya.
+1. (derivation) या chapter मधून एका गोष्टीचं उत्तर काढा: "Save"
+button जगातून हळूहळू गायब का होतोय? (Google Docs मध्ये save button
+नाहीच.)
 
-## SOCHNE KE LIYE
-
-1. (derivation) Ek cheez ka jawab is chapter se nikaalo: "save"
-button dheere dheere duniya se gayab kyun ho raha hai? (Google Docs
-mein save button nahi hai.)
-
-> **Jawab:** Pehle save isliye tha ki tez wali yaadaasht se pakki
-> wali mein likhna mehnga kaam tha, toh machine aapse poochhti thi
-> kab likhna hai. Ab storage tez aur sasta ho gaya, toh software
-> har kuch second mein chupchaap khud likh deta hai (auto-save),
-> aur internet pe bhi copy bhej deta hai. Jab kisi kaam ka kharcha
-> gir jaata hai, toh us se juda hua button bhi mar jaata hai.
-> Design ko technology ki economics chalati hai, yeh baat product
-> banate waqt hamesha saath rakhna.
+> **उत्तर:** आधी save यासाठी होतं की मेजावरून गोदामात लिहिणं महाग
+> काम होतं; मग machine तुम्हाला विचारायची कधी लिहू. आता storage
+> वेगवान आणि स्वस्त झाला, मग software दर काही seconds नी चुपचाप
+> स्वतःच लिहितं (auto-save), आणि internet वरही copy पाठवतं. जेव्हा
+> एखाद्या कामाचा खर्च कोसळतो, तेव्हा त्याच्याशी जोडलेला button पण
+> मरतो. Design ला technology ची economics चालवते; product बनवताना
+> ही गोष्ट नेहमी सोबत ठेवा.

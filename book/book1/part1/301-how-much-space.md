@@ -1,98 +1,95 @@
-# Chapter 2.1 [SPINE]: Ek cheez kitni jagah leti hai
+# Chapter 2.1 [SPINE]: एक गोष्ट किती जागा घेते
 
-Kapda meter mein napta hai, doodh litre mein, aur digital cheezein?
-Aapne naam sune hain: MB, GB. Ab unhe kamaane layak samajh lete hain.
+कापड meter मध्ये मोजतात, दूध litre मध्ये, आणि digital गोष्टी? नावं
+तुम्ही ऐकली आहेत: MB, GB. आता ती कमावण्यालायक समजून घेऊ.
 
-Naap ki ikai wahi hai jo Chapter 1.4 mein bani: **bit**, ek switch ki
-haalat. Aath bit ka jhund **byte**. Ek byte mein 256 haalat aati hain,
-itna kaafi hai ek akshar rakhne ke liye. Toh ek moti baat pakdo:
+मापाचं एकक तेच आहे जे Chapter 1.4 मध्ये बनलं: **bit**, एका switch
+ची स्थिती. आठ bits चा गट **byte**. एका byte मध्ये 256 स्थिती
+मावतात; एक अक्षर ठेवायला एवढं पुरे. मग एक ढोबळ गोष्ट पकडा:
 
-**1 byte = lagbhag 1 akshar.**
+**1 byte = साधारण 1 अक्षर.**
 
-Ab seedhi ginti, har kadam pe hazaar ka guna:
-
-```
-1 KB (kilobyte)  = ~1 hazaar byte     = ek paragraph
-1 MB (megabyte)  = ~10 lakh byte      = ek moti kitaab ka text
-1 GB (gigabyte)  = ~100 crore byte    = 1,000 moti kitaabein
-1 TB (terabyte)  = ~1 lakh crore byte = ek chhoti library
-```
-
-Ab asli duniya ke anchors, yeh ratne laayak hain kyunki har baat-cheet
-mein aayenge:
+आता सरळ मोजणी, प्रत्येक पायरीवर हजाराचा गुणाकार:
 
 ```
-WhatsApp message (sirf text)     ~ 100 byte
-Ek photo (phone camera)          ~ 3 MB
-Ek gaana                         ~ 5 MB
-Ek ghanta video call             ~ 500 MB - 1 GB
-Ek movie (achhi quality)         ~ 2-4 GB
-Aapke phone ka poora storage     ~ 128-256 GB
+1 KB (kilobyte)  = ~1 हजार bytes      = एक परिच्छेद
+1 MB (megabyte)  = ~1 million bytes   = एका जाड पुस्तकाचा text
+1 GB (gigabyte)  = ~1 billion bytes   = 1,000 जाड पुस्तकं
+1 TB (terabyte)  = ~1 trillion bytes  = एक छोटी library
 ```
 
-Ek pattern dikh raha hai? Text nanha hai. Photo usse hazaar guna.
-Video photo se bhi sau guna. **Text : photo : video = 1 : hazaar :
-lakh.** Yeh anupaat is poori kitaab ka sabse kaam ka number hai,
-kyunki jahan size hai wahan kharcha hai.
+आता खऱ्या जगाचे anchors; हे पाठ करण्यालायक आहेत, कारण प्रत्येक
+बोलण्यात येतील:
 
-Kyun aisa? Text mein har akshar ek byte hai. Photo mein har bindu
-(pixel) ke teen byte hain, aur bindu lakhs mein hain. Video mein har
-second pe 30 photos hain. Ginti khud guna hoti jaati hai.
+```
+WhatsApp message (फक्त text)    ~ 100 bytes
+एक photo (phone camera)          ~ 3 MB
+एक गाणं                          ~ 5 MB
+एक तास video call                ~ 500 MB - 1 GB
+एक movie (चांगली quality)        ~ 2-4 GB
+तुमच्या phone चा पूर्ण storage   ~ 128-256 GB
+```
 
-## NAAM
+एक pattern दिसतोय? Text चिमूटभर आहे. Photo त्याच्या हजारपट. Video
+photo च्याही शंभरपट. **Text : photo : video = 1 : हजार : लाख.** हे
+प्रमाण या पूर्ण पुस्तकातला सगळ्यात कामाचा आकडा आहे, कारण जिथे size
+आहे तिथे खर्च आहे.
 
-In naapon ka poora parivaar **storage units** kehlata hai. Ek baareek
-baat: internet ki speed **bits** mein napti hai (Mbps = megabits per
-second), storage **bytes** mein (MB). Bit byte ka aathvan hissa hai.
-Isliye "100 Mbps" ka connection ek second mein sirf 12.5 MB laata hai.
-Telecom companies bits mein isliye bolti hain kyunki number aath guna
-bada dikhta hai. Ab aap yeh chaal pakad sakte ho.
+असं का? Text मध्ये प्रत्येक अक्षर एक byte. Photo मध्ये प्रत्येक
+ठिपक्याचे (pixel) तीन bytes, आणि ठिपके millions मध्ये. Video मध्ये
+प्रत्येक second ला 30 photos. मोजणी स्वतःच गुणाकार होत जाते.
+बाजाराच्या भाषेत: चिठ्ठी, पोतं आणि truck. चिठ्ठी खिशात मावते,
+पोत्याला हमाल लागतो, truck ला रस्ता आणि diesel.
 
-## ASLI DUNIYA SE EK EXAMPLE
+एक बारीक गोष्ट, जिच्यात दुकानदाराची चलाखी लपली आहे: internet चा वेग
+**bits** मध्ये मोजला जातो (Mbps = megabits per second), storage
+**bytes** मध्ये (MB). Bit हा byte चा आठवा हिस्सा. म्हणून "100 Mbps"
+चं connection एका second मध्ये फक्त 12.5 MB आणतं. Telecom companies
+bits मध्ये बोलतात कारण आकडा आठपट मोठा दिसतो. आता तुम्ही ही चाल
+पकडू शकता.
 
-WhatsApp par bheji photo halki kyun ho jaati hai? Kyunki WhatsApp use
-bhejne se pehle daba deta hai (compress): 3 MB se ~100 KB, tees guna
-chhoti. Karodo photos roz jaati hain; agar full size jaati, toh
-WhatsApp ka data kharcha tees guna hota aur aapka data pack bhi. Ek
-compression ki recipe ne company ke arabon bachaye. Size ka intezaam
-hi paisa hai.
+आणि हे कमाईशी असं जोडलेलं आहे: WhatsApp वर पाठवलेला photo हलका का
+होतो? कारण WhatsApp तो पाठवण्याआधी दाबतं (compress): 3 MB वरून
+~100 KB, तीसपट छोटा. रोज billions photos जातात; full size गेले
+असते तर WhatsApp चा data खर्च तीसपट असता, आणि तुमचा data pack पण.
+एका compression recipe ने company चे billions वाचवले. Size ची
+व्यवस्था हाच पैसा आहे.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## इथे लोक काय चुकीचं समजतात
 
-Log KB, MB, GB ko bas "chhota, bada, aur bada" samajhte hain. Nahi:
-har kadam HAZAAR ka guna hai. MB aur GB ka farq wahi hai jo 1 rupaye
-aur 1,000 rupaye ka. Jab engineer kahe "yeh file GB mein hai," toh
-woh keh raha hai "yeh MB wali se hazaar guna bhaari hai," aur uska
-kharcha bhi waisa hi hoga.
+लोक KB, MB, GB ला नुसतं "छोटा, मोठा, अजून मोठा" समजतात. नाही:
+प्रत्येक पायरी **हजाराचा** गुणाकार आहे. MB आणि GB मधला फरक तोच आहे
+जो 1 रुपया आणि 1,000 रुपयांमधला. Engineer म्हणतो "ही file GB मध्ये
+आहे," तेव्हा तो म्हणतोय "ही MB वालीपेक्षा हजारपट जड आहे," आणि
+तिचा खर्चही तसाच असेल.
 
-## MAP PE
+## MAP वर
 
-Rupaye ka rasta: aap Google ko storage ka kiraya dete ho (Google One:
-100 GB ke liye mahina ~130 rupaye). Google woh data jinke machines pe
-rakhta hai, unki disks Samsung/Seagate se aati hain. Neeche tak jao
-toh ek zaroorat milegi: "meri yaadein na khoyein" (Level 1: yaadon ki
-hifaazat). Us zaroorat ka poora stack: photos app (L2 service), cloud
-storage (L3), disk factory (L3 ka hardware kona). Har GB kiraya de
-raha hai.
+रुपयाचा रस्ता: तुम्ही Google ला storage चं भाडं देता (Google One:
+100 GB साठी महिना ~130 रुपये). Google तो data ज्यांच्या machines
+वर ठेवतो त्यांच्या disks Samsung/Seagate कडून येतात. खाली उतरत जा,
+एक गरज मिळेल: "माझ्या आठवणी हरवू नयेत" (Level 1). त्या गरजेचा पूर्ण
+stack: Photos app (L2 सेवा), cloud storage (L3), disk factory (L3
+चा hardware कोपरा). प्रत्येक GB भाडं देतोय.
 
-## KHUD DEKHO (5 minute)
+## स्वतः बघा (5 मिनिटं)
 
-Phone mein koi ek photo kholo, uski details/info dekho (size milega,
-~2-4 MB). Ab ek text message ka size socho (~100 byte). Ab khud gino:
-ek photo kitne messages ke barabar hai? (~30,000). Ab samjho ki data
-pack video dekhne se hi kyun khatam hota hai, text se kabhi nahi.
+Phone मध्ये एक photo उघडा, त्याची details/info बघा (size मिळेल,
+~2-4 MB). आता एका text message चा size आठवा (~100 bytes). आता
+स्वतः मोजा: एक photo किती messages च्या बरोबर आहे? (~30,000.) आता
+समजेल की data pack video बघण्यानेच का संपतो, text ने कधीच नाही.
 
-## SOCHNE KE LIYE
+## विचार करा
 
-1. (derivation) Do startup ideas: ek mein log 200-word reviews likhte
-hain, doosre mein log 1-minute video reviews banate hain. Dono ke 10
-lakh users hain. Sirf size ke gyaan se batao: kiska kharcha kitna
-zyada hoga, aur iska business pe kya asar padega?
+1. (derivation) दोन startup कल्पना: एकीत लोक 200 शब्दांचे reviews
+लिहितात, दुसरीत लोक 1 मिनिटाचे video reviews बनवतात. दोन्हीकडे 1
+million users. फक्त size च्या ज्ञानाने सांगा: कोणाचा खर्च किती
+जास्त, आणि याचा business वर काय परिणाम?
 
-> **Jawab:** Text review ~1 KB, video review ~50-100 MB: farq lagbhag
-> LAKH guna. Toh video wale ka storage aur bhejne ka kharcha bhi
-> hazaaron-lakhon guna hoga. Asar: text wala app muft users pe bhi
-> zinda reh sakta hai, video wale ko pehle din se paise ka raasta
-> chahiye (ads, subscription), warna har naya user use gareeb karta
-> hai. Product ki shakal uske business model ki shakal tay kar deti
-> hai. Yeh formula ab aapke paas hai, kisi bhi idea pe lagao.
+> **उत्तर:** Text review ~1 KB, video review ~50-100 MB: फरक जवळजवळ
+> **लाखपट**. मग video वाल्याचा साठवण्याचा आणि पाठवण्याचा खर्चही
+> हजारो-लाखोपट. परिणाम: text वालं app फुकट users वरही जगू शकतं;
+> video वाल्याला पहिल्या दिवसापासून पैशाचा रस्ता लागतो (ads,
+> subscription), नाहीतर प्रत्येक नवा user त्याला गरीब करतो. Product
+> चा आकार त्याच्या business model चा आकार ठरवतो. हे सूत्र आता
+> तुमच्याकडे आहे; कुठल्याही कल्पनेवर लावा.

@@ -1,11 +1,11 @@
-# SECTION 1: PEHLA SAWAL
+# SECTION 1: पहिला प्रश्न
 
-Chhe chapters. Yahan se machine khulti hai: switch se le kar is baat tak
-ki ek hi machine sab kuch kyun kar sakti hai.
+सहा chapters. इथून machine उघडते: भिंतीवरच्या switch पासून या
+गोष्टीपर्यंत की एकच machine सगळं का करू शकते.
 
-**Yeh aapke business decision mein kahan aayegi:** Jab aap kisi engineer
-ya AI se product banwaoge, toh "kya possible hai, kya nahi, kya sasta hai,
-kya mehnga" ka andaaza isi section ki samajh se aayega. Jo founder machine
-ko jaadu samajhta hai, woh galat cheez maangta hai, galat daam pe, galat
-aadmi se. Jo samajhta hai, woh theek wahi maangta hai jo machine de
-sakti hai.
+**हे तुमच्या business decision मध्ये कुठे येईल:** जेव्हा तुम्ही
+एखाद्या engineer कडून किंवा AI कडून product बनवून घ्याल, तेव्हा "काय
+शक्य आहे, काय नाही, काय स्वस्त, काय महाग" याचा अंदाज याच section
+च्या समजेतून येईल. जो founder machine ला जादू समजतो, तो चुकीची गोष्ट
+मागतो, चुकीच्या भावात, चुकीच्या माणसाकडून. जो समजतो, तो नेमकं तेच
+मागतो जे machine देऊ शकते.

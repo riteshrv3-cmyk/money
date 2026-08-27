@@ -1,1756 +1,1639 @@
 # THE MACHINE
 
-## PART 1 OF 5: PAISA AUR MACHINE
+## PART 1 OF 5: पैसा आणि MACHINE
 
-Yeh kitaab paanch chhoti kitaabon mein hai. Yeh pehli hai.
-
-```
-PAANCH PARTS KA NAKSHA
-
-[ AAP YAHAN HO ]
-PART 1  PAISA AUR MACHINE       paisa kyun hai, computer kya hai,
-                                sab kuch numbers kaise hai
-PART 2  MACHINE SE BAAT         languages, operating system,
-                                software banta kaise hai
-PART 3  MACHINES KA JAAL        network, address, internet
-PART 4  DATA AUR YAADEIN        storage, database, dhoondhna
-PART 5  DUNIYA KO SERVE KARNA   scale, cloud, kharcha, poora jod
-```
-
-## Yeh kitaab kis liye hai
-
-Aap paisa kamana chahte ho. Aapne duniya ko chaar levels mein dekha hai:
+हे पुस्तक पाच छोट्या पुस्तकांमध्ये आहे. हे पहिलं.
 
 ```
-LEVEL 1   INSAAN KI ZAROORAT     bhookh, sehat, gyaan, suraksha
-LEVEL 2   BUSINESS               jo zaroorat poori karke paisa leta hai
-LEVEL 3   TECHNOLOGY             jo business ko taakat deti hai
-LEVEL 4   AI                     jo technology ko taakat deti hai
+पाच PARTS चा नकाशा
+
+[ तुम्ही इथे आहात ]
+PART 1  पैसा आणि MACHINE      पैसा का आहे, computer म्हणजे काय,
+                              सगळं numbers कसं आहे
+PART 2  MACHINE शी बोलणं      languages, operating system,
+                              software बनतं कसं
+PART 3  MACHINES चं जाळं      network, address, internet
+PART 4  DATA आणि आठवणी        storage, database, शोधणं
+PART 5  जगाला SERVE करणं      scale, cloud, खर्च, पूर्ण जोड
 ```
 
-Aap Level 4 pe kaam karna chahte ho, taaki neeche ke saare levels serve kar
-sako. Lekin Level 4 hawa mein nahi tikta. Woh Level 3 ke upar khada hai. Isliye
-pehle machine ko samajhna padega. Yeh paanch parts wahi karte hain.
+## हे पुस्तक कशासाठी आहे
 
-Padhne ke baad aap chaar cheezein kar paoge:
-
-1. Kisi business problem ke liye tech solution ka design khud sochna.
-2. AI tools se kaam nikaalna jaise ek engineer nikaalta hai.
-3. Koi bhi business dekhkar bataana ki tech se paisa kahan banega.
-4. Engineers aur tech news ki baat poori samajhna. Koi aapko bewakoof na bana paaye.
-
-## Yeh kitaab kaise likhi gayi hai
-
-Seedhi baat, aapse. Koi lecture nahi. Har cheez ke liye pehle problem, phir
-naam. Naam hamesha aakhir mein aata hai, kyunki naam pehle aa jaaye toh dimaag
-sochna band kar deta hai.
-
-Beech beech mein do log milenge: Madhav, ek guru, aur Kabir, ek naujawan jo
-wahi galtiyan karta hai jo hum sab karte hain. Woh sirf tab aate hain jab koi
-galat-fehmi todni ho.
-
-## Har chapter ka dhancha
+तुम्हाला पैसे कमवायचे आहेत. तुम्ही जगाला चार levels मध्ये बघितलं आहे:
 
 ```
-CHAPTER          pehle problem, phir samajh, phir naam
-NAAM             jo shabd duniya istemaal karti hai
-ASLI DUNIYA      ek sachcha example
-GALAT-FEHMI      jahan log aksar phislte hain
-MAP PE           yeh cheez Level 1-4 mein kahan hai, paisa kahan hai
-KHUD DEKHO       5 minute ka kaam, apne phone ya laptop pe (optional)
-SOCHNE KE LIYE   ek sawal, jawab seedha neeche
+LEVEL 1   माणसाची गरज          भूक, आरोग्य, ज्ञान, सुरक्षा
+LEVEL 2   BUSINESS             जो गरज पूर्ण करून पैसे घेतो
+LEVEL 3   TECHNOLOGY           जी business ला ताकद देते
+LEVEL 4   AI                   जी technology ला ताकद देते
 ```
 
-Har chapter ke naam ke saath ek nishaan hai. [SPINE] matlab reedh ki haddi,
-chhodna mat. [DEPTH] matlab gehrai, pehli baar mein chhod sakte ho, baad mein
-lautna.
+तुम्हाला Level 4 वर काम करायचं आहे, म्हणजे खालचे सगळे levels serve
+करता येतील. पण Level 4 हवेत तरंगत नाही. तो Level 3 वर उभा आहे. म्हणून
+आधी machine समजून घ्यावी लागेल. हे पाच parts तेच करतात.
 
-## Ek hi instruction
+वाचून झाल्यावर तुम्ही चार गोष्टी करू शकाल:
 
-Jaldi mat karo. Ek din mein do-teen chapters kaafi hain. Sawal ka jawab pehle
-khud socho, phir neeche padho. Jo cheez samajh na aaye, wahan ruko, aage ka
-sab usi pe khada hoga.
+1. कुठल्याही business problem साठी tech solution चं design स्वतः
+   विचार करणं.
+2. AI tools कडून काम काढून घेणं, जसं एक engineer काढतो.
+3. कुठलाही business बघून सांगणं की tech ने पैसा कुठे बनेल.
+4. Engineers आणि tech बातम्यांची भाषा पूर्ण समजणं. कोणी तुम्हाला
+   मूर्ख बनवू शकणार नाही.
 
+## हे पुस्तक कसं लिहिलं आहे
 
-# SECTION 0: PAISA, VALUE AUR SOCIETY
+सरळ बोलणं, तुमच्याशी. Lecture नाही. प्रत्येक गोष्टीसाठी आधी problem,
+मग समज, मग नाव. नाव नेहमी शेवटी येतं, कारण नाव आधी आलं की डोकं विचार
+करणं बंद करतं.
 
-Paanch chapters. Yeh section machine ke baare mein nahi hai. Yeh us cheez ke
-baare mein hai jiske liye aap machine seekh rahe ho: paisa.
+आणि प्रत्येक मोठ्या कल्पनेला रोजच्या जगातली एक उपमा आहे: truck आणि
+रस्ते, ढाबा आणि recipe, गाव आणि बाजार, post office आणि bank. Machine
+नवीन आहे; तिच्या आतल्या कल्पना हजारो वर्षं जुन्या आहेत.
 
-**Yeh aapke business decision mein kahan aayegi:** Jab bhi aap koi idea
-uthaoge, pehla sawal hoga "paisa kahan se aayega." Iska jawab hamesha Level 1
-se shuru hota hai: kiski zaroorat, kitni badi, kitne log. Yeh section woh
-sawal poochhna sikhata hai. Iske bina baaki chaar parts sirf gyaan hain,
-kamaai nahi.
-
-
-# Chapter 0.1 [SPINE]: The village: paisa exist kyun karta hai
-
-Sau logon ka ek gaon socho. Koi paisa nahi hai. Kisan ke paas anaaj hai,
-mistri ke paas hunar, vaidya ke paas ilaaj, mochi ke paas joote.
-
-Pehla intezaam seedha hai: cheez ke badle cheez. Kisan anaaj dega, mistri
-chhat banayega. Chal gaya.
-
-Ab ek case dekho. Vaidya ne mochi ka haath theek kiya. Teen mahine baad vaidya
-ko joote chahiye. Lekin iss baar mochi bilkul theek-thaak hai, usko vaidya se
-kuch nahi chahiye. Toh vaidya kya kare? Intezaar kare ki mochi bimar pade?
-
-Yahan intezaam toot gaya. Seedha exchange sirf tab chalta hai jab do log ek
-hi waqt pe ek doosre ka kaam chahte hon. Sau logon ke gaon mein bhi yeh
-mushkil se hota hai. Yeh pehli toot hai, ise yaad rakho.
-
-Doosra intezaam khud nikaalo. Rukiye, sach mein sochiye, kya karenge?
-
-Bahut log kehte hain: likh lo. Ek register banao. Vaidya ne mochi ka kaam
-kiya, likh do, baad mein le lega. Achha jawab hai, duniya ne yeh kiya bhi
-hai. Lekin do naye sawal khade ho jaate hain.
-
-**Madhav:** Register rakhega kaun?
-
-**Kabir:** Koi ek aadmi.
-
-**Madhav:** Aur jis din usne apna naam thoda bada likh diya?
-
-**Kabir:** Hmm.
-
-**Madhav:** Aur das hazaar log hon, alag gaon hon, log aate jaate hon.
-Kitne register?
-
-**Kabir:** Bahut zyada. Aur kisi ko kisi pe bharosa bhi nahi hoga.
-
-Toh register ka idea sahi hai, uski shakal galat hai. Ab teesra intezaam
-socho. Aisi koi cheez ho jo mochi le lega, chahe use ilaaj bilkul na chahiye.
-Woh use kyun lega? Sirf isliye, kyunki use bharosa hai ki baaki sab bhi
-lenge. Woh cheez uske apne kisi kaam ki nahi hai. Uska poora value ek hi
-cheez mein hai: bharosa ki aage badha dunga.
-
-Ab khud nikaalo, us cheez mein kya kya hona chahiye:
-
-1. Sadni nahi chahiye, warna rakhte rakhte khatam.
-2. Uthane mein aasan ho, bhaari patthar se kaam nahi chalega.
-3. Nakli banana mushkil ho, warna koi bina kuch diye sab le lega.
-4. Tukdon mein bat sake, chhoti cheez bhi khareedni hoti hai.
-5. Sab log use maanein. Ek bhi na maane toh chain toot jaati hai.
-
-Aapne abhi paisa invent kar diya.
-
-## NAAM
-
-Jo cheez aapne nikaali, uska naam **paisa** (money) hai. Pehli toot ka naam
-economists rakhte hain **double coincidence of wants**: dono ko ek hi waqt
-ek doosre ki cheez chahiye ho, tabhi seedha exchange chalta hai. Register
-wale idea ka naam **ledger** hai. Paisa asal mein ek chalta-phirta ledger
-hai jisme bharosa sabke beech bata hua hai, kisi ek aadmi ke haath mein nahi.
-
-## ASLI DUNIYA SE EK EXAMPLE
-
-Aapka UPI dekho. Jab aap kisi ko 50 rupaye bhejte ho, koi cheez haath se
-haath nahi jaati. Ek register mein likha jaata hai: aapke naam ke aage 50
-kam, uske naam ke aage 50 zyada. Woh register banks aur NPCI rakhte hain.
-Matlab duniya register wale idea pe wapas aa gayi, bas ab register rakhne
-wala ek aadmi nahi hai, ek system hai jise sab maante hain. Paisa shuru se
-aakhir tak bharose ka intezaam hai.
-
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
-
-Log sochte hain paisa value HAI. Nahi. Paisa value ka record hai. Note khud
-kaagaz hai, uska value is bharose mein hai ki agla aadmi use lega. Jis din
-woh bharosa tootta hai, kaagaz kaagaz reh jaata hai. Aisa hua hai: jin
-deshon mein logon ka bharosa toota, wahan log boriyon mein note le kar roti
-khareedne gaye.
-
-## MAP PE
-
-Yeh poora chapter Level 1 pe khada hai: insaan ki zaroorat aur unke beech
-ka len-den. Paisa yahin janamta hai, aur yaad rakho, paisa SIRF yahin
-ghusta hai, jab ek insaan apni zaroorat ke liye deta hai. Level 2, 3, 4
-sirf is len-den ko bada, tez aur sasta banate hain. Jo bhi kamaana chahta
-hai, uski chain kahin na kahin Level 1 ke ek insaan pe khatam hoti hai.
-
-## KHUD DEKHO (5 minute)
-
-Apna UPI app kholo. Aakhri 5 transactions dekho. Har ek ke liye poochho:
-kis zaroorat ke liye paisa gaya? Khaana, safar, gyaan, kuch aur? Har
-transaction kisi zaroorat pe khatam hoga. Ek bhi aisa nahi milega jo kisi
-insaan ki zaroorat pe khatam na ho.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Agar duniya mein sirf ek hi cheez ka len-den hota, maan lo
-sirf anaaj, toh kya paisa phir bhi banta?
-
-> **Jawab:** Nahi banta, ya bahut der se banta. Paisa us problem ka hal hai
-> jab bahut alag alag cheezon ka exchange ho aur waqt na mile. Ek hi cheez
-> ho toh seedha exchange kaafi hai, double coincidence wali toot hoti hi
-> nahi. Isse ek gehri baat dikhti hai: paisa tab zaroori hota hai jab
-> society mein kaam bat jaata hai. Jitna zyada kaam ka batwara, utna zaroori
-> paisa. Isi baat pe agla chapter khada hai.
-
-
-# Chapter 0.2 [SPINE]: Same hours, different pay
-
-Do aadmi, ek hi gaon, ek hi umar, dono mehnati.
-
-Ravi mistri hai. Roz 12 ghante kaam karta hai. Har ghar jo woh banata hai,
-uske haathon se banta hai. Jis din woh kaam nahi karta, us din kamaai zero.
-Bees saal baad bhi uska din 12 ghante ka hi hai.
-
-Anil ne gaon ke liye paani ki naali ka design banaya. Chhe mahine lage. Uske
-baad naali ban gayi aur chal padi. Ab paani har ghar pahunchta hai, roz,
-bina Anil ke haath lagaye. Gaon Anil ko har mahine hissa deta hai. Anil ab
-doosre gaon ke liye design bana raha hai.
-
-Ravi zyada ghante lagata hai. Anil zyada kamata hai. Kyun?
-
-Pehla jawab jo dimaag deta hai: Anil padha likha hai. Lekin yeh jawab kuch
-nahi samjhaata. Aisa vaidya bhi padha likha hai jo Ravi jitna hi kamata hai.
-Asli jawab teen hisson mein hai. Teeno khud nikaalo:
-
-**Problem kitni badi hai?** Ravi ek ghar ki problem solve karta hai, ek
-parivaar ke liye. Anil ne poore gaon ki paani ki problem solve ki, sau
-parivaaron ke liye. Jitne zyada log, jitni gehri zaroorat, utna bada paisa
-us problem ke peeche khada hai.
-
-**Kitne log yeh kar sakte hain?** Deewar chunna gaon ke bees log jaante
-hain. Naali ka design ek hi jaanta tha. Jo cheez kam log kar sakte hain,
-uska daam upar jaata hai. Yeh mandi ka seedha niyam hai.
-
-**Kaam ek baar, faayda kitni baar?** Yeh sabse chhupa hua hissa hai. Ravi
-ki chinaai us din khatam ho jaati hai. Anil ka design ek baar bana aur ab
-har din kaam kar raha hai, bina Anil ke. Ravi apna waqt bech raha hai.
-Anil ne ek aisi cheez banayi jo uske sone ke baad bhi chalti hai.
-
-Toh formula yeh nikla:
+## प्रत्येक chapter चा ढाचा
 
 ```
-KAMAAI  =  PROBLEM KA SIZE  x  KITNE KAM LOG KAR SAKTE HAIN  x  KAAM EK BAAR, FAAYDA BAAR BAAR
+CHAPTER                आधी problem, मग समज; नावं आणि खरी
+                       उदाहरणं मजकुरातच, ठळक अक्षरात
+इथे लोक काय चुकीचं
+समजतात                 जिथे लोक नेहमी घसरतात
+MAP वर                 ही गोष्ट Level 1-4 मध्ये कुठे, पैसा कुठे
+स्वतः बघा              5 मिनिटांचं काम, तुमच्या phone/laptop वर
+विचार करा              एक प्रश्न, उत्तर लगेच खाली
 ```
 
-Is formula mein dhyaan se dekho: GHANTE KAHIN NAHI HAIN. Isi liye 2 ghante
-wala arabpati ho sakta hai aur 12 ghante wala tang. Mehnat galat cheez pe
-lagi ho toh mehnat ka daam nahi milta.
+प्रत्येक chapter च्या नावासोबत एक खूण आहे. **[SPINE]** म्हणजे कणा,
+वगळू नका. **[DEPTH]** म्हणजे खोली, पहिल्या वेळेस वगळू शकता, नंतर
+परत या.
 
-## NAAM
+## एकच सूचना
 
-Teesre hisse ka naam **leverage** hai: ek baar kaam, baar baar faayda.
-Doosre hisse ka naam **scarcity** hai: kami. Jo cheez kam hai, mehngi hai.
-Pehla hissa **market size** kehlata hai. Yeh teen shabd is kitaab mein baar
-baar aayenge.
-
-## ASLI DUNIYA SE EK EXAMPLE
-
-Ek surgeon lo aur ek app banane wala. Surgeon ki skill zyada rare hai,
-padhaai zyada lambi hai. Phir bhi duniya ke sabse ameer log app aur software
-wale hain, surgeon nahi. Kyun? Surgeon ka har operation uske apne haathon se
-hota hai, din mein do ya teen. Leverage ka dial zero pe atka hai. App ek
-baar banti hai aur ek crore log ek saath use karte hain. WhatsApp jab bika
-(19 arab dollar), tab uske paas sirf 55 log kaam karte the. 55 log, 40
-crore users. Yeh leverage hai.
-
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
-
-Log sochte hain zyada kamaane ka raasta zyada mehnat hai. Formula kehta hai
-mehnat ka guna tab hi chalta hai jab baaki teen dial upar hon. Sirf ghante
-badhaane se sirf thakaan badhti hai. Doosri galti: log scarcity ko degree
-samajhte hain. Scarcity ka matlab certificate nahi, yeh hai ki us waqt, us
-jagah, woh kaam kitne log kar sakte hain.
-
-## MAP PE
-
-Is formula ka teesra dial, leverage, hi asli wajah hai ki Level 3
-(technology) itna paisa banata hai. Machine hi woh cheez hai jo ek baar
-banti hai aur baar baar chalti hai, bina thake. Isi liye aap yeh kitaab
-padh rahe ho: Level 3 aur 4 pe leverage ka dial sabse upar tak ghoomta hai.
-
-## KHUD DEKHO (5 minute)
-
-Duniya ke 10 sabse ameer logon ki list kholo (search: richest people).
-Har naam ke aage socho: kya yeh aadmi ghante bech kar yahan pahuncha?
-Ek bhi nahi milega. Har ek ke paas koi aisi cheez hai jo uske bina chalti
-hai: company, software, brand, factory.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Ek teacher 30 bachchon ko padhaata hai aur mahine ka X
-kamata hai. Usi gyaan se woh crores kaise kama sakta hai, formula ke teeno
-dial ghuma kar batao.
-
-> **Jawab:** Size: 30 bachchon ki jagah poore desh ke bachche, online.
-> Scarcity: sab subjects nahi, woh ek cheez jo sirf woh sabse achha
-> samjhaata hai. Leverage: roz class lene ki jagah ek baar recorded course,
-> ya ek kitaab, jo ek baar banti hai aur lakhon baar bikti hai. Physics
-> wallah yahi kahani hai: ek teacher, YouTube pe recorded classes, aaj
-> arabon ki company. Gyaan wahi tha, dial ghoom gaye.
+घाई करू नका. दिवसाला दोन-तीन chapters पुरे. प्रश्नाचं उत्तर आधी
+स्वतः विचार करा, मग खाली वाचा. जी गोष्ट समजली नाही, तिथे थांबा,
+पुढचं सगळं तिच्यावरच उभं असेल.
 
 
-# Chapter 0.3 [SPINE]: Society ke chaar levels
+# SECTION 0: पैसा, VALUE आणि SOCIETY
 
-Chapter 0.1 ke gaon mein wapas chalo, lekin ab poori duniya socho. Arabon
-log. Is bheed mein paisa kahan se shuru hota hai aur kahan jaata hai? Ek
-naksha banate hain, neeche se upar.
+पाच chapters. हा section machine बद्दल नाही. ज्या गोष्टीसाठी तुम्ही
+machine शिकताय, त्या गोष्टीबद्दल आहे: पैसा.
 
-**Level 1: Insaan ki zaroorat.** Bhookh, pyaas, chhat, sehat, gyaan,
-suraksha, safar, judav, manoranjan, izzat. Yeh list hazaaron saal se
-lagbhag wahi hai. Yahi poori economy ki zameen hai. Har rupaya jo kahin
-bhi ghoom raha hai, aakhir mein kisi insaan ki kisi zaroorat se nikla hai.
+**हे तुमच्या business decision मध्ये कुठे येईल:** जेव्हा तुम्ही
+कुठलीही कल्पना उचलाल, पहिला प्रश्न असेल "पैसा कुठून येणार." याचं
+उत्तर नेहमी Level 1 पासून सुरू होतं: कोणाची गरज, किती मोठी, किती
+लोक. हा section तो प्रश्न विचारायला शिकवतो. याच्याशिवाय बाकीचे चार
+parts फक्त ज्ञान आहेत, कमाई नाही.
 
-**Level 2: Business.** Ek insaan ki zaroorat ek baar poori karna kaam hai.
-Lakhon logon ki zaroorat baar baar poori karna intezaam maangta hai: log,
-saamaan, hisaab, bharosa. Us intezaam ka naam business hai. Restaurant
-bhookh pe khada hai, hospital sehat pe, school gyaan pe. Business zaroorat
-ko paise mein badalne ki machine hai.
 
-**Level 3: Technology.** Business ko hamesha teen cheezon ki bhookh hoti
-hai: zyada log serve karo, kam kharche mein, kam galti ke saath. Jo bhi
-cheez yeh karti hai, woh technology hai. Tractor kisan ke liye, fridge
-restaurant ke liye, software har kisi ke liye. Technology business ki
-taakat badhaane wala level hai.
+# Chapter 0.1 [SPINE]: गाव: पैसा exist का करतो
 
-**Level 4: AI.** Ab technology khud ek zaroorat wali cheez ban gayi hai:
-usse sochna, likhna, decide karna, yeh sab abhi tak insaan karte the. Jo
-machine yeh kaam karne lagi hai, woh technology ki technology hai. AI
-Level 3 ko wahi deta hai jo Level 3 ne Level 2 ko diya tha: zyada, sasta,
-kam galti.
+शंभर लोकांचं एक गाव विचार करा. पैसा नावाची गोष्ट अजून नाही. शेतकऱ्याकडे
+धान्य आहे, मिस्त्रीकडे हुनर, वैद्याकडे इलाज, चांभाराकडे जोडे.
 
-Ab sabse zaroori teer kheencho:
+पहिली व्यवस्था सरळ आहे: वस्तूच्या बदल्यात वस्तू. शेतकरी धान्य देईल,
+मिस्त्री छप्पर बांधेल. चाललं.
+
+आता एक प्रसंग बघा. वैद्याने चांभाराचा हात बरा केला. तीन महिन्यांनी
+वैद्याला जोडे हवेत. पण यावेळेस चांभार एकदम ठणठणीत आहे, त्याला वैद्याकडून
+काहीच नको. मग वैद्य काय करणार? वाट बघणार की चांभार आजारी पडेल?
+
+इथे व्यवस्था तुटली. सरळ देवाण-घेवाण तेव्हाच चालते जेव्हा दोन माणसांना
+एकाच वेळेस एकमेकांचं काम हवं असतं. या पहिल्या तुटीचं नाव economists
+ठेवतात **double coincidence of wants**: दोघांच्या गरजा एकाच क्षणी
+जुळल्या पाहिजेत. शंभर लोकांच्या गावातही हे क्वचित जुळतं. ही तूट लक्षात
+ठेवा.
+
+दुसरी व्यवस्था स्वतः काढा. थांबा, खरंच विचार करा. काय कराल?
+
+बरेच लोक म्हणतात: लिहून ठेवा. एक वही बनवा. वैद्याने चांभाराचं काम केलं,
+लिहून ठेवा, नंतर वसूल करेल. चांगलं उत्तर आहे, जगाने हे केलंही आहे; अशा
+वहीचं नाव **ledger**. पण दोन नवे प्रश्न उभे राहतात.
+
+पहिला: वही ठेवणार कोण? कोणी एक माणूस. आणि ज्या दिवशी त्याने स्वतःच्या
+नावापुढे थोडं जास्त लिहिलं? दुकानाच्या गल्ल्यावर बसलेला माणूसच हिशोब
+लिहितो, तेव्हा हिशोबावर विश्वास म्हणजे माणसावर विश्वास. दुसरा: शंभर
+लोकांत एक वही चालली. पण दहा हजार लोक, वेगवेगळी गावं, येणारे-जाणारे
+लोक? किती वह्या? आणि कोणाचा कोणावर विश्वास?
+
+म्हणजे वहीची कल्पना बरोबर आहे, तिचं रूप चुकीचं आहे. आता तिसरी व्यवस्था
+विचार करा. अशी कुठली गोष्ट असेल जी चांभार घेईल, त्याला इलाज अजिबात
+नको असला तरी? तो ती का घेईल? फक्त एवढ्यासाठी, की त्याला खात्री आहे
+की बाकी सगळेही ती घेतील. ती गोष्ट त्याच्या स्वतःच्या कुठल्याच कामाची
+नाही. तिची पूर्ण किंमत एकाच गोष्टीत आहे: पुढे चालवता येईल हा विश्वास.
+
+आता स्वतः काढा, त्या गोष्टीत काय-काय हवं:
+
+1. सडू नये, नाहीतर ठेवता ठेवता संपेल.
+2. उचलायला सोपी हवी, जड दगडाने काम चालणार नाही.
+3. नकली बनवणं अवघड हवं, नाहीतर कोणीही न देता सगळं घेईल.
+4. तुकड्यांत वाटता यावी, छोटी गोष्टही विकत घ्यावी लागते.
+5. सगळ्यांनी ती मानली पाहिजे. एकाने जरी नाकारली तरी साखळी तुटते.
+
+तुम्ही आत्ता **पैसा** invent केला. पैसा म्हणजे चालती-फिरती वही: असा
+ledger ज्यात विश्वास कोणा एका माणसाच्या हातात नाही, सगळ्यांमध्ये
+वाटलेला आहे. तुमचा **UPI** बघा: 50 रुपये पाठवता तेव्हा हातातून हातात
+काहीच जात नाही; एका वहीत एवढंच लिहिलं जातं की तुमच्या नावापुढे 50
+कमी, त्याच्या नावापुढे 50 जास्त. ती वही banks आणि NPCI ठेवतात. जग
+वहीच्या कल्पनेवर परत आलं; फरक एवढाच की वही ठेवणारा आता एक माणूस
+नाही, एक system आहे जिला सगळे मानतात.
+
+## इथे लोक काय चुकीचं समजतात
+
+लोकांना वाटतं पैसा म्हणजे value **आहे**. नाही. पैसा value ची **नोंद**
+आहे. नोट स्वतः कागद आहे; तिची किंमत या विश्वासात आहे की पुढचा माणूस
+ती घेईल. Post office चं stamp आठवा: तो छोटा कागद पत्र पोहोचवत नाही,
+तो फक्त "फी भरली आहे" ची नोंद आहे; system मेली तर stamp रद्दी. तसंच
+ज्या देशांमध्ये लोकांचा विश्वास तुटला, तिथे लोक पोत्यांमध्ये नोटा
+भरून भाकरी विकत घ्यायला गेले. कागद कागदच राहिला.
+
+## MAP वर
+
+हा पूर्ण chapter Level 1 वर उभा आहे: माणसाची गरज आणि त्यांच्यामधली
+देवाण-घेवाण. पैसा इथेच जन्मतो, आणि लक्षात ठेवा, पैसा **फक्त इथेच**
+घुसतो, जेव्हा एक माणूस आपल्या गरजेसाठी देतो. Level 2, 3, 4 फक्त ही
+देवाण-घेवाण मोठी, वेगवान आणि स्वस्त करतात. जो कोणी कमवू इच्छितो,
+त्याची साखळी कुठेतरी Level 1 च्या एका माणसावर संपते.
+
+## स्वतः बघा (5 मिनिटं)
+
+तुमचं UPI app उघडा. शेवटचे 5 व्यवहार बघा. प्रत्येकासाठी विचारा:
+कुठल्या गरजेसाठी पैसा गेला? खाणं, प्रवास, ज्ञान, अजून काही? प्रत्येक
+व्यवहार कुठल्यातरी गरजेवर संपेल. एकही असा मिळणार नाही जो कुठल्याही
+माणसाच्या गरजेवर संपत नाही.
+
+## विचार करा
+
+1. (derivation) जर जगात फक्त एकाच वस्तूची देवाण-घेवाण असती, समजा
+फक्त धान्य, तर पैसा तरीही बनला असता का?
+
+> **उत्तर:** नाही, किंवा खूप उशिरा. पैसा त्या problem चा उपाय आहे
+> जिथे खूप वेगवेगळ्या वस्तूंची देवाण-घेवाण आहे आणि वेळा जुळत नाहीत.
+> एकच वस्तू असेल तर सरळ देवाण-घेवाण पुरते, double coincidence ची
+> तूट होतच नाही. यातून एक खोल गोष्ट दिसते: पैसा तेव्हा गरजेचा होतो
+> जेव्हा समाजात कामं वाटली जातात. जेवढी जास्त कामांची वाटणी, तेवढा
+> गरजेचा पैसा. याच गोष्टीवर पुढचा chapter उभा आहे.
+
+
+# Chapter 0.2 [SPINE]: तास सारखे, कमाई वेगळी
+
+दोन माणसं, एकच गाव, एकच वय, दोघेही मेहनती.
+
+रवी मिस्त्री आहे. रोज 12 तास काम करतो. प्रत्येक घर त्याच्या हातांनी
+बनतं. ज्या दिवशी तो काम करत नाही, त्या दिवशी कमाई शून्य. वीस
+वर्षांनंतरही त्याचा दिवस 12 तासांचाच आहे.
+
+अनिलने गावासाठी पाण्याच्या नळाचं design बनवलं. सहा महिने लागले.
+त्यानंतर नळ-योजना बांधली गेली आणि चालू झाली. आता पाणी रोज प्रत्येक
+घरी पोहोचतं, अनिलने हात न लावता. गाव अनिलला दर महिन्याला हिस्सा देतं.
+अनिल आता दुसऱ्या गावासाठी design बनवतोय.
+
+रवी जास्त तास लावतो. अनिल जास्त कमावतो. का?
+
+डोकं पहिलं उत्तर देतं: अनिल शिकलेला आहे. पण हे उत्तर काहीच सांगत
+नाही. वैद्यही शिकलेला आहे आणि रवीएवढंच कमावतो. खरं उत्तर तीन भागांत
+आहे. तिन्ही स्वतः काढा:
+
+**Problem किती मोठी आहे?** रवी एका घराची problem सोडवतो, एका
+कुटुंबासाठी. अनिलने पूर्ण गावाची पाण्याची problem सोडवली, शंभर
+कुटुंबांसाठी. जेवढे जास्त लोक, जेवढी खोल गरज, तेवढा मोठा पैसा त्या
+problem च्या मागे उभा असतो. याचं नाव **market size**.
+
+**हे किती लोकांना जमतं?** भिंत बांधणं गावातले वीस जण जाणतात. नळाचं
+design एकच जाणत होता. जी गोष्ट कमी लोकांना जमते, तिचा भाव वर जातो.
+बाजाराचा सरळ नियम: टंचाई. याचं नाव **scarcity**. Auto-rickshaw
+सगळ्यांना चालवता येते, म्हणून भाडं ठरलेलं; crane फार कमी लोकांना,
+म्हणून crane वाल्याचा दर तोच सांगतो.
+
+**काम एकदा, फायदा किती वेळा?** हा सगळ्यात लपलेला भाग आहे. रवीची
+बांधणी त्या दिवशी संपते. अनिलचं design एकदा बनलं आणि आता रोज काम
+करतंय, अनिलशिवाय. रवी आपला वेळ विकतोय. अनिलने अशी गोष्ट बनवली जी
+तो झोपल्यावरही चालते. याचं नाव **leverage**.
+
+मग सूत्र हे निघालं:
+
+```
+कमाई  =  problem चा SIZE  x  SCARCITY  x  LEVERAGE
+```
+
+या सूत्रात नीट बघा: **तास कुठेच नाहीत.** म्हणूनच 2 तासवाला
+billionaire असू शकतो आणि 12 तासवाला तंगीत. मेहनत चुकीच्या गोष्टीवर
+लागली असेल तर मेहनतीचा भाव मिळत नाही.
+
+खऱ्या जगात हे असं दिसतं: एक surgeon घ्या आणि एक app बनवणारा.
+Surgeon ची skill जास्त दुर्मिळ, शिक्षण जास्त लांब. तरी जगातले सगळ्यात
+श्रीमंत लोक software वाले आहेत, surgeons नाहीत. का? Surgeon चं
+प्रत्येक operation त्याच्या स्वतःच्या हातांनी होतं, दिवसाला दोन-तीन.
+Leverage चा काटा शून्यावर अडकलेला. App एकदा बनते आणि 10 million
+(1 कोटी) लोक एकाच वेळेस वापरतात. WhatsApp विकली गेली तेव्हा (19
+billion dollars) तिच्याकडे फक्त 55 कर्मचारी होते, आणि users 400
+million. हे leverage आहे.
+
+## इथे लोक काय चुकीचं समजतात
+
+लोकांना वाटतं जास्त कमवायचा रस्ता जास्त मेहनत आहे. सूत्र म्हणतं:
+मेहनतीचा गुणाकार तेव्हाच चालतो जेव्हा बाकीचे तीन काटे वर असतात.
+Rickshaw चालवणारा दुप्पट तास चालवून दुप्पट थकतो, दुप्पट श्रीमंत होत
+नाही; पण दहा rickshaw भाड्याने देणारा झोपेतही कमावतो. दुसरी चूक:
+लोक scarcity ला degree समजतात. Scarcity म्हणजे certificate नाही;
+त्या वेळेस, त्या जागी, ते काम किती लोकांना जमतं, एवढंच.
+
+## MAP वर
+
+या सूत्राचा तिसरा काटा, leverage, हेच खरं कारण आहे की Level 3
+(technology) एवढा पैसा बनवतो. Machine हीच ती गोष्ट आहे जी एकदा
+बनते आणि पुन्हा पुन्हा चालते, न थकता. म्हणूनच तुम्ही हे पुस्तक
+वाचताय: Level 3 आणि 4 वर leverage चा काटा सगळ्यात वर फिरतो.
+
+## स्वतः बघा (5 मिनिटं)
+
+जगातल्या 10 सगळ्यात श्रीमंत लोकांची यादी उघडा (search: richest
+people). प्रत्येक नावापुढे विचारा: हा माणूस तास विकून इथे पोहोचला
+का? एकही मिळणार नाही. प्रत्येकाकडे अशी गोष्ट आहे जी त्याच्याशिवाय
+चालते: company, software, brand, factory.
+
+## विचार करा
+
+1. (derivation) एक शिक्षक 30 मुलांना शिकवतो आणि महिन्याला X कमावतो.
+त्याच ज्ञानातून तो करोडो कसा कमवू शकतो? सूत्राचे तिन्ही काटे फिरवून
+सांगा.
+
+> **उत्तर:** Size: 30 मुलांऐवजी देशभरची मुलं, online. Scarcity: सगळे
+> विषय नाहीत; ती एक गोष्ट जी फक्त तोच सगळ्यात चांगली समजावतो.
+> Leverage: रोज class घेण्याऐवजी एकदा recorded course किंवा एक
+> पुस्तक, जे एकदा बनतं आणि लाखो वेळा विकलं जातं. Physics Wallah हीच
+> गोष्ट आहे: एक शिक्षक, YouTube वर recorded classes, आज billion-
+> dollar company. ज्ञान तेच होतं; काटे फिरले.
+
+
+# Chapter 0.3 [SPINE]: समाजाचे चार levels
+
+Chapter 0.1 च्या गावात परत चला, पण आता पूर्ण जग विचार करा. Billions
+लोक. या गर्दीत पैसा कुठून सुरू होतो आणि कुठे जातो? एक नकाशा बनवू,
+खालून वर. इमारतीसारखा विचार करा: प्रत्येक मजला खालच्या मजल्यावर उभा
+असतो, आणि पाया नेहमी जमिनीत असतो.
+
+**Level 1: माणसाची गरज.** भूक, तहान, छप्पर, आरोग्य, ज्ञान, सुरक्षा,
+प्रवास, जोडलेपण, करमणूक, इज्जत. ही यादी हजारो वर्षांपासून जवळजवळ
+तीच आहे. हीच पूर्ण economy ची जमीन आहे. जगात फिरणारा प्रत्येक रुपया
+शेवटी कोणाच्यातरी कुठल्यातरी गरजेतून निघाला आहे.
+
+**Level 2: Business.** एका माणसाची गरज एकदा पूर्ण करणं म्हणजे काम.
+लाखो लोकांची गरज पुन्हा पुन्हा पूर्ण करणं व्यवस्था मागतं: माणसं,
+सामान, हिशोब, विश्वास. त्या व्यवस्थेचं नाव business. एक बाई घरात
+स्वयंपाक करते ते काम; तीच बाई रोज शंभर डबे पोहोचवते ती व्यवस्था,
+म्हणजे business. Restaurant भुकेवर उभं आहे, hospital आरोग्यावर,
+school ज्ञानावर. Business म्हणजे गरजेला पैशात बदलणारी व्यवस्था.
+
+**Level 3: Technology.** Business ला नेहमी तीन गोष्टींची भूक असते:
+जास्त लोक serve करा, कमी खर्चात, कमी चुकांसह. जी गोष्ट हे करते, ती
+technology. Tractor शेतकऱ्यासाठी, fridge restaurant साठी, software
+सगळ्यांसाठी. ढाब्याचा तंदूर पण technology आहे: एक cook च्या जागी
+एका वेळेस वीस रोट्या. Technology म्हणजे business ची ताकद वाढवणारा
+मजला.
+
+**Level 4: AI.** आता technology स्वतः एक गरजवाली गोष्ट झाली आहे:
+तिच्यासाठी विचार करणं, लिहिणं, ठरवणं, हे आत्तापर्यंत माणसं करत होती.
+जी machine ही कामं करू लागली आहे, ती technology ची technology. AI
+Level 3 ला तेच देतो जे Level 3 ने Level 2 ला दिलं: जास्त, स्वस्त,
+कमी चुका.
+
+आता सगळ्यात महत्त्वाचा बाण काढा:
 
 ```
 LEVEL 4   AI                    ^
-LEVEL 3   TECHNOLOGY            |  PAISA UPAR
-LEVEL 2   BUSINESS              |  KI TARAF
-LEVEL 1   INSAAN KI ZAROORAT    |  BEHTA HAI
+LEVEL 3   TECHNOLOGY            |  पैसा वरच्या
+LEVEL 2   BUSINESS              |  दिशेने वाहतो
+LEVEL 1   माणसाची गरज           |
 ```
 
-Paisa SIRF Level 1 pe ghusta hai, jab ek insaan apni zaroorat ke liye deta
-hai. Level 2 usmein se hissa leta hai. Level 3 ko Level 2 deta hai. Level 4
-ko Level 3 deta hai. Upar wale levels ka har rupaya neeche se hoke aaya hai.
+पैसा **फक्त Level 1 वर** घुसतो, जेव्हा एक माणूस आपल्या गरजेसाठी
+देतो. Level 2 त्यातला हिस्सा घेतो. Level 3 ला Level 2 देतो. Level 4
+ला Level 3 देतो. वरच्या मजल्यांचा प्रत्येक रुपया खालून चढत आलेला
+आहे. अशा एकावर-एक रचनेला engineers **stack** म्हणतात; पुढे "tech
+stack" ऐकाल तेव्हा हाच अर्थ: कोण कोणावर उभा आहे, कोण कोणाला पैसे
+देतो.
 
-Teen baatein check karlo, kyunki saaf naksha inhe chhupa deta hai:
+हे खऱ्या जगात असं दिसतं: **Zomato** घ्या. Level 1: भूक. Level 2:
+restaurant, आणि स्वतः Zomato चा business. Level 3: app, servers,
+नकाशा, payment system. Level 4: कोणतं खाणं कोणाला दाखवायचं,
+delivery चा रस्ता, मागणीचा अंदाज, हे AI करतो. तुम्ही 300 रुपयांचं
+जेवण मागवता: restaurant हिस्सा घेतं, Zomato हिस्सा घेतं, Zomato
+आपल्या cloud आणि software वाल्यांना देतं, ते AI चालवणाऱ्यांना
+देतात. एक भूक, चार मजल्यांची कमाई.
 
-Har zaroorat business se poori nahi hoti. Maa bachche ko khila rahi hai,
-Level 1 seedha serve ho raha hai, koi paisa nahi ghoom raha.
+तीन गोष्टी तपासून घ्या, कारण स्वच्छ नकाशा त्या लपवतो: प्रत्येक गरज
+business ने पूर्ण होत नाही (आई मुलाला जेवू घालते, कुठेही पैसा
+फिरत नाही). प्रत्येक business ला जास्त technology लागत नाही. आणि
+प्रत्येक technology ला AI चांगली करत नाही (पाण्याच्या pipe मध्ये
+विचार करणाऱ्या machine साठी काही कामच नाही). हा नकाशा कल दाखवतो,
+कायदा नाही.
 
-Har business ko technology zyada nahi chahiye. Kuch ko bas thodi si.
+## इथे लोक काय चुकीचं समजतात
 
-Har technology ko AI behtar nahi karta. Paani ki pipe technology hai,
-usmein sochne wali machine ke liye karne ko kuch nahi.
+लोकांना वाटतं पैसा technology मध्ये आहे, म्हणून tech शिका. उलटं
+आहे. पैसा **गरजेत** आहे. Technology फक्त ती गरज पकडण्याचा सगळ्यात
+लांब हात आहे. विहीर पाण्याने भरलेली असते; दोरी-पोहरा फक्त पाणी
+काढण्याचं साधन आहे. दोरी कितीही उत्तम असो, विहीर कोरडी असेल तर
+हाती काही येत नाही. जो माणूस Level 4 ची skill घेऊन बसला आहे पण
+कुठल्याही Level 1 गरजेशी जोडलेला नाही, तो काही कमावत नाही.
 
-Yeh naksha jhukav batata hai, kanoon nahi. Aur jahan koi level gayab hai,
-aksar wahi jagah sabse interesting hoti hai.
+## MAP वर
 
-## NAAM
+हा chapter स्वतःच नकाशा आहे. फोटोसारखा डोक्यात ठेवा. पुढे प्रत्येक
+chapter च्या शेवटी "MAP वर" याच नकाशावर बोट ठेवेल: ही गोष्ट कुठल्या
+level वर आहे, आणि पैसा हिच्यापर्यंत कसा पोहोचतो.
 
-Is tarah ke naksha ko log **stack** kehte hain: ek cheez doosre ke upar.
-Aage jab koi kahega "tech stack" ya "AI stack," toh wahi matlab hai: kaun
-kis ke upar khada hai, aur kaun kis ko paise deta hai.
+## स्वतः बघा (5 मिनिटं)
 
-## ASLI DUNIYA SE EK EXAMPLE
+Phone ची home screen उघडा. कुठलीही 3 apps निवडा. प्रत्येकासाठी
+लिहा: कुठली Level 1 गरज? कुठला Level 2 business? WhatsApp:
+जोडलेपणाची गरज, Meta चा business. असं app शोधा जे कुठल्याच गरजेवर
+उभं नाही. मिळणार नाही.
 
-Zomato lo. Level 1: bhookh. Level 2: restaurant, aur khud Zomato ka
-business. Level 3: app, servers, map, payment system. Level 4: kaunsa
-khaana kisko dikhaana, delivery ka rasta, demand ka andaaza, yeh AI karta
-hai. Aap 300 rupaye ka khaana mangwate ho: restaurant hissa leta hai,
-Zomato hissa leta hai, Zomato apne cloud aur software walon ko deta hai,
-woh AI chalane walon ko dete hain. Ek bhookh, chaar levels ki kamaai.
+## विचार करा
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+1. (derivation) AI companies (Level 4) billions कमावतायत. पण पैसा
+फक्त Level 1 वर घुसतो. मग OpenAI चा पैसा कुठल्या रस्त्याने, कुठल्या
+levels मधून येतो? साखळी लिहा.
 
-Log sochte hain paisa technology mein hai, isliye tech seekho. Ulta hai.
-Paisa zaroorat mein hai. Technology sirf use pakadne ka sabse lamba haath
-hai. Jo aadmi Level 4 ki skill le kar baitha hai lekin kisi Level 1
-zaroorat se juda nahi hai, woh kuch nahi kamata. Yeh kitaab aapko Level 3
-aur 4 sikhayegi, lekin har chapter mein hum poochhte rahenge: neeche
-zaroorat kya hai?
-
-## MAP PE
-
-Yeh chapter khud map hai. Ise photo ki tarah dimaag mein rakho. Aage har
-chapter ke end mein "MAP PE" isi naksha pe ungli rakhega: yeh cheez kis
-level pe hai, aur paisa is tak kaise pahunchta hai.
-
-## KHUD DEKHO (5 minute)
-
-Apne phone ki home screen kholo. Koi 3 apps chuno. Har app ke liye likho:
-kaunsi Level 1 zaroorat? Kaunsa Level 2 business? WhatsApp: judav ki
-zaroorat, Meta ka business. Aisa app dhoondho jo kisi zaroorat pe khada
-NA ho. Nahi milega.
-
-## SOCHNE KE LIYE
-
-1. (derivation) AI companies (Level 4) arabon kama rahi hain. Lekin paisa
-sirf Level 1 pe ghusta hai. Toh OpenAI ka paisa kis raaste se, kin levels
-se hoke, aata hai? Chain likho.
-
-> **Jawab:** Ek chain aisi ho sakti hai: aap bhookh mein khaana order karte
-> ho (L1 se paisa ghusa). Zomato kamata hai (L2). Zomato apne software aur
-> cloud pe kharch karta hai (L3). Woh software banane wali team ChatGPT ka
-> subscription leti hai taaki code tez likhe (L4). Har AI ka rupaya aise
-> kisi na kisi chain se neeche ke levels se hoke aaya hai. Iska ulta bhi
-> sach hai: agar koi AI product kisi bhi chain se Level 1 tak nahi
-> pahunchta, toh uske paas aane wala paisa hai hi nahi.
+> **उत्तर:** एक साखळी अशी असू शकते: तुम्ही भुकेने जेवण order करता
+> (L1 पासून पैसा घुसला). Zomato कमावतं (L2). Zomato आपल्या software
+> आणि cloud वर खर्च करतं (L3). ते software बनवणारी team ChatGPT चं
+> subscription घेते, code वेगाने लिहिण्यासाठी (L4). AI चा प्रत्येक
+> रुपया अशा कुठल्यातरी साखळीने खालच्या levels मधून आलेला असतो. याचं
+> उलटंही खरं आहे: जर एखादं AI product कुठल्याच साखळीने Level 1
+> पर्यंत पोहोचत नसेल, तर त्याच्याकडे येणारा पैसाच नाही.
 
 
-# Chapter 0.4 [SPINE]: Technology level dikhta kyun nahi
+# Chapter 0.4 [SPINE]: Technology चा मजला दिसत का नाही
 
-Aaj raat aap phone se khaana order karte ho. Aapko kya dikhta hai? Ek
-button: "Place Order." Bas.
+आज रात्री तुम्ही phone वरून जेवण order करता. तुम्हाला काय दिसतं? एक
+button: "Place Order." बस.
 
-Ab ginte hain ki us ek button ke peeche kya chal raha hai. Aapka phone ek
-message bana kar hawa mein bhejta hai. Woh message shehar paar ke kisi
-building mein rakhi machine tak jaata hai. Woh machine aapka naam, pata,
-order, paise ka hisaab jaanchti hai. Bank ki machine se baat karke 300
-rupaye idhar se udhar karti hai. Restaurant ki screen pe order chamkta
-hai. Ek aur machine sochti hai ki kaunsa delivery wala kahan hai aur kise
-bhejna sasta padega. Aapke naksha pe woh chalta hua dikhta hai.
+आता मोजू, त्या एका button च्या मागे काय चालतं. तुमचा phone एक message
+बनवून हवेत पाठवतो. तो message शहरापलीकडच्या कुठल्यातरी building मधल्या
+machine पर्यंत जातो. ती machine तुमचं नाव, पत्ता, order, पैशाचा हिशोब
+तपासते. Bank च्या machine शी बोलून 300 रुपये इकडून तिकडे करते.
+Restaurant च्या screen वर order चमकतो. अजून एक machine विचार करते की
+कुठला delivery वाला कुठे आहे आणि कोणाला पाठवणं स्वस्त पडेल. तुमच्या
+नकाशावर तो चालताना दिसतो.
 
-Yeh sab 5 second mein hua. Aur aapko inmein se KUCH BHI nahi dikha.
+हे सगळं 5 seconds मध्ये झालं. आणि तुम्हाला यातलं **काहीही** दिसलं
+नाही.
 
-Yeh koi galti nahi hai. Yeh design hai. Kyun? Do wajah, dono paise ki:
+ही चूक नाही. हे design आहे. का? दोन कारणं, दोन्ही पैशाची:
 
-**Pehli:** Aap bhookhe ho. Aap khaane ke paise de rahe ho, machine dekhne
-ke nahi. Har extra cheez jo aapko dikhegi, aapko rokegi, sochne pe majboor
-karegi, aur ruka hua aadmi order cancel karta hai. Business ke liye har
-dikhai deti hui machinery paisa girne ka khatra hai. Isliye jo technology
-jitni achhi hoti hai, utni gayab hoti hai.
+**पहिलं:** तुम्ही भुकेले आहात. तुम्ही जेवणाचे पैसे देताय, machine
+बघण्याचे नाही. ढाब्यावर जाता तेव्हा तुम्हाला गरम रोटी हवी असते;
+मालक तुम्हाला kitchen मध्ये नेऊन तंदूर, पीठाची गोणी आणि gas चं bill
+दाखवू लागला तर तुम्ही उठून दुसऱ्या ढाब्यावर जाल. जी गोष्ट ग्राहकाला
+दिसते आणि अडवते, ती पैसा घालवते. म्हणून जी technology जेवढी चांगली,
+तेवढी गायब.
 
-**Doosri:** Jo cheez gayab hai, use koi seekh nahi sakta. Jo seekh nahi
-sakta, woh bana nahi sakta. Toh dikhne wala hissa (button) sasta ho gaya,
-sab bana lete hain. Na dikhne wala hissa (peeche ka intezaam) mehnga raha,
-kyunki kam log jaante hain. Chapter 0.2 ka scarcity wala dial yaad hai?
-Technology ki scarcity uski invisibility se aati hai.
+**दुसरं:** जी गोष्ट गायब आहे, ती कोणी शिकू शकत नाही. जी शिकता येत
+नाही, ती बनवता येत नाही. मग दिसणारा भाग (button) स्वस्त झाला, सगळे
+बनवतात. न दिसणारा भाग (मागची व्यवस्था) महाग राहिला, कारण कमी लोक
+जाणतात. Chapter 0.2 चा scarcity चा काटा आठवा? Technology ची scarcity
+तिच्या न-दिसण्यातून येते.
 
-Ab is kitaab ka maqsad ek line mein: **jo hissa business ne jaan boojh ke
-chhupaya hai, hum use khol ke dekhenge.** Kyunki paisa wahi hissa banata hai.
+या लपवण्याच्या कामाचं नाव engineers ठेवतात **abstraction**: आतली
+गुंतागुंत झाकून वर एक सोपं handle देणं. Button abstraction आहे.
+गाडीचं steering wheel abstraction आहे: engine मध्ये हजार भाग फिरतात,
+तुमच्या हातात एक चाक. UPI चा QR code abstraction आहे: banks चं पूर्ण
+जाळं झाकलेलं. हा शब्द या पुस्तकात शंभर वेळा येईल, कारण पूर्ण
+technology म्हणजे abstraction वर abstraction ची शिडी.
 
-## NAAM
+खऱ्या जगातलं सगळ्यात मोठं उदाहरण: **Jio** ने 2016 मध्ये फुकट data
+दिला आणि देश बदलला. लोकांना काय दिसलं? एक स्वस्त SIM. काय दिसलं
+नाही? समुद्राखाली पडलेल्या fibre च्या तारा, प्रत्येक शहरात towers,
+त्यांच्यामधली व्यवस्था, या सगळ्यावर लावलेले 2.5 लाख कोटी रुपये (~30
+billion dollars). Level 3 इतका मोठा होता की देशाची सगळ्यात मोठी
+company बनला, आणि सामान्य माणसाने तो कधी बघितलाच नाही. तुमच्या
+शिकण्यासाठी हीच सगळ्यात मोठी बातमी आहे: **सगळ्यात मोठ्या पैशांची कामं
+डोळ्यांपासून लपलेली आहेत.**
 
-Chhupaane ke is kaam ka naam engineers rakhte hain **abstraction**: andar
-ki complexity dhak kar upar ek seedha sa handle dena. Button abstraction
-hai. Steering wheel abstraction hai (engine chhupa hai). UPI ka QR code
-abstraction hai (banks ka poora jaal chhupa hai). Yeh shabd is kitaab mein
-sau baar aayega, kyunki poori technology abstraction ke upar abstraction
-ki seedhi hai.
+## इथे लोक काय चुकीचं समजतात
 
-## ASLI DUNIYA SE EK EXAMPLE
+लोक "technology" ऐकताच gadget विचार करतात: phone, laptop, robot.
+Gadget म्हणजे technology चा फक्त तो कोपरा जो विकण्यासाठी दाखवला
+जातो. भाजी-मंडईचं वजन-काटा दिसतो; पण मंडई चालवणारी खरी व्यवस्था
+म्हणजे पहाटेचे trucks, लिलाव, उधारीचे हिशोब, ते कोणाला दिसत नाहीत.
+खरी technology व्यवस्था आहे: numbers ठेवण्याची, पाठवण्याची,
+तपासण्याची, ठरवण्याची. म्हणून "tech शिकणं म्हणजे coding शिकणं" ही
+पण अर्धीच गोष्ट आहे. Coding एक हत्यार आहे. समजणं हे आहे की पूर्ण
+व्यवस्था कशी उभी राहते.
 
-Jio ne 2016 mein muft data diya aur desh badal gaya. Logon ko kya dikha?
-Ek sasta SIM. Kya nahi dikha? Samundar ke neeche padi fibre ki taarein,
-har shehar mein towers, unke beech ka intezaam, is sab pe lagaya gaya 2.5
-lakh crore rupaya. Level 3 itna bada tha ki desh ki sabse badi company
-ban gaya, aur aam aadmi ne use kabhi dekha hi nahi. Yehi baat aapke
-seekhne ke liye sabse badi khabar hai: sabse bade paise wale kaam aankhon
-se ojhal hain.
+## MAP वर
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+रुपयाचा रस्ता बघा: तुमच्या 300 रुपयांतले restaurant ला ~200, Zomato
+ला ~100 मिळाले. त्या 100 मधून Zomato cloud, payment gateway, नकाशा-
+सेवा, SMS पाठवणाऱ्यांना देतं. हे सगळे Level 3 च्या आतले business
+आहेत ज्यांची नावं तुम्ही कधी ऐकली नाहीत: Razorpay, AWS, Twilio.
+न-दिसणाऱ्या मजल्याच्या आतही पूर्ण बाजार आहेत. जिथे डोळा जात नाही,
+तिथे स्पर्धाही कमी असते.
 
-Log "technology" sunte hi gadget sochte hain: phone, laptop, robot. Gadget
-technology ka sirf woh kona hai jo bikne ke liye dikhaya jaata hai. Asli
-technology intezaam hai: numbers rakhne ka, bhejne ka, jaanchne ka,
-decide karne ka. Isi galat-fehmi ki wajah se log sochte hain "tech seekhna
-matlab coding seekhna." Coding ek auzaar hai. Samajhna yeh hai ki poora
-intezaam kaise khada hota hai.
+## स्वतः बघा (5 मिनिटं)
 
-## MAP PE
+कुठलंही online payment करा (किंवा जुनं आठवा). कागदावर लिहा: या 5
+seconds मध्ये किती वेगळ्या companies नी काम केलं असेल? मोजा: तुमचा
+phone बनवणारी, network वाली, app वाली, तुमची bank, payment gateway,
+समोरच्याची bank, NPCI. एक tap, सातपेक्षा जास्त companies. प्रत्येकीला
+त्या tap मधून पैसा मिळतो.
 
-Rupaye ka rasta dekho: aapke 300 rupaye mein se restaurant ko ~200,
-Zomato ko ~100 mile. Us 100 mein se Zomato cloud, payment gateway, map
-service, SMS bhejne walon ko deta hai. Yeh sab Level 3 ke andar ke
-business hain jinka naam aapne kabhi nahi suna: Razorpay, AWS, Twilio.
-Na dikhne wale level ke andar bhi poore bazaar hain. Jahan aankh nahi
-jaati, wahan competition bhi kam hoti hai.
+## विचार करा
 
-## KHUD DEKHO (5 minute)
+1. (derivation) एखादा business आपली technology लपवण्याऐवजी पूर्ण
+दाखवू लागला तर (प्रत्येक order वर: "आता server X शी बोलणं चालू
+आहे...") त्याचं काय होईल? आणि या उत्तरातून काढा: engineer चा पगार
+जास्त का असतो?
 
-Koi bhi online payment karo (ya purani payment yaad karo). Ab kaagaz pe
-likho: is 5 second mein kitni alag companies ne kaam kiya hoga? Ginti
-karo: aapka phone banane wali, network wali, app wali, bank, payment
-gateway, receiver ka bank, NPCI. Ek tap, saat se zyada companies. Har ek
-ko us tap se paisa milta hai.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Agar koi business apni technology chhupaane ki jagah
-poori dikhaane lage (har order pe: "ab server X se baat ho rahi hai..."),
-toh uska kya hoga? Aur is jawab se yeh nikaalo ki engineer ki tankhwah
-zyada kyun hoti hai.
-
-> **Jawab:** Users bhaag jaayenge, kyunki unhe zaroorat poori karni thi,
-> machine nahi samajhni thi. Business dikhaane ke liye nahi, chhupaane ke
-> liye paise deta hai. Aur jo cheez sabse chhupi hui hai, use samajhne
-> wale sabse kam log hain. Kam log = scarcity = unchi tankhwah. Engineer
-> ko is baat ke paise milte hain ki woh us kamre mein kaam kar sakta hai
-> jisme baaki duniya ghus hi nahi sakti. Aap yeh kitaab padh ke usi kamre
-> ki chaabi bana rahe ho.
+> **उत्तर:** ग्राहक पळून जातील, कारण त्यांना गरज पूर्ण करायची होती,
+> machine समजायची नव्हती. Business दाखवण्यासाठी नाही, लपवण्यासाठी
+> पैसे देतो. आणि जी गोष्ट सगळ्यात लपलेली आहे, ती समजणारे सगळ्यात
+> कमी लोक आहेत. कमी लोक = scarcity = उंच पगार. Engineer ला या
+> गोष्टीचे पैसे मिळतात की तो त्या खोलीत काम करू शकतो जिथे बाकीचं जग
+> घुसूच शकत नाही. तुम्ही हे पुस्तक वाचून त्याच खोलीची किल्ली बनवत
+> आहात.
 
 
-# Chapter 0.5 [SPINE]: Toh ab hume kya kholna padega
+# Chapter 0.5 [SPINE]: मग आता आपल्याला काय उघडावं लागेल
 
-Chaar chapters mein aapke paas ab yeh hai:
+चार chapters मध्ये तुमच्याकडे आता हे आहे:
 
-1. Paisa bharose ka intezaam hai, aur SIRF Level 1 pe ghusta hai. (0.1)
-2. Kamaai = size x scarcity x leverage. Ghante formula mein nahi hain. (0.2)
-3. Duniya chaar levels ka stack hai, paisa neeche se upar behta hai. (0.3)
-4. Level 3 jaan boojh ke chhupa hai, aur chhupa hona hi uska daam hai. (0.4)
+1. पैसा म्हणजे विश्वासाची व्यवस्था, आणि **फक्त** Level 1 वर घुसतो. (0.1)
+2. कमाई = size x scarcity x leverage. तास सूत्रात नाहीत. (0.2)
+3. जग चार levels चा stack आहे, पैसा खालून वर वाहतो. (0.3)
+4. Level 3 मुद्दाम लपवलेला आहे, आणि लपलेलं असणं हाच त्याचा भाव. (0.4)
 
-Ab ek imaandaar sawal: aap Level 1 aur 2 pehle se samajhte ho. Zaroorat
-kya hoti hai, business kaise chalta hai, yeh aapko dikhta hai. Jo nahi
-dikhta, woh Level 3 aur 4 hai. Aur aapka plan Level 4 pe kaam karna hai.
+आता एक प्रामाणिक प्रश्न: Level 1 आणि 2 तुम्हाला आधीच समजतात. गरज
+म्हणजे काय, business कसा चालतो, हे तुम्हाला दिसतं. जे दिसत नाही, ते
+Level 3 आणि 4. आणि तुमचा plan Level 4 वर काम करण्याचा आहे.
 
-Yahan ek chhota samvaad zaroori hai, kyunki yahan sab phislte hain.
+मग सरळ AI च का शिकू नये? हा प्रश्न प्रत्येकजण विचारतो, आणि इथेच
+सगळे घसरतात. उत्तरासाठी एक प्रश्न पुरे: AI चालतो कशावर? Computer
+वर. आणि computer तुम्हाला समजत नसेल, तर AI तुमच्यासाठी काय असेल?
+जादू. जादूच्या प्रेक्षकाला काय जमतं? बघणं, थोडं वापरणं. काय जमत
+नाही? Design करणं, विकणं, सुधारणं, आणि तुटल्यावर सांगणं की काय
+तुटलं. जादूचा प्रेक्षक बनता येतं, जादूगार नाही.
 
-**Kabir:** Toh main seedha AI kyun na seekhun? Mujhe wahi chahiye.
+Driver आणि mechanic चा फरक हाच आहे. दोघेही गाडी चालवतात. पण गाडी
+रस्त्यात बंद पडली की driver फक्त उभा राहतो; mechanic bonnet उघडतो.
+आणि गाड्यांचा **धंदा** कोण करतं? ज्याला आतलं कळतं तो. AI च्या
+जगात तुम्हाला driver नाही, mechanic-मालक बनायचं आहे.
 
-**Madhav:** AI kis pe chalta hai?
-
-**Kabir:** Computer pe.
-
-**Madhav:** Aur tumhe computer samajh nahi aata. Toh AI tumhare liye kya
-hoga?
-
-**Kabir:** ...jaadu.
-
-**Madhav:** Aur jaadu ke saath tum kya kar sakte ho?
-
-**Kabir:** Dekh sakta hoon. Use kar sakta hoon, thoda.
-
-**Madhav:** Design nahi kar sakte. Bech nahi sakte. Sudhaar nahi sakte.
-Jab woh toote toh bata nahi sakte kya toota. Jaadu ka darshak ban sakte
-ho, jaadugar nahi.
-
-Isliye raasta neeche se hai. Level 4 Level 3 pe khada hai, toh pehle
-Level 3: machine. Yeh Part 1 se Part 5 tak ka safar hai:
+म्हणून रस्ता खालून आहे. Level 4 Level 3 वर उभा आहे, मग आधी Level 3:
+machine. हा Part 1 ते Part 5 चा प्रवास आहे:
 
 ```
-PART 1 (yeh wali)  machine kya hai, sab kuch numbers kaise hai
-PART 2             machine ko batana ki kya karna hai: software
-PART 3             machines ka aapas mein baat karna: internet
-PART 4             yaad rakhna: data, database
-PART 5             lakhon logon ko serve karna: scale, cloud, kharcha
+PART 1 (हा)   machine म्हणजे काय, सगळं numbers कसं आहे
+PART 2        machine ला सांगणं की काय करायचं: software
+PART 3        machines चं आपसात बोलणं: internet
+PART 4        लक्षात ठेवणं: data, database
+PART 5        लाखो लोकांना serve करणं: scale, cloud, खर्च
 ```
 
-Iske baad Book 2 aati hai: AI. Tab woh jaadu nahi lagegi, machine lagegi.
+यानंतर Book 2 येते: AI. तेव्हा ती जादू वाटणार नाही, machine वाटेल.
 
-Aur ek daava likh ke rakho, hum ise Part 5 ke end mein test karenge:
+आणि एक दावा लिहून ठेवा, आपण तो Part 5 च्या शेवटी तपासू:
 
-**Daava:** Machine samajhne ke baad aap kisi bhi business ko dekh kar bata
-paoge ki usme technology se paisa kahan banega, kya banana sasta hai, kya
-mehnga, aur AI usme kahan ghusega.
+**दावा:** Machine समजल्यावर तुम्ही कुठलाही business बघून सांगू शकाल
+की त्यात technology ने पैसा कुठे बनेल, काय बनवणं स्वस्त आहे, काय
+महाग, आणि AI त्यात कुठे घुसेल.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## इथे लोक काय चुकीचं समजतात
 
-"Basics baad mein dekh lunga, pehle jaldi wala raasta." Aisa raasta hota
-toh sab us pe hote. Jo log AI tools ko sabse achha chalate hain, woh wahi
-hain jo jaante hain ki andar kya ho raha hai, isliye woh sahi cheez maang
-paate hain aur galat jawab pakad lete hain. Machine ki samajh hi AI ki
-steering hai.
+"Basics नंतर बघेन, आधी जलद रस्ता." असा रस्ता असता तर सगळे त्यावर
+असते. जे लोक AI tools सगळ्यात चांगले चालवतात, ते तेच आहेत ज्यांना
+आत काय चालतं ते माहीत आहे; म्हणून ते बरोबर गोष्ट मागू शकतात आणि
+चुकीचं उत्तर पकडू शकतात. Machine ची समज हीच AI ची steering आहे.
 
-## MAP PE
+## MAP वर
 
-Aap is waqt map pe khud ko rakh rahe ho: Level 1-2 ki samajh aapke paas
-hai, Level 3 ka darwaza yeh kitaab hai, Level 4 agli kitaab. Jis din
-aapke paas chaaron levels ki samajh hogi, aap us chhoti si bheed mein
-honge jo poori chain dekh sakti hai. Chain dekhne wala hi chain design
-kar sakta hai.
+तुम्ही या क्षणी नकाशावर स्वतःला ठेवताय: Level 1-2 ची समज तुमच्याकडे
+आहे, Level 3 चा दरवाजा हे पुस्तक आहे, Level 4 पुढचं पुस्तक. ज्या
+दिवशी तुमच्याकडे चारही levels ची समज असेल, तुम्ही त्या छोट्या गर्दीत
+असाल जिला पूर्ण साखळी दिसते. साखळी बघणाराच साखळी design करू शकतो.
 
-## KHUD DEKHO (5 minute)
+## स्वतः बघा (5 मिनिटं)
 
-Ek kaagaz pe apne haath se yeh likho aur photo kheench lo:
-"Main yeh isliye seekh raha hoon taaki ____________________."
-Apne shabdon mein bharo. Part 5 ke aakhri chapter mein yeh line wapas
-maangi jaayegi, tab dekhna ki jawab badla ya wahi hai.
+एका कागदावर स्वतःच्या हाताने हे लिहा आणि photo काढून ठेवा:
+"मी हे यासाठी शिकतोय की ____________________."
+आपल्या शब्दांत भरा. Part 5 च्या शेवटच्या chapter मध्ये ही ओळ परत
+मागितली जाईल; तेव्हा बघा उत्तर बदललं की तेच आहे.
 
-## SOCHNE KE LIYE
+## विचार करा
 
-1. (derivation) Kabir wala tark ulta karo: ek aadmi ne SIRF Level 3
-seekha, machine ka poora expert, lekin Level 1-2 (zaroorat, business)
-kabhi nahi dekha. Uski kamaai ka kya hoga?
+1. (derivation) वरचा तर्क उलटा करा: एका माणसाने **फक्त** Level 3
+शिकला, machine चा पूर्ण expert, पण Level 1-2 (गरज, business) कधी
+बघितलंच नाही. त्याच्या कमाईचं काय होईल?
 
-> **Jawab:** Woh kamayega, lekin hamesha kisi aur ke liye. Tankhwah
-> milegi, kyunki uski skill scarce hai. Lekin size aur leverage ke dial
-> koi aur ghumayega: founder, jo jaanta hai kis zaroorat pe kya banana
-> hai. Duniya ke lakhon behtareen engineers tankhwah pe hain aur unke
-> founders arabpati hain. Farq skill ka nahi, chain ki poori samajh ka
-> hai. Isliye is kitaab mein har chapter money line ke saath aata hai:
-> aapko dono aankhein chahiye, machine wali bhi, paisa wali bhi.
+> **उत्तर:** तो कमावेल, पण नेहमी दुसऱ्यासाठी. पगार मिळेल, कारण
+> त्याची skill दुर्मिळ आहे. पण size आणि leverage चे काटे दुसरा कोणी
+> फिरवेल: founder, ज्याला माहीत आहे कुठल्या गरजेवर काय बनवायचं.
+> जगातले लाखो उत्तम engineers पगारावर आहेत आणि त्यांचे founders
+> billionaires आहेत. फरक skill चा नाही, साखळीच्या पूर्ण समजेचा आहे.
+> म्हणून या पुस्तकात प्रत्येक chapter पैशाच्या ओळीसह येतो: तुम्हाला
+> दोन्ही डोळे हवेत, machine वालाही, पैसा वालाही.
 
 
-# SECTION 1: PEHLA SAWAL
+# SECTION 1: पहिला प्रश्न
 
-Chhe chapters. Yahan se machine khulti hai: switch se le kar is baat tak
-ki ek hi machine sab kuch kyun kar sakti hai.
+सहा chapters. इथून machine उघडते: भिंतीवरच्या switch पासून या
+गोष्टीपर्यंत की एकच machine सगळं का करू शकते.
 
-**Yeh aapke business decision mein kahan aayegi:** Jab aap kisi engineer
-ya AI se product banwaoge, toh "kya possible hai, kya nahi, kya sasta hai,
-kya mehnga" ka andaaza isi section ki samajh se aayega. Jo founder machine
-ko jaadu samajhta hai, woh galat cheez maangta hai, galat daam pe, galat
-aadmi se. Jo samajhta hai, woh theek wahi maangta hai jo machine de
-sakti hai.
+**हे तुमच्या business decision मध्ये कुठे येईल:** जेव्हा तुम्ही
+एखाद्या engineer कडून किंवा AI कडून product बनवून घ्याल, तेव्हा "काय
+शक्य आहे, काय नाही, काय स्वस्त, काय महाग" याचा अंदाज याच section
+च्या समजेतून येईल. जो founder machine ला जादू समजतो, तो चुकीची गोष्ट
+मागतो, चुकीच्या भावात, चुकीच्या माणसाकडून. जो समजतो, तो नेमकं तेच
+मागतो जे machine देऊ शकते.
 
 
-# Chapter 1.1 [SPINE]: Ek switch dabane se kya hota hai
+# Chapter 1.1 [SPINE]: एक switch दाबल्यावर काय होतं
 
-Deewar ka switch dabao. Bulb jala. Yeh poori kitaab isi ek ghatna ke andar
-chhupi hai, toh ise dheere se kholte hain.
+भिंतीचा switch दाबा. Bulb लागला. हे पूर्ण पुस्तक याच एका घटनेच्या आत
+लपलं आहे, म्हणून हळूहळू उघडू.
 
-Bijli ghar mein taaron ke raaste aati hai. Taar ek bandh raasta hai: power
-station se chal kar, bulb se hote hue, wapas. Jab tak raasta poora juda
-hua hai, bijli behti hai aur bulb jalta hai. Switch us raaste ki ek
-kadi hai jo tootti aur judti hai. Daba diya: raasta juda, bijli behi,
-roshni. Wapas dabaya: raasta toota, andhera.
+वीज घरात तारांच्या रस्त्याने येते. तार म्हणजे एक बंद रस्ता: power
+station पासून निघून, bulb मधून जाऊन, परत. जोपर्यंत रस्ता पूर्ण
+जोडलेला आहे, वीज वाहते आणि bulb जळतो. अशा बंद रस्त्याचं नाव
+**circuit**. Switch त्या रस्त्यातली एक कडी आहे जी तुटते आणि जुळते.
+दाबला: रस्ता जुळला, वीज वाहिली, उजेड. परत दाबला: रस्ता तुटला, अंधार.
 
-Toh switch asal mein kya hai? **Ek sawal ka jawab jo do mein se ek ho
-sakta hai: juda hai, ya toota hai. Haan, ya na. 1, ya 0.**
+मग switch खरं काय आहे? **एका प्रश्नाचं उत्तर, जे दोनपैकी एकच असू
+शकतं: जुळलेला, की तुटलेला. हो, की नाही. 1, की 0.**
+
+आता तीन उड्या मारा, प्रत्येक छोटी आहे:
 
-Ab teen chhalaang lagao, har ek chhoti hai:
+**पहिली:** Switch बोटाने दाबला जातो. विजेने दाबता येईल का? हो, असा
+switch बनतो ज्याला दुसऱ्या तारेतला current दाबतो. याचा अर्थ नीट
+ऐका: **एक switch दुसऱ्या switch ला दाबू शकतो.** बोटाची गरज फक्त
+सुरुवातीला आहे.
 
-**Pehli:** Switch ungli se dabta hai. Kya bijli se dab sakta hai? Haan,
-aisa switch banta hai jise doosri taar ka current daba deta hai. Iska
-matlab dhyaan se suno: **ek switch doosre switch ko daba sakta hai.**
-Ungli ki zaroorat sirf shuru mein hai.
-
-**Doosri:** Agar ek switch doosre ko daba sakta hai, toh hazaar switch
-mila kar ek chain ban sakti hai: yeh dabega toh woh dabega, woh dabega
-toh yeh khulega. Chain design karne ka matlab hai: pehle se tay karna ki
-kya hone pe kya hoga. Yeh "pehle se tay karna" aage bahut bada hone wala
-hai.
-
-**Teesri:** Aaj ke switch mein koi hilta hua purza nahi hai. Woh retili
-dhaatu (silicon) ka ek tukda hai jo bijli ke ishaare pe raasta kholta
-band karta hai. Na ghisna, na awaaz, aur size? Aapke phone ke andar wali
-chip mein aise 15 arab (billion) switch hain. Nakhoon ke size mein.
-
-Toh yeh kitaab jis machine ko khol rahi hai, woh yeh hai: **arabon
-switch, ek doosre ko dabate hue, ek design ki hui chain mein.** Aapka har
-tap, har message, har video isi ka natija hai. Agle chapters mein hum
-dekhte hain ki on/off se ginti, photo, aur soch kaise banti hai.
-
-## NAAM
-
-Bijli se dabne wale switch ka naam **transistor** hai. Yeh shayad insaan
-ki sabse zaroori invention hai, aur duniya isse har saal kharabon ki
-ginti mein banati hai. Bandh raaste ka naam **circuit** hai. Haan/na wale
-jawab ka naam agla chapter dega.
-
-## ASLI DUNIYA SE EK EXAMPLE
-
-Aapke phone ka torch button dabao. Ungli ne sheeshe ko chhua, sheeshe ke
-neeche ke sensor ne ek chhota sa current bheja, us current ne chain shuru
-ki, aur chain ke aakhir mein ek transistor ne LED ka raasta jod diya.
-Roshni. Aapne deewar wala switch hi dabaya, bas beech mein arabon switch
-the. Farq sirf ginti ka hai, idea wahi hai.
-
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
-
-Log sochte hain computer koi ajeeb, samajh ke bahar ki cheez hai. Sach
-yeh hai ki uska har hissa utna hi seedha hai jitna deewar ka switch. Jo
-cheez dimaag ko chakrati hai woh GINTI hai: arabon switch, arab baar
-prati second. Lekin ginti se darna aisa hai jaise samundar se darna
-kyunki usmein boondein bahut hain. Boond samajh lo, samundar samajh
-aayega.
-
-## MAP PE
-
-Level 3 ki poori imaarat is ek purze pe khadi hai, aur transistor banane
-ka business duniya ke sabse bade businesses mein hai. Ek company, TSMC
-(Taiwan), duniya ke sabse behtareen transistor banati hai, aur Apple se
-le kar Nvidia tak sab uske darwaaze pe line mein hain. Ek cheez jo koi
-aur nahi bana sakta = scarcity ka dial poora upar. Ek factory jo ek baar
-lagti hai aur arabon chips nikaalti hai = leverage bhi poora upar. Formula
-kaam kar raha hai.
-
-## KHUD DEKHO (5 minute)
-
-Ghar ka koi switch dabate waqt yeh sochna: main ek sawal ka jawab set kar
-raha hoon, haan ya na. Phir phone ka torch on karna aur khud se kehna:
-abhi maine arabon switchon ki chain ke sire pe ungli rakhi. Dono ek hi
-cheez hain. Yeh mehsoos karna hi is chapter ka asli kaam hai.
-
-## SOCHNE KE LIYE
-
-1. (derivation) "Ek switch doosre switch ko daba sakta hai." Agar yeh
-possible NA hota, ungli hamesha zaroori hoti, toh computer ka kya hota?
-
-> **Jawab:** Computer ban hi nahi paata. Har kadam pe insaan chahiye
-> hota, toh machine ki speed insaan ki speed pe atak jaati: second mein
-> arab kadam ki jagah second mein ek kadam. Aur leverage zero ho jaata:
-> machine "ek baar bana ke chhod do, chalti rahegi" wali cheez na hoti.
-> Poora Level 3 is ek baat pe khada hai ki chain ek baar design karo,
-> phir woh bina insaan ke chalti hai. Anil ki naali yaad karo: yeh wahi
-> hai, bas paani ki jagah bijli behti hai.
-
-
-# Chapter 1.2 [SPINE]: Yeh maan kar chal raha hoon
-
-Har kitaab kuch cheezein maan kar chalti hai aur batati nahi. Phir reader
-kahin atakta hai aur use lagta hai woh kamzor hai. Galat. Kitaab ne farz
-kiya tha, yeh kitaab farz nahi karegi. Yeh raha poora list jo main maan
-raha hoon. Jo pata hai, use tick karo, jo nahi, uska ek line ka jawab
-yahin hai.
-
-**Bijli kya hai?** Dhaatu ke andar chhote kan (electrons) hote hain jo
-dhakka milne pe ek taraf sarakte hain. Us sarakne ka naam current hai.
-Paani ki pipe mein paani jaisa soch lo, kaam chalega. (Analogy hai,
-poori sachchai nahi, lekin is kitaab ke liye kaafi hai.)
-
-**Taar current kyun le jaati hai aur plastic kyun nahi?** Kuch cheezon
-mein kan aasani se sarakte hain (dhaatu: conductor), kuch mein bilkul
-nahi (plastic, rubber: insulator). Isliye taar dhaatu ki hai aur uska
-khol plastic ka: andar raasta, bahar deewar.
-
-**Battery kya karti hai?** Dhakka deti hai. Uske do sire hote hain, aur
-woh kanon ko ek sire se doosre tak dhakelti hai. Jab tak raasta juda
-hai, dhakka chalta hai.
-
-**"Signal" kya hai?** Current ka hona ya na hona, bas. Jab hum aage
-kahein "phone ne signal bheja," matlab kisi taar ya hawa mein current/
-lehar ka pattern gaya: hai, nahi hai, hai, hai, nahi hai. Isse zyada
-kuch nahi.
-
-**Chip kya hai?** Silicon ke chhote tukde pe chhape hue arabon
-transistor aur unke beech ki taarein, ek dibbi mein band. Computer ke
-andar ki hari patti (circuit board) pe yahi dibbiyan lagi hoti hain.
-
-Bas. Is kitaab ko bijli ke baare mein isse zyada kuch nahi chahiye. Agar
-upar ki paanch baatein theek lagti hain, toh aapke paas poori kitaab ke
-liye kaafi physics hai.
-
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
-
-Log sochte hain technology samajhne ke liye pehle physics ka pahad
-chadhna padega, phir maths ka. Nahi. Har level apne neeche wale level ka
-sirf ek chhota sa hissa use karta hai. Computer banane wale ko bhi
-electron ki poori physics nahi chahiye, use bas itna chahiye: switch
-kholta hai, band karta hai, bharosemand hai. Yeh baat aage har jagah
-lagegi: **har level, neeche wale ka sirf handle pakadta hai, poora
-engine nahi.** (Yeh abstraction hai, Chapter 0.4 wali.)
-
-## MAP PE
-
-Kaun kamata hai yahan? Jo log yeh neeche wala level poora jaante hain:
-electrical engineers, chip designers. Unki duniya is kitaab ke bahar
-hai, aur wahan bhi arabon ka bazaar hai (power grids, batteries, solar).
-Hum us darwaaze ke saamne se guzar rahe hain, ghus nahi rahe. Yaad bas
-itna rakho ki woh darwaza hai, aur uske andar bhi Level 3 hi hai: kisi
-business ki taakat badhaana.
-
-## KHUD DEKHO (5 minute)
-
-Apna phone charger dekho. Us pe chhota sa likha hoga: "5V 2A" jaisa
-kuch. V dhakke ka naap hai (kitni zor se), A bahaav ka naap hai (kitne
-kan prati second). Ab charger ki taar dekho: andar dhaatu, bahar
-plastic. Conductor, insulator. Aapke haath mein poora Chapter 1.2 hai.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Paani wali analogy kahan toot sakti hai? Ek jagah socho
-jahan bijli paani jaisi NAHI hai.
-
-> **Jawab:** Kai jagah. Sabse badi: paani pipe se girta hai toh farsh
-> geela hota hai, lekin current ko poora juda hua raasta chahiye, bina
-> wapas jaane ke raaste ke current behta hi nahi. Isliye chidiya ek
-> taar pe baith sakti hai (raasta poora nahi hua), lekin do taar chhoo
-> le toh raasta poora ho jaata hai. Analogy auzaar hai, sachchai nahi.
-> Yeh sabak aage AI tak jaayega: har model, har analogy kahin na kahin
-> tootti hai, aur expert wohi hai jo jaanta hai kahan.
-
-
-# Chapter 1.3 [SPINE]: Computer actually hai kya
-
-Ab tak ke tukde jodo: switch haan/na rakhta hai, switch switch ko dabata
-hai, chain pehle se design hoti hai. Toh yeh poori cheez milkar karti
-kya hai?
-
-Ek kaam se shuru karo jo aap khud karte ho: 47 + 38 jodna. Aap kya karte
-ho? Aapke paas ek TAREEKA hai, bachpan mein rata hua: pehle ikai jodo,
-7 + 8 = 15, 5 likho, 1 haath mein. Phir dahai jodo, haath wala 1 bhi.
-Jawab 85. Dhyaan do: aapne SOCHA nahi, aapne ek rata hua tareeka CHALAYA.
-Koi bhi do numbers do, tareeka wahi rahega.
-
-Ab poochho: kya switchon ki chain se aisa tareeka chal sakta hai? Haan.
-Numbers haan/na mein rakhe ja sakte hain (agla chapter). Jodne ka tareeka
-switchon ki chain mein pehle se design kiya ja sakta hai (Chapter 1.5).
-Toh ek dibba ban sakta hai: is taraf se do numbers ghusao, us taraf se
-jod nikle. Bina kisi insaan ke.
-
-Aur ab asli chhalaang. Agar jodne ka dibba ban sakta hai, toh:
-compare karne ka dibba (kaunsa bada?), copy karne ka dibba, "agar yeh
-toh woh" ka dibba. Aur in dibbon ko line mein laga do, ek ke baad ek,
-toh lambi recipe chal sakti hai: "pehle jodo, phir compare karo, agar
-bada hai toh yeh copy karo..."
-
-**Toh computer yeh hai: ek machine jo numbers pe, pehle se likhi recipe,
-bina thake, arab kadam prati second ki raftaar se chalati hai.**
-
-Teen shabd is definition mein dhyaan se dekho:
-
-**Numbers pe.** Computer sirf numbers jaanta hai. Photo, gaana, message,
-sab pehle number banenge (Section 2 ka kaam).
-
-**Pehle se likhi.** Computer ke har kadam ke peeche kisi insaan ka pehle
-se liya gaya faisla hai. Machine faisla nahi karti, faisla CHALATI hai.
-
-**Bina thake.** Yehi iski poori keemat hai. Recipe ek baar likho, machine
-arab baar chalayegi. Leverage, shuddh roop mein.
-
-## NAAM
-
-Recipe ka naam **program** hai. Recipe likhne ka naam **programming**.
-Saari recipes milke **software** kehlati hain, aur chhoone laayak machine
-**hardware**. Jodne-compare karne wala mukhya dibba **processor** ya
-**CPU** kehlata hai.
-
-## ASLI DUNIYA SE EK EXAMPLE
-
-Bank ka clerk 1960 mein interest ginta tha: har khaate pe wahi kadam,
-din bhar, galtiyon ke saath. Aaj wahi recipe software mein likhi hai aur
-raat ko 2 baje har khaate pe ek saath chalti hai, karodon baar, zero
-thakaan. Clerk ka TAREEKA hi machine mein gaya. Insaan ka kaam recipe
-likhna reh gaya, chalana machine le gayi. Jahan jahan duniya mein koi
-"rata hua tareeka" baar baar chal raha hai, wahan wahan computer ghusega.
-Yeh line business dhoondhne ka auzaar hai, sambhaal ke rakho.
-
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
-
-"Computer sochta hai." Nahi. Woh recipe chalata hai. Jab computer
-"galti" karta hai, woh recipe ki galti hai, kisi insaan ki likhi hui.
-Jab computer "decide" karta hai, woh insaan ka pehle se likha faisla
-hai. Yeh baat AI tak bhi jaayegi, wahan recipe ajeeb tarike se likhi
-jaati hai, lekin machine wahi hai. Jo aadmi yeh samajh gaya, woh machine
-se kabhi nahi darega aur us pe kabhi andha bharosa bhi nahi karega.
-
-## MAP PE
-
-Is chapter ne Level 3 ko do hisson mein kaat diya: hardware aur
-software. Dono ke bazaar alag hain. Hardware mein paisa factory aur
-scarcity se aata hai (TSMC, Samsung, Nvidia). Software mein paisa
-LIKHNE ki laagat ek baar lagne se aata hai: recipe ek baar likhi, ab
-har copy muft. Isliye duniya ki sabse moti kamaai wali companies
-software wali hain: Microsoft ka maal banane ka kharcha lagbhag zero
-hai. Aap jo seekh rahe ho, woh isi taraf ka darwaza hai.
-
-## KHUD DEKHO (5 minute)
-
-Phone ka calculator kholo. 47 + 38 karo. Ab khud se poochho: iss glass
-ke neeche kya hua? Aapke tap numbers bane, numbers CPU ke jodne wale
-dibbe mein gaye, jawab ke numbers screen ke pixels bane. Poora Chapter
-1.3 ek second mein chala. Aur yeh calculator recipe kisi ne EK BAAR
-likhi thi, ab arabon phones pe muft chal rahi hai.
-
-## SOCHNE KE LIYE
-
-1. (derivation) "Machine faisla nahi karti, faisla chalati hai." Toh
-jab bank ka software aapka loan reject karta hai, asli faisla kisne
-kiya? Aur is jawab se business ki ek zimmedari nikaalo.
-
-> **Jawab:** Faisla us insaan ne kiya jisne recipe likhi ya likhwayi:
-> "agar income itni se kam, toh na." Machine ne sirf use bina thake
-> chalaya. Zimmedari: jab business apna faisla recipe mein daal deta
-> hai, toh galti bhi leverage pa jaati hai, ek galat niyam lakhon logon
-> pe ek saath chalta hai. Isliye recipe likhne wale ki keemat bhi
-> zyada hai aur zimmedari bhi. AI ke zamaane mein yeh sawal aur bada
-> hoga, Book 2 mein milega.
-
-
-# Chapter 1.4 [SPINE]: Switches numbers kaise rakhte hain
-
-Ek switch do baatein keh sakta hai: 0 ya 1. Lekin duniya ke numbers toh
-0 se 9 tak ke ankon se bante hain, aur bade numbers, jaise 300 rupaye ya
-15 arab, unka kya?
-
-Khud nikaalte hain. Ek switch: do haalat (0, 1). Do switch: chaar haalat
-(00, 01, 10, 11). Teen switch: aath haalat. Har naya switch haalat ki
-ginti DUGNI kar deta hai, kyunki purani har haalat ab do roop mein ho
-sakti hai: naya switch 0 ke saath, ya 1 ke saath.
-
-Ab in haalaton ko naam de do, bas itna hi karna hai:
+**दुसरी:** एक switch दुसऱ्याला दाबू शकतो, तर हजार switch मिळून एक
+साखळी बनू शकते: हा दाबला तर तो दाबेल, तो दाबला तर हा उघडेल. रेल्वेचं
+signal-yard आठवा: एक lever ओढला की पुढे रूळ बदलतो, रूळ बदलला की
+पुढचा signal बदलतो; stationmaster एका जागी बसून पूर्ण yard चालवतो.
+साखळी design करणं म्हणजे आधीच ठरवणं की काय झाल्यावर काय होईल. हे
+"आधीच ठरवणं" पुढे खूप मोठं होणार आहे.
+
+**तिसरी:** आजच्या switch मध्ये हलणारा भाग नाही. तो वाळूच्या धातूचा
+(silicon) एक तुकडा आहे जो विजेच्या इशाऱ्यावर रस्ता उघडतो-बंद करतो.
+या विजेने-दाबल्या-जाणाऱ्या switch चं नाव **transistor**: माणसाचा
+कदाचित सगळ्यात महत्त्वाचा शोध. झीज नाही, आवाज नाही, आणि आकार?
+तुमच्या phone च्या आतल्या chip मध्ये असे **15 billion** (1,500
+कोटी) transistors आहेत. नखाएवढ्या जागेत.
+
+मग हे पुस्तक जी machine उघडतंय, ती ही आहे: **billions switches,
+एकमेकांना दाबत, एका design केलेल्या साखळीत.** तुमचा प्रत्येक tap,
+प्रत्येक message, प्रत्येक video याचाच निकाल आहे. Phone चा torch
+लावा: बोटाने काच दाबली, काचेखालच्या sensor ने छोटा current पाठवला,
+त्याने साखळी सुरू केली, साखळीच्या शेवटी एका transistor ने LED चा
+रस्ता जोडला. उजेड. तुम्ही भिंतीचा switch च दाबला, फक्त मध्ये
+billions switches होते. फरक फक्त मोजणीचा आहे, कल्पना तीच.
+
+## इथे लोक काय चुकीचं समजतात
+
+लोकांना वाटतं computer ही कुठलीतरी विचित्र, समजण्यापलीकडची गोष्ट
+आहे. खरं हे आहे की तिचा प्रत्येक भाग भिंतीच्या switch इतकाच सरळ
+आहे. डोकं चक्रावतं ते **मोजणीने**: billions switches, billion वेळा
+प्रति second. पण मोजणीला घाबरणं म्हणजे समुद्राला घाबरणं कारण त्यात
+थेंब खूप आहेत. थेंब समजला की समुद्र समजतो.
+
+## MAP वर
+
+Level 3 ची पूर्ण इमारत या एका भागावर उभी आहे, आणि transistor बनवणं
+जगातल्या सगळ्यात मोठ्या धंद्यांपैकी आहे. एक company, **TSMC**
+(Taiwan), जगातले सगळ्यात उत्तम transistors बनवते, आणि Apple पासून
+Nvidia पर्यंत सगळे तिच्या दारात रांगेत उभे आहेत. जी गोष्ट दुसऱ्या
+कोणालाच बनवता येत नाही = scarcity चा काटा पूर्ण वर. एक factory
+एकदा उभी राहते आणि billions chips काढते = leverage पण पूर्ण वर.
+सूत्र काम करतंय.
+
+## स्वतः बघा (5 मिनिटं)
+
+घरचा कुठलाही switch दाबताना हा विचार करा: मी एका प्रश्नाचं उत्तर
+set करतोय, हो की नाही. मग phone चा torch लावा आणि स्वतःला सांगा:
+आत्ता मी billions switches च्या साखळीच्या टोकावर बोट ठेवलं. दोन्ही
+एकच गोष्ट आहेत. हे जाणवणं हेच या chapter चं खरं काम.
+
+## विचार करा
+
+1. (derivation) "एक switch दुसऱ्या switch ला दाबू शकतो." हे शक्य
+**नसतं**, बोट नेहमी लागलं असतं, तर computer चं काय झालं असतं?
+
+> **उत्तर:** Computer बनूच शकला नसता. प्रत्येक पावलावर माणूस लागला
+> असता, मग machine चा वेग माणसाच्या वेगावर अडकला असता: second ला
+> billion पावलांऐवजी second ला एक. आणि leverage शून्य झाला असता:
+> machine ही "एकदा बनवा, चालत राहील" वाली गोष्ट राहिली नसती. पूर्ण
+> Level 3 या एका गोष्टीवर उभा आहे की साखळी एकदा design करा, मग ती
+> माणसाशिवाय चालते. अनिलची नळ-योजना आठवा (Chapter 0.2): हे तेच
+> आहे, फक्त पाण्याऐवजी वीज वाहते.
+
+
+# Chapter 1.2 [SPINE]: मी हे गृहीत धरून चाललोय
+
+प्रत्येक पुस्तक काही गोष्टी गृहीत धरतं आणि सांगत नाही. मग वाचणारा
+कुठेतरी अडतो आणि त्याला वाटतं आपणच कमी आहोत. चूक. पुस्तकाने गृहीत
+धरलं होतं. हे पुस्तक तसं करणार नाही. मी काय-काय गृहीत धरतोय त्याची
+ही पूर्ण यादी. जे माहीत आहे त्यावर खूण करा; जे नाही, त्याचं एका
+ओळीचं उत्तर इथेच आहे.
+
+**वीज म्हणजे काय?** धातूच्या आत छोटे कण (electrons) असतात, जे धक्का
+मिळाल्यावर एका दिशेला सरकतात. त्या सरकण्याचं नाव current. पाण्याच्या
+pipe मधलं पाणी असा विचार करा, काम चालेल. (ही उपमा आहे, पूर्ण सत्य
+नाही; पण या पुस्तकासाठी पुरेशी आहे.)
+
+**तार current का नेते आणि plastic का नाही?** काही वस्तूंमध्ये कण
+सहज सरकतात (धातू: **conductor**), काहींमध्ये अजिबात नाही (plastic,
+rubber: **insulator**). म्हणून तार धातूची आणि तिचं आवरण plastic चं:
+आत रस्ता, बाहेर भिंत. रस्ता आणि रस्त्याच्या कडेचा कठडा.
+
+**Battery काय करते?** धक्का देते. तिची दोन टोकं असतात, आणि ती
+कणांना एका टोकाकडून दुसऱ्याकडे ढकलते. जोपर्यंत रस्ता जोडलेला आहे,
+धक्का चालू. हातपंपासारखी: दांडा मारत राहा, पाणी फिरत राहतं.
+
+**"Signal" म्हणजे काय?** Current चं असणं किंवा नसणं, बस. पुढे
+जेव्हा म्हणू "phone ने signal पाठवला," तेव्हा अर्थ: कुठल्यातरी तारेत
+किंवा हवेत current/लहरीचा एक क्रम गेला: आहे, नाही, आहे, आहे, नाही.
+Post office ची जुनी tar (telegraph) हेच करायची: टक-टक चा क्रम,
+आणि पलीकडे अर्थ.
+
+**Chip म्हणजे काय?** Silicon च्या छोट्या तुकड्यावर छापलेले billions
+transistors आणि त्यांच्यामधल्या तारा, एका डबीत बंद. Computer च्या
+आतल्या हिरव्या पट्टीवर (circuit board) याच डब्या बसवलेल्या असतात.
+
+बस. या पुस्तकाला विजेबद्दल यापेक्षा जास्त काहीही लागत नाही. वरच्या
+पाच गोष्टी ठीक वाटत असतील, तर पूर्ण पुस्तकासाठी पुरेसं physics
+तुमच्याकडे आहे.
+
+## इथे लोक काय चुकीचं समजतात
+
+लोकांना वाटतं technology समजण्यासाठी आधी physics चा डोंगर चढावा
+लागेल, मग maths चा. नाही. प्रत्येक मजला खालच्या मजल्याचा फक्त छोटा
+हिस्सा वापरतो. Bus driver ला engine ची पूर्ण रचना लागत नाही; त्याला
+एवढंच लागतं: accelerator, brake, आणि हे की गाडी भरवशाची आहे.
+Computer बनवणाऱ्यालाही electron ची पूर्ण physics लागत नाही; त्याला
+एवढंच लागतं: switch उघडतो, बंद होतो, भरवशाचा आहे. ही गोष्ट पुढे
+सगळीकडे लागेल: **प्रत्येक मजला खालच्याचं फक्त handle धरतो, पूर्ण
+engine नाही.** (हे abstraction आहे, Chapter 0.4 वालं.)
+
+## MAP वर
+
+इथे कोण कमावतं: जे हा खालचा मजला पूर्ण जाणतात: electrical
+engineers, chip designers. त्यांची दुनिया या पुस्तकाच्या बाहेर आहे,
+आणि तिथेही billions चा बाजार आहे (power grids, batteries, solar).
+आपण त्या दरवाजासमोरून जातोय, आत घुसत नाही. लक्षात एवढंच ठेवा की तो
+दरवाजा आहे, आणि त्याच्या आतही Level 3 च आहे: कुठल्यातरी business
+ची ताकद वाढवणं.
+
+## स्वतः बघा (5 मिनिटं)
+
+तुमचा phone charger बघा. त्यावर बारीक लिहिलेलं असेल: "5V 2A" सारखं
+काही. V धक्क्याचं माप आहे (किती जोरात), A प्रवाहाचं माप (किती कण
+प्रति second). आता charger ची तार बघा: आत धातू, बाहेर plastic.
+Conductor, insulator. तुमच्या हातात पूर्ण Chapter 1.2 आहे.
+
+## विचार करा
+
+1. (derivation) पाण्याची उपमा कुठे तुटू शकते? एक जागा विचार करा
+जिथे वीज पाण्यासारखी **नाही**.
+
+> **उत्तर:** बऱ्याच जागी. सगळ्यात मोठी: पाणी pipe मधून गळालं तर
+> फरशी ओली होते; पण current ला पूर्ण जोडलेला रस्ता लागतो, परत
+> जाण्याच्या रस्त्याशिवाय current वाहतच नाही. म्हणून चिमणी एका
+> तारेवर बसू शकते (रस्ता पूर्ण झाला नाही), पण दोन तारांना एकदम
+> शिवली तर रस्ता पूर्ण होतो. उपमा हत्यार आहे, सत्य नाही. हा धडा AI
+> पर्यंत जाईल: प्रत्येक model, प्रत्येक उपमा कुठेतरी तुटते, आणि
+> expert तोच जो जाणतो कुठे.
+
+
+# Chapter 1.3 [SPINE]: Computer खरं आहे तरी काय
+
+आतापर्यंतचे तुकडे जोडा: switch हो/नाही ठेवतो, switch switch ला
+दाबतो, साखळी आधीच design होते. मग ही पूर्ण गोष्ट मिळून करते काय?
+
+एका कामापासून सुरुवात करा जे तुम्ही स्वतः करता: 47 + 38 जोडणं.
+तुम्ही काय करता? तुमच्याकडे एक **पद्धत** आहे, लहानपणी पाठ केलेली:
+आधी एकं जोडा, 7 + 8 = 15, 5 लिहा, 1 हातचा. मग दहं जोडा, हातचा 1
+पण. उत्तर 85. लक्ष द्या: तुम्ही **विचार** केला नाही, तुम्ही एक पाठ
+केलेली पद्धत **चालवली**. कुठलेही दोन आकडे द्या, पद्धत तीच राहील.
+
+आता विचारा: switches च्या साखळीतून अशी पद्धत चालू शकेल का? हो.
+आकडे हो/नाही मध्ये ठेवता येतात (पुढचा chapter). जोडण्याची पद्धत
+switches च्या साखळीत आधीच design करता येते (Chapter 1.5). मग एक
+डबा बनू शकतो: या बाजूने दोन आकडे घाला, त्या बाजूने बेरीज निघेल.
+कुठल्याही माणसाशिवाय.
+
+आणि आता खरी उडी. जोडण्याचा डबा बनू शकतो, तर: तुलना करण्याचा डबा
+(कुठला मोठा?), copy करण्याचा डबा, "जर हे तर ते" चा डबा. आणि हे
+डबे रांगेत लावले, एकामागून एक, तर लांबलचक recipe चालू शकते: "आधी
+जोडा, मग तुलना करा, मोठं असेल तर हे copy करा..."
+
+**मग computer हे आहे: एक machine जी आकड्यांवर, आधीच लिहिलेली
+recipe, न थकता, billion पावलं प्रति second च्या वेगाने चालवते.**
+
+या व्याख्येतले तीन शब्द नीट बघा. **आकड्यांवर:** computer ला फक्त
+numbers कळतात; photo, गाणं, message, सगळं आधी number बनेल (Section
+2 चं काम). **आधीच लिहिलेली:** computer च्या प्रत्येक पावलामागे
+कुठल्यातरी माणसाचा आधीच घेतलेला निर्णय आहे; machine निर्णय घेत
+नाही, निर्णय **चालवते**. **न थकता:** हीच तिची पूर्ण किंमत; recipe
+एकदा लिहा, machine billion वेळा चालवेल. Leverage, शुद्ध रूपात.
+
+या recipe चं नाव **program**. Recipe लिहिण्याचं नाव **programming**.
+सगळ्या recipes मिळून **software**, आणि हाताला लागणारी machine
+**hardware**. जोडणारा-तुलना करणारा मुख्य डबा **processor** किंवा
+**CPU**.
+
+ढाब्याच्या भाषेत: मालकीण एकदा recipe लिहून देते; नवा cook रोज तीच
+चालवतो, विचार न करता, आणि चव तीच येते. Recipe लिहिणं वेगळं काम,
+चालवणं वेगळं. आणि खऱ्या जगात हे असं दिसलं: bank चा clerk 1960
+मध्ये interest मोजायचा: प्रत्येक खात्यावर तीच पावलं, दिवसभर,
+चुकांसह. आज तीच recipe software मध्ये लिहिलेली आहे आणि रात्री 2
+वाजता कोट्यवधी खात्यांवर एकदम चालते, शून्य थकवा. Clerk ची
+**पद्धतच** machine मध्ये गेली. माणसाचं काम recipe लिहिणं उरलं,
+चालवणं machine घेऊन गेली. जिथे जिथे जगात एखादी "पाठ केलेली पद्धत"
+पुन्हा पुन्हा चालते, तिथे तिथे computer घुसेल. ही ओळ business
+शोधण्याचं हत्यार आहे, जपून ठेवा.
+
+## इथे लोक काय चुकीचं समजतात
+
+"Computer विचार करतो." नाही. तो recipe चालवतो. Computer "चूक"
+करतो तेव्हा ती recipe ची चूक असते, कुठल्यातरी माणसाने लिहिलेली.
+Computer "ठरवतो" तेव्हा तो माणसाचा आधीच लिहिलेला निर्णय असतो. ही
+गोष्ट AI पर्यंतही जाईल; तिथे recipe विचित्र पद्धतीने लिहिली जाते,
+पण machine तीच आहे. ज्याला हे समजलं, तो machine ला कधी घाबरणार
+नाही आणि तिच्यावर कधी आंधळा विश्वासही ठेवणार नाही.
+
+## MAP वर
+
+या chapter ने Level 3 ला दोन भागांत कापलं: hardware आणि software.
+दोघांचे बाजार वेगळे. Hardware मध्ये पैसा factory आणि scarcity तून
+येतो (TSMC, Samsung, Nvidia). Software मध्ये पैसा या गोष्टीतून
+येतो की लिहिण्याचा खर्च **एकदाच** लागतो: recipe एकदा लिहिली, आता
+प्रत्येक copy फुकट. म्हणून जगातल्या सगळ्यात जाड नफ्याच्या companies
+software वाल्या आहेत: Microsoft चा माल बनवण्याचा खर्च जवळजवळ शून्य
+आहे. तुम्ही जे शिकताय, ते याच बाजूचं दार आहे.
+
+## स्वतः बघा (5 मिनिटं)
+
+Phone चा calculator उघडा. 47 + 38 करा. आता स्वतःला विचारा: या
+काचेखाली काय झालं? तुमचे taps numbers बनले, numbers CPU च्या
+जोडणाऱ्या डब्यात गेले, उत्तराचे numbers screen चे ठिपके बनले. पूर्ण
+Chapter 1.3 एका second मध्ये चाललं. आणि ही calculator-recipe कोणी
+तरी **एकदा** लिहिली होती; आता billions phones वर फुकट चालते.
+
+## विचार करा
+
+1. (derivation) "Machine निर्णय घेत नाही, निर्णय चालवते." मग bank
+चं software तुमचं loan नाकारतं तेव्हा खरा निर्णय कोणी घेतला? आणि
+या उत्तरातून business ची एक जबाबदारी काढा.
+
+> **उत्तर:** निर्णय त्या माणसाने घेतला ज्याने recipe लिहिली किंवा
+> लिहून घेतली: "जर income इतक्यापेक्षा कमी, तर नाही." Machine ने
+> फक्त तो न थकता चालवला. जबाबदारी: business जेव्हा आपला निर्णय
+> recipe मध्ये घालतो, तेव्हा चुकीलाही leverage मिळतो; एक चुकीचा
+> नियम लाखो लोकांवर एकदम चालतो. म्हणून recipe लिहिणाऱ्याची किंमतही
+> जास्त आहे आणि जबाबदारीही. AI च्या जमान्यात हा प्रश्न अजून मोठा
+> होईल; Book 2 मध्ये भेटेल.
+
+
+# Chapter 1.4 [SPINE]: Switches आकडे कसे ठेवतात
+
+एक switch दोन गोष्टी सांगू शकतो: 0 किंवा 1. पण जगातले आकडे तर 0 ते
+9 च्या अंकांनी बनतात, आणि मोठे आकडे, जसे 300 रुपये किंवा 15 billion,
+त्यांचं काय?
+
+स्वतः काढू. एक switch: दोन स्थिती (0, 1). दोन switch: चार स्थिती
+(00, 01, 10, 11). तीन switch: आठ. प्रत्येक नवा switch स्थितींची
+मोजणी **दुप्पट** करतो, कारण जुनी प्रत्येक स्थिती आता दोन रूपांत असू
+शकते: नवा switch 0 सोबत, किंवा 1 सोबत.
+
+आता या स्थितींना नावं द्या, एवढंच करायचं आहे:
 
 ```
-00 ko bolo "zero"      01 ko bolo "ek"
-10 ko bolo "do"        11 ko bolo "teen"
+00 ला म्हणा "शून्य"      01 ला म्हणा "एक"
+10 ला म्हणा "दोन"        11 ला म्हणा "तीन"
 ```
 
-Ruko, yeh toh wahi hai jo hum das ungliyon ke saath karte hain! Hum 9 ke
-baad naya anka shuru karte hain (10), machine 1 ke baad naya switch
-shuru karti hai (10). Hamara har anka das guna badhta hai, machine ka
-har switch do guna. Bas itna hi farq hai. Ginti ka idea wahi hai, sirf
-ungliyaan 10 ki jagah 2 hain.
+थांबा, हे तर तेच आहे जे आपण दहा बोटांनी करतो! आपण 9 नंतर नवा अंक
+सुरू करतो (10), machine 1 नंतर नवा switch सुरू करते (10). आपला
+प्रत्येक अंक दहापट वाढतो, machine चा प्रत्येक switch दुप्पट. बस,
+एवढाच फरक. मोजणीची कल्पना तीच, फक्त बोटं 10 ऐवजी 2.
 
-Toh kitne switch chahiye kaam ke numbers ke liye?
+एका switch च्या स्थितीचं नाव **bit** (binary digit). आठ bits च्या
+गटाचं नाव **byte**. दुप्पट-वाल्या मोजणीचं नाव **binary**. हे तीन
+शब्द आता तुमचे झाले, आणि पूर्ण digital जग यांनीच मोजलं जातं.
+
+मग कामाच्या आकड्यांसाठी किती switch लागतात?
 
 ```
- 8 switch   =  256 haalat      (0 se 255)
+ 8 switch   =  256 स्थिती      (0 ते 255)
 16 switch   =  65,536
-32 switch   =  429 crore
-64 switch   =  itna bada ki duniya ke saare rupaye, saare
-               phone, saari files gin lo, khatam nahi hota
+32 switch   =  4 billion+ (430 कोटी)
+64 switch   =  इतकं मोठं की जगातले सगळे रुपये, सगळे
+               phones, सगळ्या files मोजा, संपत नाही
 ```
 
-Aapke phone ka processor ek saath 64 switchon ke jhund pe kaam karta
-hai. Isliye "64-bit phone" likha hota hai dibbe pe. Ab aap jaante ho us
-line ka matlab, duniya ke 99% log nahi jaante.
+तुमच्या phone चा processor एकदम 64 switches च्या गटावर काम करतो.
+म्हणून खोक्यावर "64-bit phone" लिहिलेलं असतं. आता तुम्हाला त्या
+ओळीचा अर्थ माहीत आहे; जगातल्या 99% लोकांना नाही.
 
-Ek aakhri sawal khud se poochho: machine 2 pe kyun ruki, 10 haalat wala
-switch kyun nahi banaya? Ban sakta tha. Lekin bijli ka current kabhi
-thoda upar neeche hota rehta hai (noise). Do haalat mein farq itna
-bada hai (poora on, poora off) ki chhoti moti hilna-dulna se galti
-nahi hoti. Das haalat paas paas hoti, aur har halki kampan galat anka
-ban jaati. **2 chuna gaya kyunki 2 sabse bharosemand hai.** Machine
-ki har design mein yeh sawal milega: tez chahiye, sasta chahiye, ya
-bharosemand chahiye? Yahan bharosa jeeta.
+एक शेवटचा प्रश्न स्वतःला विचारा: machine 2 वर का थांबली, 10
+स्थितींवाला switch का नाही बनवला? बनू शकला असता. पण विजेचा current
+थोडा वर-खाली होत राहतो (noise). दोन स्थितींमध्ये फरक इतका मोठा आहे
+(पूर्ण चालू, पूर्ण बंद) की छोट्या-मोठ्या कंपनेने चूक होत नाही. दहा
+स्थिती जवळजवळ असत्या, आणि प्रत्येक हलकी कंपन चुकीचा अंक बनली असती.
+Post office चा शिक्का आठवा: तारीख थोडी तिरकी उमटली तरी चालतं, कारण
+पर्याय मोजके आणि एकमेकांपासून दूर आहेत. **2 निवडला कारण 2 सगळ्यात
+भरवशाचा आहे.** Machine च्या प्रत्येक design मध्ये हा प्रश्न भेटेल:
+वेगवान हवं, स्वस्त हवं, की भरवशाचं हवं? इथे भरवसा जिंकला.
 
-## NAAM
+खऱ्या जगात हे कुठे आहे: तुमचा bank balance कुठल्यातरी machine मध्ये
+64 switches ची एक रांग आहे. UPI ने 50 रुपये पाठवले तर त्या रांगेतले
+काही switches पलटले, आणि दुसऱ्या machine मध्ये दुसऱ्या रांगेतले.
+पूर्ण Indian economy, प्रत्येक खातं, प्रत्येक देवाण-घेवाण, चालू/बंद
+च्या रांगांमध्ये ठेवलेली आहे. म्हणून त्या रांगांची राखण (Part 3
+मधलं encryption) इतका मोठा business आहे: switches मध्ये ठेवलेला
+पैसा खरा पैसा आहे.
 
-Ek switch ki haalat ka naam **bit** hai (binary digit). Aath bit ke
-jhund ka naam **byte**. Do-guna wali ginti ka naam **binary**. Yeh teen
-shabd ab aapke hain, aur poori digital duniya inhi se napi jaati hai.
+## इथे लोक काय चुकीचं समजतात
 
-## ASLI DUNIYA SE EK EXAMPLE
+लोक binary बघून विचार करतात की machine कुठलीतरी वेगळी, परकी भाषा
+बोलते जी माणसाच्या आवाक्याबाहेर आहे. तुम्ही आत्ता 5 मिनिटांत पूर्ण
+कल्पना काढली, कारण नवीन काही नव्हतंच: ही तीच मोजणी आहे जी तुम्ही
+लहानपणापासून करता, कमी बोटांवर. Technology मध्ये "अवघड" हे बहुतेक
+वेळा "अनोळखी" चं दुसरं नाव असतं.
 
-Aapka bank balance kahin kisi machine mein 64 switchon ki ek qataar
-hai. UPI se 50 rupaye bheje toh us qataar ke kuch switch palte, aur
-kisi doosri machine mein doosri qataar ke switch palte. Poori Indian
-economy, har khaata, har lena-dena, on/off ki qataaron mein rakhi hai.
-Isliye us qataar ki hifaazat (Part 3 mein encryption) itna bada
-business hai: switchon mein rakha paisa asli paisa hai.
+## MAP वर
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+रुपयाचा रस्ता: तुम्ही जे काही साठवता ते bits मध्ये मोजलं जातं, आणि
+bits ठेवायच्या जागेचं भाडं लागतं. गोदामासारखं: पोती जास्त, भाडं
+जास्त. Google तुम्हाला 15 GB फुकट देतो आणि त्यावर महिन्याचं भाडं
+घेतो (Google One, iCloud). ते भाडं billions चा business आहे. पुढे
+Chapter 2.1 मध्ये हे माप पूर्ण शिकू, कारण जे मोजलं जातं, तेच विकलं
+जातं.
 
-Log binary dekh ke sochte hain machine koi alag, ajnabi bhasha bolti
-hai jo insaan ke bas ki nahi. Aapne abhi 5 minute mein poora idea
-nikaal liya, kyunki naya kuch tha hi nahi: yeh wahi ginti hai jo aap
-bachpan se karte ho, chhoti ungliyon pe. Technology mein "mushkil"
-aksar "anjaan" ka doosra naam hota hai.
+## स्वतः बघा (5 मिनिटं)
 
-## MAP PE
+एका हाताची पाच बोटं घ्या. मिटलेलं बोट 0, उघडं 1. अंगठ्यापासून सुरू
+करा: फक्त अंगठा उघडा = 1, फक्त दुसरं बोट = 2, दोन्ही = 3. असं मोजत
+जा. पाच बोटांवर तुम्ही 31 पर्यंत मोजू शकता. हे एकदा केलंत की binary
+हाताने चालवली; आता ती कधीच विसरणार नाही.
 
-Rupaye ka rasta: har cheez jo aap store karte ho, bits mein napti hai,
-aur bits rakhne ki jagah ka kiraya lagta hai. Google aapko 15 GB muft
-deta hai, aur uske upar mahina charge karta hai. Woh kiraya arabon ka
-business hai (Google One, iCloud). Aage Chapter 2.1 mein hum yeh naap
-poora seekhenge, kyunki jo cheez napti hai, wahi bikti hai.
+## विचार करा
 
-## KHUD DEKHO (5 minute)
+1. (derivation) 8 switches 256 स्थिती देतात. एक जुना game console
+"8-bit" होता: screen वरचा एक रंग निवडायला 8 bits. त्या console वर
+किती रंग शक्य होते, आणि यातून काढा: जुने games तसे का दिसायचे?
 
-Ek haath ki paanch ungliyan lo. Band ungli 0, khuli 1. Angoothe se
-shuru karo: sirf angootha khula = 1, sirf doosri ungli = 2, dono = 3.
-Aise ginte jao. Paanch ungliyon pe aap 31 tak gin sakte ho. Jab yeh
-kar loge, aapne binary ko haath se chala liya, ab woh kabhi nahi
-bhoolegi.
-
-## SOCHNE KE LIYE
-
-1. (derivation) 8 switch 256 haalat dete hain. Ek purani game console
-"8-bit" thi. Uske screen pe ek rang chunne ke liye 8 bit the. Us
-console pe kitne rang possible the, aur is se yeh nikaalo ki purane
-games waise kyun dikhte the?
-
-> **Jawab:** 256 rang, bas. Isliye purane games ke rang saaf saaf
-> tukdon mein dikhte hain, godhuli ka narm dhalta rang unme ban hi
-> nahi sakta tha. Aaj ke screen har pixel ke liye 24+ bit rakhte
-> hain, 1.6 crore rang, isliye photo asli lagti hai. Sabak: bits ki
-> ginti seedha tay karti hai ki machine kitni bareeki dekh sakti
-> hai. Yeh niyam AI tak jaayega: wahan bhi bareeki bits mein bikti
-> hai.
+> **उत्तर:** 256 रंग, बस. म्हणून जुन्या games चे रंग स्पष्ट
+> तुकड्यांत दिसतात; संध्याकाळच्या आभाळाचा हळू बदलणारा रंग त्यांच्यात
+> बनूच शकत नव्हता. आजचे screens प्रत्येक ठिपक्यासाठी 24+ bits
+> ठेवतात, 16 million (1.6 कोटी) रंग, म्हणून photo खरा वाटतो. धडा:
+> bits ची मोजणी थेट ठरवते की machine किती बारकावा बघू शकते. हा नियम
+> AI पर्यंत जाईल: तिथेही बारकावा bits मध्ये विकला जातो.
 
 
-# Chapter 1.5 [DEPTH]: Switches decide kaise karte hain
+# Chapter 1.5 [DEPTH]: Switches ठरवतात कसे
 
-(Yeh DEPTH chapter hai. Pehli baar mein bhaari lage toh aage badho, Part
-1 khatam karke lautna. Lekin laut zaroor aana, kyunki yahin pe "machine
-sochti hai" wala jaadu poora tootta hai.)
+(हा DEPTH chapter आहे. पहिल्या वेळेस जड वाटला तर पुढे जा, Part 1
+संपवून परत या. पण परत नक्की या, कारण इथेच "machine विचार करते"
+वाली जादू पूर्ण तुटते.)
 
-Chapter 1.3 mein humne maana tha ki "jodne ka dibba" aur "compare karne
-ka dibba" ban sakte hain. Ab banate hain. Sirf teen chhote purze chahiye,
-teeno switchon se bante hain:
+Chapter 1.3 मध्ये आपण मानलं होतं की "जोडण्याचा डबा" आणि "तुलनेचा
+डबा" बनू शकतात. आता बनवू. फक्त तीन छोटे भाग लागतात, तिन्ही
+switches पासून बनतात. दरवाजांचा विचार करा:
 
-**AND:** do raaste ek ke baad ek (line mein). Bijli tabhi paar hogi jab
-DONO switch on hon. Matlab: "dono haan, toh haan."
+**AND:** दोन दरवाजे एकामागून एक, रांगेत. पलीकडे जायचं तर **दोन्ही**
+उघडे लागतील. म्हणजे: "दोन्ही हो, तर हो." सरकारी कामासारखं: form
+वर दोन साह्या लागतात, एक जरी नसली तरी file पुढे जात नाही.
 
-**OR:** do raaste side by side (samanantar). Bijli paar hogi agar KOI
-BHI ek on ho. Matlab: "koi bhi haan, toh haan."
+**OR:** दोन दरवाजे शेजारी-शेजारी, दोन वेगळे रस्ते. **कुठलाही एक**
+उघडा असला तरी पलीकडे जाता येतं. म्हणजे: "कोणीही हो, तर हो."
+गावात जायला दोन रस्ते: पूल बंद असला तरी वळणाचा रस्ता चालतो.
 
-**NOT:** ulta karne wala. Input 1 toh output 0, input 0 toh output 1.
+**NOT:** उलट करणारा. आत 1 तर बाहेर 0, आत 0 तर बाहेर 1.
 
-Bas. Yeh teen hi hain. Ab inse kaam karwao.
+बस. हे तीनच आहेत. यांचं नाव **logic gates**. आता यांच्याकडून काम
+करून घेऊ.
 
-**Compare banao:** "Kya A aur B alag hain?" Socho: alag ka matlab hai
-(A haan, B na) YA (A na, B haan). Yeh toh AND, OR, NOT ka jod hai:
-(A AND (NOT B)) OR ((NOT A) AND B). Ho gaya. Machine ab "alag hai ya
-nahi" bata sakti hai. Aur "barabar hai?" uska NOT hai.
+**तुलना बनवा:** "A आणि B वेगळे आहेत का?" विचार करा: वेगळे म्हणजे
+(A हो, B नाही) **किंवा** (A नाही, B हो). हे तर AND, OR, NOT ची
+जोडणी आहे: (A AND (NOT B)) OR ((NOT A) AND B). झालं. Machine आता
+"वेगळं आहे का" सांगू शकते. आणि "सारखं आहे का?" त्याचं NOT आहे.
 
-**Jodna banao:** ek bit jodo: 0+0=0, 0+1=1, 1+0=1, 1+1=10 (do bits ka
-jawab: "0 likho, 1 haath mein"). Dekho, jawab ka pehla hissa "alag
-hain?" wala purza hai, aur haath wala hissa AND hai (dono 1 hon tabhi
-haath mein jaata hai). School wali jod ki recipe, switchon mein utar
-gayi. Aise 64 jodo, aur 64-bit numbers ka jod tayyar.
+**बेरीज बनवा:** एक bit जोडा: 0+0=0, 0+1=1, 1+0=1, 1+1=10 (दोन bits
+चं उत्तर: "0 लिहा, 1 हातचा"). बघा, उत्तराचा पहिला भाग "वेगळे आहेत?"
+वालाच भाग आहे, आणि हातच्याचा भाग AND आहे (दोन्ही 1 असतील तेव्हाच
+हातचा जातो). शाळेतली बेरजेची पद्धत switches मध्ये उतरली. असे 64
+जोडा, आणि 64-bit आकड्यांची बेरीज तयार.
 
-**"Agar" banao:** "AGAR yeh 1 hai TOH is taar ka signal aage jaane do."
-Yeh sirf ek AND hai: signal AND shart. Recipe ka har "agar aisa toh
-waisa" aakhir mein inhi AND/OR/NOT ki chain hai.
+**"जर" बनवा:** "जर हे 1 असेल तर या तारेचा signal पुढे जाऊ दे." हे
+फक्त एक AND आहे: signal AND अट. Recipe चं प्रत्येक "जर असं तर तसं"
+शेवटी याच AND/OR/NOT च्या साखळ्या आहेत. ATM चा निर्णय बघा: "पैसे
+द्या **जर** PIN बरोबर **AND** balance पुरेसा **AND** आजची limit
+शिल्लक." तीन अटी, एक AND-साखळी. तुम्ही ATM मधून पैसे काढता तेव्हा
+gates चा एक गट तुमच्या बाजूने 1 म्हणतो.
 
-Ab poora minaar neeche se upar dekho:
+आता पूर्ण मनोरा खालून वर बघा:
 
 ```
-transistor  ->  AND/OR/NOT  ->  jod/compare/agar  ->  recipe ke kadam
-            ->  poora program  ->  WhatsApp
+transistor -> AND/OR/NOT -> बेरीज/तुलना/जर -> recipe ची पावलं
+           -> पूर्ण program -> WhatsApp
 ```
 
-Har manzil apne neeche wali manzil ke purzon se bani hai. Kahin bhi,
-kisi bhi manzil pe, "soch" naam ka koi purza nahi hai. Sirf switch hain,
-design mein jade hue.
+प्रत्येक मजला खालच्या मजल्याच्या भागांनी बनला आहे. कुठेही, कुठल्याही
+मजल्यावर, "विचार" नावाचा भाग नाही. फक्त switches आहेत, design मध्ये
+जडवलेले.
 
-## NAAM
+## इथे लोक काय चुकीचं समजतात
 
-In purzon ka naam **logic gates** hai. AND gate, OR gate, NOT gate.
-"Logic" isliye ki yeh haan/na wale tarkon ko bijli mein utaarte hain.
-Aapke phone ki chip in gates ke arabon jodon se bani hai, aur gates
-transistors se.
+"Machine ठरवते, म्हणजे तिच्या आत कुठेतरी छोटा मेंदू आहे." आता
+तुम्हाला "ठरवणं" चा अर्थ माहीत आहे: आधीच design केलेली AND/OR/NOT
+ची साखळी, जिच्यात प्रत्येक शक्य input चं output **आधीच** ठरलेलं आहे.
+Machine कडे surprise नसतं. Machine चं उत्तर तुम्हाला surprise करतं,
+तेव्हा अर्थ: तुम्हाला design माहीत नाही; machine काही नवीन विचार
+करत नाहीये.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## MAP वर
 
-ATM ka faisla: "paise do AGAR pin sahi hai AND balance kaafi hai AND
-aaj ki limit baaki hai." Teen shartein, ek AND chain. Jis din aap ATM
-se paisa nikaalte ho, ek AND gate ka jhund aapke haq mein 1 bolta hai.
-Bank ka poora risk intezaam aise hi gates ki chains mein likha hai.
+कोण कमावतं: chip design करणारे. Gates जोडून वेगवान, छोटी, कमी वीज
+खाणारी साखळी बनवणं जगातल्या सगळ्यात दुर्मिळ skills पैकी आहे.
+**Nvidia** याच खेळात जगातल्या सगळ्यात मौल्यवान companies मध्ये
+पोहोचली: त्यांच्या gates ची जुळणी AI च्या कामासाठी सगळ्यात वेगवान
+निघाली. जी गोष्ट तुम्ही आज 15 मिनिटांत समजलात, तिचीच उत्तम जुळणी
+trillion-dollar company बनवते. फरक खोलीचा आहे, कल्पनेचा नाही.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## स्वतः बघा (5 मिनिटं)
 
-"Machine decide karti hai, matlab uske andar kahin koi chhota dimaag
-hai." Ab aap jaante ho decide ka matlab kya hai: pehle se design ki
-hui AND/OR/NOT ki chain, jisme har possible input ka output PEHLE SE
-tay hai. Machine ke paas surprise nahi hota. Jab machine ka jawab
-aapko surprise kare, toh matlab aap design nahi jaante, machine kuch
-naya nahi soch rahi.
+कागदावर हे table स्वतः बनवा, न बघता: A आणि B च्या चार जोड्या (00,
+01, 10, 11), आणि प्रत्येक जोडीसाठी AND, OR, आणि "वेगळे आहेत?" चं
+उत्तर. शेवटचा रकाना स्वतः विचार करावा लागेल. बनला की समजा: आज
+तुम्ही gate design केला.
 
-## MAP PE
+## विचार करा
 
-Kaun kamata hai: chip design karne wale. Gates ko jodkar tez, chhoti,
-kam bijli wali chain banana duniya ki sabse scarce skills mein hai.
-Nvidia isi khel mein duniya ki sabse keemti companies mein pahunchi:
-unke gates ka intezaam AI ke kaam ke liye sabse tez nikla. Jo cheez
-aapne aaj 15 minute mein samjhi, usi ki behtareen jamawat kharabon
-dollar ki company banati hai. Farq gehraai ka hai, idea ka nahi.
+1. (derivation) NOT gate काढून टाका. फक्त AND आणि OR उरले. "वेगळे
+आहेत?" वाला भाग अजूनही बनू शकेल का? का किंवा का नाही?
 
-## KHUD DEKHO (5 minute)
-
-Kaagaz pe yeh table khud banao, bina dekhe: A aur B ke chaar jod
-(00, 01, 10, 11), aur har jod ke liye AND, OR, aur "alag hain?" ka
-jawab. Aakhri column khud sochna padega. Jab ban jaaye, aapne aaj
-gate design kiya.
-
-## SOCHNE KE LIYE
-
-1. (derivation) NOT gate hata do. Sirf AND aur OR bache. Kya "alag
-hain?" wala purza ab bhi ban sakta hai? Kyun ya kyun nahi?
-
-> **Jawab:** Nahi ban sakta. AND aur OR dono "milaane" wale hain: agar
-> saare inputs 1 hain, toh dono ka output 1 hi hoga, ulatne wala koi
-> nahi. Lekin "alag hain?" ko 11 pe 0 dena hota hai. Bina kisi ulatne
-> wale purze ke, 1 se 0 banta hi nahi. Isliye NOT zaroori hai. Sabak:
-> chhota sa purza bhi poore system ki taakat badal deta hai, aur design
-> ka matlab hi yeh jaan-na hai ki kaunsa purza kya jodta hai.
+> **उत्तर:** नाही बनू शकत. AND आणि OR दोन्ही "मिळवणारे" आहेत: सगळे
+> inputs 1 असतील तर दोघांचंही output 1 च असतं; उलटवणारा कोणी नाही.
+> पण "वेगळे आहेत?" ला 11 वर 0 द्यावं लागतं. उलटवणाऱ्या भागाशिवाय
+> 1 पासून 0 बनतच नाही. म्हणून NOT गरजेचा आहे. धडा: छोटासा भागही
+> पूर्ण system ची ताकद बदलतो, आणि design म्हणजे हेच जाणणं की कुठला
+> भाग काय जोडतो.
 
 
-# Chapter 1.6 [SPINE]: Ek machine sab kuch kyun kar sakti hai
+# Chapter 1.6 [SPINE]: एकच machine सगळं का करू शकते
 
-Ek ajeeb baat pe kabhi dhyaan diya? Mixer sirf peesta hai. Fridge sirf
-thanda karta hai. Car sirf chalti hai. Har machine EK kaam karti hai.
+एका विचित्र गोष्टीकडे कधी लक्ष दिलंय? Mixer फक्त वाटतो. Fridge फक्त
+थंड करतो. गाडी फक्त चालते. प्रत्येक machine **एक** काम करते.
 
-Lekin aapka phone? Subah alarm, phir camera, phir bank, phir game, phir
-video call. Ek hi machine, hazaar kaam. Duniya ki baaki har machine se
-alag. Aisa kya hai isme?
+पण तुमचा phone? सकाळी alarm, मग camera, मग bank, मग game, मग video
+call. एकच machine, हजार कामं. जगातल्या बाकी प्रत्येक machine पेक्षा
+वेगळी. असं काय आहे हिच्यात?
 
-Chapter 1.3 se recipe wali baat uthao. Machine recipe chalati hai. Ab
-ek sawal jo poori history ka sabse sundar sawal hai:
+Chapter 1.3 मधून recipe ची गोष्ट उचला. Machine recipe चालवते. आता
+एक प्रश्न, जो पूर्ण इतिहासातला सगळ्यात सुंदर प्रश्न आहे:
 
-**Recipe khud kya hai?**
+**Recipe स्वतः काय आहे?**
 
-Recipe kadmon ki list hai: "jodo," "compare karo," "agar aisa toh wahan
-jao." Ab in kadmon ko number de do: jodo = 1, compare = 2, copy = 3...
-Toh poori recipe ban gayi numbers ki qataar: 1, 3, 2, 7...
+Recipe म्हणजे पावलांची यादी: "जोडा," "तुलना करा," "जर असं तर तिकडे
+जा." आता या पावलांना नंबर द्या: जोडा = 1, तुलना = 2, copy = 3...
+मग पूर्ण recipe बनली numbers ची रांग: 1, 3, 2, 7...
 
-Ruko. Numbers ki qataar? Woh toh machine switchon mein rakh sakti hai
-(Chapter 1.4). Matlab:
+थांबा. Numbers ची रांग? ती तर machine switches मध्ये ठेवू शकते
+(Chapter 1.4). म्हणजे:
 
-**Recipe usi jagah rakhi ja sakti hai jahan data rakha jaata hai. Aur
-machine ko aisa banao ki woh apni memory se agla number padhe, aur us
-number wala kaam kare. Bas.**
+**Recipe त्याच जागी ठेवता येते जिथे data ठेवला जातो. आणि machine
+अशी बनवा की ती आपल्या memory मधून पुढचा number वाचेल, आणि त्या
+number चं काम करेल. बस.**
 
-Iska matlab pheliye, kyunki yeh Level 3 ka janam hai:
+याचा अर्थ उलगडा, कारण हा Level 3 चा जन्म आहे:
 
-Naya kaam chahiye? Nayi machine MAT banao. Bas memory mein nayi recipe
-daalo. Machine wahi, kaam naya. Camera app dala toh phone camera ban
-gaya, bank app dala toh bank ban gaya. Machine badli nahi, sirf numbers
-badle.
+नवं काम हवं? नवी machine बनवू **नका**. फक्त memory मध्ये नवी recipe
+घाला. Machine तीच, काम नवं. Camera app घातलं तर phone camera झाला,
+bank app घातलं तर bank झाला. Machine बदलली नाही, फक्त numbers बदलले.
 
-Aur ab paisa dekho. Machine banana: factory, saamaan, mazdoor, har
-copy ka kharcha. Recipe banana: ek baar dimaag lagao, phir har copy
-LAGBHAG MUFT, kyunki copy sirf numbers ki nakal hai. Chapter 0.2 ka
-leverage dial yaad karo. Software woh pehli cheez hai jahan leverage
-ka dial theoretical had tak ghoomta hai: ek baar likho, arab baar
-chalao, copy ka daam zero.
+ढाब्याची उपमा परत: mixer म्हणजे एकाच पदार्थाचा cook. पण एक cook
+जो **कुठलीही** लिहिलेली recipe वाचून बनवू शकतो, तो एकटा पूर्ण
+hotel आहे. आज पंजाबी, उद्या चायनीज; cook तोच, कागद बदलला. तुमचा
+phone हा तो cook आहे. या design चं नाव **stored-program computer**
+(recipe data च्या जागी ठेवणं), आणि "एक machine जी कुठलीही recipe
+चालवू शकते" या कल्पनेचं नाव **universal machine**. Alan Turing ने
+1936 मध्ये, machine बनण्याआधी, कागदावर हे सिद्ध केलं होतं.
 
-Isi ek idea ne duniya ki ameeri ka naksha badla. Microsoft, Google,
-Infosys, sab is ek baat pe khade hain: recipe number hai, number ki
-copy muft hai.
+आणि आता पैसा बघा. Machine बनवणं: factory, सामान, मजूर, प्रत्येक
+copy चा खर्च. Recipe बनवणं: एकदा डोकं लावा, मग प्रत्येक copy
+**जवळजवळ फुकट**, कारण copy म्हणजे फक्त numbers ची नक्कल. Chapter
+0.2 चा leverage चा काटा आठवा. Software ही पहिली गोष्ट आहे जिथे
+leverage चा काटा टोकापर्यंत फिरतो: एकदा लिहा, billion वेळा चालवा,
+copy चा भाव शून्य.
 
-## NAAM
+याच एका कल्पनेने जगाच्या श्रीमंतीचा नकाशा बदलला. **Nokia** जगातली
+सगळ्यात मोठी phone company होती. तिचे phones **एका** कामासाठी बनले
+होते: call आणि SMS. iPhone आला आणि त्याने phone ला universal
+machine बनवलं: app store म्हणजे "कुठलीही recipe घाला." Nokia
+hardware चांगलं करत राहिली; Apple ने recipes चा बाजार नेला. दहा
+वर्षांत Nokia संपली. Machine विरुद्ध universal machine च्या लढाईत
+universal नेहमी जिंकते, कारण तिच्याकडे जगभरच्या recipe लिहिणाऱ्यांची
+फौज असते.
 
-Is design ka naam **stored-program computer** hai, aur idea jis se juda
-hai woh naam hai **von Neumann architecture** (1945). "Ek machine jo
-koi bhi recipe chala sakti hai" ke idea ko **universal machine** kehte
-hain, yeh Alan Turing ne 1936 mein, machine banne se pehle, kaagaz pe
-saabit kiya tha. Aapke phone ka formal naam yahi hai: universal machine.
+## इथे लोक काय चुकीचं समजतात
 
-## ASLI DUNIYA SE EK EXAMPLE
+"Software company काढायला factory सारखा मोठा पैसा लागतो." उलटं.
+Software ची factory नाहीच, म्हणून सुरुवातीचा खर्च इतिहासातला सगळ्यात
+कमी आहे: एक laptop, एक डोकं. म्हणूनच दोन मुलं garage मध्ये Google
+सुरू करू शकली. आणि म्हणूनच स्पर्धाही भयंकर आहे: जी गोष्ट तुम्ही
+स्वस्तात सुरू करू शकता, ती कोणीही स्वस्तात सुरू करू शकतो. Scarcity
+आता recipe च्या **कल्पनेत** आणि **quality** त आहे, सुरू करण्यात
+नाही.
 
-Nokia duniya ki sabse badi phone company thi. Uske phone EK kaam ke
-liye bane the: call aur SMS. iPhone aaya aur usne phone ko universal
-machine bana diya: app store matlab "koi bhi recipe daalo." Nokia
-hardware behtar banata raha, Apple recipes ka bazaar le gaya. Dus saal
-mein Nokia khatam. Machine vs universal machine ki ladai mein universal
-hamesha jeetti hai, kyunki uske paas duniya bhar ke recipe likhne
-walon ki fauj hai.
+## MAP वर
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+India चं उदाहरण: **Zerodha**. दोन भावांनी stock broking ची recipe
+software मध्ये लिहिली. Branch नाही उघडली, agents नाही ठेवले. एक
+recipe, 10 million+ (1 कोटी+) ग्राहक, आणि India च्या सगळ्यात
+नफ्यातल्या startups पैकी एक, बाहेरचा पैसा न घेता. Universal machine
+वर लिहिलेली एक चांगली recipe काय करू शकते, याचा देशी पुरावा. तुमचा
+Level 4 वाला plan याच जमिनीवर उभा राहील.
 
-"Software company banane ke liye factory jaisa bada paisa chahiye."
-Ulta. Software ki factory hai hi nahi, isliye shuru karne ka kharcha
-history mein sabse kam hai: ek laptop, ek dimaag. Isi liye do do bachche
-garage mein Google shuru kar paaye. Aur isi liye competition bhi
-bhayankar hai: jo cheez aap sasta shuru kar sakte ho, woh koi bhi
-sasta shuru kar sakta hai. Scarcity ab recipe ke IDEA aur QUALITY mein
-hai, shuru karne mein nahi.
+## स्वतः बघा (5 मिनिटं)
 
-## MAP PE
+Phone च्या Settings मध्ये जा, Storage बघा. तिथे apps ची यादी असेल,
+प्रत्येकीपुढे MB/GB. आता विचार करा: प्रत्येक ओळ एक recipe आहे,
+numbers ची रांग, जी याच एका machine ला शंभर वेगळ्या machines बनवते.
+WhatsApp ~100 MB ची recipe आहे. तिची प्रत्येक copy फुकट बनते, आणि
+3 billion (300 कोटी) लोक चालवतात. आता सूत्र स्वतः लावा: size x
+scarcity x leverage.
 
-Company case: Zerodha. Do bhaiyon ne stock broking ki recipe software
-mein likhi. Na branch kholi, na agents rakhe. Ek recipe, ek crore se
-zyada users, aur India ki sabse zyada munafe wali startups mein ek,
-bina bahar ka paisa liye. Universal machine pe likhi ek achhi recipe
-kya kar sakti hai, iska desi saboot. Aapka Level 4 wala plan isi
-zameen pe khada hoga.
+## विचार करा
 
-## KHUD DEKHO (5 minute)
+1. (derivation) Recipe data च्या जागी राहते. मग एक recipe दुसऱ्या
+recipe ला **वाचू** किंवा **लिहू** शकते, कारण ती फक्त numbers आहे.
+या गोष्टीमुळे एक खूप मोठी गोष्ट शक्य होते जी तुम्ही रोज वापरता.
+कुठली?
 
-Apne phone ki settings mein jao, storage dekho. Wahan apps ki list
-hogi, har ek ke aage MB/GB. Ab socho: yeh har entry ek recipe hai,
-numbers ki qataar, jo isi ek machine ko sau alag machines banati hai.
-WhatsApp ~100 MB ki recipe hai. Us recipe ki har copy muft banti hai,
-aur 300 crore log chalate hain. Ab formula khud lagao: size x scarcity
-x leverage.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Recipe data ki jagah rehti hai. Toh ek recipe doosri
-recipe ko PADH ya LIKH bhi sakti hai, kyunki woh bas numbers hai. Is
-baat se ek bahut badi cheez possible hoti hai jo aap roz use karte ho.
-Kya?
-
-> **Jawab:** Update. Jab WhatsApp khud ko update karta hai, toh ek
-> recipe (updater) doosri recipe (purana WhatsApp) ko naye numbers se
-> badal rahi hoti hai. Machine ko haath lagaye bina, duniya bhar ki
-> machines raat-o-raat naya kaam seekh jaati hain. Aur isi darwaaze se
-> virus bhi ghusta hai: woh bhi ek recipe hai jo doosri recipes ko
-> likhne ki koshish karti hai. Ek hi taakat, achhe aur bure dono haath
-> mein. Part 3 mein iski hifaazat milegi.
+> **उत्तर:** Update. WhatsApp स्वतःला update करतं तेव्हा एक recipe
+> (updater) दुसऱ्या recipe ला (जुनं WhatsApp) नव्या numbers नी
+> बदलत असते. Machine ला हात न लावता, जगभरच्या machines रातोरात नवं
+> काम शिकतात. आणि याच दरवाजाने virus पण घुसतो: तोही एक recipe आहे
+> जी दुसऱ्या recipes ना लिहिण्याचा प्रयत्न करते. एकच ताकद, चांगल्या
+> आणि वाईट दोन्ही हातांत. Part 3 मध्ये हिची राखण भेटेल.
 
 
-# SECTION 2: NUMBERS AUR SIZE
+# SECTION 2: NUMBERS आणि SIZE
 
-Paanch chapters. Section 1 ne dikhaya ki machine numbers pe recipe
-chalati hai. Ab do sawal bache: duniya ki cheezein (text, photo, awaaz)
-numbers kaise banti hain, aur numbers kitni jagah lete hain.
+पाच chapters. Section 1 ने दाखवलं की machine numbers वर recipe
+चालवते. आता दोन प्रश्न उरले: जगातल्या गोष्टी (text, photo, आवाज)
+numbers कशा बनतात, आणि numbers किती जागा घेतात.
 
-**Yeh aapke business decision mein kahan aayegi:** Har tech product ka
-kharcha teen cheezon se banta hai: data kitna bada hai, kitna tez
-chahiye, kitna rakhna hai. Yeh section aapko woh naap deta hai. Jis
-founder ko GB aur millisecond ka matlab pata hai, woh engineer ke
-estimate pe sawal utha sakta hai aur cloud ke bill ko padh sakta hai.
-Jo nahi jaanta, woh andhere mein sign karta hai.
+**हे तुमच्या business decision मध्ये कुठे येईल:** प्रत्येक tech
+product चा खर्च तीन गोष्टींनी बनतो: data किती मोठा, किती वेगवान
+हवा, किती साठवायचा. हा section तुम्हाला ते माप देतो. ज्या founder
+ला GB आणि millisecond चा अर्थ माहीत आहे, तो engineer च्या estimate
+वर प्रश्न विचारू शकतो आणि cloud चं bill वाचू शकतो. जो जाणत नाही,
+तो अंधारात सही करतो.
 
 
-# Chapter 2.1 [SPINE]: Ek cheez kitni jagah leti hai
+# Chapter 2.1 [SPINE]: एक गोष्ट किती जागा घेते
 
-Kapda meter mein napta hai, doodh litre mein, aur digital cheezein?
-Aapne naam sune hain: MB, GB. Ab unhe kamaane layak samajh lete hain.
+कापड meter मध्ये मोजतात, दूध litre मध्ये, आणि digital गोष्टी? नावं
+तुम्ही ऐकली आहेत: MB, GB. आता ती कमावण्यालायक समजून घेऊ.
 
-Naap ki ikai wahi hai jo Chapter 1.4 mein bani: **bit**, ek switch ki
-haalat. Aath bit ka jhund **byte**. Ek byte mein 256 haalat aati hain,
-itna kaafi hai ek akshar rakhne ke liye. Toh ek moti baat pakdo:
+मापाचं एकक तेच आहे जे Chapter 1.4 मध्ये बनलं: **bit**, एका switch
+ची स्थिती. आठ bits चा गट **byte**. एका byte मध्ये 256 स्थिती
+मावतात; एक अक्षर ठेवायला एवढं पुरे. मग एक ढोबळ गोष्ट पकडा:
 
-**1 byte = lagbhag 1 akshar.**
+**1 byte = साधारण 1 अक्षर.**
 
-Ab seedhi ginti, har kadam pe hazaar ka guna:
+आता सरळ मोजणी, प्रत्येक पायरीवर हजाराचा गुणाकार:
 
 ```
-1 KB (kilobyte)  = ~1 hazaar byte     = ek paragraph
-1 MB (megabyte)  = ~10 lakh byte      = ek moti kitaab ka text
-1 GB (gigabyte)  = ~100 crore byte    = 1,000 moti kitaabein
-1 TB (terabyte)  = ~1 lakh crore byte = ek chhoti library
+1 KB (kilobyte)  = ~1 हजार bytes      = एक परिच्छेद
+1 MB (megabyte)  = ~1 million bytes   = एका जाड पुस्तकाचा text
+1 GB (gigabyte)  = ~1 billion bytes   = 1,000 जाड पुस्तकं
+1 TB (terabyte)  = ~1 trillion bytes  = एक छोटी library
 ```
 
-Ab asli duniya ke anchors, yeh ratne laayak hain kyunki har baat-cheet
-mein aayenge:
+आता खऱ्या जगाचे anchors; हे पाठ करण्यालायक आहेत, कारण प्रत्येक
+बोलण्यात येतील:
 
 ```
-WhatsApp message (sirf text)     ~ 100 byte
-Ek photo (phone camera)          ~ 3 MB
-Ek gaana                         ~ 5 MB
-Ek ghanta video call             ~ 500 MB - 1 GB
-Ek movie (achhi quality)         ~ 2-4 GB
-Aapke phone ka poora storage     ~ 128-256 GB
+WhatsApp message (फक्त text)    ~ 100 bytes
+एक photo (phone camera)          ~ 3 MB
+एक गाणं                          ~ 5 MB
+एक तास video call                ~ 500 MB - 1 GB
+एक movie (चांगली quality)        ~ 2-4 GB
+तुमच्या phone चा पूर्ण storage   ~ 128-256 GB
 ```
 
-Ek pattern dikh raha hai? Text nanha hai. Photo usse hazaar guna.
-Video photo se bhi sau guna. **Text : photo : video = 1 : hazaar :
-lakh.** Yeh anupaat is poori kitaab ka sabse kaam ka number hai,
-kyunki jahan size hai wahan kharcha hai.
+एक pattern दिसतोय? Text चिमूटभर आहे. Photo त्याच्या हजारपट. Video
+photo च्याही शंभरपट. **Text : photo : video = 1 : हजार : लाख.** हे
+प्रमाण या पूर्ण पुस्तकातला सगळ्यात कामाचा आकडा आहे, कारण जिथे size
+आहे तिथे खर्च आहे.
 
-Kyun aisa? Text mein har akshar ek byte hai. Photo mein har bindu
-(pixel) ke teen byte hain, aur bindu lakhs mein hain. Video mein har
-second pe 30 photos hain. Ginti khud guna hoti jaati hai.
+असं का? Text मध्ये प्रत्येक अक्षर एक byte. Photo मध्ये प्रत्येक
+ठिपक्याचे (pixel) तीन bytes, आणि ठिपके millions मध्ये. Video मध्ये
+प्रत्येक second ला 30 photos. मोजणी स्वतःच गुणाकार होत जाते.
+बाजाराच्या भाषेत: चिठ्ठी, पोतं आणि truck. चिठ्ठी खिशात मावते,
+पोत्याला हमाल लागतो, truck ला रस्ता आणि diesel.
 
-## NAAM
+एक बारीक गोष्ट, जिच्यात दुकानदाराची चलाखी लपली आहे: internet चा वेग
+**bits** मध्ये मोजला जातो (Mbps = megabits per second), storage
+**bytes** मध्ये (MB). Bit हा byte चा आठवा हिस्सा. म्हणून "100 Mbps"
+चं connection एका second मध्ये फक्त 12.5 MB आणतं. Telecom companies
+bits मध्ये बोलतात कारण आकडा आठपट मोठा दिसतो. आता तुम्ही ही चाल
+पकडू शकता.
 
-In naapon ka poora parivaar **storage units** kehlata hai. Ek baareek
-baat: internet ki speed **bits** mein napti hai (Mbps = megabits per
-second), storage **bytes** mein (MB). Bit byte ka aathvan hissa hai.
-Isliye "100 Mbps" ka connection ek second mein sirf 12.5 MB laata hai.
-Telecom companies bits mein isliye bolti hain kyunki number aath guna
-bada dikhta hai. Ab aap yeh chaal pakad sakte ho.
+आणि हे कमाईशी असं जोडलेलं आहे: WhatsApp वर पाठवलेला photo हलका का
+होतो? कारण WhatsApp तो पाठवण्याआधी दाबतं (compress): 3 MB वरून
+~100 KB, तीसपट छोटा. रोज billions photos जातात; full size गेले
+असते तर WhatsApp चा data खर्च तीसपट असता, आणि तुमचा data pack पण.
+एका compression recipe ने company चे billions वाचवले. Size ची
+व्यवस्था हाच पैसा आहे.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## इथे लोक काय चुकीचं समजतात
 
-WhatsApp par bheji photo halki kyun ho jaati hai? Kyunki WhatsApp use
-bhejne se pehle daba deta hai (compress): 3 MB se ~100 KB, tees guna
-chhoti. Karodo photos roz jaati hain; agar full size jaati, toh
-WhatsApp ka data kharcha tees guna hota aur aapka data pack bhi. Ek
-compression ki recipe ne company ke arabon bachaye. Size ka intezaam
-hi paisa hai.
+लोक KB, MB, GB ला नुसतं "छोटा, मोठा, अजून मोठा" समजतात. नाही:
+प्रत्येक पायरी **हजाराचा** गुणाकार आहे. MB आणि GB मधला फरक तोच आहे
+जो 1 रुपया आणि 1,000 रुपयांमधला. Engineer म्हणतो "ही file GB मध्ये
+आहे," तेव्हा तो म्हणतोय "ही MB वालीपेक्षा हजारपट जड आहे," आणि
+तिचा खर्चही तसाच असेल.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## MAP वर
 
-Log KB, MB, GB ko bas "chhota, bada, aur bada" samajhte hain. Nahi:
-har kadam HAZAAR ka guna hai. MB aur GB ka farq wahi hai jo 1 rupaye
-aur 1,000 rupaye ka. Jab engineer kahe "yeh file GB mein hai," toh
-woh keh raha hai "yeh MB wali se hazaar guna bhaari hai," aur uska
-kharcha bhi waisa hi hoga.
+रुपयाचा रस्ता: तुम्ही Google ला storage चं भाडं देता (Google One:
+100 GB साठी महिना ~130 रुपये). Google तो data ज्यांच्या machines
+वर ठेवतो त्यांच्या disks Samsung/Seagate कडून येतात. खाली उतरत जा,
+एक गरज मिळेल: "माझ्या आठवणी हरवू नयेत" (Level 1). त्या गरजेचा पूर्ण
+stack: Photos app (L2 सेवा), cloud storage (L3), disk factory (L3
+चा hardware कोपरा). प्रत्येक GB भाडं देतोय.
 
-## MAP PE
+## स्वतः बघा (5 मिनिटं)
 
-Rupaye ka rasta: aap Google ko storage ka kiraya dete ho (Google One:
-100 GB ke liye mahina ~130 rupaye). Google woh data jinke machines pe
-rakhta hai, unki disks Samsung/Seagate se aati hain. Neeche tak jao
-toh ek zaroorat milegi: "meri yaadein na khoyein" (Level 1: yaadon ki
-hifaazat). Us zaroorat ka poora stack: photos app (L2 service), cloud
-storage (L3), disk factory (L3 ka hardware kona). Har GB kiraya de
-raha hai.
+Phone मध्ये एक photo उघडा, त्याची details/info बघा (size मिळेल,
+~2-4 MB). आता एका text message चा size आठवा (~100 bytes). आता
+स्वतः मोजा: एक photo किती messages च्या बरोबर आहे? (~30,000.) आता
+समजेल की data pack video बघण्यानेच का संपतो, text ने कधीच नाही.
 
-## KHUD DEKHO (5 minute)
+## विचार करा
 
-Phone mein koi ek photo kholo, uski details/info dekho (size milega,
-~2-4 MB). Ab ek text message ka size socho (~100 byte). Ab khud gino:
-ek photo kitne messages ke barabar hai? (~30,000). Ab samjho ki data
-pack video dekhne se hi kyun khatam hota hai, text se kabhi nahi.
+1. (derivation) दोन startup कल्पना: एकीत लोक 200 शब्दांचे reviews
+लिहितात, दुसरीत लोक 1 मिनिटाचे video reviews बनवतात. दोन्हीकडे 1
+million users. फक्त size च्या ज्ञानाने सांगा: कोणाचा खर्च किती
+जास्त, आणि याचा business वर काय परिणाम?
 
-## SOCHNE KE LIYE
-
-1. (derivation) Do startup ideas: ek mein log 200-word reviews likhte
-hain, doosre mein log 1-minute video reviews banate hain. Dono ke 10
-lakh users hain. Sirf size ke gyaan se batao: kiska kharcha kitna
-zyada hoga, aur iska business pe kya asar padega?
-
-> **Jawab:** Text review ~1 KB, video review ~50-100 MB: farq lagbhag
-> LAKH guna. Toh video wale ka storage aur bhejne ka kharcha bhi
-> hazaaron-lakhon guna hoga. Asar: text wala app muft users pe bhi
-> zinda reh sakta hai, video wale ko pehle din se paise ka raasta
-> chahiye (ads, subscription), warna har naya user use gareeb karta
-> hai. Product ki shakal uske business model ki shakal tay kar deti
-> hai. Yeh formula ab aapke paas hai, kisi bhi idea pe lagao.
+> **उत्तर:** Text review ~1 KB, video review ~50-100 MB: फरक जवळजवळ
+> **लाखपट**. मग video वाल्याचा साठवण्याचा आणि पाठवण्याचा खर्चही
+> हजारो-लाखोपट. परिणाम: text वालं app फुकट users वरही जगू शकतं;
+> video वाल्याला पहिल्या दिवसापासून पैशाचा रस्ता लागतो (ads,
+> subscription), नाहीतर प्रत्येक नवा user त्याला गरीब करतो. Product
+> चा आकार त्याच्या business model चा आकार ठरवतो. हे सूत्र आता
+> तुमच्याकडे आहे; कुठल्याही कल्पनेवर लावा.
 
 
-# Chapter 2.2 [SPINE]: Text, photo, awaaz, video: sab numbers hain
+# Chapter 2.2 [SPINE]: Text, photo, आवाज, video: सगळे numbers
 
-Machine sirf numbers jaanti hai. Toh aapki shaadi ki photo, maa ki
-awaaz wali recording, yeh kitaab ka text, yeh sab machine mein kaise
-ghusa? Har ek ka jawab ek hi chaal se niklega. Chaal yeh hai:
+Machine ला फक्त numbers कळतात. मग तुमचा लग्नाचा photo, आईच्या
+आवाजाची recording, या पुस्तकाचा text, हे सगळं machine मध्ये कसं
+घुसलं? प्रत्येकाचं उत्तर एकाच चालीने निघेल. चाल ही आहे:
 
-**Cheez ko chhote chhote tukdon mein kaato, har tukde ko ek number do,
-aur numbers ka matlab pehle se sab mil kar tay kar lo.**
+**गोष्टीचे छोटे-छोटे तुकडे करा, प्रत्येक तुकड्याला एक number द्या,
+आणि numbers चा अर्थ आधीच सगळ्यांनी मिळून ठरवा.**
 
-Ab chaaron pe lagao:
+Pincode ची व्यवस्था आठवा: 400001 म्हणजे Mumbai GPO, हे कुठल्या
+कागदात लपलेलं सत्य नाही; post खात्याने **ठरवलं** आणि सगळ्यांनी
+मानलं. आता हीच चाल चारही गोष्टींवर लावा:
 
-**Text.** Tukda = akshar. Sab ne mil kar tay kiya: A = 65, B = 66,
-space = 32. Toh "HI" machine mein 72, 73 hai. Bas. Aapke naam ka
-spelling numbers ki qataar hai. (Hindi ke aksharon ke bhi numbers tay
-hain, अ = 2309.)
+**Text.** तुकडा = अक्षर. सगळ्यांनी मिळून ठरवलं: A = 65, B = 66,
+space = 32. मग "HI" machine मध्ये 72, 73 आहे. बस. तुमच्या नावाचं
+spelling numbers ची रांग आहे. या ठरवलेल्या table चं नाव
+**encoding**; जुनं table **ASCII** (1963), आजचं पूर्ण table
+**Unicode**, ज्यात जगातली प्रत्येक भाषा आहे: अ = 2309, आणि emoji
+सुद्धा (हसणारा चेहरा = 128514). तुम्ही वाचताय ती मराठी अक्षरंही
+याच क्षणी numbers म्हणूनच साठवलेली आहेत.
 
-**Photo.** Tukda = bindu (pixel). Photo ko jaali mein kaato, har
-khaane ka ek rang. Aur rang? Har rang laal, hara, neela ke mel se
-banta hai, toh teen numbers (0-255) har bindu ke liye: (255, 0, 0) =
-poora laal. 40 lakh bindu x 3 numbers = aapki photo.
+**Photo.** तुकडा = ठिपका (**pixel**). Photo ला जाळीत कापा, प्रत्येक
+चौकोनाचा एक रंग. आणि रंग? प्रत्येक रंग लाल, हिरवा, निळा यांच्या
+मिश्रणाने बनतो, म्हणून तीन numbers (0-255) प्रत्येक ठिपक्यासाठी:
+(255, 0, 0) = पूर्ण लाल. 4 million ठिपके x 3 numbers = तुमचा photo.
+रांगोळीसारखं: दुरून चित्र, जवळून फक्त ठिपके.
 
-**Awaaz.** Awaaz hawa ka kampan hai. Tukda = waqt ka pal. Har second
-ko ~44,000 palon mein kaato, har pal pe kampan ki oonchai naapo, woh
-number likh lo. Numbers ki qataar wapas bajao, awaaz wapas. Maa ki
-awaaz 44,000 numbers prati second hai.
+**आवाज.** आवाज म्हणजे हवेचं कंपन. तुकडा = वेळेचा क्षण. प्रत्येक
+second चे ~44,000 क्षण करा, प्रत्येक क्षणी कंपनाची उंची मोजा, तो
+number लिहा (एका मापाचं नाव **sample**). Numbers ची रांग परत
+वाजवा, आवाज परत. आईचा आवाज म्हणजे 44,000 numbers प्रति second.
 
-**Video.** Tukda = frame. Har second 30 photos, plus awaaz. Isliye
-video sabse bhaari hai: photo ka kharcha x 30 x seconds.
+**Video.** तुकडा = **frame**. प्रत्येक second ला 30 photos, अधिक
+आवाज. म्हणून video सगळ्यात जड: photo चा खर्च x 30 x seconds.
 
-Teeno kadmon mein sabse zaroori kaunsa hai? Kaatna? Naapna? Nahi:
-**"matlab pehle se sab mil kar tay kar lo."** 72 ka matlab H tabhi
-hai jab bhejne wala aur paane wala dono ek hi table maante hon. Agar
-mera 72 H hai aur tumhara kuch aur, toh message kachra ban jaayega.
-Yeh baat, ki **numbers ka matlab samjhauta hai, numbers mein nahi
-hota**, aage internet (Part 3) aur AI (Book 2) dono ki neev hai.
+तीन पावलांमध्ये सगळ्यात महत्त्वाचं कुठलं? कापणं? मोजणं? नाही:
+**"अर्थ आधीच सगळ्यांनी मिळून ठरवा."** 72 चा अर्थ H तेव्हाच आहे
+जेव्हा पाठवणारा आणि घेणारा दोघे एकच table मानतात. जुन्या websites
+वर मराठी लिहिल्यावर ??? किंवा चौकोन दिसायचे, ते हेच: numbers
+पोहोचले, पण त्या बाजूचं software Unicode चा मराठी भाग जाणत नव्हतं.
+Numbers बरोबर, अर्थ हरवला. ही गोष्ट, की **numbers चा अर्थ करार
+असतो, numbers मध्ये नसतो**, पुढे internet (Part 3) आणि AI (Book 2)
+दोन्हींचा पाया आहे.
 
-## NAAM
+## इथे लोक काय चुकीचं समजतात
 
-Matlab tay karne wale table ka naam **encoding** hai. Text ka sabse
-purana table **ASCII** (1963), aaj ka poora table **Unicode**, jisme
-duniya ki har bhasha aur emoji tak hai (emoji bhi bas ek number hai:
-"laughing face" = 128514). Photo ke bindu ka naam **pixel**, awaaz ke
-pal ka naam **sample**, video ki photo ka naam **frame**.
+लोकांना वाटतं machine photo "बघते" किंवा गाणं "ऐकते". नाही. Machine
+साठी photo म्हणजे 12 million numbers आणि गाणं म्हणजे 15 million.
+तिला ना रंग माहीत ना राग. आणि तरीही (हे पुढे Book 2 चं बीज आहे)
+numbers च्या pattern वरून machine सांगते की photo त मांजर आहे.
+बघणं नाही, मोजणीतून ओळख. जेव्हा ती गोष्ट येईल, तेव्हा हा chapter
+आठवा: सगळं numbers च होतं, नेहमी.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## MAP वर
 
-Jab aap Hindi mein type karte ho aur kisi purani website pe ??? ya
-dibbe dikhte hain, toh kya hua? Aapke numbers pahunch gaye, lekin us
-taraf ka software Unicode ka Hindi wala hissa nahi jaanta tha. Numbers
-sahi, matlab kho gaya. Poori duniya ka software dheere dheere Unicode
-pe isliye aaya kyunki bina ek jaisi table ke, bhaashaon ka internet
-ban hi nahi sakta tha. Ek boring sa samjhauta, arabon logon ko jodne
-ki shart nikla.
+Company case: **JioCinema/Hotstar** cricket दाखवतात तेव्हा 40
+million लोक एकाच वेळेस frames चे numbers मागत असतात. त्यांचा पूर्ण
+engineering खर्च याच chapter च्या प्रमाणातून येतो: video = सगळ्यात
+जड numbers. आणि त्यांचं business model पण तेच ठरवतं: ads आणि
+subscription गरजेचे, कारण प्रत्येक प्रेक्षकाचा data खर्च खरा आहे.
+Level 1 गरज: करमणूक. तिचे numbers: सगळ्यात महाग.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## स्वतः बघा (5 मिनिटं)
 
-Log sochte hain machine photo "dekhti" hai ya gaana "sunti" hai. Nahi.
-Machine ke liye photo 1.2 crore numbers hain aur gaana 1.5 crore.
-Usko na rang pata hai na raag. Aur phir bhi (yeh aage Book 2 ka beej
-hai) numbers ke pattern se machine bata deti hai ki photo mein billi
-hai. Dekhna nahi, ginti se pehchaan. Jab woh baat aaye, yeh chapter
-yaad rakhna: sab kuch numbers hi tha, hamesha.
+कोणाला तरी हा message पाठवा: "72 69 76 76 79". आणि सांगा: प्रत्येक
+number मधून 64 वजा करा आणि A=1, B=2 च्या मोजणीने अक्षर बनवा. उत्तर
+येईल HELLO. तुम्ही आत्ता स्वतःचं encoding table बनवलं आणि एका
+माणसाकडून decode करून घेतलं. Machine बस हेच करते, billion पट वेगाने.
 
-## MAP PE
+## विचार करा
 
-Company case: JioCinema/Hotstar jab cricket dikhata hai, toh 4 crore
-log ek saath frames ke numbers maang rahe hote hain. Unka poora
-engineering kharcha isi chapter ke anupaat se aata hai: video = sabse
-bhaari numbers. Aur unka business model bhi wahi tay karta hai: ads
-aur subscription zaroori hain, kyunki har viewer ka data kharcha asli
-hai. Level 1 zaroorat: manoranjan. Uske numbers: sabse mehnge.
+1. (derivation) WhatsApp voice message पाठवताना "पाठवण्याआधी दाबा"
+(compress) कसं शक्य आहे? आवाज तर मोजलेलाच होता, 44,000 numbers
+प्रति second. कुठले numbers फेकता येतात?
 
-## KHUD DEKHO (5 minute)
-
-Kisi ko yeh message bhejo: "72 69 76 76 79". Aur bolo har number 64
-ghata ke A=1, B=2 wali ginti pe akshar banao. Jawab aayega HELLO. Aapne
-abhi apna encoding table banaya aur ek insaan ko decode karwaya. Machine
-bas yahi karti hai, arab guna tez.
-
-## SOCHNE KE LIYE
-
-1. (derivation) WhatsApp voice message bhejte waqt "bhejne se pehle
-daba do" (compress) kaise possible hai? Awaaz toh naapi hui thi,
-44,000 number prati second. Kaunse numbers phenke ja sakte hain?
-
-> **Jawab:** Woh jo insaan ke kaan waise bhi nahi pakadte. Bahut
-> ooncha kampan, bahut halki awaaz jo tez awaaz ke peeche dab gayi,
-> do palon ke beech ka farak jo andaaze se wapas ban sakta hai. Recipe
-> unhe phenk deti hai, size das guna girta hai, kaan ko farq nahi
-> padta. Sabak: compression ka matlab hai "matlab bachao, numbers
-> phenko." Aur dhyaan do, yeh ek FAISLA hai ki kya phenkna hai, aur
-> har faisla kisi insaan ki recipe mein likha hai. Machine mein har
-> jagah aise chhupe hue faisle milenge.
+> **उत्तर:** ते, जे माणसाचे कान तसेही पकडत नाहीत. खूप उंच कंपन,
+> मोठ्या आवाजामागे दबलेला हलका आवाज, दोन क्षणांमधला फरक जो अंदाजाने
+> परत बनवता येतो. Recipe ते फेकून देते, size दहापट घटतो, कानाला
+> फरक पडत नाही. धडा: compression म्हणजे "अर्थ वाचवा, numbers फेका."
+> आणि लक्ष द्या: काय फेकायचं हा एक **निर्णय** आहे, आणि प्रत्येक
+> निर्णय कोणा माणसाच्या recipe त लिहिलेला आहे. Machine मध्ये सगळीकडे
+> असे लपलेले निर्णय भेटतील.
 
 
-# Chapter 2.3 [SPINE]: Bade numbers ka matlab
+# Chapter 2.3 [SPINE]: मोठ्या आकड्यांचा अर्थ
 
-Is kitaab mein ab tak aaye: 15 arab transistor, 44,000 sample prati
-second, arab kadam prati second. Aage aur bade aayenge. Problem yeh
-hai ki insaan ka dimaag lakh ke aage sab numbers ko ek jaisa "bahut
-bada" maan leta hai. Woh chalega nahi, kyunki in numbers ke beech ke
-FARQ mein hi saari samajh aur saara paisa hai.
+या पुस्तकात आतापर्यंत आले: 15 billion transistors, 44,000 samples
+प्रति second, billion पावलं प्रति second. पुढे अजून मोठे येतील.
+Problem ही आहे की माणसाचं डोकं लाखाच्या पुढचे सगळे आकडे एकसारखे
+"खूप मोठे" मानतं. ते चालणार नाही, कारण या आकड्यांमधल्या **फरकातच**
+सगळी समज आणि सगळा पैसा आहे.
 
-Pehle tarjuma ka table, kyunki India ginti apni bolta hai aur
-technology angrezi:
+आधी भाषांतराचं table, कारण India मोजणी आपली बोलतो आणि technology
+इंग्रजी:
 
 ```
-10 lakh     = 1 million   (M)
-1 crore     = 10 million
-1 arab      = 1 billion   (B)  = 100 crore
-1 kharab    = 100 billion
-            = 0.1 trillion (T)
+1 million   (M)  = 10 लाख
+10 million       = 1 कोटी
+1 billion   (B)  = 100 कोटी  = 1 अब्ज
+1 trillion  (T)  = 1 लाख कोटी
 ```
 
-Ab farq ko mehsoos karo, ghadi se. Ek second mein ek ginti bolo:
+आता फरक जाणवून घ्या, घड्याळाने. एका second ला एक अशी मोजणी करा:
 
 ```
-1 million tak ginne mein    ~ 11 din lagenge
-1 billion tak               ~ 31 SAAL
-1 trillion tak              ~ 31,000 saal
+1 million पर्यंत मोजायला    ~ 11 दिवस लागतील
+1 billion पर्यंत            ~ 31 वर्षं
+1 trillion पर्यंत           ~ 31,000 वर्षं
 ```
 
-Million aur billion "paas paas" nahi hain. Unke beech hazaar guna ka
-samundar hai. Jab news kahe "company X billion dollar ki hui," toh
-ab aapke paas paimana hai.
+Million आणि billion "जवळजवळ" नाहीत. त्यांच्यामध्ये हजारपट अंतराचा
+समुद्र आहे. बातमी म्हणते "company X billion dollars ची झाली," तेव्हा
+आता तुमच्याकडे मोजपट्टी आहे.
 
-Ab ulti taraf, chhote waqt ki ginti, kyunki machine wahan jeeti hai:
+आता उलट्या दिशेला, छोट्या वेळाची मोजणी, कारण machine तिथे जिंकते:
 
 ```
-1 second        aapka ek palak jhapakna
-1 millisecond   (1/1000 sec)    achhe internet ka ek phera
-1 microsecond   (1/10 lakh)     machine memory se ek cheez uthana
-1 nanosecond    (1/1 arab)      CPU ka ek kadam
+1 second        तुमची एक पापणी लवते
+1 millisecond   (1/1000 sec)      चांगल्या internet चा एक फेरा
+1 microsecond   (1/1 million)     machine ने memory तून एक गोष्ट उचलणं
+1 nanosecond    (1/1 billion)     CPU चं एक पाऊल
 ```
 
-Ek moti baat nikaalo: **CPU ke ek kadam (nanosecond) aur internet ke
-ek phere (millisecond) mein 10 lakh guna ka farq hai.** Matlab jab
-tak ek message shehar paar jaa kar lautta hai, CPU 10 lakh kadam chal
-chuka hota hai. Machine ke andar sab kuch muft jaisa tez hai; bahar
-jaana mehnga hai. Yeh ek line aage Part 3, 4, 5 mein baar baar kaam
-aayegi, aur engineers ke har design ke peeche yahi hai: **bahar mat
-jao jab tak zaroori na ho.**
+एक जाड ओळ काढा: **CPU च्या एका पावलात (nanosecond) आणि internet
+च्या एका फेऱ्यात (millisecond) 1 million पटीचा फरक आहे.** म्हणजे
+एक message शहरापलीकडे जाऊन परत येईपर्यंत CPU 1 million पावलं चालून
+झालेला असतो. ढाब्याची उपमा: cook च्या हातात मीठ शेजारीच आहे
+(nanosecond), पण कांदे संपले तर मंडईची फेरी (millisecond) म्हणजे
+अर्धा दिवस. हुशार cook काय करतो? मंडईला रोज शंभर फेऱ्या मारत नाही;
+सकाळी एकदाच सगळं आणून ठेवतो. Machine चं पूर्ण design याच शहाणपणावर
+चालतं: **बाहेर जाऊ नका, जोपर्यंत गरज नाही.** ही एक ओळ Part 3, 4, 5
+मध्ये पुन्हा पुन्हा कामी येईल. (या फेऱ्याच्या वेळेचं नाव
+**latency**; हा शब्द पुढे पूर्ण chapter आणेल.)
 
-## NAAM
+आणि हा वेळ थेट पैसा आहे: **Google** ने मोजलं की search 400
+milliseconds ने हळू झाली तर लोक कमी search करतात. अर्ध्या पापणीपेक्षा
+कमी वेळ, आणि करोडोंचा फरक. **Amazon** ची मोजणी: प्रत्येक 100
+milliseconds ची उशीर = ~1% कमी विक्री. म्हणून वेग ही engineering
+ची हौस नाही, थेट पैसा आहे. जी company milliseconds मोजू शकते, ती
+ते रुपयांत बदलू शकते.
 
-In chhote naapon ke naam upar table mein hain: milli (hazaarvan),
-micro (10 lakhvan), nano (arabvan). Speed ke is khel ka naam
-**latency** hai: ek kaam shuru hone se jawab aane tak ka waqt. Yeh
-shabd Part 5 mein poora chapter layega.
+## इथे लोक काय चुकीचं समजतात
 
-## ASLI DUNIYA SE EK EXAMPLE
+"Computer वेगवान आहे, बस." नाही: computer **कुठे** वेगवान आहे, हे
+जाणणं हीच खरी विद्या. आत nanosecond, बाहेर millisecond, 1 million
+पटीचा फरक. जो हे जाणत नाही, तो असं product बनवतो जे प्रत्येक
+पावलावर internet ला विचारतं, आणि मग चकित होतो की सगळं हळू का आहे.
+वेगवान machine वरही हळू design शक्य आहे, आणि सर्रास आहे.
 
-Google ne naapa ki search 400 millisecond dheemi hui toh log kam
-search karne lage. Aadha palak jhapakne se kam waqt, aur karodon ka
-farq. Amazon ki ginti: har 100 millisecond ki deri = ~1% kam bikri.
-Isliye speed engineering ki shauk nahi, seedha paisa hai. Jo company
-millisecond gin sakti hai, woh unhe rupaye mein badal sakti hai.
+## MAP वर
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+या chapter मधून कोण कमावतं: जो scale वाचू शकतो. Investor साठी "1
+million users" आणि "10 million users" मध्ये दहापट फरक आहे; जो
+founder दोन्हींना "खूप users" म्हणतो, त्याच्यापासून पैसा दूर राहतो.
+आणि जो engineer millisecond वाचवू शकतो, तो Google/Amazon सारख्या
+business मध्ये थेट revenue चा काटा फिरवतो; म्हणून अशा skill चा पगार
+कोटी पार जातो. आकडे जाणवणं ही Level 2, 3, 4 तिन्हींची सामायिक भाषा
+आहे.
 
-"Computer tez hai, bas." Nahi: computer KAHAN tez hai, yeh jaanna hi
-asli gyaan hai. Andar nanosecond, bahar millisecond, 10 lakh ka farq.
-Jo yeh nahi jaanta, woh aisa product sochta hai jo har kadam pe
-internet se poochhta hai, aur phir hairaan hota hai ki sab dheema
-kyun hai. Tez machine pe bhi dheema design possible hai, aur aam hai.
+## स्वतः बघा (5 मिनिटं)
 
-## MAP PE
+Phone वर stopwatch लावा आणि 100 पर्यंत मोठ्याने मोजा (~100
+seconds). आता हिशोब: 1 million पर्यंत असं मोजायला किती दिवस? (~11
+दिवस, न झोपता.) 1 billion पर्यंत? (~31 वर्षं.) एकदा स्वतः हिशोब
+केलात की billion हा शब्द कायमचा जड होईल, जसा त्याने असायला हवं.
 
-Kaun kamata hai is chapter se: jo scale ko padh sakta hai. Ek
-investor ke liye "10 lakh users" aur "1 crore users" mein das guna ka
-farq hai; jo founder dono ko "bahut saare users" bolta hai, usse
-paisa door rehta hai. Aur jo engineer millisecond bacha sakta hai,
-woh Google/Amazon jaise business mein seedha revenue dial ghuma raha
-hai, isliye aisi skill ki tankhwah crore paar jaati hai. Numbers ko
-mehsoos karna Level 2, 3, 4 teeno ki shared bhasha hai.
+## विचार करा
 
-## KHUD DEKHO (5 minute)
+1. (derivation) तुमच्या phone ची chip 15 billion transistors ची
+आहे. प्रत्येक transistor तांदळाचा एक दाणा असता, तर किती तांदूळ
+झाला असता? (एका किलोत ~50,000 दाणे.) आणि यातून समजून घ्या: chip
+बनवणारी factory जगात तीन-चारच का आहेत?
 
-Phone pe stopwatch chalao aur 100 tak zor se gino. (~100 second.) Ab
-hisaab: 1 million tak aise ginne mein kitne din? (~11 din, bina soye.)
-1 billion tak? (~31 saal.) Ek baar khud hisaab lagaoge toh billion
-shabd hamesha ke liye bhaari ho jaayega, jaisa use hona chahiye.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Aapke phone ki chip 15 arab transistor ki hai. Agar
-har transistor chawal ka ek dana hota, toh kitna chawal banta? (Ek
-kilo mein ~50,000 dane.) Aur is se kya samajh aata hai ki chip banane
-wali factory duniya mein teen-chaar hi kyun hain?
-
-> **Jawab:** 15 arab / 50,000 = 3 lakh kilo, yaani 300 tonne chawal,
-> pachees trucks bhar ke. Itni cheezein nakhoon bhar jagah pe, bina
-> ek bhi galat lage, chhaapni hain. Isliye yeh duniya ki sabse
-> mushkil manufacturing hai: ek factory lagane ka kharcha ~2 lakh
-> crore rupaye, aur hunar sirf TSMC (Taiwan), Samsung (Korea), Intel
-> (US) ke paas. Scarcity itni oonchi ki desh iske liye jang ki
-> taiyari karte hain. Ab aap samajhte ho ki "chip war" news mein
-> kyun rehti hai.
+> **उत्तर:** 15 billion / 50,000 = 3 लाख किलो, म्हणजे 300 tonnes
+> तांदूळ, पंचवीस trucks भरून. एवढ्या गोष्टी नखाएवढ्या जागेवर, एकही
+> चुकीची न लागता, छापायच्या आहेत. म्हणून ही जगातली सगळ्यात अवघड
+> manufacturing आहे: एक factory उभारायचा खर्च ~20 billion dollars
+> (1.7 लाख कोटी रुपये), आणि हुनर फक्त TSMC (Taiwan), Samsung
+> (Korea), Intel (US) कडे. Scarcity इतकी उंच की देश यासाठी
+> युद्धाची तयारी करतात. आता समजेल "chip war" बातम्यांमध्ये का असतं.
 
 
-# Chapter 2.4 [DEPTH]: Ek instruction chalti kaise hai
+# Chapter 2.4 [DEPTH]: एक instruction चालते कशी
 
-(DEPTH chapter. Skip kar sakte ho, lekin yeh chhota hai aur iske baad
-"processor" shabd hamesha ke liye khul jaata hai.)
+(DEPTH chapter. वगळू शकता, पण हा छोटा आहे आणि यानंतर "processor" हा
+शब्द कायमचा उघडतो.)
 
-Chapter 1.6 se: recipe numbers ban kar memory mein rakhi hai. Machine
-use chalati kaise hai? Poora raaz ek ginne wale khaane mein hai.
+Chapter 1.6 मधून: recipe numbers बनून memory त ठेवली आहे. Machine
+ती चालवते कशी? पूर्ण रहस्य एका मोजणाऱ्या खणात आहे.
 
-CPU ke andar ek chhota sa khaana hai jisme bas ek number rehta hai:
-**"abhi main recipe ke kadam number ___ pe hoon."** Aur CPU din raat
-bas yeh teen kaam gol gol karta hai:
+CPU च्या आत एक छोटा खण आहे ज्यात फक्त एक number असतो: **"आत्ता मी
+recipe च्या पाऊल क्रमांक ___ वर आहे."** या खणाचं नाव **program
+counter**. ढाब्याचा cook आठवा, ज्याचं बोट recipe च्या कागदावर
+असतं: बोट ज्या ओळीवर, तेच काम चालू. आणि CPU रात्रंदिवस फक्त हे तीन
+काम गोल-गोल करतो:
 
-**1. UTHAO (fetch):** khaane mein jo number hai, memory ki us jagah
-se kadam utha lo. Maan lo wahan likha hai: "3" (matlab: jodo).
+**1. उचला (fetch):** खणात जो number आहे, memory च्या त्या जागेवरून
+पाऊल उचला. समजा तिथे लिहिलंय: "3" (म्हणजे: जोडा).
 
-**2. SAMJHO (decode):** number 3 ka matlab kya hai? Chapter 1.5 wali
-gates ki chain number ko padh kar sahi purza chuun leti hai: jodne
-wala dibba on.
+**2. समजा (decode):** Number 3 चा अर्थ काय? Chapter 1.5 वाली gates
+ची साखळी number वाचून बरोबर भाग निवडते: जोडणारा डबा चालू.
 
-**3. KARO (execute):** jod do. Jawab kisi khaane mein rakho. Aur
-ginne wale khaane mein 1 badha do, taaki agla phera agla kadam uthaye.
+**3. करा (execute):** जोडा. उत्तर एका खणात ठेवा. आणि मोजणाऱ्या
+खणात 1 वाढवा, म्हणजे पुढचा फेरा पुढचं पाऊल उचलेल.
 
-Bas. Yeh teen kadam ka chakkar hi "computer chal raha hai" ka poora
-matlab hai. Aapke phone mein yeh chakkar ek second mein ~3 arab baar
-ghoomta hai.
+बस. या तीन पावलांचं चक्र (**fetch-decode-execute cycle**) म्हणजेच
+"computer चालू आहे" चा पूर्ण अर्थ. तुमच्या phone मध्ये हे चक्र एका
+second ला ~3 billion वेळा फिरतं. "3 GHz processor" चा अर्थ हाच:
+GHz = billion फेरे प्रति second.
 
-Ek sawal khud se poochho: "agar aisa toh wahan jao" wala kadam kaise
-chalega? Aasaan: woh kadam bas ginne wale khaane mein NAYA number
-likh deta hai. Ab agla fetch wahin se uthega. Recipe ne chhalaang
-maar li. Loop bhi yahi hai: peechhe wale number pe chhalaang, baar
-baar. Programming ka poora control isi ek khaane se hota hai.
+एक प्रश्न स्वतःला विचारा: "जर असं तर तिकडे जा" वालं पाऊल कसं
+चालेल? सोपं: ते पाऊल फक्त मोजणाऱ्या खणात **नवा number** लिहितं.
+आता पुढचा fetch तिथूनच उचलेल. Recipe ने उडी मारली. Loop पण हेच
+आहे: मागच्या number वर उडी, पुन्हा पुन्हा. Cook चं बोट कागदावर
+मागे सरकलं, बस. Programming चं पूर्ण नियंत्रण याच एका खणातून होतं.
 
-Ab "3 GHz processor" ka matlab bhi le lo: GHz = giga hertz = arab
-phere prati second. 3 GHz matlab yeh chakkar 3 arab baar prati
-second. Yeh hi woh "arab kadam" hai jo kitaab mein baar baar aaya.
+आता रोजची एक गोष्ट या नजरेने बघा: phone कधीकधी "hang" होतो. आत
+काय झालं: program counter अशा जागी अडकला जिथे recipe गोल-गोल फिरते
+आहे आणि बाहेर पडायची अट कधीच खरी होत नाही (infinite loop), किंवा
+अशा number वर गेला जिथे recipe नव्हतीच. Machine बिघडली नाही; recipe
+ने तिला खड्ड्यात फिरवलं. Restart काय करतो? Program counter सकट
+सगळं सुरुवातीच्या जागेवर. म्हणून restart एवढे आजार बरे करतो.
 
-## NAAM
+## इथे लोक काय चुकीचं समजतात
 
-Ginne wale khaane ka naam **program counter** hai. Teen kadam ke
-chakkar ka naam **fetch-decode-execute cycle**. Chakkar ki raftaar ka
-naam **clock speed** (GHz mein). Kadmon ke numbers wali poori bhasha
-ka naam **machine code**: yehi ek bhasha hai jo CPU sach mein samajhta
-hai. (Insaan iski jagah aaraam wali bhaashaein likhta hai; unka
-tarjuma Part 2 ka mukhya kissa hai.)
+"जास्त GHz = वेगवान computer," बस एवढंच. अर्धवट आहे. GHz फक्त
+चक्राचा वेग; काम किती झालं हे यावरही आहे की प्रत्येक फेऱ्यात किती
+होतं, पावलं किती हुशार आहेत, आणि memory किती वेगाने पावलं पुरवते
+आहे (पुढचा chapter). दोन processors एकाच GHz वर दुप्पट वेगळं काम
+करू शकतात. Truck आणि गाडीचा rpm सारखा असू शकतो; ओझं किती नेलं हे
+rpm सांगत नाही. दुकानदार तुम्हाला एक आकडा विकतोय; machine अनेक
+आकड्यांचा खेळ आहे.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## MAP वर
 
-Phone kabhi "hang" hota hai. Ab aap bata sakte ho andar kya hua:
-program counter kisi aisi jagah phas gaya jahan recipe gol gol ghoom
-rahi hai aur bahar aane ki shart kabhi sach nahi ho rahi (infinite
-loop), ya kisi aise number pe chala gaya jahan recipe thi hi nahi.
-Machine kharab nahi hui, recipe ne use gadhe mein ghuma diya. Restart
-kya karta hai? Program counter samet sab kuch shuruaati jagah pe wapas.
-Isliye restart itni beemariyan theek karta hai.
+रुपयाचा रस्ता: Apple आपल्या chips स्वतः design करते (M-series),
+म्हणजे प्रत्येक फेऱ्यात जास्त काम व्हावं. चांगलं चक्र = कमी battery
+त जास्त काम = महाग machine विकली जाते. जे चक्र तुम्ही आत्ता 10
+मिनिटांत समजलात, त्याच्या बारकाव्यावर जगातल्या सगळ्यात मौल्यवान
+company चं margin टिकलेलं आहे. Level 3 च्या आतही मजले आहेत, आणि
+खालचा जेवढा चांगला, वरचं सगळं तेवढं चांगलं.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## स्वतः बघा (5 मिनिटं)
 
-"Zyada GHz = tez computer," bas itna. Adhoora hai. GHz sirf chakkar
-ki raftaar hai; kaam kitna hua yeh is pe bhi hai ki har phere mein
-kitna hota hai, kadam kitne samajhdaar hain, aur memory kitni tez
-kadam pakda rahi hai (agla chapter). Do processor same GHz pe do guna
-alag kaam kar sakte hain. Dukaandaar aapko ek number bech raha hai,
-machine kai numbers ka khel hai.
+ही recipe कागदावर चालवा; तुम्ही स्वतः CPU व्हा. खण K मध्ये 5 आहे.
+Recipe: पाऊल 1: K मध्ये 3 जोडा. पाऊल 2: जर K < 15, पाऊल 1 वर जा.
+पाऊल 3: थांबा. बोटाने program counter बना आणि चालवा. किती फेरे
+लागले? (K: 5, 8, 11, 14, 17 -> 4 बेरजा, मग अट खोटी, थांबलात.)
+तुम्ही आत्ता fetch-decode-execute आणि loop दोन्ही चालवले.
 
-## MAP PE
+## विचार करा
 
-Rupaye ka rasta: Apple apne chips khud design karta hai (M-series)
-taaki har phere mein zyada kaam ho. Behtar cycle = kam battery mein
-zyada kaam = mehngi machine bikti hai. Ek chakkar jo aapne abhi 10
-minute mein samjha, uski bareeki pe duniya ki sabse keemti company ka
-margin tika hai. Level 3 ke andar bhi levels hain, aur neeche wala
-jitna behtar, upar sab utna behtar.
+1. (derivation) Program counter मध्ये चुकीचा number आला, अशा जागेचा
+जिथे recipe नाही, कचरा numbers आहेत. CPU काय करेल? त्याला कसं कळेल
+की हे "recipe नाही"?
 
-## KHUD DEKHO (5 minute)
-
-Yeh recipe kaagaz pe chalao, aap khud CPU bano. Khaana K mein 5 hai.
-Recipe: kadam 1: K mein 3 jodo. kadam 2: agar K < 15, kadam 1 pe
-jao. kadam 3: ruko. Ungli se program counter banao aur chalao. Kitne
-phere lage? (K: 5, 8, 11, 14, 17 -> 4 jod, phir shart fail, ruk
-gaye.) Aapne abhi fetch-decode-execute aur loop dono chala liye.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Program counter mein galat number aa jaaye, aisi
-jagah ka jahan recipe nahi, kachra numbers hain. CPU kya karega?
-Usko kaise pata chalega ki yeh "recipe nahi" hai?
-
-> **Jawab:** Nahi pata chalega, yahi darr ki baat hai. CPU ke liye
-> har number kadam jaisa hi dikhta hai, woh kachre ko bhi decode
-> karke chalane ki koshish karega. Kabhi bekaar kaam hoga, kabhi
-> crash. Isliye aas paas ke intezaam (operating system, Part 2)
-> deewarein banate hain: kaunsi recipe kahan chal sakti hai, kaunsi
-> memory chhoo sakti hai. Aur hackers ka aadha khel hi yeh hai:
-> kisi tarah apne numbers program counter tak pahunchana. Ek
-> chhota khaana, poori security ki jang ka maidan.
+> **उत्तर:** कळणारच नाही; हीच भीतीची गोष्ट आहे. CPU साठी प्रत्येक
+> number पावलासारखाच दिसतो; तो कचऱ्यालाही decode करून चालवायचा
+> प्रयत्न करेल. कधी निरुपयोगी काम होईल, कधी crash. म्हणून भोवतीची
+> व्यवस्था (operating system, Part 2) भिंती बांधते: कुठली recipe
+> कुठे चालू शकते, कुठली memory शिवू शकते. आणि hackers चा अर्धा खेळ
+> हाच आहे: कसंही करून आपले numbers program counter पर्यंत पोहोचवणं.
+> एक छोटा खण, पूर्ण security युद्धाचं मैदान.
 
 
-# Chapter 2.5 [SPINE]: Yaad rakhna aur bhool jaana
+# Chapter 2.5 [SPINE]: लक्षात ठेवणं आणि विसरणं
 
-Ek paheli se shuru karo. Phone pe game khel rahe the, battery achanak
-khatam. Charge karke on kiya: game wahin ka wahin nahi hai, dobara
-kholna pada, lekin aapki photos sab salaamat hain. Ek hi machine mein
-kuch cheezein bijli jaane se mit gayin, kuch nahi mitin. Kyun?
+एका कोड्याने सुरुवात. Phone वर game खेळत होतात, battery अचानक
+संपली. Charge करून चालू केला: game जिथे होता तिथे नाही, परत उघडावा
+लागला; पण तुमचे photos सगळे सुखरूप. एकाच machine मध्ये काही गोष्टी
+वीज गेल्यावर पुसल्या गेल्या, काही नाही. का?
 
-Kyunki machine mein yaadaasht EK nahi, DO hain, aur dono ka sauda
-alag hai:
+कारण machine मध्ये स्मरणशक्ती **एक** नाही, **दोन** आहेत, आणि
+दोघींचा सौदा वेगळा:
 
-**Tez wali, bhulakkad.** Switchon se bani yaadaasht (Chapter 1.4
-wali). Bijli hai toh haalat hai; bijli gayi, sab 0. Lekin raftaar?
-CPU ke kadmon ke saath bhaag sakti hai. Yahan woh sab rehta hai jo
-ABHI chal raha hai: khula hua app, game ki abhi wali haalat.
+**वेगवान, विसराळू.** Switches पासून बनलेली (Chapter 1.4 वाली). वीज
+आहे तोवर स्थिती आहे; वीज गेली, सगळं 0. पण वेग? CPU च्या पावलांसोबत
+धावू शकते. इथे ते राहतं जे **आत्ता** चालू आहे: उघडलेलं app, game
+ची आत्ताची स्थिती. हिचं नाव **RAM** (नुसतं memory पण म्हणतात).
 
-**Dheemi wali, pakki.** Aisi jagah jahan bits bijli ke bina bhi tike
-rehte hain (chumbak ya phanse hue charge se). Bijli jaao ya aao,
-data wahin. Lekin dheemi: tez wali se sau-hazaar guna. Yahan photos,
-apps, files rehti hain.
+**हळू, पक्की.** अशी जागा जिथे bits विजेशिवायही टिकतात. वीज जा किंवा
+या, data तिथेच. पण हळू: वेगवानपेक्षा शंभर-हजारपट. इथे photos, apps,
+files राहतात. हिचं नाव **storage** (disk, SSD).
 
-Ab poochho: dono ke faayde wali ek cheez kyun nahi bana lete, tez
-bhi, pakki bhi, sasti bhi? Engineers 70 saal se koshish kar rahe
-hain. Physics ka sauda hai: **tez, sasta, pakka: teeno mein se do
-chun lo.** Isliye machine dono rakhti hai aur beech mein data ka
-aana jaana chalta rehta hai:
+ढाब्याची उपमा सगळं सांगते: **मेज आणि गोदाम.** Cook च्या मेजावर
+आत्ताच्या order चं सामान असतं: चिरलेला कांदा, हाताशी मसाले. मेज
+छोटं आणि महाग (जागा मर्यादित), पण हात लगेच पोहोचतो. गोदाम मोठं आणि
+स्वस्त, पण फेरी लागते. रात्री ढाबा बंद झाला की मेज पुसलं जातं;
+गोदाम तसंच राहतं.
 
-App "kholna" = pakki wali se tez wali mein recipe copy karna. Isliye
-kholne mein waqt lagta hai. File "save karna" = tez wali se pakki
-wali mein likhna. Isliye save ka matlab hai "ab bijli jaaye toh bhi
-bacha rahega." Phone "hang by memory" = tez wali bhar gayi, ab
-machine har kadam pe dheemi wali se kaam chala rahi hai.
+आता विचारा: दोन्हींचे फायदे असलेली एक गोष्ट का नाही बनवत? वेगवान
+पण, पक्की पण, स्वस्त पण? Engineers 70 वर्षं प्रयत्न करतायत.
+Physics चा सौदा आहे: **वेगवान, स्वस्त, पक्की: तिन्हींपैकी दोनच
+निवडा.** म्हणून machine दोन्ही ठेवते आणि मध्ये data ची ने-आण चालू
+राहते:
 
-## NAAM
+App "उघडणं" = गोदामातून मेजावर recipe copy करणं. म्हणून उघडायला
+वेळ लागतो. File "save करणं" = मेजावरून गोदामात लिहिणं. म्हणून save
+चा अर्थ: "आता वीज गेली तरी वाचेल." Phone "hang" = मेज भरलं, आता
+machine प्रत्येक पावलाला गोदामाच्या फेऱ्या मारते आहे.
 
-Tez bhulakkad ka naam **RAM** (ya bas memory). Dheemi pakki ka naam
-**storage** (disk, SSD). Dibbe pe "8 GB RAM, 128 GB storage" ka
-matlab ab poora khulta hai: 8 GB ka tez kaam-karne-ka mez, 128 GB ki
-pakki almaari. Mez chhota aur mehnga, almaari badi aur sasti. Yehi
-anupaat har machine mein milega, phone se datacenter tak.
+खोक्यावरची ओळ आता पूर्ण उघडते: "8 GB RAM, 128 GB storage" म्हणजे
+8 GB चं कामाचं मेज, 128 GB चं पक्कं गोदाम. आणि दुकानदाराची चाल पण
+दिसते: स्वस्त phone वर तो storage चा मोठा आकडा दाखवतो (128 GB!)
+आणि RAM लपवतो (4 GB). Phone अडखळतो तो RAM कमी म्हणून, storage
+मुळे नाही. आता तुम्ही खोका वाचून खरा प्रश्न विचारू शकता: मेज केवढं
+आहे? हे छोटं ज्ञान हजारो रुपयांच्या चुकीच्या खरेदीपासून वाचवतं.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## इथे लोक काय चुकीचं समजतात
 
-Sasta phone "12 GB storage full" nahi bolta, woh chalte chalte
-atakta hai: wajah RAM kam hai, mez chhota hai, har app switch pe
-almaari ke chakkar lag rahe hain. Dukaan wala aapko storage ka bada
-number dikhata hai (128 GB!), RAM chhupa deta hai (4 GB). Ab aap
-dibba padh kar asli sawal pooch sakte ho: mez kitna bada hai? Yeh
-chhota sa gyaan hazaaron rupaye ki galat khareed se bachata hai.
+"Memory full झाली, जुने photos delete करा." दोन वेगळ्या गोष्टी
+मिसळल्या: photos गोदामात (storage) आहेत, hang होणं मेजाचं (RAM)
+आहे. Photos हटवल्याने hang बरा होत नाही (गोदाम अगदी ठासून भरलं
+असेल तरच थोडा फरक). आणि उलटंही: "8 GB RAM आहे तर 8 GB ची file
+आरामात उघडेल" पण सरळ नाही; मेजावर आधीच इतर गोष्टी मांडलेल्या असतात.
+दोन नावं, दोन कामं; आता कायम वेगळी ठेवा.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## MAP वर
 
-"Memory full ho gayi, purani photos delete karo." Do alag cheezein
-mix ho gayin: photos storage mein hain, hang hona RAM ka hai. Photos
-hataane se hang theek nahi hota (jab tak storage bilkul hi thasa na
-ho). Aur ulta bhi: "8 GB RAM hai toh 8 GB ki file aaraam se khulegi"
-bhi seedha nahi hai, mez pe aur cheezein bhi rakhi hain. Do naam, do
-kaam, ab hamesha alag rakhna.
+Company case: memory chips चा बाजार (Samsung, SK Hynix, Micron)
+~150 billion dollars चा आहे, आणि AI ने त्याला आग लावली आहे, कारण
+AI recipes चं मेज (RAM) राक्षसी आकाराचं लागतं. 2024-25 मध्ये AI
+वाल्या memory chips ची (HBM नावाच्या) इतकी टंचाई झाली की भाव
+आभाळाला गेले. Chapter 0.2 चं सूत्र: scarcity चा काटा. जेव्हा नवी
+technology येते, तेव्हा तिच्या खालच्या कुठल्यातरी भागाची टंचाई
+कोणाचं तरी सोनं बनते. हा pattern ओळखणं म्हणजेच संधी ओळखणं.
 
-## MAP PE
+## स्वतः बघा (5 मिनिटं)
 
-Company case: memory chips ka bazaar (Samsung, SK Hynix, Micron)
-~150 arab dollar ka hai, aur AI ne use aag laga di hai, kyunki AI
-recipes ka mez (RAM) rakshasi size ka chahiye. 2024-25 mein AI wale
-memory chips (HBM naam ke) ki itni kami hui ki daam aasman pe chale
-gaye. Chapter 0.2 ka formula: scarcity ka dial. Jab bhi koi nayi
-technology aati hai, uske neeche wale kisi purze ki scarcity kisi ka
-sona ban jaati hai. Yeh pattern pehchaanna hi mauka pehchaanna hai.
+एखादं जड app उघडा (game किंवा editor): किती seconds लागले? हा
+गोदाम-ते-मेज copy चा वेळ होता. आता ते बंद करून **लगेच** परत उघडा:
+यावेळेस पटकन उघडलं ना? कारण system ने ते मेजाजवळच ठेवलं होतं.
+तुम्ही आत्ता दोन्ही स्मरणशक्तींमधला फरक स्वतःच्या घड्याळाने मोजला.
 
-## KHUD DEKHO (5 minute)
+## विचार करा
 
-Koi bhaari app kholo (game ya editor): kitne second lage? Yeh pakki
-almaari se tez mez tak copy ka waqt tha. Ab use band karke TURANT
-dobara kholo: is baar tez khula na? Kyunki system ne use mez ke paas
-hi rakha tha. Aapne abhi dono yaadaashton ka farq apni ghadi se naap
-liya.
+1. (derivation) या chapter मधून एका गोष्टीचं उत्तर काढा: "Save"
+button जगातून हळूहळू गायब का होतोय? (Google Docs मध्ये save button
+नाहीच.)
 
-## SOCHNE KE LIYE
-
-1. (derivation) Ek cheez ka jawab is chapter se nikaalo: "save"
-button dheere dheere duniya se gayab kyun ho raha hai? (Google Docs
-mein save button nahi hai.)
-
-> **Jawab:** Pehle save isliye tha ki tez wali yaadaasht se pakki
-> wali mein likhna mehnga kaam tha, toh machine aapse poochhti thi
-> kab likhna hai. Ab storage tez aur sasta ho gaya, toh software
-> har kuch second mein chupchaap khud likh deta hai (auto-save),
-> aur internet pe bhi copy bhej deta hai. Jab kisi kaam ka kharcha
-> gir jaata hai, toh us se juda hua button bhi mar jaata hai.
-> Design ko technology ki economics chalati hai, yeh baat product
-> banate waqt hamesha saath rakhna.
+> **उत्तर:** आधी save यासाठी होतं की मेजावरून गोदामात लिहिणं महाग
+> काम होतं; मग machine तुम्हाला विचारायची कधी लिहू. आता storage
+> वेगवान आणि स्वस्त झाला, मग software दर काही seconds नी चुपचाप
+> स्वतःच लिहितं (auto-save), आणि internet वरही copy पाठवतं. जेव्हा
+> एखाद्या कामाचा खर्च कोसळतो, तेव्हा त्याच्याशी जोडलेला button पण
+> मरतो. Design ला technology ची economics चालवते; product बनवताना
+> ही गोष्ट नेहमी सोबत ठेवा.
 
 
-# PART 1 KA ANT: NAKSHA AUR AGLA KADAM
+# PART 1 चा शेवट: नकाशा आणि पुढचं पाऊल
 
-## Jo aapke paas ab hai
+## जे तुमच्याकडे आता आहे
 
 ```
-PAISA               bharose ka intezaam, sirf Level 1 pe ghusta hai
-KAMAAI KA FORMULA   size x scarcity x leverage (ghante nahi)
-CHAAR LEVELS        zaroorat -> business -> technology -> AI
-                    paisa neeche se upar behta hai
-ABSTRACTION         har level neeche wale ko chhupa deta hai,
-                    aur chhupa hissa hi mehnga hai
+पैसा               विश्वासाची व्यवस्था; फक्त Level 1 वर घुसतो
+कमाईचं सूत्र       size x scarcity x leverage (तास नाहीत)
+चार LEVELS         गरज -> business -> technology -> AI;
+                   पैसा खालून वर वाहतो
+ABSTRACTION        प्रत्येक मजला खालचा लपवतो, आणि लपलेला
+                   हिस्साच महाग असतो
 
-MACHINE             arabon switch (transistors), designed chains mein
-BIT / BYTE          switch ki haalat / 8 switchon ka jhund
-GATES               AND, OR, NOT: inhi se jod, compare, "agar"
-COMPUTER            numbers pe pehle se likhi recipe, arab kadam
-                    prati second, bina thake
-UNIVERSAL MACHINE   recipe bhi number hai, isliye ek machine
-                    sab kuch: yahi software ka janam
-SAB KUCH NUMBER     text/photo/awaaz/video: kaato, naapo,
-                    matlab pehle se tay karo (encoding)
-NAAP                KB->MB->GB->TB, har kadam hazaar guna;
-                    text : photo : video = 1 : hazaar : lakh
-ANDAR VS BAHAR      CPU ka kadam nanosecond, internet ka phera
-                    millisecond: 10 lakh guna farq
-DO YAADAASHT        RAM (tez, bhulakkad) vs storage (dheemi, pakki)
+MACHINE            billions switches (transistors), design
+                   केलेल्या साखळ्यांमध्ये
+BIT / BYTE         switch ची स्थिती / 8 switches चा गट
+GATES              AND, OR, NOT: यांतूनच बेरीज, तुलना, "जर"
+COMPUTER           numbers वर आधीच लिहिलेली recipe, billion
+                   पावलं प्रति second, न थकता
+UNIVERSAL MACHINE  recipe पण number आहे, म्हणून एक machine
+                   सगळं काही: हाच software चा जन्म
+सगळं NUMBER        text/photo/आवाज/video: कापा, मोजा, अर्थ
+                   आधीच ठरवा (encoding)
+माप                KB->MB->GB->TB, प्रत्येक पायरी हजारपट;
+                   text : photo : video = 1 : हजार : लाख
+आत VS बाहेर        CPU चं पाऊल nanosecond, internet चा फेरा
+                   millisecond: 1 million पटीचा फरक
+दोन स्मरणशक्ती     RAM (मेज: वेगवान, विसराळू) vs storage
+                   (गोदाम: हळू, पक्कं)
 ```
 
-## Ek test, khud ke liye
+## एक परीक्षा, स्वतःसाठी
 
-Bina kitaab palte, kisi ko (ya khud ko, bol kar) yeh 4 jawab do:
+पुस्तक न उघडता, कोणाला तरी (किंवा स्वतःला, बोलून) ही 4 उत्तरं द्या:
 
-1. Paisa sirf Level 1 pe kyun ghusta hai?
-2. Surgeon se zyada app wala kyun kamata hai?
-3. Ek hi phone camera bhi, bank bhi, game bhi kaise ban jaata hai?
-4. "8 GB RAM, 128 GB storage" ka matlab kya hai?
+1. पैसा फक्त Level 1 वर का घुसतो?
+2. Surgeon पेक्षा app वाला जास्त का कमावतो?
+3. एकच phone camera पण, bank पण, game पण कसा बनतो?
+4. "8 GB RAM, 128 GB storage" चा अर्थ काय?
 
-Agar chaaron aa gaye, Part 2 ke liye tayyar ho. Jo atka, uska
-chapter number upar wale naksha se milega, wahin lauto.
+चारही आली, तर Part 2 साठी तयार आहात. जे अडलं, त्याचा chapter
+number वरच्या नकाशात मिळेल; तिथे परत जा.
 
-## Part 2 mein kya hai
+## Part 2 मध्ये काय आहे
 
-Machine recipe chalati hai, yeh aapko pata chal gaya. Ab agla sawal:
-recipe LIKHI kaise jaati hai? Insaan ki bhasha se machine ke numbers
-tak ka tarjuma kaun karta hai? Languages itni saari kyun hain? Woh
-manager kaun hai jo saari recipes ko ek machine pe ladne se rokta
-hai (operating system)? Aur software mein bug hote hi kyun hain?
-Part 2: MACHINE SE BAAT.
+Machine recipe चालवते, हे कळलं. आता पुढचा प्रश्न: recipe **लिहिली**
+कशी जाते? माणसाच्या भाषेपासून machine च्या numbers पर्यंत भाषांतर
+कोण करतं? Languages इतक्या साऱ्या का आहेत? तो manager कोण जो
+सगळ्या recipes ना एका machine वर भांडण्यापासून रोखतो (operating
+system)? आणि software मध्ये bugs असतातच का? Part 2: MACHINE शी
+बोलणं.
 
-# PART 1 KA MINI-GLOSSARY
+# PART 1 चा MINI-GLOSSARY
 
-Sirf woh shabd jo is part mein aaye. Har ek ke aage uska chapter,
-taaki lautna aasan ho.
+फक्त ते शब्द जे या part मध्ये आले. प्रत्येकापुढे त्याचा chapter,
+म्हणजे परत जाणं सोपं.
 
 ```
-abstraction      andar ki complexity chhupa kar seedha handle dena (0.4)
-AND / OR / NOT   teen buniyaadi gates: dono/koi-bhi/ulta (1.5)
-ASCII / Unicode  aksharon ke numbers ka samjhauta, purana / aaj ka (2.2)
-binary           do-guna wali ginti, sirf 0 aur 1 se (1.4)
-bit              ek switch ki haalat: 0 ya 1 (1.4)
-byte             8 bits; lagbhag ek akshar (1.4)
-circuit          bijli ka bandh raasta (1.1)
-clock speed      CPU ke chakkar ki raftaar, GHz mein (2.4)
-CPU / processor  recipe chalane wala mukhya purza (1.3)
+abstraction        आतली गुंतागुंत झाकून सोपं handle देणं (0.4)
+AND / OR / NOT     तीन मूळ gates: दोन्ही/कोणीही/उलट (1.5)
+ASCII / Unicode    अक्षरांच्या numbers चा करार, जुना / आजचा (2.2)
+binary             दुप्पट-वाली मोजणी, फक्त 0 आणि 1 (1.4)
+bit                एका switch ची स्थिती: 0 किंवा 1 (1.4)
+byte               8 bits; साधारण एक अक्षर (1.4)
+circuit            विजेचा बंद रस्ता (1.1)
+CPU / processor    recipe चालवणारा मुख्य भाग (1.3)
 double coincidence of wants
-                 dono ko ek hi waqt ek doosre ki cheez chahiye (0.1)
-encoding         numbers ka matlab tay karne wala table (2.2)
+                   दोघांना एकाच वेळेस एकमेकांची गोष्ट हवी (0.1)
+encoding           numbers चा अर्थ ठरवणारं table (2.2)
 fetch-decode-execute
-                 CPU ka teen-kadam chakkar: uthao, samjho, karo (2.4)
-frame            video ki ek photo; ~30 prati second (2.2)
-hardware         chhoone laayak machine (1.3)
-KB / MB / GB / TB
-                 size ki seedhi, har kadam hazaar guna (2.1)
-latency          kaam shuru se jawab tak ka waqt (2.3)
-ledger           len-den ka register; paisa chalta-phirta ledger hai (0.1)
-leverage         kaam ek baar, faayda baar baar (0.2)
-logic gates      switchon se bane decide karne wale purze (1.5)
-machine code     numbers wali bhasha jo CPU seedha samajhta hai (2.4)
-market size      problem kitne logon ki, kitni gehri (0.2)
-pixel            photo ka ek bindu; teen numbers ka rang (2.2)
-program          machine ke liye likhi recipe (1.3)
-program counter  "abhi kadam number __ pe hoon" wala khaana (2.4)
-RAM              tez, bhulakkad yaadaasht; kaam ka mez (2.5)
-sample           awaaz ka ek pal ka naap; ~44,000 prati second (2.2)
-scarcity         kitne kam log yeh kar sakte hain (0.2)
-software         saari recipes, milkar (1.3)
-stack            levels ka minaar: kaun kis pe khada hai (0.3)
-storage          dheemi, pakki yaadaasht; almaari (2.5)
+                   CPU चं तीन-पावलांचं चक्र: उचला, समजा, करा (2.4)
+frame              video चा एक photo; ~30 प्रति second (2.2)
+GHz / clock speed  चक्राचा वेग: billion फेरे प्रति second (2.4)
+hardware           हाताला लागणारी machine (1.3)
+KB / MB / GB / TB  size ची शिडी, प्रत्येक पायरी हजारपट (2.1)
+latency            काम सुरू होऊन उत्तर येईपर्यंतचा वेळ (2.3)
+ledger             देवाण-घेवाणीची वही; पैसा चालती वही आहे (0.1)
+leverage           काम एकदा, फायदा पुन्हा पुन्हा (0.2)
+logic gates        switches पासून बनलेले ठरवणारे भाग (1.5)
+market size        problem किती लोकांची, किती खोल (0.2)
+pixel              photo चा एक ठिपका; तीन numbers चा रंग (2.2)
+program            machine साठी लिहिलेली recipe (1.3)
+program counter    "आत्ता पाऊल क्रमांक __ वर" वाला खण (2.4)
+RAM                वेगवान, विसराळू स्मरणशक्ती; कामाचं मेज (2.5)
+sample             आवाजाच्या एका क्षणाचं माप; ~44,000/second (2.2)
+scarcity           हे किती कमी लोकांना जमतं (0.2)
+software           सगळ्या recipes, मिळून (1.3)
+stack              मजल्यांचा मनोरा: कोण कोणावर उभा (0.3)
+storage            हळू, पक्की स्मरणशक्ती; गोदाम (2.5)
 stored-program computer
-                 recipe ko data ki jagah rakhne wala design (1.6)
-transistor       bijli se dabne wala switch (1.1)
-universal machine
-                 ek machine jo koi bhi recipe chala sake (1.6)
+                   recipe ला data च्या जागी ठेवणारं design (1.6)
+transistor         विजेने दाबला जाणारा switch (1.1)
+universal machine  एक machine जी कुठलीही recipe चालवते (1.6)
 ```

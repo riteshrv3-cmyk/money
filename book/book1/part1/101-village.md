@@ -1,102 +1,87 @@
-# Chapter 0.1 [SPINE]: The village: paisa exist kyun karta hai
+# Chapter 0.1 [SPINE]: गाव: पैसा exist का करतो
 
-Sau logon ka ek gaon socho. Koi paisa nahi hai. Kisan ke paas anaaj hai,
-mistri ke paas hunar, vaidya ke paas ilaaj, mochi ke paas joote.
+शंभर लोकांचं एक गाव विचार करा. पैसा नावाची गोष्ट अजून नाही. शेतकऱ्याकडे
+धान्य आहे, मिस्त्रीकडे हुनर, वैद्याकडे इलाज, चांभाराकडे जोडे.
 
-Pehla intezaam seedha hai: cheez ke badle cheez. Kisan anaaj dega, mistri
-chhat banayega. Chal gaya.
+पहिली व्यवस्था सरळ आहे: वस्तूच्या बदल्यात वस्तू. शेतकरी धान्य देईल,
+मिस्त्री छप्पर बांधेल. चाललं.
 
-Ab ek case dekho. Vaidya ne mochi ka haath theek kiya. Teen mahine baad vaidya
-ko joote chahiye. Lekin iss baar mochi bilkul theek-thaak hai, usko vaidya se
-kuch nahi chahiye. Toh vaidya kya kare? Intezaar kare ki mochi bimar pade?
+आता एक प्रसंग बघा. वैद्याने चांभाराचा हात बरा केला. तीन महिन्यांनी
+वैद्याला जोडे हवेत. पण यावेळेस चांभार एकदम ठणठणीत आहे, त्याला वैद्याकडून
+काहीच नको. मग वैद्य काय करणार? वाट बघणार की चांभार आजारी पडेल?
 
-Yahan intezaam toot gaya. Seedha exchange sirf tab chalta hai jab do log ek
-hi waqt pe ek doosre ka kaam chahte hon. Sau logon ke gaon mein bhi yeh
-mushkil se hota hai. Yeh pehli toot hai, ise yaad rakho.
+इथे व्यवस्था तुटली. सरळ देवाण-घेवाण तेव्हाच चालते जेव्हा दोन माणसांना
+एकाच वेळेस एकमेकांचं काम हवं असतं. या पहिल्या तुटीचं नाव economists
+ठेवतात **double coincidence of wants**: दोघांच्या गरजा एकाच क्षणी
+जुळल्या पाहिजेत. शंभर लोकांच्या गावातही हे क्वचित जुळतं. ही तूट लक्षात
+ठेवा.
 
-Doosra intezaam khud nikaalo. Rukiye, sach mein sochiye, kya karenge?
+दुसरी व्यवस्था स्वतः काढा. थांबा, खरंच विचार करा. काय कराल?
 
-Bahut log kehte hain: likh lo. Ek register banao. Vaidya ne mochi ka kaam
-kiya, likh do, baad mein le lega. Achha jawab hai, duniya ne yeh kiya bhi
-hai. Lekin do naye sawal khade ho jaate hain.
+बरेच लोक म्हणतात: लिहून ठेवा. एक वही बनवा. वैद्याने चांभाराचं काम केलं,
+लिहून ठेवा, नंतर वसूल करेल. चांगलं उत्तर आहे, जगाने हे केलंही आहे; अशा
+वहीचं नाव **ledger**. पण दोन नवे प्रश्न उभे राहतात.
 
-**Madhav:** Register rakhega kaun?
+पहिला: वही ठेवणार कोण? कोणी एक माणूस. आणि ज्या दिवशी त्याने स्वतःच्या
+नावापुढे थोडं जास्त लिहिलं? दुकानाच्या गल्ल्यावर बसलेला माणूसच हिशोब
+लिहितो, तेव्हा हिशोबावर विश्वास म्हणजे माणसावर विश्वास. दुसरा: शंभर
+लोकांत एक वही चालली. पण दहा हजार लोक, वेगवेगळी गावं, येणारे-जाणारे
+लोक? किती वह्या? आणि कोणाचा कोणावर विश्वास?
 
-**Kabir:** Koi ek aadmi.
+म्हणजे वहीची कल्पना बरोबर आहे, तिचं रूप चुकीचं आहे. आता तिसरी व्यवस्था
+विचार करा. अशी कुठली गोष्ट असेल जी चांभार घेईल, त्याला इलाज अजिबात
+नको असला तरी? तो ती का घेईल? फक्त एवढ्यासाठी, की त्याला खात्री आहे
+की बाकी सगळेही ती घेतील. ती गोष्ट त्याच्या स्वतःच्या कुठल्याच कामाची
+नाही. तिची पूर्ण किंमत एकाच गोष्टीत आहे: पुढे चालवता येईल हा विश्वास.
 
-**Madhav:** Aur jis din usne apna naam thoda bada likh diya?
+आता स्वतः काढा, त्या गोष्टीत काय-काय हवं:
 
-**Kabir:** Hmm.
+1. सडू नये, नाहीतर ठेवता ठेवता संपेल.
+2. उचलायला सोपी हवी, जड दगडाने काम चालणार नाही.
+3. नकली बनवणं अवघड हवं, नाहीतर कोणीही न देता सगळं घेईल.
+4. तुकड्यांत वाटता यावी, छोटी गोष्टही विकत घ्यावी लागते.
+5. सगळ्यांनी ती मानली पाहिजे. एकाने जरी नाकारली तरी साखळी तुटते.
 
-**Madhav:** Aur das hazaar log hon, alag gaon hon, log aate jaate hon.
-Kitne register?
+तुम्ही आत्ता **पैसा** invent केला. पैसा म्हणजे चालती-फिरती वही: असा
+ledger ज्यात विश्वास कोणा एका माणसाच्या हातात नाही, सगळ्यांमध्ये
+वाटलेला आहे. तुमचा **UPI** बघा: 50 रुपये पाठवता तेव्हा हातातून हातात
+काहीच जात नाही; एका वहीत एवढंच लिहिलं जातं की तुमच्या नावापुढे 50
+कमी, त्याच्या नावापुढे 50 जास्त. ती वही banks आणि NPCI ठेवतात. जग
+वहीच्या कल्पनेवर परत आलं; फरक एवढाच की वही ठेवणारा आता एक माणूस
+नाही, एक system आहे जिला सगळे मानतात.
 
-**Kabir:** Bahut zyada. Aur kisi ko kisi pe bharosa bhi nahi hoga.
+## इथे लोक काय चुकीचं समजतात
 
-Toh register ka idea sahi hai, uski shakal galat hai. Ab teesra intezaam
-socho. Aisi koi cheez ho jo mochi le lega, chahe use ilaaj bilkul na chahiye.
-Woh use kyun lega? Sirf isliye, kyunki use bharosa hai ki baaki sab bhi
-lenge. Woh cheez uske apne kisi kaam ki nahi hai. Uska poora value ek hi
-cheez mein hai: bharosa ki aage badha dunga.
+लोकांना वाटतं पैसा म्हणजे value **आहे**. नाही. पैसा value ची **नोंद**
+आहे. नोट स्वतः कागद आहे; तिची किंमत या विश्वासात आहे की पुढचा माणूस
+ती घेईल. Post office चं stamp आठवा: तो छोटा कागद पत्र पोहोचवत नाही,
+तो फक्त "फी भरली आहे" ची नोंद आहे; system मेली तर stamp रद्दी. तसंच
+ज्या देशांमध्ये लोकांचा विश्वास तुटला, तिथे लोक पोत्यांमध्ये नोटा
+भरून भाकरी विकत घ्यायला गेले. कागद कागदच राहिला.
 
-Ab khud nikaalo, us cheez mein kya kya hona chahiye:
+## MAP वर
 
-1. Sadni nahi chahiye, warna rakhte rakhte khatam.
-2. Uthane mein aasan ho, bhaari patthar se kaam nahi chalega.
-3. Nakli banana mushkil ho, warna koi bina kuch diye sab le lega.
-4. Tukdon mein bat sake, chhoti cheez bhi khareedni hoti hai.
-5. Sab log use maanein. Ek bhi na maane toh chain toot jaati hai.
+हा पूर्ण chapter Level 1 वर उभा आहे: माणसाची गरज आणि त्यांच्यामधली
+देवाण-घेवाण. पैसा इथेच जन्मतो, आणि लक्षात ठेवा, पैसा **फक्त इथेच**
+घुसतो, जेव्हा एक माणूस आपल्या गरजेसाठी देतो. Level 2, 3, 4 फक्त ही
+देवाण-घेवाण मोठी, वेगवान आणि स्वस्त करतात. जो कोणी कमवू इच्छितो,
+त्याची साखळी कुठेतरी Level 1 च्या एका माणसावर संपते.
 
-Aapne abhi paisa invent kar diya.
+## स्वतः बघा (5 मिनिटं)
 
-## NAAM
+तुमचं UPI app उघडा. शेवटचे 5 व्यवहार बघा. प्रत्येकासाठी विचारा:
+कुठल्या गरजेसाठी पैसा गेला? खाणं, प्रवास, ज्ञान, अजून काही? प्रत्येक
+व्यवहार कुठल्यातरी गरजेवर संपेल. एकही असा मिळणार नाही जो कुठल्याही
+माणसाच्या गरजेवर संपत नाही.
 
-Jo cheez aapne nikaali, uska naam **paisa** (money) hai. Pehli toot ka naam
-economists rakhte hain **double coincidence of wants**: dono ko ek hi waqt
-ek doosre ki cheez chahiye ho, tabhi seedha exchange chalta hai. Register
-wale idea ka naam **ledger** hai. Paisa asal mein ek chalta-phirta ledger
-hai jisme bharosa sabke beech bata hua hai, kisi ek aadmi ke haath mein nahi.
+## विचार करा
 
-## ASLI DUNIYA SE EK EXAMPLE
+1. (derivation) जर जगात फक्त एकाच वस्तूची देवाण-घेवाण असती, समजा
+फक्त धान्य, तर पैसा तरीही बनला असता का?
 
-Aapka UPI dekho. Jab aap kisi ko 50 rupaye bhejte ho, koi cheez haath se
-haath nahi jaati. Ek register mein likha jaata hai: aapke naam ke aage 50
-kam, uske naam ke aage 50 zyada. Woh register banks aur NPCI rakhte hain.
-Matlab duniya register wale idea pe wapas aa gayi, bas ab register rakhne
-wala ek aadmi nahi hai, ek system hai jise sab maante hain. Paisa shuru se
-aakhir tak bharose ka intezaam hai.
-
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
-
-Log sochte hain paisa value HAI. Nahi. Paisa value ka record hai. Note khud
-kaagaz hai, uska value is bharose mein hai ki agla aadmi use lega. Jis din
-woh bharosa tootta hai, kaagaz kaagaz reh jaata hai. Aisa hua hai: jin
-deshon mein logon ka bharosa toota, wahan log boriyon mein note le kar roti
-khareedne gaye.
-
-## MAP PE
-
-Yeh poora chapter Level 1 pe khada hai: insaan ki zaroorat aur unke beech
-ka len-den. Paisa yahin janamta hai, aur yaad rakho, paisa SIRF yahin
-ghusta hai, jab ek insaan apni zaroorat ke liye deta hai. Level 2, 3, 4
-sirf is len-den ko bada, tez aur sasta banate hain. Jo bhi kamaana chahta
-hai, uski chain kahin na kahin Level 1 ke ek insaan pe khatam hoti hai.
-
-## KHUD DEKHO (5 minute)
-
-Apna UPI app kholo. Aakhri 5 transactions dekho. Har ek ke liye poochho:
-kis zaroorat ke liye paisa gaya? Khaana, safar, gyaan, kuch aur? Har
-transaction kisi zaroorat pe khatam hoga. Ek bhi aisa nahi milega jo kisi
-insaan ki zaroorat pe khatam na ho.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Agar duniya mein sirf ek hi cheez ka len-den hota, maan lo
-sirf anaaj, toh kya paisa phir bhi banta?
-
-> **Jawab:** Nahi banta, ya bahut der se banta. Paisa us problem ka hal hai
-> jab bahut alag alag cheezon ka exchange ho aur waqt na mile. Ek hi cheez
-> ho toh seedha exchange kaafi hai, double coincidence wali toot hoti hi
-> nahi. Isse ek gehri baat dikhti hai: paisa tab zaroori hota hai jab
-> society mein kaam bat jaata hai. Jitna zyada kaam ka batwara, utna zaroori
-> paisa. Isi baat pe agla chapter khada hai.
+> **उत्तर:** नाही, किंवा खूप उशिरा. पैसा त्या problem चा उपाय आहे
+> जिथे खूप वेगवेगळ्या वस्तूंची देवाण-घेवाण आहे आणि वेळा जुळत नाहीत.
+> एकच वस्तू असेल तर सरळ देवाण-घेवाण पुरते, double coincidence ची
+> तूट होतच नाही. यातून एक खोल गोष्ट दिसते: पैसा तेव्हा गरजेचा होतो
+> जेव्हा समाजात कामं वाटली जातात. जेवढी जास्त कामांची वाटणी, तेवढा
+> गरजेचा पैसा. याच गोष्टीवर पुढचा chapter उभा आहे.

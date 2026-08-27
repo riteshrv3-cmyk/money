@@ -1,96 +1,88 @@
-# Chapter 1.5 [DEPTH]: Switches decide kaise karte hain
+# Chapter 1.5 [DEPTH]: Switches ठरवतात कसे
 
-(Yeh DEPTH chapter hai. Pehli baar mein bhaari lage toh aage badho, Part
-1 khatam karke lautna. Lekin laut zaroor aana, kyunki yahin pe "machine
-sochti hai" wala jaadu poora tootta hai.)
+(हा DEPTH chapter आहे. पहिल्या वेळेस जड वाटला तर पुढे जा, Part 1
+संपवून परत या. पण परत नक्की या, कारण इथेच "machine विचार करते"
+वाली जादू पूर्ण तुटते.)
 
-Chapter 1.3 mein humne maana tha ki "jodne ka dibba" aur "compare karne
-ka dibba" ban sakte hain. Ab banate hain. Sirf teen chhote purze chahiye,
-teeno switchon se bante hain:
+Chapter 1.3 मध्ये आपण मानलं होतं की "जोडण्याचा डबा" आणि "तुलनेचा
+डबा" बनू शकतात. आता बनवू. फक्त तीन छोटे भाग लागतात, तिन्ही
+switches पासून बनतात. दरवाजांचा विचार करा:
 
-**AND:** do raaste ek ke baad ek (line mein). Bijli tabhi paar hogi jab
-DONO switch on hon. Matlab: "dono haan, toh haan."
+**AND:** दोन दरवाजे एकामागून एक, रांगेत. पलीकडे जायचं तर **दोन्ही**
+उघडे लागतील. म्हणजे: "दोन्ही हो, तर हो." सरकारी कामासारखं: form
+वर दोन साह्या लागतात, एक जरी नसली तरी file पुढे जात नाही.
 
-**OR:** do raaste side by side (samanantar). Bijli paar hogi agar KOI
-BHI ek on ho. Matlab: "koi bhi haan, toh haan."
+**OR:** दोन दरवाजे शेजारी-शेजारी, दोन वेगळे रस्ते. **कुठलाही एक**
+उघडा असला तरी पलीकडे जाता येतं. म्हणजे: "कोणीही हो, तर हो."
+गावात जायला दोन रस्ते: पूल बंद असला तरी वळणाचा रस्ता चालतो.
 
-**NOT:** ulta karne wala. Input 1 toh output 0, input 0 toh output 1.
+**NOT:** उलट करणारा. आत 1 तर बाहेर 0, आत 0 तर बाहेर 1.
 
-Bas. Yeh teen hi hain. Ab inse kaam karwao.
+बस. हे तीनच आहेत. यांचं नाव **logic gates**. आता यांच्याकडून काम
+करून घेऊ.
 
-**Compare banao:** "Kya A aur B alag hain?" Socho: alag ka matlab hai
-(A haan, B na) YA (A na, B haan). Yeh toh AND, OR, NOT ka jod hai:
-(A AND (NOT B)) OR ((NOT A) AND B). Ho gaya. Machine ab "alag hai ya
-nahi" bata sakti hai. Aur "barabar hai?" uska NOT hai.
+**तुलना बनवा:** "A आणि B वेगळे आहेत का?" विचार करा: वेगळे म्हणजे
+(A हो, B नाही) **किंवा** (A नाही, B हो). हे तर AND, OR, NOT ची
+जोडणी आहे: (A AND (NOT B)) OR ((NOT A) AND B). झालं. Machine आता
+"वेगळं आहे का" सांगू शकते. आणि "सारखं आहे का?" त्याचं NOT आहे.
 
-**Jodna banao:** ek bit jodo: 0+0=0, 0+1=1, 1+0=1, 1+1=10 (do bits ka
-jawab: "0 likho, 1 haath mein"). Dekho, jawab ka pehla hissa "alag
-hain?" wala purza hai, aur haath wala hissa AND hai (dono 1 hon tabhi
-haath mein jaata hai). School wali jod ki recipe, switchon mein utar
-gayi. Aise 64 jodo, aur 64-bit numbers ka jod tayyar.
+**बेरीज बनवा:** एक bit जोडा: 0+0=0, 0+1=1, 1+0=1, 1+1=10 (दोन bits
+चं उत्तर: "0 लिहा, 1 हातचा"). बघा, उत्तराचा पहिला भाग "वेगळे आहेत?"
+वालाच भाग आहे, आणि हातच्याचा भाग AND आहे (दोन्ही 1 असतील तेव्हाच
+हातचा जातो). शाळेतली बेरजेची पद्धत switches मध्ये उतरली. असे 64
+जोडा, आणि 64-bit आकड्यांची बेरीज तयार.
 
-**"Agar" banao:** "AGAR yeh 1 hai TOH is taar ka signal aage jaane do."
-Yeh sirf ek AND hai: signal AND shart. Recipe ka har "agar aisa toh
-waisa" aakhir mein inhi AND/OR/NOT ki chain hai.
+**"जर" बनवा:** "जर हे 1 असेल तर या तारेचा signal पुढे जाऊ दे." हे
+फक्त एक AND आहे: signal AND अट. Recipe चं प्रत्येक "जर असं तर तसं"
+शेवटी याच AND/OR/NOT च्या साखळ्या आहेत. ATM चा निर्णय बघा: "पैसे
+द्या **जर** PIN बरोबर **AND** balance पुरेसा **AND** आजची limit
+शिल्लक." तीन अटी, एक AND-साखळी. तुम्ही ATM मधून पैसे काढता तेव्हा
+gates चा एक गट तुमच्या बाजूने 1 म्हणतो.
 
-Ab poora minaar neeche se upar dekho:
+आता पूर्ण मनोरा खालून वर बघा:
 
 ```
-transistor  ->  AND/OR/NOT  ->  jod/compare/agar  ->  recipe ke kadam
-            ->  poora program  ->  WhatsApp
+transistor -> AND/OR/NOT -> बेरीज/तुलना/जर -> recipe ची पावलं
+           -> पूर्ण program -> WhatsApp
 ```
 
-Har manzil apne neeche wali manzil ke purzon se bani hai. Kahin bhi,
-kisi bhi manzil pe, "soch" naam ka koi purza nahi hai. Sirf switch hain,
-design mein jade hue.
+प्रत्येक मजला खालच्या मजल्याच्या भागांनी बनला आहे. कुठेही, कुठल्याही
+मजल्यावर, "विचार" नावाचा भाग नाही. फक्त switches आहेत, design मध्ये
+जडवलेले.
 
-## NAAM
+## इथे लोक काय चुकीचं समजतात
 
-In purzon ka naam **logic gates** hai. AND gate, OR gate, NOT gate.
-"Logic" isliye ki yeh haan/na wale tarkon ko bijli mein utaarte hain.
-Aapke phone ki chip in gates ke arabon jodon se bani hai, aur gates
-transistors se.
+"Machine ठरवते, म्हणजे तिच्या आत कुठेतरी छोटा मेंदू आहे." आता
+तुम्हाला "ठरवणं" चा अर्थ माहीत आहे: आधीच design केलेली AND/OR/NOT
+ची साखळी, जिच्यात प्रत्येक शक्य input चं output **आधीच** ठरलेलं आहे.
+Machine कडे surprise नसतं. Machine चं उत्तर तुम्हाला surprise करतं,
+तेव्हा अर्थ: तुम्हाला design माहीत नाही; machine काही नवीन विचार
+करत नाहीये.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## MAP वर
 
-ATM ka faisla: "paise do AGAR pin sahi hai AND balance kaafi hai AND
-aaj ki limit baaki hai." Teen shartein, ek AND chain. Jis din aap ATM
-se paisa nikaalte ho, ek AND gate ka jhund aapke haq mein 1 bolta hai.
-Bank ka poora risk intezaam aise hi gates ki chains mein likha hai.
+कोण कमावतं: chip design करणारे. Gates जोडून वेगवान, छोटी, कमी वीज
+खाणारी साखळी बनवणं जगातल्या सगळ्यात दुर्मिळ skills पैकी आहे.
+**Nvidia** याच खेळात जगातल्या सगळ्यात मौल्यवान companies मध्ये
+पोहोचली: त्यांच्या gates ची जुळणी AI च्या कामासाठी सगळ्यात वेगवान
+निघाली. जी गोष्ट तुम्ही आज 15 मिनिटांत समजलात, तिचीच उत्तम जुळणी
+trillion-dollar company बनवते. फरक खोलीचा आहे, कल्पनेचा नाही.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## स्वतः बघा (5 मिनिटं)
 
-"Machine decide karti hai, matlab uske andar kahin koi chhota dimaag
-hai." Ab aap jaante ho decide ka matlab kya hai: pehle se design ki
-hui AND/OR/NOT ki chain, jisme har possible input ka output PEHLE SE
-tay hai. Machine ke paas surprise nahi hota. Jab machine ka jawab
-aapko surprise kare, toh matlab aap design nahi jaante, machine kuch
-naya nahi soch rahi.
+कागदावर हे table स्वतः बनवा, न बघता: A आणि B च्या चार जोड्या (00,
+01, 10, 11), आणि प्रत्येक जोडीसाठी AND, OR, आणि "वेगळे आहेत?" चं
+उत्तर. शेवटचा रकाना स्वतः विचार करावा लागेल. बनला की समजा: आज
+तुम्ही gate design केला.
 
-## MAP PE
+## विचार करा
 
-Kaun kamata hai: chip design karne wale. Gates ko jodkar tez, chhoti,
-kam bijli wali chain banana duniya ki sabse scarce skills mein hai.
-Nvidia isi khel mein duniya ki sabse keemti companies mein pahunchi:
-unke gates ka intezaam AI ke kaam ke liye sabse tez nikla. Jo cheez
-aapne aaj 15 minute mein samjhi, usi ki behtareen jamawat kharabon
-dollar ki company banati hai. Farq gehraai ka hai, idea ka nahi.
+1. (derivation) NOT gate काढून टाका. फक्त AND आणि OR उरले. "वेगळे
+आहेत?" वाला भाग अजूनही बनू शकेल का? का किंवा का नाही?
 
-## KHUD DEKHO (5 minute)
-
-Kaagaz pe yeh table khud banao, bina dekhe: A aur B ke chaar jod
-(00, 01, 10, 11), aur har jod ke liye AND, OR, aur "alag hain?" ka
-jawab. Aakhri column khud sochna padega. Jab ban jaaye, aapne aaj
-gate design kiya.
-
-## SOCHNE KE LIYE
-
-1. (derivation) NOT gate hata do. Sirf AND aur OR bache. Kya "alag
-hain?" wala purza ab bhi ban sakta hai? Kyun ya kyun nahi?
-
-> **Jawab:** Nahi ban sakta. AND aur OR dono "milaane" wale hain: agar
-> saare inputs 1 hain, toh dono ka output 1 hi hoga, ulatne wala koi
-> nahi. Lekin "alag hain?" ko 11 pe 0 dena hota hai. Bina kisi ulatne
-> wale purze ke, 1 se 0 banta hi nahi. Isliye NOT zaroori hai. Sabak:
-> chhota sa purza bhi poore system ki taakat badal deta hai, aur design
-> ka matlab hi yeh jaan-na hai ki kaunsa purza kya jodta hai.
+> **उत्तर:** नाही बनू शकत. AND आणि OR दोन्ही "मिळवणारे" आहेत: सगळे
+> inputs 1 असतील तर दोघांचंही output 1 च असतं; उलटवणारा कोणी नाही.
+> पण "वेगळे आहेत?" ला 11 वर 0 द्यावं लागतं. उलटवणाऱ्या भागाशिवाय
+> 1 पासून 0 बनतच नाही. म्हणून NOT गरजेचा आहे. धडा: छोटासा भागही
+> पूर्ण system ची ताकद बदलतो, आणि design म्हणजे हेच जाणणं की कुठला
+> भाग काय जोडतो.

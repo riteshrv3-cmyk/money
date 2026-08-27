@@ -1,100 +1,95 @@
-# Chapter 1.4 [SPINE]: Switches numbers kaise rakhte hain
+# Chapter 1.4 [SPINE]: Switches आकडे कसे ठेवतात
 
-Ek switch do baatein keh sakta hai: 0 ya 1. Lekin duniya ke numbers toh
-0 se 9 tak ke ankon se bante hain, aur bade numbers, jaise 300 rupaye ya
-15 arab, unka kya?
+एक switch दोन गोष्टी सांगू शकतो: 0 किंवा 1. पण जगातले आकडे तर 0 ते
+9 च्या अंकांनी बनतात, आणि मोठे आकडे, जसे 300 रुपये किंवा 15 billion,
+त्यांचं काय?
 
-Khud nikaalte hain. Ek switch: do haalat (0, 1). Do switch: chaar haalat
-(00, 01, 10, 11). Teen switch: aath haalat. Har naya switch haalat ki
-ginti DUGNI kar deta hai, kyunki purani har haalat ab do roop mein ho
-sakti hai: naya switch 0 ke saath, ya 1 ke saath.
+स्वतः काढू. एक switch: दोन स्थिती (0, 1). दोन switch: चार स्थिती
+(00, 01, 10, 11). तीन switch: आठ. प्रत्येक नवा switch स्थितींची
+मोजणी **दुप्पट** करतो, कारण जुनी प्रत्येक स्थिती आता दोन रूपांत असू
+शकते: नवा switch 0 सोबत, किंवा 1 सोबत.
 
-Ab in haalaton ko naam de do, bas itna hi karna hai:
-
-```
-00 ko bolo "zero"      01 ko bolo "ek"
-10 ko bolo "do"        11 ko bolo "teen"
-```
-
-Ruko, yeh toh wahi hai jo hum das ungliyon ke saath karte hain! Hum 9 ke
-baad naya anka shuru karte hain (10), machine 1 ke baad naya switch
-shuru karti hai (10). Hamara har anka das guna badhta hai, machine ka
-har switch do guna. Bas itna hi farq hai. Ginti ka idea wahi hai, sirf
-ungliyaan 10 ki jagah 2 hain.
-
-Toh kitne switch chahiye kaam ke numbers ke liye?
+आता या स्थितींना नावं द्या, एवढंच करायचं आहे:
 
 ```
- 8 switch   =  256 haalat      (0 se 255)
+00 ला म्हणा "शून्य"      01 ला म्हणा "एक"
+10 ला म्हणा "दोन"        11 ला म्हणा "तीन"
+```
+
+थांबा, हे तर तेच आहे जे आपण दहा बोटांनी करतो! आपण 9 नंतर नवा अंक
+सुरू करतो (10), machine 1 नंतर नवा switch सुरू करते (10). आपला
+प्रत्येक अंक दहापट वाढतो, machine चा प्रत्येक switch दुप्पट. बस,
+एवढाच फरक. मोजणीची कल्पना तीच, फक्त बोटं 10 ऐवजी 2.
+
+एका switch च्या स्थितीचं नाव **bit** (binary digit). आठ bits च्या
+गटाचं नाव **byte**. दुप्पट-वाल्या मोजणीचं नाव **binary**. हे तीन
+शब्द आता तुमचे झाले, आणि पूर्ण digital जग यांनीच मोजलं जातं.
+
+मग कामाच्या आकड्यांसाठी किती switch लागतात?
+
+```
+ 8 switch   =  256 स्थिती      (0 ते 255)
 16 switch   =  65,536
-32 switch   =  429 crore
-64 switch   =  itna bada ki duniya ke saare rupaye, saare
-               phone, saari files gin lo, khatam nahi hota
+32 switch   =  4 billion+ (430 कोटी)
+64 switch   =  इतकं मोठं की जगातले सगळे रुपये, सगळे
+               phones, सगळ्या files मोजा, संपत नाही
 ```
 
-Aapke phone ka processor ek saath 64 switchon ke jhund pe kaam karta
-hai. Isliye "64-bit phone" likha hota hai dibbe pe. Ab aap jaante ho us
-line ka matlab, duniya ke 99% log nahi jaante.
+तुमच्या phone चा processor एकदम 64 switches च्या गटावर काम करतो.
+म्हणून खोक्यावर "64-bit phone" लिहिलेलं असतं. आता तुम्हाला त्या
+ओळीचा अर्थ माहीत आहे; जगातल्या 99% लोकांना नाही.
 
-Ek aakhri sawal khud se poochho: machine 2 pe kyun ruki, 10 haalat wala
-switch kyun nahi banaya? Ban sakta tha. Lekin bijli ka current kabhi
-thoda upar neeche hota rehta hai (noise). Do haalat mein farq itna
-bada hai (poora on, poora off) ki chhoti moti hilna-dulna se galti
-nahi hoti. Das haalat paas paas hoti, aur har halki kampan galat anka
-ban jaati. **2 chuna gaya kyunki 2 sabse bharosemand hai.** Machine
-ki har design mein yeh sawal milega: tez chahiye, sasta chahiye, ya
-bharosemand chahiye? Yahan bharosa jeeta.
+एक शेवटचा प्रश्न स्वतःला विचारा: machine 2 वर का थांबली, 10
+स्थितींवाला switch का नाही बनवला? बनू शकला असता. पण विजेचा current
+थोडा वर-खाली होत राहतो (noise). दोन स्थितींमध्ये फरक इतका मोठा आहे
+(पूर्ण चालू, पूर्ण बंद) की छोट्या-मोठ्या कंपनेने चूक होत नाही. दहा
+स्थिती जवळजवळ असत्या, आणि प्रत्येक हलकी कंपन चुकीचा अंक बनली असती.
+Post office चा शिक्का आठवा: तारीख थोडी तिरकी उमटली तरी चालतं, कारण
+पर्याय मोजके आणि एकमेकांपासून दूर आहेत. **2 निवडला कारण 2 सगळ्यात
+भरवशाचा आहे.** Machine च्या प्रत्येक design मध्ये हा प्रश्न भेटेल:
+वेगवान हवं, स्वस्त हवं, की भरवशाचं हवं? इथे भरवसा जिंकला.
 
-## NAAM
+खऱ्या जगात हे कुठे आहे: तुमचा bank balance कुठल्यातरी machine मध्ये
+64 switches ची एक रांग आहे. UPI ने 50 रुपये पाठवले तर त्या रांगेतले
+काही switches पलटले, आणि दुसऱ्या machine मध्ये दुसऱ्या रांगेतले.
+पूर्ण Indian economy, प्रत्येक खातं, प्रत्येक देवाण-घेवाण, चालू/बंद
+च्या रांगांमध्ये ठेवलेली आहे. म्हणून त्या रांगांची राखण (Part 3
+मधलं encryption) इतका मोठा business आहे: switches मध्ये ठेवलेला
+पैसा खरा पैसा आहे.
 
-Ek switch ki haalat ka naam **bit** hai (binary digit). Aath bit ke
-jhund ka naam **byte**. Do-guna wali ginti ka naam **binary**. Yeh teen
-shabd ab aapke hain, aur poori digital duniya inhi se napi jaati hai.
+## इथे लोक काय चुकीचं समजतात
 
-## ASLI DUNIYA SE EK EXAMPLE
+लोक binary बघून विचार करतात की machine कुठलीतरी वेगळी, परकी भाषा
+बोलते जी माणसाच्या आवाक्याबाहेर आहे. तुम्ही आत्ता 5 मिनिटांत पूर्ण
+कल्पना काढली, कारण नवीन काही नव्हतंच: ही तीच मोजणी आहे जी तुम्ही
+लहानपणापासून करता, कमी बोटांवर. Technology मध्ये "अवघड" हे बहुतेक
+वेळा "अनोळखी" चं दुसरं नाव असतं.
 
-Aapka bank balance kahin kisi machine mein 64 switchon ki ek qataar
-hai. UPI se 50 rupaye bheje toh us qataar ke kuch switch palte, aur
-kisi doosri machine mein doosri qataar ke switch palte. Poori Indian
-economy, har khaata, har lena-dena, on/off ki qataaron mein rakhi hai.
-Isliye us qataar ki hifaazat (Part 3 mein encryption) itna bada
-business hai: switchon mein rakha paisa asli paisa hai.
+## MAP वर
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+रुपयाचा रस्ता: तुम्ही जे काही साठवता ते bits मध्ये मोजलं जातं, आणि
+bits ठेवायच्या जागेचं भाडं लागतं. गोदामासारखं: पोती जास्त, भाडं
+जास्त. Google तुम्हाला 15 GB फुकट देतो आणि त्यावर महिन्याचं भाडं
+घेतो (Google One, iCloud). ते भाडं billions चा business आहे. पुढे
+Chapter 2.1 मध्ये हे माप पूर्ण शिकू, कारण जे मोजलं जातं, तेच विकलं
+जातं.
 
-Log binary dekh ke sochte hain machine koi alag, ajnabi bhasha bolti
-hai jo insaan ke bas ki nahi. Aapne abhi 5 minute mein poora idea
-nikaal liya, kyunki naya kuch tha hi nahi: yeh wahi ginti hai jo aap
-bachpan se karte ho, chhoti ungliyon pe. Technology mein "mushkil"
-aksar "anjaan" ka doosra naam hota hai.
+## स्वतः बघा (5 मिनिटं)
 
-## MAP PE
+एका हाताची पाच बोटं घ्या. मिटलेलं बोट 0, उघडं 1. अंगठ्यापासून सुरू
+करा: फक्त अंगठा उघडा = 1, फक्त दुसरं बोट = 2, दोन्ही = 3. असं मोजत
+जा. पाच बोटांवर तुम्ही 31 पर्यंत मोजू शकता. हे एकदा केलंत की binary
+हाताने चालवली; आता ती कधीच विसरणार नाही.
 
-Rupaye ka rasta: har cheez jo aap store karte ho, bits mein napti hai,
-aur bits rakhne ki jagah ka kiraya lagta hai. Google aapko 15 GB muft
-deta hai, aur uske upar mahina charge karta hai. Woh kiraya arabon ka
-business hai (Google One, iCloud). Aage Chapter 2.1 mein hum yeh naap
-poora seekhenge, kyunki jo cheez napti hai, wahi bikti hai.
+## विचार करा
 
-## KHUD DEKHO (5 minute)
+1. (derivation) 8 switches 256 स्थिती देतात. एक जुना game console
+"8-bit" होता: screen वरचा एक रंग निवडायला 8 bits. त्या console वर
+किती रंग शक्य होते, आणि यातून काढा: जुने games तसे का दिसायचे?
 
-Ek haath ki paanch ungliyan lo. Band ungli 0, khuli 1. Angoothe se
-shuru karo: sirf angootha khula = 1, sirf doosri ungli = 2, dono = 3.
-Aise ginte jao. Paanch ungliyon pe aap 31 tak gin sakte ho. Jab yeh
-kar loge, aapne binary ko haath se chala liya, ab woh kabhi nahi
-bhoolegi.
-
-## SOCHNE KE LIYE
-
-1. (derivation) 8 switch 256 haalat dete hain. Ek purani game console
-"8-bit" thi. Uske screen pe ek rang chunne ke liye 8 bit the. Us
-console pe kitne rang possible the, aur is se yeh nikaalo ki purane
-games waise kyun dikhte the?
-
-> **Jawab:** 256 rang, bas. Isliye purane games ke rang saaf saaf
-> tukdon mein dikhte hain, godhuli ka narm dhalta rang unme ban hi
-> nahi sakta tha. Aaj ke screen har pixel ke liye 24+ bit rakhte
-> hain, 1.6 crore rang, isliye photo asli lagti hai. Sabak: bits ki
-> ginti seedha tay karti hai ki machine kitni bareeki dekh sakti
-> hai. Yeh niyam AI tak jaayega: wahan bhi bareeki bits mein bikti
-> hai.
+> **उत्तर:** 256 रंग, बस. म्हणून जुन्या games चे रंग स्पष्ट
+> तुकड्यांत दिसतात; संध्याकाळच्या आभाळाचा हळू बदलणारा रंग त्यांच्यात
+> बनूच शकत नव्हता. आजचे screens प्रत्येक ठिपक्यासाठी 24+ bits
+> ठेवतात, 16 million (1.6 कोटी) रंग, म्हणून photo खरा वाटतो. धडा:
+> bits ची मोजणी थेट ठरवते की machine किती बारकावा बघू शकते. हा नियम
+> AI पर्यंत जाईल: तिथेही बारकावा bits मध्ये विकला जातो.

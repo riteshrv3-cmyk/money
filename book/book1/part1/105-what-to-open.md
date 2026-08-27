@@ -1,89 +1,78 @@
-# Chapter 0.5 [SPINE]: Toh ab hume kya kholna padega
+# Chapter 0.5 [SPINE]: मग आता आपल्याला काय उघडावं लागेल
 
-Chaar chapters mein aapke paas ab yeh hai:
+चार chapters मध्ये तुमच्याकडे आता हे आहे:
 
-1. Paisa bharose ka intezaam hai, aur SIRF Level 1 pe ghusta hai. (0.1)
-2. Kamaai = size x scarcity x leverage. Ghante formula mein nahi hain. (0.2)
-3. Duniya chaar levels ka stack hai, paisa neeche se upar behta hai. (0.3)
-4. Level 3 jaan boojh ke chhupa hai, aur chhupa hona hi uska daam hai. (0.4)
+1. पैसा म्हणजे विश्वासाची व्यवस्था, आणि **फक्त** Level 1 वर घुसतो. (0.1)
+2. कमाई = size x scarcity x leverage. तास सूत्रात नाहीत. (0.2)
+3. जग चार levels चा stack आहे, पैसा खालून वर वाहतो. (0.3)
+4. Level 3 मुद्दाम लपवलेला आहे, आणि लपलेलं असणं हाच त्याचा भाव. (0.4)
 
-Ab ek imaandaar sawal: aap Level 1 aur 2 pehle se samajhte ho. Zaroorat
-kya hoti hai, business kaise chalta hai, yeh aapko dikhta hai. Jo nahi
-dikhta, woh Level 3 aur 4 hai. Aur aapka plan Level 4 pe kaam karna hai.
+आता एक प्रामाणिक प्रश्न: Level 1 आणि 2 तुम्हाला आधीच समजतात. गरज
+म्हणजे काय, business कसा चालतो, हे तुम्हाला दिसतं. जे दिसत नाही, ते
+Level 3 आणि 4. आणि तुमचा plan Level 4 वर काम करण्याचा आहे.
 
-Yahan ek chhota samvaad zaroori hai, kyunki yahan sab phislte hain.
+मग सरळ AI च का शिकू नये? हा प्रश्न प्रत्येकजण विचारतो, आणि इथेच
+सगळे घसरतात. उत्तरासाठी एक प्रश्न पुरे: AI चालतो कशावर? Computer
+वर. आणि computer तुम्हाला समजत नसेल, तर AI तुमच्यासाठी काय असेल?
+जादू. जादूच्या प्रेक्षकाला काय जमतं? बघणं, थोडं वापरणं. काय जमत
+नाही? Design करणं, विकणं, सुधारणं, आणि तुटल्यावर सांगणं की काय
+तुटलं. जादूचा प्रेक्षक बनता येतं, जादूगार नाही.
 
-**Kabir:** Toh main seedha AI kyun na seekhun? Mujhe wahi chahiye.
+Driver आणि mechanic चा फरक हाच आहे. दोघेही गाडी चालवतात. पण गाडी
+रस्त्यात बंद पडली की driver फक्त उभा राहतो; mechanic bonnet उघडतो.
+आणि गाड्यांचा **धंदा** कोण करतं? ज्याला आतलं कळतं तो. AI च्या
+जगात तुम्हाला driver नाही, mechanic-मालक बनायचं आहे.
 
-**Madhav:** AI kis pe chalta hai?
-
-**Kabir:** Computer pe.
-
-**Madhav:** Aur tumhe computer samajh nahi aata. Toh AI tumhare liye kya
-hoga?
-
-**Kabir:** ...jaadu.
-
-**Madhav:** Aur jaadu ke saath tum kya kar sakte ho?
-
-**Kabir:** Dekh sakta hoon. Use kar sakta hoon, thoda.
-
-**Madhav:** Design nahi kar sakte. Bech nahi sakte. Sudhaar nahi sakte.
-Jab woh toote toh bata nahi sakte kya toota. Jaadu ka darshak ban sakte
-ho, jaadugar nahi.
-
-Isliye raasta neeche se hai. Level 4 Level 3 pe khada hai, toh pehle
-Level 3: machine. Yeh Part 1 se Part 5 tak ka safar hai:
+म्हणून रस्ता खालून आहे. Level 4 Level 3 वर उभा आहे, मग आधी Level 3:
+machine. हा Part 1 ते Part 5 चा प्रवास आहे:
 
 ```
-PART 1 (yeh wali)  machine kya hai, sab kuch numbers kaise hai
-PART 2             machine ko batana ki kya karna hai: software
-PART 3             machines ka aapas mein baat karna: internet
-PART 4             yaad rakhna: data, database
-PART 5             lakhon logon ko serve karna: scale, cloud, kharcha
+PART 1 (हा)   machine म्हणजे काय, सगळं numbers कसं आहे
+PART 2        machine ला सांगणं की काय करायचं: software
+PART 3        machines चं आपसात बोलणं: internet
+PART 4        लक्षात ठेवणं: data, database
+PART 5        लाखो लोकांना serve करणं: scale, cloud, खर्च
 ```
 
-Iske baad Book 2 aati hai: AI. Tab woh jaadu nahi lagegi, machine lagegi.
+यानंतर Book 2 येते: AI. तेव्हा ती जादू वाटणार नाही, machine वाटेल.
 
-Aur ek daava likh ke rakho, hum ise Part 5 ke end mein test karenge:
+आणि एक दावा लिहून ठेवा, आपण तो Part 5 च्या शेवटी तपासू:
 
-**Daava:** Machine samajhne ke baad aap kisi bhi business ko dekh kar bata
-paoge ki usme technology se paisa kahan banega, kya banana sasta hai, kya
-mehnga, aur AI usme kahan ghusega.
+**दावा:** Machine समजल्यावर तुम्ही कुठलाही business बघून सांगू शकाल
+की त्यात technology ने पैसा कुठे बनेल, काय बनवणं स्वस्त आहे, काय
+महाग, आणि AI त्यात कुठे घुसेल.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## इथे लोक काय चुकीचं समजतात
 
-"Basics baad mein dekh lunga, pehle jaldi wala raasta." Aisa raasta hota
-toh sab us pe hote. Jo log AI tools ko sabse achha chalate hain, woh wahi
-hain jo jaante hain ki andar kya ho raha hai, isliye woh sahi cheez maang
-paate hain aur galat jawab pakad lete hain. Machine ki samajh hi AI ki
-steering hai.
+"Basics नंतर बघेन, आधी जलद रस्ता." असा रस्ता असता तर सगळे त्यावर
+असते. जे लोक AI tools सगळ्यात चांगले चालवतात, ते तेच आहेत ज्यांना
+आत काय चालतं ते माहीत आहे; म्हणून ते बरोबर गोष्ट मागू शकतात आणि
+चुकीचं उत्तर पकडू शकतात. Machine ची समज हीच AI ची steering आहे.
 
-## MAP PE
+## MAP वर
 
-Aap is waqt map pe khud ko rakh rahe ho: Level 1-2 ki samajh aapke paas
-hai, Level 3 ka darwaza yeh kitaab hai, Level 4 agli kitaab. Jis din
-aapke paas chaaron levels ki samajh hogi, aap us chhoti si bheed mein
-honge jo poori chain dekh sakti hai. Chain dekhne wala hi chain design
-kar sakta hai.
+तुम्ही या क्षणी नकाशावर स्वतःला ठेवताय: Level 1-2 ची समज तुमच्याकडे
+आहे, Level 3 चा दरवाजा हे पुस्तक आहे, Level 4 पुढचं पुस्तक. ज्या
+दिवशी तुमच्याकडे चारही levels ची समज असेल, तुम्ही त्या छोट्या गर्दीत
+असाल जिला पूर्ण साखळी दिसते. साखळी बघणाराच साखळी design करू शकतो.
 
-## KHUD DEKHO (5 minute)
+## स्वतः बघा (5 मिनिटं)
 
-Ek kaagaz pe apne haath se yeh likho aur photo kheench lo:
-"Main yeh isliye seekh raha hoon taaki ____________________."
-Apne shabdon mein bharo. Part 5 ke aakhri chapter mein yeh line wapas
-maangi jaayegi, tab dekhna ki jawab badla ya wahi hai.
+एका कागदावर स्वतःच्या हाताने हे लिहा आणि photo काढून ठेवा:
+"मी हे यासाठी शिकतोय की ____________________."
+आपल्या शब्दांत भरा. Part 5 च्या शेवटच्या chapter मध्ये ही ओळ परत
+मागितली जाईल; तेव्हा बघा उत्तर बदललं की तेच आहे.
 
-## SOCHNE KE LIYE
+## विचार करा
 
-1. (derivation) Kabir wala tark ulta karo: ek aadmi ne SIRF Level 3
-seekha, machine ka poora expert, lekin Level 1-2 (zaroorat, business)
-kabhi nahi dekha. Uski kamaai ka kya hoga?
+1. (derivation) वरचा तर्क उलटा करा: एका माणसाने **फक्त** Level 3
+शिकला, machine चा पूर्ण expert, पण Level 1-2 (गरज, business) कधी
+बघितलंच नाही. त्याच्या कमाईचं काय होईल?
 
-> **Jawab:** Woh kamayega, lekin hamesha kisi aur ke liye. Tankhwah
-> milegi, kyunki uski skill scarce hai. Lekin size aur leverage ke dial
-> koi aur ghumayega: founder, jo jaanta hai kis zaroorat pe kya banana
-> hai. Duniya ke lakhon behtareen engineers tankhwah pe hain aur unke
-> founders arabpati hain. Farq skill ka nahi, chain ki poori samajh ka
-> hai. Isliye is kitaab mein har chapter money line ke saath aata hai:
-> aapko dono aankhein chahiye, machine wali bhi, paisa wali bhi.
+> **उत्तर:** तो कमावेल, पण नेहमी दुसऱ्यासाठी. पगार मिळेल, कारण
+> त्याची skill दुर्मिळ आहे. पण size आणि leverage चे काटे दुसरा कोणी
+> फिरवेल: founder, ज्याला माहीत आहे कुठल्या गरजेवर काय बनवायचं.
+> जगातले लाखो उत्तम engineers पगारावर आहेत आणि त्यांचे founders
+> billionaires आहेत. फरक skill चा नाही, साखळीच्या पूर्ण समजेचा आहे.
+> म्हणून या पुस्तकात प्रत्येक chapter पैशाच्या ओळीसह येतो: तुम्हाला
+> दोन्ही डोळे हवेत, machine वालाही, पैसा वालाही.

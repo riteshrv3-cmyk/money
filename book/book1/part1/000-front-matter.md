@@ -1,72 +1,74 @@
 # THE MACHINE
 
-## PART 1 OF 5: PAISA AUR MACHINE
+## PART 1 OF 5: पैसा आणि MACHINE
 
-Yeh kitaab paanch chhoti kitaabon mein hai. Yeh pehli hai.
-
-```
-PAANCH PARTS KA NAKSHA
-
-[ AAP YAHAN HO ]
-PART 1  PAISA AUR MACHINE       paisa kyun hai, computer kya hai,
-                                sab kuch numbers kaise hai
-PART 2  MACHINE SE BAAT         languages, operating system,
-                                software banta kaise hai
-PART 3  MACHINES KA JAAL        network, address, internet
-PART 4  DATA AUR YAADEIN        storage, database, dhoondhna
-PART 5  DUNIYA KO SERVE KARNA   scale, cloud, kharcha, poora jod
-```
-
-## Yeh kitaab kis liye hai
-
-Aap paisa kamana chahte ho. Aapne duniya ko chaar levels mein dekha hai:
+हे पुस्तक पाच छोट्या पुस्तकांमध्ये आहे. हे पहिलं.
 
 ```
-LEVEL 1   INSAAN KI ZAROORAT     bhookh, sehat, gyaan, suraksha
-LEVEL 2   BUSINESS               jo zaroorat poori karke paisa leta hai
-LEVEL 3   TECHNOLOGY             jo business ko taakat deti hai
-LEVEL 4   AI                     jo technology ko taakat deti hai
+पाच PARTS चा नकाशा
+
+[ तुम्ही इथे आहात ]
+PART 1  पैसा आणि MACHINE      पैसा का आहे, computer म्हणजे काय,
+                              सगळं numbers कसं आहे
+PART 2  MACHINE शी बोलणं      languages, operating system,
+                              software बनतं कसं
+PART 3  MACHINES चं जाळं      network, address, internet
+PART 4  DATA आणि आठवणी        storage, database, शोधणं
+PART 5  जगाला SERVE करणं      scale, cloud, खर्च, पूर्ण जोड
 ```
 
-Aap Level 4 pe kaam karna chahte ho, taaki neeche ke saare levels serve kar
-sako. Lekin Level 4 hawa mein nahi tikta. Woh Level 3 ke upar khada hai. Isliye
-pehle machine ko samajhna padega. Yeh paanch parts wahi karte hain.
+## हे पुस्तक कशासाठी आहे
 
-Padhne ke baad aap chaar cheezein kar paoge:
-
-1. Kisi business problem ke liye tech solution ka design khud sochna.
-2. AI tools se kaam nikaalna jaise ek engineer nikaalta hai.
-3. Koi bhi business dekhkar bataana ki tech se paisa kahan banega.
-4. Engineers aur tech news ki baat poori samajhna. Koi aapko bewakoof na bana paaye.
-
-## Yeh kitaab kaise likhi gayi hai
-
-Seedhi baat, aapse. Koi lecture nahi. Har cheez ke liye pehle problem, phir
-naam. Naam hamesha aakhir mein aata hai, kyunki naam pehle aa jaaye toh dimaag
-sochna band kar deta hai.
-
-Beech beech mein do log milenge: Madhav, ek guru, aur Kabir, ek naujawan jo
-wahi galtiyan karta hai jo hum sab karte hain. Woh sirf tab aate hain jab koi
-galat-fehmi todni ho.
-
-## Har chapter ka dhancha
+तुम्हाला पैसे कमवायचे आहेत. तुम्ही जगाला चार levels मध्ये बघितलं आहे:
 
 ```
-CHAPTER          pehle problem, phir samajh, phir naam
-NAAM             jo shabd duniya istemaal karti hai
-ASLI DUNIYA      ek sachcha example
-GALAT-FEHMI      jahan log aksar phislte hain
-MAP PE           yeh cheez Level 1-4 mein kahan hai, paisa kahan hai
-KHUD DEKHO       5 minute ka kaam, apne phone ya laptop pe (optional)
-SOCHNE KE LIYE   ek sawal, jawab seedha neeche
+LEVEL 1   माणसाची गरज          भूक, आरोग्य, ज्ञान, सुरक्षा
+LEVEL 2   BUSINESS             जो गरज पूर्ण करून पैसे घेतो
+LEVEL 3   TECHNOLOGY           जी business ला ताकद देते
+LEVEL 4   AI                   जी technology ला ताकद देते
 ```
 
-Har chapter ke naam ke saath ek nishaan hai. [SPINE] matlab reedh ki haddi,
-chhodna mat. [DEPTH] matlab gehrai, pehli baar mein chhod sakte ho, baad mein
-lautna.
+तुम्हाला Level 4 वर काम करायचं आहे, म्हणजे खालचे सगळे levels serve
+करता येतील. पण Level 4 हवेत तरंगत नाही. तो Level 3 वर उभा आहे. म्हणून
+आधी machine समजून घ्यावी लागेल. हे पाच parts तेच करतात.
 
-## Ek hi instruction
+वाचून झाल्यावर तुम्ही चार गोष्टी करू शकाल:
 
-Jaldi mat karo. Ek din mein do-teen chapters kaafi hain. Sawal ka jawab pehle
-khud socho, phir neeche padho. Jo cheez samajh na aaye, wahan ruko, aage ka
-sab usi pe khada hoga.
+1. कुठल्याही business problem साठी tech solution चं design स्वतः
+   विचार करणं.
+2. AI tools कडून काम काढून घेणं, जसं एक engineer काढतो.
+3. कुठलाही business बघून सांगणं की tech ने पैसा कुठे बनेल.
+4. Engineers आणि tech बातम्यांची भाषा पूर्ण समजणं. कोणी तुम्हाला
+   मूर्ख बनवू शकणार नाही.
+
+## हे पुस्तक कसं लिहिलं आहे
+
+सरळ बोलणं, तुमच्याशी. Lecture नाही. प्रत्येक गोष्टीसाठी आधी problem,
+मग समज, मग नाव. नाव नेहमी शेवटी येतं, कारण नाव आधी आलं की डोकं विचार
+करणं बंद करतं.
+
+आणि प्रत्येक मोठ्या कल्पनेला रोजच्या जगातली एक उपमा आहे: truck आणि
+रस्ते, ढाबा आणि recipe, गाव आणि बाजार, post office आणि bank. Machine
+नवीन आहे; तिच्या आतल्या कल्पना हजारो वर्षं जुन्या आहेत.
+
+## प्रत्येक chapter चा ढाचा
+
+```
+CHAPTER                आधी problem, मग समज; नावं आणि खरी
+                       उदाहरणं मजकुरातच, ठळक अक्षरात
+इथे लोक काय चुकीचं
+समजतात                 जिथे लोक नेहमी घसरतात
+MAP वर                 ही गोष्ट Level 1-4 मध्ये कुठे, पैसा कुठे
+स्वतः बघा              5 मिनिटांचं काम, तुमच्या phone/laptop वर
+विचार करा              एक प्रश्न, उत्तर लगेच खाली
+```
+
+प्रत्येक chapter च्या नावासोबत एक खूण आहे. **[SPINE]** म्हणजे कणा,
+वगळू नका. **[DEPTH]** म्हणजे खोली, पहिल्या वेळेस वगळू शकता, नंतर
+परत या.
+
+## एकच सूचना
+
+घाई करू नका. दिवसाला दोन-तीन chapters पुरे. प्रश्नाचं उत्तर आधी
+स्वतः विचार करा, मग खाली वाचा. जी गोष्ट समजली नाही, तिथे थांबा,
+पुढचं सगळं तिच्यावरच उभं असेल.

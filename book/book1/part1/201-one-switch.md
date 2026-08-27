@@ -1,90 +1,80 @@
-# Chapter 1.1 [SPINE]: Ek switch dabane se kya hota hai
+# Chapter 1.1 [SPINE]: एक switch दाबल्यावर काय होतं
 
-Deewar ka switch dabao. Bulb jala. Yeh poori kitaab isi ek ghatna ke andar
-chhupi hai, toh ise dheere se kholte hain.
+भिंतीचा switch दाबा. Bulb लागला. हे पूर्ण पुस्तक याच एका घटनेच्या आत
+लपलं आहे, म्हणून हळूहळू उघडू.
 
-Bijli ghar mein taaron ke raaste aati hai. Taar ek bandh raasta hai: power
-station se chal kar, bulb se hote hue, wapas. Jab tak raasta poora juda
-hua hai, bijli behti hai aur bulb jalta hai. Switch us raaste ki ek
-kadi hai jo tootti aur judti hai. Daba diya: raasta juda, bijli behi,
-roshni. Wapas dabaya: raasta toota, andhera.
+वीज घरात तारांच्या रस्त्याने येते. तार म्हणजे एक बंद रस्ता: power
+station पासून निघून, bulb मधून जाऊन, परत. जोपर्यंत रस्ता पूर्ण
+जोडलेला आहे, वीज वाहते आणि bulb जळतो. अशा बंद रस्त्याचं नाव
+**circuit**. Switch त्या रस्त्यातली एक कडी आहे जी तुटते आणि जुळते.
+दाबला: रस्ता जुळला, वीज वाहिली, उजेड. परत दाबला: रस्ता तुटला, अंधार.
 
-Toh switch asal mein kya hai? **Ek sawal ka jawab jo do mein se ek ho
-sakta hai: juda hai, ya toota hai. Haan, ya na. 1, ya 0.**
+मग switch खरं काय आहे? **एका प्रश्नाचं उत्तर, जे दोनपैकी एकच असू
+शकतं: जुळलेला, की तुटलेला. हो, की नाही. 1, की 0.**
 
-Ab teen chhalaang lagao, har ek chhoti hai:
+आता तीन उड्या मारा, प्रत्येक छोटी आहे:
 
-**Pehli:** Switch ungli se dabta hai. Kya bijli se dab sakta hai? Haan,
-aisa switch banta hai jise doosri taar ka current daba deta hai. Iska
-matlab dhyaan se suno: **ek switch doosre switch ko daba sakta hai.**
-Ungli ki zaroorat sirf shuru mein hai.
+**पहिली:** Switch बोटाने दाबला जातो. विजेने दाबता येईल का? हो, असा
+switch बनतो ज्याला दुसऱ्या तारेतला current दाबतो. याचा अर्थ नीट
+ऐका: **एक switch दुसऱ्या switch ला दाबू शकतो.** बोटाची गरज फक्त
+सुरुवातीला आहे.
 
-**Doosri:** Agar ek switch doosre ko daba sakta hai, toh hazaar switch
-mila kar ek chain ban sakti hai: yeh dabega toh woh dabega, woh dabega
-toh yeh khulega. Chain design karne ka matlab hai: pehle se tay karna ki
-kya hone pe kya hoga. Yeh "pehle se tay karna" aage bahut bada hone wala
-hai.
+**दुसरी:** एक switch दुसऱ्याला दाबू शकतो, तर हजार switch मिळून एक
+साखळी बनू शकते: हा दाबला तर तो दाबेल, तो दाबला तर हा उघडेल. रेल्वेचं
+signal-yard आठवा: एक lever ओढला की पुढे रूळ बदलतो, रूळ बदलला की
+पुढचा signal बदलतो; stationmaster एका जागी बसून पूर्ण yard चालवतो.
+साखळी design करणं म्हणजे आधीच ठरवणं की काय झाल्यावर काय होईल. हे
+"आधीच ठरवणं" पुढे खूप मोठं होणार आहे.
 
-**Teesri:** Aaj ke switch mein koi hilta hua purza nahi hai. Woh retili
-dhaatu (silicon) ka ek tukda hai jo bijli ke ishaare pe raasta kholta
-band karta hai. Na ghisna, na awaaz, aur size? Aapke phone ke andar wali
-chip mein aise 15 arab (billion) switch hain. Nakhoon ke size mein.
+**तिसरी:** आजच्या switch मध्ये हलणारा भाग नाही. तो वाळूच्या धातूचा
+(silicon) एक तुकडा आहे जो विजेच्या इशाऱ्यावर रस्ता उघडतो-बंद करतो.
+या विजेने-दाबल्या-जाणाऱ्या switch चं नाव **transistor**: माणसाचा
+कदाचित सगळ्यात महत्त्वाचा शोध. झीज नाही, आवाज नाही, आणि आकार?
+तुमच्या phone च्या आतल्या chip मध्ये असे **15 billion** (1,500
+कोटी) transistors आहेत. नखाएवढ्या जागेत.
 
-Toh yeh kitaab jis machine ko khol rahi hai, woh yeh hai: **arabon
-switch, ek doosre ko dabate hue, ek design ki hui chain mein.** Aapka har
-tap, har message, har video isi ka natija hai. Agle chapters mein hum
-dekhte hain ki on/off se ginti, photo, aur soch kaise banti hai.
+मग हे पुस्तक जी machine उघडतंय, ती ही आहे: **billions switches,
+एकमेकांना दाबत, एका design केलेल्या साखळीत.** तुमचा प्रत्येक tap,
+प्रत्येक message, प्रत्येक video याचाच निकाल आहे. Phone चा torch
+लावा: बोटाने काच दाबली, काचेखालच्या sensor ने छोटा current पाठवला,
+त्याने साखळी सुरू केली, साखळीच्या शेवटी एका transistor ने LED चा
+रस्ता जोडला. उजेड. तुम्ही भिंतीचा switch च दाबला, फक्त मध्ये
+billions switches होते. फरक फक्त मोजणीचा आहे, कल्पना तीच.
 
-## NAAM
+## इथे लोक काय चुकीचं समजतात
 
-Bijli se dabne wale switch ka naam **transistor** hai. Yeh shayad insaan
-ki sabse zaroori invention hai, aur duniya isse har saal kharabon ki
-ginti mein banati hai. Bandh raaste ka naam **circuit** hai. Haan/na wale
-jawab ka naam agla chapter dega.
+लोकांना वाटतं computer ही कुठलीतरी विचित्र, समजण्यापलीकडची गोष्ट
+आहे. खरं हे आहे की तिचा प्रत्येक भाग भिंतीच्या switch इतकाच सरळ
+आहे. डोकं चक्रावतं ते **मोजणीने**: billions switches, billion वेळा
+प्रति second. पण मोजणीला घाबरणं म्हणजे समुद्राला घाबरणं कारण त्यात
+थेंब खूप आहेत. थेंब समजला की समुद्र समजतो.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## MAP वर
 
-Aapke phone ka torch button dabao. Ungli ne sheeshe ko chhua, sheeshe ke
-neeche ke sensor ne ek chhota sa current bheja, us current ne chain shuru
-ki, aur chain ke aakhir mein ek transistor ne LED ka raasta jod diya.
-Roshni. Aapne deewar wala switch hi dabaya, bas beech mein arabon switch
-the. Farq sirf ginti ka hai, idea wahi hai.
+Level 3 ची पूर्ण इमारत या एका भागावर उभी आहे, आणि transistor बनवणं
+जगातल्या सगळ्यात मोठ्या धंद्यांपैकी आहे. एक company, **TSMC**
+(Taiwan), जगातले सगळ्यात उत्तम transistors बनवते, आणि Apple पासून
+Nvidia पर्यंत सगळे तिच्या दारात रांगेत उभे आहेत. जी गोष्ट दुसऱ्या
+कोणालाच बनवता येत नाही = scarcity चा काटा पूर्ण वर. एक factory
+एकदा उभी राहते आणि billions chips काढते = leverage पण पूर्ण वर.
+सूत्र काम करतंय.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## स्वतः बघा (5 मिनिटं)
 
-Log sochte hain computer koi ajeeb, samajh ke bahar ki cheez hai. Sach
-yeh hai ki uska har hissa utna hi seedha hai jitna deewar ka switch. Jo
-cheez dimaag ko chakrati hai woh GINTI hai: arabon switch, arab baar
-prati second. Lekin ginti se darna aisa hai jaise samundar se darna
-kyunki usmein boondein bahut hain. Boond samajh lo, samundar samajh
-aayega.
+घरचा कुठलाही switch दाबताना हा विचार करा: मी एका प्रश्नाचं उत्तर
+set करतोय, हो की नाही. मग phone चा torch लावा आणि स्वतःला सांगा:
+आत्ता मी billions switches च्या साखळीच्या टोकावर बोट ठेवलं. दोन्ही
+एकच गोष्ट आहेत. हे जाणवणं हेच या chapter चं खरं काम.
 
-## MAP PE
+## विचार करा
 
-Level 3 ki poori imaarat is ek purze pe khadi hai, aur transistor banane
-ka business duniya ke sabse bade businesses mein hai. Ek company, TSMC
-(Taiwan), duniya ke sabse behtareen transistor banati hai, aur Apple se
-le kar Nvidia tak sab uske darwaaze pe line mein hain. Ek cheez jo koi
-aur nahi bana sakta = scarcity ka dial poora upar. Ek factory jo ek baar
-lagti hai aur arabon chips nikaalti hai = leverage bhi poora upar. Formula
-kaam kar raha hai.
+1. (derivation) "एक switch दुसऱ्या switch ला दाबू शकतो." हे शक्य
+**नसतं**, बोट नेहमी लागलं असतं, तर computer चं काय झालं असतं?
 
-## KHUD DEKHO (5 minute)
-
-Ghar ka koi switch dabate waqt yeh sochna: main ek sawal ka jawab set kar
-raha hoon, haan ya na. Phir phone ka torch on karna aur khud se kehna:
-abhi maine arabon switchon ki chain ke sire pe ungli rakhi. Dono ek hi
-cheez hain. Yeh mehsoos karna hi is chapter ka asli kaam hai.
-
-## SOCHNE KE LIYE
-
-1. (derivation) "Ek switch doosre switch ko daba sakta hai." Agar yeh
-possible NA hota, ungli hamesha zaroori hoti, toh computer ka kya hota?
-
-> **Jawab:** Computer ban hi nahi paata. Har kadam pe insaan chahiye
-> hota, toh machine ki speed insaan ki speed pe atak jaati: second mein
-> arab kadam ki jagah second mein ek kadam. Aur leverage zero ho jaata:
-> machine "ek baar bana ke chhod do, chalti rahegi" wali cheez na hoti.
-> Poora Level 3 is ek baat pe khada hai ki chain ek baar design karo,
-> phir woh bina insaan ke chalti hai. Anil ki naali yaad karo: yeh wahi
-> hai, bas paani ki jagah bijli behti hai.
+> **उत्तर:** Computer बनूच शकला नसता. प्रत्येक पावलावर माणूस लागला
+> असता, मग machine चा वेग माणसाच्या वेगावर अडकला असता: second ला
+> billion पावलांऐवजी second ला एक. आणि leverage शून्य झाला असता:
+> machine ही "एकदा बनवा, चालत राहील" वाली गोष्ट राहिली नसती. पूर्ण
+> Level 3 या एका गोष्टीवर उभा आहे की साखळी एकदा design करा, मग ती
+> माणसाशिवाय चालते. अनिलची नळ-योजना आठवा (Chapter 0.2): हे तेच
+> आहे, फक्त पाण्याऐवजी वीज वाहते.

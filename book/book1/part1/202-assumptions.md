@@ -1,73 +1,75 @@
-# Chapter 1.2 [SPINE]: Yeh maan kar chal raha hoon
+# Chapter 1.2 [SPINE]: मी हे गृहीत धरून चाललोय
 
-Har kitaab kuch cheezein maan kar chalti hai aur batati nahi. Phir reader
-kahin atakta hai aur use lagta hai woh kamzor hai. Galat. Kitaab ne farz
-kiya tha, yeh kitaab farz nahi karegi. Yeh raha poora list jo main maan
-raha hoon. Jo pata hai, use tick karo, jo nahi, uska ek line ka jawab
-yahin hai.
+प्रत्येक पुस्तक काही गोष्टी गृहीत धरतं आणि सांगत नाही. मग वाचणारा
+कुठेतरी अडतो आणि त्याला वाटतं आपणच कमी आहोत. चूक. पुस्तकाने गृहीत
+धरलं होतं. हे पुस्तक तसं करणार नाही. मी काय-काय गृहीत धरतोय त्याची
+ही पूर्ण यादी. जे माहीत आहे त्यावर खूण करा; जे नाही, त्याचं एका
+ओळीचं उत्तर इथेच आहे.
 
-**Bijli kya hai?** Dhaatu ke andar chhote kan (electrons) hote hain jo
-dhakka milne pe ek taraf sarakte hain. Us sarakne ka naam current hai.
-Paani ki pipe mein paani jaisa soch lo, kaam chalega. (Analogy hai,
-poori sachchai nahi, lekin is kitaab ke liye kaafi hai.)
+**वीज म्हणजे काय?** धातूच्या आत छोटे कण (electrons) असतात, जे धक्का
+मिळाल्यावर एका दिशेला सरकतात. त्या सरकण्याचं नाव current. पाण्याच्या
+pipe मधलं पाणी असा विचार करा, काम चालेल. (ही उपमा आहे, पूर्ण सत्य
+नाही; पण या पुस्तकासाठी पुरेशी आहे.)
 
-**Taar current kyun le jaati hai aur plastic kyun nahi?** Kuch cheezon
-mein kan aasani se sarakte hain (dhaatu: conductor), kuch mein bilkul
-nahi (plastic, rubber: insulator). Isliye taar dhaatu ki hai aur uska
-khol plastic ka: andar raasta, bahar deewar.
+**तार current का नेते आणि plastic का नाही?** काही वस्तूंमध्ये कण
+सहज सरकतात (धातू: **conductor**), काहींमध्ये अजिबात नाही (plastic,
+rubber: **insulator**). म्हणून तार धातूची आणि तिचं आवरण plastic चं:
+आत रस्ता, बाहेर भिंत. रस्ता आणि रस्त्याच्या कडेचा कठडा.
 
-**Battery kya karti hai?** Dhakka deti hai. Uske do sire hote hain, aur
-woh kanon ko ek sire se doosre tak dhakelti hai. Jab tak raasta juda
-hai, dhakka chalta hai.
+**Battery काय करते?** धक्का देते. तिची दोन टोकं असतात, आणि ती
+कणांना एका टोकाकडून दुसऱ्याकडे ढकलते. जोपर्यंत रस्ता जोडलेला आहे,
+धक्का चालू. हातपंपासारखी: दांडा मारत राहा, पाणी फिरत राहतं.
 
-**"Signal" kya hai?** Current ka hona ya na hona, bas. Jab hum aage
-kahein "phone ne signal bheja," matlab kisi taar ya hawa mein current/
-lehar ka pattern gaya: hai, nahi hai, hai, hai, nahi hai. Isse zyada
-kuch nahi.
+**"Signal" म्हणजे काय?** Current चं असणं किंवा नसणं, बस. पुढे
+जेव्हा म्हणू "phone ने signal पाठवला," तेव्हा अर्थ: कुठल्यातरी तारेत
+किंवा हवेत current/लहरीचा एक क्रम गेला: आहे, नाही, आहे, आहे, नाही.
+Post office ची जुनी tar (telegraph) हेच करायची: टक-टक चा क्रम,
+आणि पलीकडे अर्थ.
 
-**Chip kya hai?** Silicon ke chhote tukde pe chhape hue arabon
-transistor aur unke beech ki taarein, ek dibbi mein band. Computer ke
-andar ki hari patti (circuit board) pe yahi dibbiyan lagi hoti hain.
+**Chip म्हणजे काय?** Silicon च्या छोट्या तुकड्यावर छापलेले billions
+transistors आणि त्यांच्यामधल्या तारा, एका डबीत बंद. Computer च्या
+आतल्या हिरव्या पट्टीवर (circuit board) याच डब्या बसवलेल्या असतात.
 
-Bas. Is kitaab ko bijli ke baare mein isse zyada kuch nahi chahiye. Agar
-upar ki paanch baatein theek lagti hain, toh aapke paas poori kitaab ke
-liye kaafi physics hai.
+बस. या पुस्तकाला विजेबद्दल यापेक्षा जास्त काहीही लागत नाही. वरच्या
+पाच गोष्टी ठीक वाटत असतील, तर पूर्ण पुस्तकासाठी पुरेसं physics
+तुमच्याकडे आहे.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## इथे लोक काय चुकीचं समजतात
 
-Log sochte hain technology samajhne ke liye pehle physics ka pahad
-chadhna padega, phir maths ka. Nahi. Har level apne neeche wale level ka
-sirf ek chhota sa hissa use karta hai. Computer banane wale ko bhi
-electron ki poori physics nahi chahiye, use bas itna chahiye: switch
-kholta hai, band karta hai, bharosemand hai. Yeh baat aage har jagah
-lagegi: **har level, neeche wale ka sirf handle pakadta hai, poora
-engine nahi.** (Yeh abstraction hai, Chapter 0.4 wali.)
+लोकांना वाटतं technology समजण्यासाठी आधी physics चा डोंगर चढावा
+लागेल, मग maths चा. नाही. प्रत्येक मजला खालच्या मजल्याचा फक्त छोटा
+हिस्सा वापरतो. Bus driver ला engine ची पूर्ण रचना लागत नाही; त्याला
+एवढंच लागतं: accelerator, brake, आणि हे की गाडी भरवशाची आहे.
+Computer बनवणाऱ्यालाही electron ची पूर्ण physics लागत नाही; त्याला
+एवढंच लागतं: switch उघडतो, बंद होतो, भरवशाचा आहे. ही गोष्ट पुढे
+सगळीकडे लागेल: **प्रत्येक मजला खालच्याचं फक्त handle धरतो, पूर्ण
+engine नाही.** (हे abstraction आहे, Chapter 0.4 वालं.)
 
-## MAP PE
+## MAP वर
 
-Kaun kamata hai yahan? Jo log yeh neeche wala level poora jaante hain:
-electrical engineers, chip designers. Unki duniya is kitaab ke bahar
-hai, aur wahan bhi arabon ka bazaar hai (power grids, batteries, solar).
-Hum us darwaaze ke saamne se guzar rahe hain, ghus nahi rahe. Yaad bas
-itna rakho ki woh darwaza hai, aur uske andar bhi Level 3 hi hai: kisi
-business ki taakat badhaana.
+इथे कोण कमावतं: जे हा खालचा मजला पूर्ण जाणतात: electrical
+engineers, chip designers. त्यांची दुनिया या पुस्तकाच्या बाहेर आहे,
+आणि तिथेही billions चा बाजार आहे (power grids, batteries, solar).
+आपण त्या दरवाजासमोरून जातोय, आत घुसत नाही. लक्षात एवढंच ठेवा की तो
+दरवाजा आहे, आणि त्याच्या आतही Level 3 च आहे: कुठल्यातरी business
+ची ताकद वाढवणं.
 
-## KHUD DEKHO (5 minute)
+## स्वतः बघा (5 मिनिटं)
 
-Apna phone charger dekho. Us pe chhota sa likha hoga: "5V 2A" jaisa
-kuch. V dhakke ka naap hai (kitni zor se), A bahaav ka naap hai (kitne
-kan prati second). Ab charger ki taar dekho: andar dhaatu, bahar
-plastic. Conductor, insulator. Aapke haath mein poora Chapter 1.2 hai.
+तुमचा phone charger बघा. त्यावर बारीक लिहिलेलं असेल: "5V 2A" सारखं
+काही. V धक्क्याचं माप आहे (किती जोरात), A प्रवाहाचं माप (किती कण
+प्रति second). आता charger ची तार बघा: आत धातू, बाहेर plastic.
+Conductor, insulator. तुमच्या हातात पूर्ण Chapter 1.2 आहे.
 
-## SOCHNE KE LIYE
+## विचार करा
 
-1. (derivation) Paani wali analogy kahan toot sakti hai? Ek jagah socho
-jahan bijli paani jaisi NAHI hai.
+1. (derivation) पाण्याची उपमा कुठे तुटू शकते? एक जागा विचार करा
+जिथे वीज पाण्यासारखी **नाही**.
 
-> **Jawab:** Kai jagah. Sabse badi: paani pipe se girta hai toh farsh
-> geela hota hai, lekin current ko poora juda hua raasta chahiye, bina
-> wapas jaane ke raaste ke current behta hi nahi. Isliye chidiya ek
-> taar pe baith sakti hai (raasta poora nahi hua), lekin do taar chhoo
-> le toh raasta poora ho jaata hai. Analogy auzaar hai, sachchai nahi.
-> Yeh sabak aage AI tak jaayega: har model, har analogy kahin na kahin
-> tootti hai, aur expert wohi hai jo jaanta hai kahan.
+> **उत्तर:** बऱ्याच जागी. सगळ्यात मोठी: पाणी pipe मधून गळालं तर
+> फरशी ओली होते; पण current ला पूर्ण जोडलेला रस्ता लागतो, परत
+> जाण्याच्या रस्त्याशिवाय current वाहतच नाही. म्हणून चिमणी एका
+> तारेवर बसू शकते (रस्ता पूर्ण झाला नाही), पण दोन तारांना एकदम
+> शिवली तर रस्ता पूर्ण होतो. उपमा हत्यार आहे, सत्य नाही. हा धडा AI
+> पर्यंत जाईल: प्रत्येक model, प्रत्येक उपमा कुठेतरी तुटते, आणि
+> expert तोच जो जाणतो कुठे.

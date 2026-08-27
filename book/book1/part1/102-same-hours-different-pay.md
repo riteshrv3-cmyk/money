@@ -1,94 +1,89 @@
-# Chapter 0.2 [SPINE]: Same hours, different pay
+# Chapter 0.2 [SPINE]: तास सारखे, कमाई वेगळी
 
-Do aadmi, ek hi gaon, ek hi umar, dono mehnati.
+दोन माणसं, एकच गाव, एकच वय, दोघेही मेहनती.
 
-Ravi mistri hai. Roz 12 ghante kaam karta hai. Har ghar jo woh banata hai,
-uske haathon se banta hai. Jis din woh kaam nahi karta, us din kamaai zero.
-Bees saal baad bhi uska din 12 ghante ka hi hai.
+रवी मिस्त्री आहे. रोज 12 तास काम करतो. प्रत्येक घर त्याच्या हातांनी
+बनतं. ज्या दिवशी तो काम करत नाही, त्या दिवशी कमाई शून्य. वीस
+वर्षांनंतरही त्याचा दिवस 12 तासांचाच आहे.
 
-Anil ne gaon ke liye paani ki naali ka design banaya. Chhe mahine lage. Uske
-baad naali ban gayi aur chal padi. Ab paani har ghar pahunchta hai, roz,
-bina Anil ke haath lagaye. Gaon Anil ko har mahine hissa deta hai. Anil ab
-doosre gaon ke liye design bana raha hai.
+अनिलने गावासाठी पाण्याच्या नळाचं design बनवलं. सहा महिने लागले.
+त्यानंतर नळ-योजना बांधली गेली आणि चालू झाली. आता पाणी रोज प्रत्येक
+घरी पोहोचतं, अनिलने हात न लावता. गाव अनिलला दर महिन्याला हिस्सा देतं.
+अनिल आता दुसऱ्या गावासाठी design बनवतोय.
 
-Ravi zyada ghante lagata hai. Anil zyada kamata hai. Kyun?
+रवी जास्त तास लावतो. अनिल जास्त कमावतो. का?
 
-Pehla jawab jo dimaag deta hai: Anil padha likha hai. Lekin yeh jawab kuch
-nahi samjhaata. Aisa vaidya bhi padha likha hai jo Ravi jitna hi kamata hai.
-Asli jawab teen hisson mein hai. Teeno khud nikaalo:
+डोकं पहिलं उत्तर देतं: अनिल शिकलेला आहे. पण हे उत्तर काहीच सांगत
+नाही. वैद्यही शिकलेला आहे आणि रवीएवढंच कमावतो. खरं उत्तर तीन भागांत
+आहे. तिन्ही स्वतः काढा:
 
-**Problem kitni badi hai?** Ravi ek ghar ki problem solve karta hai, ek
-parivaar ke liye. Anil ne poore gaon ki paani ki problem solve ki, sau
-parivaaron ke liye. Jitne zyada log, jitni gehri zaroorat, utna bada paisa
-us problem ke peeche khada hai.
+**Problem किती मोठी आहे?** रवी एका घराची problem सोडवतो, एका
+कुटुंबासाठी. अनिलने पूर्ण गावाची पाण्याची problem सोडवली, शंभर
+कुटुंबांसाठी. जेवढे जास्त लोक, जेवढी खोल गरज, तेवढा मोठा पैसा त्या
+problem च्या मागे उभा असतो. याचं नाव **market size**.
 
-**Kitne log yeh kar sakte hain?** Deewar chunna gaon ke bees log jaante
-hain. Naali ka design ek hi jaanta tha. Jo cheez kam log kar sakte hain,
-uska daam upar jaata hai. Yeh mandi ka seedha niyam hai.
+**हे किती लोकांना जमतं?** भिंत बांधणं गावातले वीस जण जाणतात. नळाचं
+design एकच जाणत होता. जी गोष्ट कमी लोकांना जमते, तिचा भाव वर जातो.
+बाजाराचा सरळ नियम: टंचाई. याचं नाव **scarcity**. Auto-rickshaw
+सगळ्यांना चालवता येते, म्हणून भाडं ठरलेलं; crane फार कमी लोकांना,
+म्हणून crane वाल्याचा दर तोच सांगतो.
 
-**Kaam ek baar, faayda kitni baar?** Yeh sabse chhupa hua hissa hai. Ravi
-ki chinaai us din khatam ho jaati hai. Anil ka design ek baar bana aur ab
-har din kaam kar raha hai, bina Anil ke. Ravi apna waqt bech raha hai.
-Anil ne ek aisi cheez banayi jo uske sone ke baad bhi chalti hai.
+**काम एकदा, फायदा किती वेळा?** हा सगळ्यात लपलेला भाग आहे. रवीची
+बांधणी त्या दिवशी संपते. अनिलचं design एकदा बनलं आणि आता रोज काम
+करतंय, अनिलशिवाय. रवी आपला वेळ विकतोय. अनिलने अशी गोष्ट बनवली जी
+तो झोपल्यावरही चालते. याचं नाव **leverage**.
 
-Toh formula yeh nikla:
+मग सूत्र हे निघालं:
 
 ```
-KAMAAI  =  PROBLEM KA SIZE  x  KITNE KAM LOG KAR SAKTE HAIN  x  KAAM EK BAAR, FAAYDA BAAR BAAR
+कमाई  =  problem चा SIZE  x  SCARCITY  x  LEVERAGE
 ```
 
-Is formula mein dhyaan se dekho: GHANTE KAHIN NAHI HAIN. Isi liye 2 ghante
-wala arabpati ho sakta hai aur 12 ghante wala tang. Mehnat galat cheez pe
-lagi ho toh mehnat ka daam nahi milta.
+या सूत्रात नीट बघा: **तास कुठेच नाहीत.** म्हणूनच 2 तासवाला
+billionaire असू शकतो आणि 12 तासवाला तंगीत. मेहनत चुकीच्या गोष्टीवर
+लागली असेल तर मेहनतीचा भाव मिळत नाही.
 
-## NAAM
+खऱ्या जगात हे असं दिसतं: एक surgeon घ्या आणि एक app बनवणारा.
+Surgeon ची skill जास्त दुर्मिळ, शिक्षण जास्त लांब. तरी जगातले सगळ्यात
+श्रीमंत लोक software वाले आहेत, surgeons नाहीत. का? Surgeon चं
+प्रत्येक operation त्याच्या स्वतःच्या हातांनी होतं, दिवसाला दोन-तीन.
+Leverage चा काटा शून्यावर अडकलेला. App एकदा बनते आणि 10 million
+(1 कोटी) लोक एकाच वेळेस वापरतात. WhatsApp विकली गेली तेव्हा (19
+billion dollars) तिच्याकडे फक्त 55 कर्मचारी होते, आणि users 400
+million. हे leverage आहे.
 
-Teesre hisse ka naam **leverage** hai: ek baar kaam, baar baar faayda.
-Doosre hisse ka naam **scarcity** hai: kami. Jo cheez kam hai, mehngi hai.
-Pehla hissa **market size** kehlata hai. Yeh teen shabd is kitaab mein baar
-baar aayenge.
+## इथे लोक काय चुकीचं समजतात
 
-## ASLI DUNIYA SE EK EXAMPLE
+लोकांना वाटतं जास्त कमवायचा रस्ता जास्त मेहनत आहे. सूत्र म्हणतं:
+मेहनतीचा गुणाकार तेव्हाच चालतो जेव्हा बाकीचे तीन काटे वर असतात.
+Rickshaw चालवणारा दुप्पट तास चालवून दुप्पट थकतो, दुप्पट श्रीमंत होत
+नाही; पण दहा rickshaw भाड्याने देणारा झोपेतही कमावतो. दुसरी चूक:
+लोक scarcity ला degree समजतात. Scarcity म्हणजे certificate नाही;
+त्या वेळेस, त्या जागी, ते काम किती लोकांना जमतं, एवढंच.
 
-Ek surgeon lo aur ek app banane wala. Surgeon ki skill zyada rare hai,
-padhaai zyada lambi hai. Phir bhi duniya ke sabse ameer log app aur software
-wale hain, surgeon nahi. Kyun? Surgeon ka har operation uske apne haathon se
-hota hai, din mein do ya teen. Leverage ka dial zero pe atka hai. App ek
-baar banti hai aur ek crore log ek saath use karte hain. WhatsApp jab bika
-(19 arab dollar), tab uske paas sirf 55 log kaam karte the. 55 log, 40
-crore users. Yeh leverage hai.
+## MAP वर
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+या सूत्राचा तिसरा काटा, leverage, हेच खरं कारण आहे की Level 3
+(technology) एवढा पैसा बनवतो. Machine हीच ती गोष्ट आहे जी एकदा
+बनते आणि पुन्हा पुन्हा चालते, न थकता. म्हणूनच तुम्ही हे पुस्तक
+वाचताय: Level 3 आणि 4 वर leverage चा काटा सगळ्यात वर फिरतो.
 
-Log sochte hain zyada kamaane ka raasta zyada mehnat hai. Formula kehta hai
-mehnat ka guna tab hi chalta hai jab baaki teen dial upar hon. Sirf ghante
-badhaane se sirf thakaan badhti hai. Doosri galti: log scarcity ko degree
-samajhte hain. Scarcity ka matlab certificate nahi, yeh hai ki us waqt, us
-jagah, woh kaam kitne log kar sakte hain.
+## स्वतः बघा (5 मिनिटं)
 
-## MAP PE
+जगातल्या 10 सगळ्यात श्रीमंत लोकांची यादी उघडा (search: richest
+people). प्रत्येक नावापुढे विचारा: हा माणूस तास विकून इथे पोहोचला
+का? एकही मिळणार नाही. प्रत्येकाकडे अशी गोष्ट आहे जी त्याच्याशिवाय
+चालते: company, software, brand, factory.
 
-Is formula ka teesra dial, leverage, hi asli wajah hai ki Level 3
-(technology) itna paisa banata hai. Machine hi woh cheez hai jo ek baar
-banti hai aur baar baar chalti hai, bina thake. Isi liye aap yeh kitaab
-padh rahe ho: Level 3 aur 4 pe leverage ka dial sabse upar tak ghoomta hai.
+## विचार करा
 
-## KHUD DEKHO (5 minute)
+1. (derivation) एक शिक्षक 30 मुलांना शिकवतो आणि महिन्याला X कमावतो.
+त्याच ज्ञानातून तो करोडो कसा कमवू शकतो? सूत्राचे तिन्ही काटे फिरवून
+सांगा.
 
-Duniya ke 10 sabse ameer logon ki list kholo (search: richest people).
-Har naam ke aage socho: kya yeh aadmi ghante bech kar yahan pahuncha?
-Ek bhi nahi milega. Har ek ke paas koi aisi cheez hai jo uske bina chalti
-hai: company, software, brand, factory.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Ek teacher 30 bachchon ko padhaata hai aur mahine ka X
-kamata hai. Usi gyaan se woh crores kaise kama sakta hai, formula ke teeno
-dial ghuma kar batao.
-
-> **Jawab:** Size: 30 bachchon ki jagah poore desh ke bachche, online.
-> Scarcity: sab subjects nahi, woh ek cheez jo sirf woh sabse achha
-> samjhaata hai. Leverage: roz class lene ki jagah ek baar recorded course,
-> ya ek kitaab, jo ek baar banti hai aur lakhon baar bikti hai. Physics
-> wallah yahi kahani hai: ek teacher, YouTube pe recorded classes, aaj
-> arabon ki company. Gyaan wahi tha, dial ghoom gaye.
+> **उत्तर:** Size: 30 मुलांऐवजी देशभरची मुलं, online. Scarcity: सगळे
+> विषय नाहीत; ती एक गोष्ट जी फक्त तोच सगळ्यात चांगली समजावतो.
+> Leverage: रोज class घेण्याऐवजी एकदा recorded course किंवा एक
+> पुस्तक, जे एकदा बनतं आणि लाखो वेळा विकलं जातं. Physics Wallah हीच
+> गोष्ट आहे: एक शिक्षक, YouTube वर recorded classes, आज billion-
+> dollar company. ज्ञान तेच होतं; काटे फिरले.

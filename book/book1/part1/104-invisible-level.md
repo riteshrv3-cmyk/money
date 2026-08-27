@@ -1,91 +1,89 @@
-# Chapter 0.4 [SPINE]: Technology level dikhta kyun nahi
+# Chapter 0.4 [SPINE]: Technology चा मजला दिसत का नाही
 
-Aaj raat aap phone se khaana order karte ho. Aapko kya dikhta hai? Ek
-button: "Place Order." Bas.
+आज रात्री तुम्ही phone वरून जेवण order करता. तुम्हाला काय दिसतं? एक
+button: "Place Order." बस.
 
-Ab ginte hain ki us ek button ke peeche kya chal raha hai. Aapka phone ek
-message bana kar hawa mein bhejta hai. Woh message shehar paar ke kisi
-building mein rakhi machine tak jaata hai. Woh machine aapka naam, pata,
-order, paise ka hisaab jaanchti hai. Bank ki machine se baat karke 300
-rupaye idhar se udhar karti hai. Restaurant ki screen pe order chamkta
-hai. Ek aur machine sochti hai ki kaunsa delivery wala kahan hai aur kise
-bhejna sasta padega. Aapke naksha pe woh chalta hua dikhta hai.
+आता मोजू, त्या एका button च्या मागे काय चालतं. तुमचा phone एक message
+बनवून हवेत पाठवतो. तो message शहरापलीकडच्या कुठल्यातरी building मधल्या
+machine पर्यंत जातो. ती machine तुमचं नाव, पत्ता, order, पैशाचा हिशोब
+तपासते. Bank च्या machine शी बोलून 300 रुपये इकडून तिकडे करते.
+Restaurant च्या screen वर order चमकतो. अजून एक machine विचार करते की
+कुठला delivery वाला कुठे आहे आणि कोणाला पाठवणं स्वस्त पडेल. तुमच्या
+नकाशावर तो चालताना दिसतो.
 
-Yeh sab 5 second mein hua. Aur aapko inmein se KUCH BHI nahi dikha.
+हे सगळं 5 seconds मध्ये झालं. आणि तुम्हाला यातलं **काहीही** दिसलं
+नाही.
 
-Yeh koi galti nahi hai. Yeh design hai. Kyun? Do wajah, dono paise ki:
+ही चूक नाही. हे design आहे. का? दोन कारणं, दोन्ही पैशाची:
 
-**Pehli:** Aap bhookhe ho. Aap khaane ke paise de rahe ho, machine dekhne
-ke nahi. Har extra cheez jo aapko dikhegi, aapko rokegi, sochne pe majboor
-karegi, aur ruka hua aadmi order cancel karta hai. Business ke liye har
-dikhai deti hui machinery paisa girne ka khatra hai. Isliye jo technology
-jitni achhi hoti hai, utni gayab hoti hai.
+**पहिलं:** तुम्ही भुकेले आहात. तुम्ही जेवणाचे पैसे देताय, machine
+बघण्याचे नाही. ढाब्यावर जाता तेव्हा तुम्हाला गरम रोटी हवी असते;
+मालक तुम्हाला kitchen मध्ये नेऊन तंदूर, पीठाची गोणी आणि gas चं bill
+दाखवू लागला तर तुम्ही उठून दुसऱ्या ढाब्यावर जाल. जी गोष्ट ग्राहकाला
+दिसते आणि अडवते, ती पैसा घालवते. म्हणून जी technology जेवढी चांगली,
+तेवढी गायब.
 
-**Doosri:** Jo cheez gayab hai, use koi seekh nahi sakta. Jo seekh nahi
-sakta, woh bana nahi sakta. Toh dikhne wala hissa (button) sasta ho gaya,
-sab bana lete hain. Na dikhne wala hissa (peeche ka intezaam) mehnga raha,
-kyunki kam log jaante hain. Chapter 0.2 ka scarcity wala dial yaad hai?
-Technology ki scarcity uski invisibility se aati hai.
+**दुसरं:** जी गोष्ट गायब आहे, ती कोणी शिकू शकत नाही. जी शिकता येत
+नाही, ती बनवता येत नाही. मग दिसणारा भाग (button) स्वस्त झाला, सगळे
+बनवतात. न दिसणारा भाग (मागची व्यवस्था) महाग राहिला, कारण कमी लोक
+जाणतात. Chapter 0.2 चा scarcity चा काटा आठवा? Technology ची scarcity
+तिच्या न-दिसण्यातून येते.
 
-Ab is kitaab ka maqsad ek line mein: **jo hissa business ne jaan boojh ke
-chhupaya hai, hum use khol ke dekhenge.** Kyunki paisa wahi hissa banata hai.
+या लपवण्याच्या कामाचं नाव engineers ठेवतात **abstraction**: आतली
+गुंतागुंत झाकून वर एक सोपं handle देणं. Button abstraction आहे.
+गाडीचं steering wheel abstraction आहे: engine मध्ये हजार भाग फिरतात,
+तुमच्या हातात एक चाक. UPI चा QR code abstraction आहे: banks चं पूर्ण
+जाळं झाकलेलं. हा शब्द या पुस्तकात शंभर वेळा येईल, कारण पूर्ण
+technology म्हणजे abstraction वर abstraction ची शिडी.
 
-## NAAM
+खऱ्या जगातलं सगळ्यात मोठं उदाहरण: **Jio** ने 2016 मध्ये फुकट data
+दिला आणि देश बदलला. लोकांना काय दिसलं? एक स्वस्त SIM. काय दिसलं
+नाही? समुद्राखाली पडलेल्या fibre च्या तारा, प्रत्येक शहरात towers,
+त्यांच्यामधली व्यवस्था, या सगळ्यावर लावलेले 2.5 लाख कोटी रुपये (~30
+billion dollars). Level 3 इतका मोठा होता की देशाची सगळ्यात मोठी
+company बनला, आणि सामान्य माणसाने तो कधी बघितलाच नाही. तुमच्या
+शिकण्यासाठी हीच सगळ्यात मोठी बातमी आहे: **सगळ्यात मोठ्या पैशांची कामं
+डोळ्यांपासून लपलेली आहेत.**
 
-Chhupaane ke is kaam ka naam engineers rakhte hain **abstraction**: andar
-ki complexity dhak kar upar ek seedha sa handle dena. Button abstraction
-hai. Steering wheel abstraction hai (engine chhupa hai). UPI ka QR code
-abstraction hai (banks ka poora jaal chhupa hai). Yeh shabd is kitaab mein
-sau baar aayega, kyunki poori technology abstraction ke upar abstraction
-ki seedhi hai.
+## इथे लोक काय चुकीचं समजतात
 
-## ASLI DUNIYA SE EK EXAMPLE
+लोक "technology" ऐकताच gadget विचार करतात: phone, laptop, robot.
+Gadget म्हणजे technology चा फक्त तो कोपरा जो विकण्यासाठी दाखवला
+जातो. भाजी-मंडईचं वजन-काटा दिसतो; पण मंडई चालवणारी खरी व्यवस्था
+म्हणजे पहाटेचे trucks, लिलाव, उधारीचे हिशोब, ते कोणाला दिसत नाहीत.
+खरी technology व्यवस्था आहे: numbers ठेवण्याची, पाठवण्याची,
+तपासण्याची, ठरवण्याची. म्हणून "tech शिकणं म्हणजे coding शिकणं" ही
+पण अर्धीच गोष्ट आहे. Coding एक हत्यार आहे. समजणं हे आहे की पूर्ण
+व्यवस्था कशी उभी राहते.
 
-Jio ne 2016 mein muft data diya aur desh badal gaya. Logon ko kya dikha?
-Ek sasta SIM. Kya nahi dikha? Samundar ke neeche padi fibre ki taarein,
-har shehar mein towers, unke beech ka intezaam, is sab pe lagaya gaya 2.5
-lakh crore rupaya. Level 3 itna bada tha ki desh ki sabse badi company
-ban gaya, aur aam aadmi ne use kabhi dekha hi nahi. Yehi baat aapke
-seekhne ke liye sabse badi khabar hai: sabse bade paise wale kaam aankhon
-se ojhal hain.
+## MAP वर
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+रुपयाचा रस्ता बघा: तुमच्या 300 रुपयांतले restaurant ला ~200, Zomato
+ला ~100 मिळाले. त्या 100 मधून Zomato cloud, payment gateway, नकाशा-
+सेवा, SMS पाठवणाऱ्यांना देतं. हे सगळे Level 3 च्या आतले business
+आहेत ज्यांची नावं तुम्ही कधी ऐकली नाहीत: Razorpay, AWS, Twilio.
+न-दिसणाऱ्या मजल्याच्या आतही पूर्ण बाजार आहेत. जिथे डोळा जात नाही,
+तिथे स्पर्धाही कमी असते.
 
-Log "technology" sunte hi gadget sochte hain: phone, laptop, robot. Gadget
-technology ka sirf woh kona hai jo bikne ke liye dikhaya jaata hai. Asli
-technology intezaam hai: numbers rakhne ka, bhejne ka, jaanchne ka,
-decide karne ka. Isi galat-fehmi ki wajah se log sochte hain "tech seekhna
-matlab coding seekhna." Coding ek auzaar hai. Samajhna yeh hai ki poora
-intezaam kaise khada hota hai.
+## स्वतः बघा (5 मिनिटं)
 
-## MAP PE
+कुठलंही online payment करा (किंवा जुनं आठवा). कागदावर लिहा: या 5
+seconds मध्ये किती वेगळ्या companies नी काम केलं असेल? मोजा: तुमचा
+phone बनवणारी, network वाली, app वाली, तुमची bank, payment gateway,
+समोरच्याची bank, NPCI. एक tap, सातपेक्षा जास्त companies. प्रत्येकीला
+त्या tap मधून पैसा मिळतो.
 
-Rupaye ka rasta dekho: aapke 300 rupaye mein se restaurant ko ~200,
-Zomato ko ~100 mile. Us 100 mein se Zomato cloud, payment gateway, map
-service, SMS bhejne walon ko deta hai. Yeh sab Level 3 ke andar ke
-business hain jinka naam aapne kabhi nahi suna: Razorpay, AWS, Twilio.
-Na dikhne wale level ke andar bhi poore bazaar hain. Jahan aankh nahi
-jaati, wahan competition bhi kam hoti hai.
+## विचार करा
 
-## KHUD DEKHO (5 minute)
+1. (derivation) एखादा business आपली technology लपवण्याऐवजी पूर्ण
+दाखवू लागला तर (प्रत्येक order वर: "आता server X शी बोलणं चालू
+आहे...") त्याचं काय होईल? आणि या उत्तरातून काढा: engineer चा पगार
+जास्त का असतो?
 
-Koi bhi online payment karo (ya purani payment yaad karo). Ab kaagaz pe
-likho: is 5 second mein kitni alag companies ne kaam kiya hoga? Ginti
-karo: aapka phone banane wali, network wali, app wali, bank, payment
-gateway, receiver ka bank, NPCI. Ek tap, saat se zyada companies. Har ek
-ko us tap se paisa milta hai.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Agar koi business apni technology chhupaane ki jagah
-poori dikhaane lage (har order pe: "ab server X se baat ho rahi hai..."),
-toh uska kya hoga? Aur is jawab se yeh nikaalo ki engineer ki tankhwah
-zyada kyun hoti hai.
-
-> **Jawab:** Users bhaag jaayenge, kyunki unhe zaroorat poori karni thi,
-> machine nahi samajhni thi. Business dikhaane ke liye nahi, chhupaane ke
-> liye paise deta hai. Aur jo cheez sabse chhupi hui hai, use samajhne
-> wale sabse kam log hain. Kam log = scarcity = unchi tankhwah. Engineer
-> ko is baat ke paise milte hain ki woh us kamre mein kaam kar sakta hai
-> jisme baaki duniya ghus hi nahi sakti. Aap yeh kitaab padh ke usi kamre
-> ki chaabi bana rahe ho.
+> **उत्तर:** ग्राहक पळून जातील, कारण त्यांना गरज पूर्ण करायची होती,
+> machine समजायची नव्हती. Business दाखवण्यासाठी नाही, लपवण्यासाठी
+> पैसे देतो. आणि जी गोष्ट सगळ्यात लपलेली आहे, ती समजणारे सगळ्यात
+> कमी लोक आहेत. कमी लोक = scarcity = उंच पगार. Engineer ला या
+> गोष्टीचे पैसे मिळतात की तो त्या खोलीत काम करू शकतो जिथे बाकीचं जग
+> घुसूच शकत नाही. तुम्ही हे पुस्तक वाचून त्याच खोलीची किल्ली बनवत
+> आहात.

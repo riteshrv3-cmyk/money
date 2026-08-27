@@ -1,10 +1,10 @@
-# SECTION 0: PAISA, VALUE AUR SOCIETY
+# SECTION 0: पैसा, VALUE आणि SOCIETY
 
-Paanch chapters. Yeh section machine ke baare mein nahi hai. Yeh us cheez ke
-baare mein hai jiske liye aap machine seekh rahe ho: paisa.
+पाच chapters. हा section machine बद्दल नाही. ज्या गोष्टीसाठी तुम्ही
+machine शिकताय, त्या गोष्टीबद्दल आहे: पैसा.
 
-**Yeh aapke business decision mein kahan aayegi:** Jab bhi aap koi idea
-uthaoge, pehla sawal hoga "paisa kahan se aayega." Iska jawab hamesha Level 1
-se shuru hota hai: kiski zaroorat, kitni badi, kitne log. Yeh section woh
-sawal poochhna sikhata hai. Iske bina baaki chaar parts sirf gyaan hain,
-kamaai nahi.
+**हे तुमच्या business decision मध्ये कुठे येईल:** जेव्हा तुम्ही
+कुठलीही कल्पना उचलाल, पहिला प्रश्न असेल "पैसा कुठून येणार." याचं
+उत्तर नेहमी Level 1 पासून सुरू होतं: कोणाची गरज, किती मोठी, किती
+लोक. हा section तो प्रश्न विचारायला शिकवतो. याच्याशिवाय बाकीचे चार
+parts फक्त ज्ञान आहेत, कमाई नाही.

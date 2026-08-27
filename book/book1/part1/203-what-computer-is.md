@@ -1,95 +1,88 @@
-# Chapter 1.3 [SPINE]: Computer actually hai kya
+# Chapter 1.3 [SPINE]: Computer खरं आहे तरी काय
 
-Ab tak ke tukde jodo: switch haan/na rakhta hai, switch switch ko dabata
-hai, chain pehle se design hoti hai. Toh yeh poori cheez milkar karti
-kya hai?
+आतापर्यंतचे तुकडे जोडा: switch हो/नाही ठेवतो, switch switch ला
+दाबतो, साखळी आधीच design होते. मग ही पूर्ण गोष्ट मिळून करते काय?
 
-Ek kaam se shuru karo jo aap khud karte ho: 47 + 38 jodna. Aap kya karte
-ho? Aapke paas ek TAREEKA hai, bachpan mein rata hua: pehle ikai jodo,
-7 + 8 = 15, 5 likho, 1 haath mein. Phir dahai jodo, haath wala 1 bhi.
-Jawab 85. Dhyaan do: aapne SOCHA nahi, aapne ek rata hua tareeka CHALAYA.
-Koi bhi do numbers do, tareeka wahi rahega.
+एका कामापासून सुरुवात करा जे तुम्ही स्वतः करता: 47 + 38 जोडणं.
+तुम्ही काय करता? तुमच्याकडे एक **पद्धत** आहे, लहानपणी पाठ केलेली:
+आधी एकं जोडा, 7 + 8 = 15, 5 लिहा, 1 हातचा. मग दहं जोडा, हातचा 1
+पण. उत्तर 85. लक्ष द्या: तुम्ही **विचार** केला नाही, तुम्ही एक पाठ
+केलेली पद्धत **चालवली**. कुठलेही दोन आकडे द्या, पद्धत तीच राहील.
 
-Ab poochho: kya switchon ki chain se aisa tareeka chal sakta hai? Haan.
-Numbers haan/na mein rakhe ja sakte hain (agla chapter). Jodne ka tareeka
-switchon ki chain mein pehle se design kiya ja sakta hai (Chapter 1.5).
-Toh ek dibba ban sakta hai: is taraf se do numbers ghusao, us taraf se
-jod nikle. Bina kisi insaan ke.
+आता विचारा: switches च्या साखळीतून अशी पद्धत चालू शकेल का? हो.
+आकडे हो/नाही मध्ये ठेवता येतात (पुढचा chapter). जोडण्याची पद्धत
+switches च्या साखळीत आधीच design करता येते (Chapter 1.5). मग एक
+डबा बनू शकतो: या बाजूने दोन आकडे घाला, त्या बाजूने बेरीज निघेल.
+कुठल्याही माणसाशिवाय.
 
-Aur ab asli chhalaang. Agar jodne ka dibba ban sakta hai, toh:
-compare karne ka dibba (kaunsa bada?), copy karne ka dibba, "agar yeh
-toh woh" ka dibba. Aur in dibbon ko line mein laga do, ek ke baad ek,
-toh lambi recipe chal sakti hai: "pehle jodo, phir compare karo, agar
-bada hai toh yeh copy karo..."
+आणि आता खरी उडी. जोडण्याचा डबा बनू शकतो, तर: तुलना करण्याचा डबा
+(कुठला मोठा?), copy करण्याचा डबा, "जर हे तर ते" चा डबा. आणि हे
+डबे रांगेत लावले, एकामागून एक, तर लांबलचक recipe चालू शकते: "आधी
+जोडा, मग तुलना करा, मोठं असेल तर हे copy करा..."
 
-**Toh computer yeh hai: ek machine jo numbers pe, pehle se likhi recipe,
-bina thake, arab kadam prati second ki raftaar se chalati hai.**
+**मग computer हे आहे: एक machine जी आकड्यांवर, आधीच लिहिलेली
+recipe, न थकता, billion पावलं प्रति second च्या वेगाने चालवते.**
 
-Teen shabd is definition mein dhyaan se dekho:
+या व्याख्येतले तीन शब्द नीट बघा. **आकड्यांवर:** computer ला फक्त
+numbers कळतात; photo, गाणं, message, सगळं आधी number बनेल (Section
+2 चं काम). **आधीच लिहिलेली:** computer च्या प्रत्येक पावलामागे
+कुठल्यातरी माणसाचा आधीच घेतलेला निर्णय आहे; machine निर्णय घेत
+नाही, निर्णय **चालवते**. **न थकता:** हीच तिची पूर्ण किंमत; recipe
+एकदा लिहा, machine billion वेळा चालवेल. Leverage, शुद्ध रूपात.
 
-**Numbers pe.** Computer sirf numbers jaanta hai. Photo, gaana, message,
-sab pehle number banenge (Section 2 ka kaam).
+या recipe चं नाव **program**. Recipe लिहिण्याचं नाव **programming**.
+सगळ्या recipes मिळून **software**, आणि हाताला लागणारी machine
+**hardware**. जोडणारा-तुलना करणारा मुख्य डबा **processor** किंवा
+**CPU**.
 
-**Pehle se likhi.** Computer ke har kadam ke peeche kisi insaan ka pehle
-se liya gaya faisla hai. Machine faisla nahi karti, faisla CHALATI hai.
+ढाब्याच्या भाषेत: मालकीण एकदा recipe लिहून देते; नवा cook रोज तीच
+चालवतो, विचार न करता, आणि चव तीच येते. Recipe लिहिणं वेगळं काम,
+चालवणं वेगळं. आणि खऱ्या जगात हे असं दिसलं: bank चा clerk 1960
+मध्ये interest मोजायचा: प्रत्येक खात्यावर तीच पावलं, दिवसभर,
+चुकांसह. आज तीच recipe software मध्ये लिहिलेली आहे आणि रात्री 2
+वाजता कोट्यवधी खात्यांवर एकदम चालते, शून्य थकवा. Clerk ची
+**पद्धतच** machine मध्ये गेली. माणसाचं काम recipe लिहिणं उरलं,
+चालवणं machine घेऊन गेली. जिथे जिथे जगात एखादी "पाठ केलेली पद्धत"
+पुन्हा पुन्हा चालते, तिथे तिथे computer घुसेल. ही ओळ business
+शोधण्याचं हत्यार आहे, जपून ठेवा.
 
-**Bina thake.** Yehi iski poori keemat hai. Recipe ek baar likho, machine
-arab baar chalayegi. Leverage, shuddh roop mein.
+## इथे लोक काय चुकीचं समजतात
 
-## NAAM
+"Computer विचार करतो." नाही. तो recipe चालवतो. Computer "चूक"
+करतो तेव्हा ती recipe ची चूक असते, कुठल्यातरी माणसाने लिहिलेली.
+Computer "ठरवतो" तेव्हा तो माणसाचा आधीच लिहिलेला निर्णय असतो. ही
+गोष्ट AI पर्यंतही जाईल; तिथे recipe विचित्र पद्धतीने लिहिली जाते,
+पण machine तीच आहे. ज्याला हे समजलं, तो machine ला कधी घाबरणार
+नाही आणि तिच्यावर कधी आंधळा विश्वासही ठेवणार नाही.
 
-Recipe ka naam **program** hai. Recipe likhne ka naam **programming**.
-Saari recipes milke **software** kehlati hain, aur chhoone laayak machine
-**hardware**. Jodne-compare karne wala mukhya dibba **processor** ya
-**CPU** kehlata hai.
+## MAP वर
 
-## ASLI DUNIYA SE EK EXAMPLE
+या chapter ने Level 3 ला दोन भागांत कापलं: hardware आणि software.
+दोघांचे बाजार वेगळे. Hardware मध्ये पैसा factory आणि scarcity तून
+येतो (TSMC, Samsung, Nvidia). Software मध्ये पैसा या गोष्टीतून
+येतो की लिहिण्याचा खर्च **एकदाच** लागतो: recipe एकदा लिहिली, आता
+प्रत्येक copy फुकट. म्हणून जगातल्या सगळ्यात जाड नफ्याच्या companies
+software वाल्या आहेत: Microsoft चा माल बनवण्याचा खर्च जवळजवळ शून्य
+आहे. तुम्ही जे शिकताय, ते याच बाजूचं दार आहे.
 
-Bank ka clerk 1960 mein interest ginta tha: har khaate pe wahi kadam,
-din bhar, galtiyon ke saath. Aaj wahi recipe software mein likhi hai aur
-raat ko 2 baje har khaate pe ek saath chalti hai, karodon baar, zero
-thakaan. Clerk ka TAREEKA hi machine mein gaya. Insaan ka kaam recipe
-likhna reh gaya, chalana machine le gayi. Jahan jahan duniya mein koi
-"rata hua tareeka" baar baar chal raha hai, wahan wahan computer ghusega.
-Yeh line business dhoondhne ka auzaar hai, sambhaal ke rakho.
+## स्वतः बघा (5 मिनिटं)
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+Phone चा calculator उघडा. 47 + 38 करा. आता स्वतःला विचारा: या
+काचेखाली काय झालं? तुमचे taps numbers बनले, numbers CPU च्या
+जोडणाऱ्या डब्यात गेले, उत्तराचे numbers screen चे ठिपके बनले. पूर्ण
+Chapter 1.3 एका second मध्ये चाललं. आणि ही calculator-recipe कोणी
+तरी **एकदा** लिहिली होती; आता billions phones वर फुकट चालते.
 
-"Computer sochta hai." Nahi. Woh recipe chalata hai. Jab computer
-"galti" karta hai, woh recipe ki galti hai, kisi insaan ki likhi hui.
-Jab computer "decide" karta hai, woh insaan ka pehle se likha faisla
-hai. Yeh baat AI tak bhi jaayegi, wahan recipe ajeeb tarike se likhi
-jaati hai, lekin machine wahi hai. Jo aadmi yeh samajh gaya, woh machine
-se kabhi nahi darega aur us pe kabhi andha bharosa bhi nahi karega.
+## विचार करा
 
-## MAP PE
+1. (derivation) "Machine निर्णय घेत नाही, निर्णय चालवते." मग bank
+चं software तुमचं loan नाकारतं तेव्हा खरा निर्णय कोणी घेतला? आणि
+या उत्तरातून business ची एक जबाबदारी काढा.
 
-Is chapter ne Level 3 ko do hisson mein kaat diya: hardware aur
-software. Dono ke bazaar alag hain. Hardware mein paisa factory aur
-scarcity se aata hai (TSMC, Samsung, Nvidia). Software mein paisa
-LIKHNE ki laagat ek baar lagne se aata hai: recipe ek baar likhi, ab
-har copy muft. Isliye duniya ki sabse moti kamaai wali companies
-software wali hain: Microsoft ka maal banane ka kharcha lagbhag zero
-hai. Aap jo seekh rahe ho, woh isi taraf ka darwaza hai.
-
-## KHUD DEKHO (5 minute)
-
-Phone ka calculator kholo. 47 + 38 karo. Ab khud se poochho: iss glass
-ke neeche kya hua? Aapke tap numbers bane, numbers CPU ke jodne wale
-dibbe mein gaye, jawab ke numbers screen ke pixels bane. Poora Chapter
-1.3 ek second mein chala. Aur yeh calculator recipe kisi ne EK BAAR
-likhi thi, ab arabon phones pe muft chal rahi hai.
-
-## SOCHNE KE LIYE
-
-1. (derivation) "Machine faisla nahi karti, faisla chalati hai." Toh
-jab bank ka software aapka loan reject karta hai, asli faisla kisne
-kiya? Aur is jawab se business ki ek zimmedari nikaalo.
-
-> **Jawab:** Faisla us insaan ne kiya jisne recipe likhi ya likhwayi:
-> "agar income itni se kam, toh na." Machine ne sirf use bina thake
-> chalaya. Zimmedari: jab business apna faisla recipe mein daal deta
-> hai, toh galti bhi leverage pa jaati hai, ek galat niyam lakhon logon
-> pe ek saath chalta hai. Isliye recipe likhne wale ki keemat bhi
-> zyada hai aur zimmedari bhi. AI ke zamaane mein yeh sawal aur bada
-> hoga, Book 2 mein milega.
+> **उत्तर:** निर्णय त्या माणसाने घेतला ज्याने recipe लिहिली किंवा
+> लिहून घेतली: "जर income इतक्यापेक्षा कमी, तर नाही." Machine ने
+> फक्त तो न थकता चालवला. जबाबदारी: business जेव्हा आपला निर्णय
+> recipe मध्ये घालतो, तेव्हा चुकीलाही leverage मिळतो; एक चुकीचा
+> नियम लाखो लोकांवर एकदम चालतो. म्हणून recipe लिहिणाऱ्याची किंमतही
+> जास्त आहे आणि जबाबदारीही. AI च्या जमान्यात हा प्रश्न अजून मोठा
+> होईल; Book 2 मध्ये भेटेल.

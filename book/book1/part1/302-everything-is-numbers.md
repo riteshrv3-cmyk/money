@@ -1,93 +1,82 @@
-# Chapter 2.2 [SPINE]: Text, photo, awaaz, video: sab numbers hain
+# Chapter 2.2 [SPINE]: Text, photo, आवाज, video: सगळे numbers
 
-Machine sirf numbers jaanti hai. Toh aapki shaadi ki photo, maa ki
-awaaz wali recording, yeh kitaab ka text, yeh sab machine mein kaise
-ghusa? Har ek ka jawab ek hi chaal se niklega. Chaal yeh hai:
+Machine ला फक्त numbers कळतात. मग तुमचा लग्नाचा photo, आईच्या
+आवाजाची recording, या पुस्तकाचा text, हे सगळं machine मध्ये कसं
+घुसलं? प्रत्येकाचं उत्तर एकाच चालीने निघेल. चाल ही आहे:
 
-**Cheez ko chhote chhote tukdon mein kaato, har tukde ko ek number do,
-aur numbers ka matlab pehle se sab mil kar tay kar lo.**
+**गोष्टीचे छोटे-छोटे तुकडे करा, प्रत्येक तुकड्याला एक number द्या,
+आणि numbers चा अर्थ आधीच सगळ्यांनी मिळून ठरवा.**
 
-Ab chaaron pe lagao:
+Pincode ची व्यवस्था आठवा: 400001 म्हणजे Mumbai GPO, हे कुठल्या
+कागदात लपलेलं सत्य नाही; post खात्याने **ठरवलं** आणि सगळ्यांनी
+मानलं. आता हीच चाल चारही गोष्टींवर लावा:
 
-**Text.** Tukda = akshar. Sab ne mil kar tay kiya: A = 65, B = 66,
-space = 32. Toh "HI" machine mein 72, 73 hai. Bas. Aapke naam ka
-spelling numbers ki qataar hai. (Hindi ke aksharon ke bhi numbers tay
-hain, अ = 2309.)
+**Text.** तुकडा = अक्षर. सगळ्यांनी मिळून ठरवलं: A = 65, B = 66,
+space = 32. मग "HI" machine मध्ये 72, 73 आहे. बस. तुमच्या नावाचं
+spelling numbers ची रांग आहे. या ठरवलेल्या table चं नाव
+**encoding**; जुनं table **ASCII** (1963), आजचं पूर्ण table
+**Unicode**, ज्यात जगातली प्रत्येक भाषा आहे: अ = 2309, आणि emoji
+सुद्धा (हसणारा चेहरा = 128514). तुम्ही वाचताय ती मराठी अक्षरंही
+याच क्षणी numbers म्हणूनच साठवलेली आहेत.
 
-**Photo.** Tukda = bindu (pixel). Photo ko jaali mein kaato, har
-khaane ka ek rang. Aur rang? Har rang laal, hara, neela ke mel se
-banta hai, toh teen numbers (0-255) har bindu ke liye: (255, 0, 0) =
-poora laal. 40 lakh bindu x 3 numbers = aapki photo.
+**Photo.** तुकडा = ठिपका (**pixel**). Photo ला जाळीत कापा, प्रत्येक
+चौकोनाचा एक रंग. आणि रंग? प्रत्येक रंग लाल, हिरवा, निळा यांच्या
+मिश्रणाने बनतो, म्हणून तीन numbers (0-255) प्रत्येक ठिपक्यासाठी:
+(255, 0, 0) = पूर्ण लाल. 4 million ठिपके x 3 numbers = तुमचा photo.
+रांगोळीसारखं: दुरून चित्र, जवळून फक्त ठिपके.
 
-**Awaaz.** Awaaz hawa ka kampan hai. Tukda = waqt ka pal. Har second
-ko ~44,000 palon mein kaato, har pal pe kampan ki oonchai naapo, woh
-number likh lo. Numbers ki qataar wapas bajao, awaaz wapas. Maa ki
-awaaz 44,000 numbers prati second hai.
+**आवाज.** आवाज म्हणजे हवेचं कंपन. तुकडा = वेळेचा क्षण. प्रत्येक
+second चे ~44,000 क्षण करा, प्रत्येक क्षणी कंपनाची उंची मोजा, तो
+number लिहा (एका मापाचं नाव **sample**). Numbers ची रांग परत
+वाजवा, आवाज परत. आईचा आवाज म्हणजे 44,000 numbers प्रति second.
 
-**Video.** Tukda = frame. Har second 30 photos, plus awaaz. Isliye
-video sabse bhaari hai: photo ka kharcha x 30 x seconds.
+**Video.** तुकडा = **frame**. प्रत्येक second ला 30 photos, अधिक
+आवाज. म्हणून video सगळ्यात जड: photo चा खर्च x 30 x seconds.
 
-Teeno kadmon mein sabse zaroori kaunsa hai? Kaatna? Naapna? Nahi:
-**"matlab pehle se sab mil kar tay kar lo."** 72 ka matlab H tabhi
-hai jab bhejne wala aur paane wala dono ek hi table maante hon. Agar
-mera 72 H hai aur tumhara kuch aur, toh message kachra ban jaayega.
-Yeh baat, ki **numbers ka matlab samjhauta hai, numbers mein nahi
-hota**, aage internet (Part 3) aur AI (Book 2) dono ki neev hai.
+तीन पावलांमध्ये सगळ्यात महत्त्वाचं कुठलं? कापणं? मोजणं? नाही:
+**"अर्थ आधीच सगळ्यांनी मिळून ठरवा."** 72 चा अर्थ H तेव्हाच आहे
+जेव्हा पाठवणारा आणि घेणारा दोघे एकच table मानतात. जुन्या websites
+वर मराठी लिहिल्यावर ??? किंवा चौकोन दिसायचे, ते हेच: numbers
+पोहोचले, पण त्या बाजूचं software Unicode चा मराठी भाग जाणत नव्हतं.
+Numbers बरोबर, अर्थ हरवला. ही गोष्ट, की **numbers चा अर्थ करार
+असतो, numbers मध्ये नसतो**, पुढे internet (Part 3) आणि AI (Book 2)
+दोन्हींचा पाया आहे.
 
-## NAAM
+## इथे लोक काय चुकीचं समजतात
 
-Matlab tay karne wale table ka naam **encoding** hai. Text ka sabse
-purana table **ASCII** (1963), aaj ka poora table **Unicode**, jisme
-duniya ki har bhasha aur emoji tak hai (emoji bhi bas ek number hai:
-"laughing face" = 128514). Photo ke bindu ka naam **pixel**, awaaz ke
-pal ka naam **sample**, video ki photo ka naam **frame**.
+लोकांना वाटतं machine photo "बघते" किंवा गाणं "ऐकते". नाही. Machine
+साठी photo म्हणजे 12 million numbers आणि गाणं म्हणजे 15 million.
+तिला ना रंग माहीत ना राग. आणि तरीही (हे पुढे Book 2 चं बीज आहे)
+numbers च्या pattern वरून machine सांगते की photo त मांजर आहे.
+बघणं नाही, मोजणीतून ओळख. जेव्हा ती गोष्ट येईल, तेव्हा हा chapter
+आठवा: सगळं numbers च होतं, नेहमी.
 
-## ASLI DUNIYA SE EK EXAMPLE
+## MAP वर
 
-Jab aap Hindi mein type karte ho aur kisi purani website pe ??? ya
-dibbe dikhte hain, toh kya hua? Aapke numbers pahunch gaye, lekin us
-taraf ka software Unicode ka Hindi wala hissa nahi jaanta tha. Numbers
-sahi, matlab kho gaya. Poori duniya ka software dheere dheere Unicode
-pe isliye aaya kyunki bina ek jaisi table ke, bhaashaon ka internet
-ban hi nahi sakta tha. Ek boring sa samjhauta, arabon logon ko jodne
-ki shart nikla.
+Company case: **JioCinema/Hotstar** cricket दाखवतात तेव्हा 40
+million लोक एकाच वेळेस frames चे numbers मागत असतात. त्यांचा पूर्ण
+engineering खर्च याच chapter च्या प्रमाणातून येतो: video = सगळ्यात
+जड numbers. आणि त्यांचं business model पण तेच ठरवतं: ads आणि
+subscription गरजेचे, कारण प्रत्येक प्रेक्षकाचा data खर्च खरा आहे.
+Level 1 गरज: करमणूक. तिचे numbers: सगळ्यात महाग.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## स्वतः बघा (5 मिनिटं)
 
-Log sochte hain machine photo "dekhti" hai ya gaana "sunti" hai. Nahi.
-Machine ke liye photo 1.2 crore numbers hain aur gaana 1.5 crore.
-Usko na rang pata hai na raag. Aur phir bhi (yeh aage Book 2 ka beej
-hai) numbers ke pattern se machine bata deti hai ki photo mein billi
-hai. Dekhna nahi, ginti se pehchaan. Jab woh baat aaye, yeh chapter
-yaad rakhna: sab kuch numbers hi tha, hamesha.
+कोणाला तरी हा message पाठवा: "72 69 76 76 79". आणि सांगा: प्रत्येक
+number मधून 64 वजा करा आणि A=1, B=2 च्या मोजणीने अक्षर बनवा. उत्तर
+येईल HELLO. तुम्ही आत्ता स्वतःचं encoding table बनवलं आणि एका
+माणसाकडून decode करून घेतलं. Machine बस हेच करते, billion पट वेगाने.
 
-## MAP PE
+## विचार करा
 
-Company case: JioCinema/Hotstar jab cricket dikhata hai, toh 4 crore
-log ek saath frames ke numbers maang rahe hote hain. Unka poora
-engineering kharcha isi chapter ke anupaat se aata hai: video = sabse
-bhaari numbers. Aur unka business model bhi wahi tay karta hai: ads
-aur subscription zaroori hain, kyunki har viewer ka data kharcha asli
-hai. Level 1 zaroorat: manoranjan. Uske numbers: sabse mehnge.
+1. (derivation) WhatsApp voice message पाठवताना "पाठवण्याआधी दाबा"
+(compress) कसं शक्य आहे? आवाज तर मोजलेलाच होता, 44,000 numbers
+प्रति second. कुठले numbers फेकता येतात?
 
-## KHUD DEKHO (5 minute)
-
-Kisi ko yeh message bhejo: "72 69 76 76 79". Aur bolo har number 64
-ghata ke A=1, B=2 wali ginti pe akshar banao. Jawab aayega HELLO. Aapne
-abhi apna encoding table banaya aur ek insaan ko decode karwaya. Machine
-bas yahi karti hai, arab guna tez.
-
-## SOCHNE KE LIYE
-
-1. (derivation) WhatsApp voice message bhejte waqt "bhejne se pehle
-daba do" (compress) kaise possible hai? Awaaz toh naapi hui thi,
-44,000 number prati second. Kaunse numbers phenke ja sakte hain?
-
-> **Jawab:** Woh jo insaan ke kaan waise bhi nahi pakadte. Bahut
-> ooncha kampan, bahut halki awaaz jo tez awaaz ke peeche dab gayi,
-> do palon ke beech ka farak jo andaaze se wapas ban sakta hai. Recipe
-> unhe phenk deti hai, size das guna girta hai, kaan ko farq nahi
-> padta. Sabak: compression ka matlab hai "matlab bachao, numbers
-> phenko." Aur dhyaan do, yeh ek FAISLA hai ki kya phenkna hai, aur
-> har faisla kisi insaan ki recipe mein likha hai. Machine mein har
-> jagah aise chhupe hue faisle milenge.
+> **उत्तर:** ते, जे माणसाचे कान तसेही पकडत नाहीत. खूप उंच कंपन,
+> मोठ्या आवाजामागे दबलेला हलका आवाज, दोन क्षणांमधला फरक जो अंदाजाने
+> परत बनवता येतो. Recipe ते फेकून देते, size दहापट घटतो, कानाला
+> फरक पडत नाही. धडा: compression म्हणजे "अर्थ वाचवा, numbers फेका."
+> आणि लक्ष द्या: काय फेकायचं हा एक **निर्णय** आहे, आणि प्रत्येक
+> निर्णय कोणा माणसाच्या recipe त लिहिलेला आहे. Machine मध्ये सगळीकडे
+> असे लपलेले निर्णय भेटतील.

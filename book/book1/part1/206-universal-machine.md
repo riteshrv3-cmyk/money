@@ -1,103 +1,96 @@
-# Chapter 1.6 [SPINE]: Ek machine sab kuch kyun kar sakti hai
+# Chapter 1.6 [SPINE]: एकच machine सगळं का करू शकते
 
-Ek ajeeb baat pe kabhi dhyaan diya? Mixer sirf peesta hai. Fridge sirf
-thanda karta hai. Car sirf chalti hai. Har machine EK kaam karti hai.
+एका विचित्र गोष्टीकडे कधी लक्ष दिलंय? Mixer फक्त वाटतो. Fridge फक्त
+थंड करतो. गाडी फक्त चालते. प्रत्येक machine **एक** काम करते.
 
-Lekin aapka phone? Subah alarm, phir camera, phir bank, phir game, phir
-video call. Ek hi machine, hazaar kaam. Duniya ki baaki har machine se
-alag. Aisa kya hai isme?
+पण तुमचा phone? सकाळी alarm, मग camera, मग bank, मग game, मग video
+call. एकच machine, हजार कामं. जगातल्या बाकी प्रत्येक machine पेक्षा
+वेगळी. असं काय आहे हिच्यात?
 
-Chapter 1.3 se recipe wali baat uthao. Machine recipe chalati hai. Ab
-ek sawal jo poori history ka sabse sundar sawal hai:
+Chapter 1.3 मधून recipe ची गोष्ट उचला. Machine recipe चालवते. आता
+एक प्रश्न, जो पूर्ण इतिहासातला सगळ्यात सुंदर प्रश्न आहे:
 
-**Recipe khud kya hai?**
+**Recipe स्वतः काय आहे?**
 
-Recipe kadmon ki list hai: "jodo," "compare karo," "agar aisa toh wahan
-jao." Ab in kadmon ko number de do: jodo = 1, compare = 2, copy = 3...
-Toh poori recipe ban gayi numbers ki qataar: 1, 3, 2, 7...
+Recipe म्हणजे पावलांची यादी: "जोडा," "तुलना करा," "जर असं तर तिकडे
+जा." आता या पावलांना नंबर द्या: जोडा = 1, तुलना = 2, copy = 3...
+मग पूर्ण recipe बनली numbers ची रांग: 1, 3, 2, 7...
 
-Ruko. Numbers ki qataar? Woh toh machine switchon mein rakh sakti hai
-(Chapter 1.4). Matlab:
+थांबा. Numbers ची रांग? ती तर machine switches मध्ये ठेवू शकते
+(Chapter 1.4). म्हणजे:
 
-**Recipe usi jagah rakhi ja sakti hai jahan data rakha jaata hai. Aur
-machine ko aisa banao ki woh apni memory se agla number padhe, aur us
-number wala kaam kare. Bas.**
+**Recipe त्याच जागी ठेवता येते जिथे data ठेवला जातो. आणि machine
+अशी बनवा की ती आपल्या memory मधून पुढचा number वाचेल, आणि त्या
+number चं काम करेल. बस.**
 
-Iska matlab pheliye, kyunki yeh Level 3 ka janam hai:
+याचा अर्थ उलगडा, कारण हा Level 3 चा जन्म आहे:
 
-Naya kaam chahiye? Nayi machine MAT banao. Bas memory mein nayi recipe
-daalo. Machine wahi, kaam naya. Camera app dala toh phone camera ban
-gaya, bank app dala toh bank ban gaya. Machine badli nahi, sirf numbers
-badle.
+नवं काम हवं? नवी machine बनवू **नका**. फक्त memory मध्ये नवी recipe
+घाला. Machine तीच, काम नवं. Camera app घातलं तर phone camera झाला,
+bank app घातलं तर bank झाला. Machine बदलली नाही, फक्त numbers बदलले.
 
-Aur ab paisa dekho. Machine banana: factory, saamaan, mazdoor, har
-copy ka kharcha. Recipe banana: ek baar dimaag lagao, phir har copy
-LAGBHAG MUFT, kyunki copy sirf numbers ki nakal hai. Chapter 0.2 ka
-leverage dial yaad karo. Software woh pehli cheez hai jahan leverage
-ka dial theoretical had tak ghoomta hai: ek baar likho, arab baar
-chalao, copy ka daam zero.
+ढाब्याची उपमा परत: mixer म्हणजे एकाच पदार्थाचा cook. पण एक cook
+जो **कुठलीही** लिहिलेली recipe वाचून बनवू शकतो, तो एकटा पूर्ण
+hotel आहे. आज पंजाबी, उद्या चायनीज; cook तोच, कागद बदलला. तुमचा
+phone हा तो cook आहे. या design चं नाव **stored-program computer**
+(recipe data च्या जागी ठेवणं), आणि "एक machine जी कुठलीही recipe
+चालवू शकते" या कल्पनेचं नाव **universal machine**. Alan Turing ने
+1936 मध्ये, machine बनण्याआधी, कागदावर हे सिद्ध केलं होतं.
 
-Isi ek idea ne duniya ki ameeri ka naksha badla. Microsoft, Google,
-Infosys, sab is ek baat pe khade hain: recipe number hai, number ki
-copy muft hai.
+आणि आता पैसा बघा. Machine बनवणं: factory, सामान, मजूर, प्रत्येक
+copy चा खर्च. Recipe बनवणं: एकदा डोकं लावा, मग प्रत्येक copy
+**जवळजवळ फुकट**, कारण copy म्हणजे फक्त numbers ची नक्कल. Chapter
+0.2 चा leverage चा काटा आठवा. Software ही पहिली गोष्ट आहे जिथे
+leverage चा काटा टोकापर्यंत फिरतो: एकदा लिहा, billion वेळा चालवा,
+copy चा भाव शून्य.
 
-## NAAM
+याच एका कल्पनेने जगाच्या श्रीमंतीचा नकाशा बदलला. **Nokia** जगातली
+सगळ्यात मोठी phone company होती. तिचे phones **एका** कामासाठी बनले
+होते: call आणि SMS. iPhone आला आणि त्याने phone ला universal
+machine बनवलं: app store म्हणजे "कुठलीही recipe घाला." Nokia
+hardware चांगलं करत राहिली; Apple ने recipes चा बाजार नेला. दहा
+वर्षांत Nokia संपली. Machine विरुद्ध universal machine च्या लढाईत
+universal नेहमी जिंकते, कारण तिच्याकडे जगभरच्या recipe लिहिणाऱ्यांची
+फौज असते.
 
-Is design ka naam **stored-program computer** hai, aur idea jis se juda
-hai woh naam hai **von Neumann architecture** (1945). "Ek machine jo
-koi bhi recipe chala sakti hai" ke idea ko **universal machine** kehte
-hain, yeh Alan Turing ne 1936 mein, machine banne se pehle, kaagaz pe
-saabit kiya tha. Aapke phone ka formal naam yahi hai: universal machine.
+## इथे लोक काय चुकीचं समजतात
 
-## ASLI DUNIYA SE EK EXAMPLE
+"Software company काढायला factory सारखा मोठा पैसा लागतो." उलटं.
+Software ची factory नाहीच, म्हणून सुरुवातीचा खर्च इतिहासातला सगळ्यात
+कमी आहे: एक laptop, एक डोकं. म्हणूनच दोन मुलं garage मध्ये Google
+सुरू करू शकली. आणि म्हणूनच स्पर्धाही भयंकर आहे: जी गोष्ट तुम्ही
+स्वस्तात सुरू करू शकता, ती कोणीही स्वस्तात सुरू करू शकतो. Scarcity
+आता recipe च्या **कल्पनेत** आणि **quality** त आहे, सुरू करण्यात
+नाही.
 
-Nokia duniya ki sabse badi phone company thi. Uske phone EK kaam ke
-liye bane the: call aur SMS. iPhone aaya aur usne phone ko universal
-machine bana diya: app store matlab "koi bhi recipe daalo." Nokia
-hardware behtar banata raha, Apple recipes ka bazaar le gaya. Dus saal
-mein Nokia khatam. Machine vs universal machine ki ladai mein universal
-hamesha jeetti hai, kyunki uske paas duniya bhar ke recipe likhne
-walon ki fauj hai.
+## MAP वर
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+India चं उदाहरण: **Zerodha**. दोन भावांनी stock broking ची recipe
+software मध्ये लिहिली. Branch नाही उघडली, agents नाही ठेवले. एक
+recipe, 10 million+ (1 कोटी+) ग्राहक, आणि India च्या सगळ्यात
+नफ्यातल्या startups पैकी एक, बाहेरचा पैसा न घेता. Universal machine
+वर लिहिलेली एक चांगली recipe काय करू शकते, याचा देशी पुरावा. तुमचा
+Level 4 वाला plan याच जमिनीवर उभा राहील.
 
-"Software company banane ke liye factory jaisa bada paisa chahiye."
-Ulta. Software ki factory hai hi nahi, isliye shuru karne ka kharcha
-history mein sabse kam hai: ek laptop, ek dimaag. Isi liye do do bachche
-garage mein Google shuru kar paaye. Aur isi liye competition bhi
-bhayankar hai: jo cheez aap sasta shuru kar sakte ho, woh koi bhi
-sasta shuru kar sakta hai. Scarcity ab recipe ke IDEA aur QUALITY mein
-hai, shuru karne mein nahi.
+## स्वतः बघा (5 मिनिटं)
 
-## MAP PE
+Phone च्या Settings मध्ये जा, Storage बघा. तिथे apps ची यादी असेल,
+प्रत्येकीपुढे MB/GB. आता विचार करा: प्रत्येक ओळ एक recipe आहे,
+numbers ची रांग, जी याच एका machine ला शंभर वेगळ्या machines बनवते.
+WhatsApp ~100 MB ची recipe आहे. तिची प्रत्येक copy फुकट बनते, आणि
+3 billion (300 कोटी) लोक चालवतात. आता सूत्र स्वतः लावा: size x
+scarcity x leverage.
 
-Company case: Zerodha. Do bhaiyon ne stock broking ki recipe software
-mein likhi. Na branch kholi, na agents rakhe. Ek recipe, ek crore se
-zyada users, aur India ki sabse zyada munafe wali startups mein ek,
-bina bahar ka paisa liye. Universal machine pe likhi ek achhi recipe
-kya kar sakti hai, iska desi saboot. Aapka Level 4 wala plan isi
-zameen pe khada hoga.
+## विचार करा
 
-## KHUD DEKHO (5 minute)
+1. (derivation) Recipe data च्या जागी राहते. मग एक recipe दुसऱ्या
+recipe ला **वाचू** किंवा **लिहू** शकते, कारण ती फक्त numbers आहे.
+या गोष्टीमुळे एक खूप मोठी गोष्ट शक्य होते जी तुम्ही रोज वापरता.
+कुठली?
 
-Apne phone ki settings mein jao, storage dekho. Wahan apps ki list
-hogi, har ek ke aage MB/GB. Ab socho: yeh har entry ek recipe hai,
-numbers ki qataar, jo isi ek machine ko sau alag machines banati hai.
-WhatsApp ~100 MB ki recipe hai. Us recipe ki har copy muft banti hai,
-aur 300 crore log chalate hain. Ab formula khud lagao: size x scarcity
-x leverage.
-
-## SOCHNE KE LIYE
-
-1. (derivation) Recipe data ki jagah rehti hai. Toh ek recipe doosri
-recipe ko PADH ya LIKH bhi sakti hai, kyunki woh bas numbers hai. Is
-baat se ek bahut badi cheez possible hoti hai jo aap roz use karte ho.
-Kya?
-
-> **Jawab:** Update. Jab WhatsApp khud ko update karta hai, toh ek
-> recipe (updater) doosri recipe (purana WhatsApp) ko naye numbers se
-> badal rahi hoti hai. Machine ko haath lagaye bina, duniya bhar ki
-> machines raat-o-raat naya kaam seekh jaati hain. Aur isi darwaaze se
-> virus bhi ghusta hai: woh bhi ek recipe hai jo doosri recipes ko
-> likhne ki koshish karti hai. Ek hi taakat, achhe aur bure dono haath
-> mein. Part 3 mein iski hifaazat milegi.
+> **उत्तर:** Update. WhatsApp स्वतःला update करतं तेव्हा एक recipe
+> (updater) दुसऱ्या recipe ला (जुनं WhatsApp) नव्या numbers नी
+> बदलत असते. Machine ला हात न लावता, जगभरच्या machines रातोरात नवं
+> काम शिकतात. आणि याच दरवाजाने virus पण घुसतो: तोही एक recipe आहे
+> जी दुसऱ्या recipes ना लिहिण्याचा प्रयत्न करते. एकच ताकद, चांगल्या
+> आणि वाईट दोन्ही हातांत. Part 3 मध्ये हिची राखण भेटेल.

@@ -1,103 +1,96 @@
-# Chapter 2.3 [SPINE]: Bade numbers ka matlab
+# Chapter 2.3 [SPINE]: मोठ्या आकड्यांचा अर्थ
 
-Is kitaab mein ab tak aaye: 15 arab transistor, 44,000 sample prati
-second, arab kadam prati second. Aage aur bade aayenge. Problem yeh
-hai ki insaan ka dimaag lakh ke aage sab numbers ko ek jaisa "bahut
-bada" maan leta hai. Woh chalega nahi, kyunki in numbers ke beech ke
-FARQ mein hi saari samajh aur saara paisa hai.
+या पुस्तकात आतापर्यंत आले: 15 billion transistors, 44,000 samples
+प्रति second, billion पावलं प्रति second. पुढे अजून मोठे येतील.
+Problem ही आहे की माणसाचं डोकं लाखाच्या पुढचे सगळे आकडे एकसारखे
+"खूप मोठे" मानतं. ते चालणार नाही, कारण या आकड्यांमधल्या **फरकातच**
+सगळी समज आणि सगळा पैसा आहे.
 
-Pehle tarjuma ka table, kyunki India ginti apni bolta hai aur
-technology angrezi:
-
-```
-10 lakh     = 1 million   (M)
-1 crore     = 10 million
-1 arab      = 1 billion   (B)  = 100 crore
-1 kharab    = 100 billion
-            = 0.1 trillion (T)
-```
-
-Ab farq ko mehsoos karo, ghadi se. Ek second mein ek ginti bolo:
+आधी भाषांतराचं table, कारण India मोजणी आपली बोलतो आणि technology
+इंग्रजी:
 
 ```
-1 million tak ginne mein    ~ 11 din lagenge
-1 billion tak               ~ 31 SAAL
-1 trillion tak              ~ 31,000 saal
+1 million   (M)  = 10 लाख
+10 million       = 1 कोटी
+1 billion   (B)  = 100 कोटी  = 1 अब्ज
+1 trillion  (T)  = 1 लाख कोटी
 ```
 
-Million aur billion "paas paas" nahi hain. Unke beech hazaar guna ka
-samundar hai. Jab news kahe "company X billion dollar ki hui," toh
-ab aapke paas paimana hai.
-
-Ab ulti taraf, chhote waqt ki ginti, kyunki machine wahan jeeti hai:
+आता फरक जाणवून घ्या, घड्याळाने. एका second ला एक अशी मोजणी करा:
 
 ```
-1 second        aapka ek palak jhapakna
-1 millisecond   (1/1000 sec)    achhe internet ka ek phera
-1 microsecond   (1/10 lakh)     machine memory se ek cheez uthana
-1 nanosecond    (1/1 arab)      CPU ka ek kadam
+1 million पर्यंत मोजायला    ~ 11 दिवस लागतील
+1 billion पर्यंत            ~ 31 वर्षं
+1 trillion पर्यंत           ~ 31,000 वर्षं
 ```
 
-Ek moti baat nikaalo: **CPU ke ek kadam (nanosecond) aur internet ke
-ek phere (millisecond) mein 10 lakh guna ka farq hai.** Matlab jab
-tak ek message shehar paar jaa kar lautta hai, CPU 10 lakh kadam chal
-chuka hota hai. Machine ke andar sab kuch muft jaisa tez hai; bahar
-jaana mehnga hai. Yeh ek line aage Part 3, 4, 5 mein baar baar kaam
-aayegi, aur engineers ke har design ke peeche yahi hai: **bahar mat
-jao jab tak zaroori na ho.**
+Million आणि billion "जवळजवळ" नाहीत. त्यांच्यामध्ये हजारपट अंतराचा
+समुद्र आहे. बातमी म्हणते "company X billion dollars ची झाली," तेव्हा
+आता तुमच्याकडे मोजपट्टी आहे.
 
-## NAAM
+आता उलट्या दिशेला, छोट्या वेळाची मोजणी, कारण machine तिथे जिंकते:
 
-In chhote naapon ke naam upar table mein hain: milli (hazaarvan),
-micro (10 lakhvan), nano (arabvan). Speed ke is khel ka naam
-**latency** hai: ek kaam shuru hone se jawab aane tak ka waqt. Yeh
-shabd Part 5 mein poora chapter layega.
+```
+1 second        तुमची एक पापणी लवते
+1 millisecond   (1/1000 sec)      चांगल्या internet चा एक फेरा
+1 microsecond   (1/1 million)     machine ने memory तून एक गोष्ट उचलणं
+1 nanosecond    (1/1 billion)     CPU चं एक पाऊल
+```
 
-## ASLI DUNIYA SE EK EXAMPLE
+एक जाड ओळ काढा: **CPU च्या एका पावलात (nanosecond) आणि internet
+च्या एका फेऱ्यात (millisecond) 1 million पटीचा फरक आहे.** म्हणजे
+एक message शहरापलीकडे जाऊन परत येईपर्यंत CPU 1 million पावलं चालून
+झालेला असतो. ढाब्याची उपमा: cook च्या हातात मीठ शेजारीच आहे
+(nanosecond), पण कांदे संपले तर मंडईची फेरी (millisecond) म्हणजे
+अर्धा दिवस. हुशार cook काय करतो? मंडईला रोज शंभर फेऱ्या मारत नाही;
+सकाळी एकदाच सगळं आणून ठेवतो. Machine चं पूर्ण design याच शहाणपणावर
+चालतं: **बाहेर जाऊ नका, जोपर्यंत गरज नाही.** ही एक ओळ Part 3, 4, 5
+मध्ये पुन्हा पुन्हा कामी येईल. (या फेऱ्याच्या वेळेचं नाव
+**latency**; हा शब्द पुढे पूर्ण chapter आणेल.)
 
-Google ne naapa ki search 400 millisecond dheemi hui toh log kam
-search karne lage. Aadha palak jhapakne se kam waqt, aur karodon ka
-farq. Amazon ki ginti: har 100 millisecond ki deri = ~1% kam bikri.
-Isliye speed engineering ki shauk nahi, seedha paisa hai. Jo company
-millisecond gin sakti hai, woh unhe rupaye mein badal sakti hai.
+आणि हा वेळ थेट पैसा आहे: **Google** ने मोजलं की search 400
+milliseconds ने हळू झाली तर लोक कमी search करतात. अर्ध्या पापणीपेक्षा
+कमी वेळ, आणि करोडोंचा फरक. **Amazon** ची मोजणी: प्रत्येक 100
+milliseconds ची उशीर = ~1% कमी विक्री. म्हणून वेग ही engineering
+ची हौस नाही, थेट पैसा आहे. जी company milliseconds मोजू शकते, ती
+ते रुपयांत बदलू शकते.
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+## इथे लोक काय चुकीचं समजतात
 
-"Computer tez hai, bas." Nahi: computer KAHAN tez hai, yeh jaanna hi
-asli gyaan hai. Andar nanosecond, bahar millisecond, 10 lakh ka farq.
-Jo yeh nahi jaanta, woh aisa product sochta hai jo har kadam pe
-internet se poochhta hai, aur phir hairaan hota hai ki sab dheema
-kyun hai. Tez machine pe bhi dheema design possible hai, aur aam hai.
+"Computer वेगवान आहे, बस." नाही: computer **कुठे** वेगवान आहे, हे
+जाणणं हीच खरी विद्या. आत nanosecond, बाहेर millisecond, 1 million
+पटीचा फरक. जो हे जाणत नाही, तो असं product बनवतो जे प्रत्येक
+पावलावर internet ला विचारतं, आणि मग चकित होतो की सगळं हळू का आहे.
+वेगवान machine वरही हळू design शक्य आहे, आणि सर्रास आहे.
 
-## MAP PE
+## MAP वर
 
-Kaun kamata hai is chapter se: jo scale ko padh sakta hai. Ek
-investor ke liye "10 lakh users" aur "1 crore users" mein das guna ka
-farq hai; jo founder dono ko "bahut saare users" bolta hai, usse
-paisa door rehta hai. Aur jo engineer millisecond bacha sakta hai,
-woh Google/Amazon jaise business mein seedha revenue dial ghuma raha
-hai, isliye aisi skill ki tankhwah crore paar jaati hai. Numbers ko
-mehsoos karna Level 2, 3, 4 teeno ki shared bhasha hai.
+या chapter मधून कोण कमावतं: जो scale वाचू शकतो. Investor साठी "1
+million users" आणि "10 million users" मध्ये दहापट फरक आहे; जो
+founder दोन्हींना "खूप users" म्हणतो, त्याच्यापासून पैसा दूर राहतो.
+आणि जो engineer millisecond वाचवू शकतो, तो Google/Amazon सारख्या
+business मध्ये थेट revenue चा काटा फिरवतो; म्हणून अशा skill चा पगार
+कोटी पार जातो. आकडे जाणवणं ही Level 2, 3, 4 तिन्हींची सामायिक भाषा
+आहे.
 
-## KHUD DEKHO (5 minute)
+## स्वतः बघा (5 मिनिटं)
 
-Phone pe stopwatch chalao aur 100 tak zor se gino. (~100 second.) Ab
-hisaab: 1 million tak aise ginne mein kitne din? (~11 din, bina soye.)
-1 billion tak? (~31 saal.) Ek baar khud hisaab lagaoge toh billion
-shabd hamesha ke liye bhaari ho jaayega, jaisa use hona chahiye.
+Phone वर stopwatch लावा आणि 100 पर्यंत मोठ्याने मोजा (~100
+seconds). आता हिशोब: 1 million पर्यंत असं मोजायला किती दिवस? (~11
+दिवस, न झोपता.) 1 billion पर्यंत? (~31 वर्षं.) एकदा स्वतः हिशोब
+केलात की billion हा शब्द कायमचा जड होईल, जसा त्याने असायला हवं.
 
-## SOCHNE KE LIYE
+## विचार करा
 
-1. (derivation) Aapke phone ki chip 15 arab transistor ki hai. Agar
-har transistor chawal ka ek dana hota, toh kitna chawal banta? (Ek
-kilo mein ~50,000 dane.) Aur is se kya samajh aata hai ki chip banane
-wali factory duniya mein teen-chaar hi kyun hain?
+1. (derivation) तुमच्या phone ची chip 15 billion transistors ची
+आहे. प्रत्येक transistor तांदळाचा एक दाणा असता, तर किती तांदूळ
+झाला असता? (एका किलोत ~50,000 दाणे.) आणि यातून समजून घ्या: chip
+बनवणारी factory जगात तीन-चारच का आहेत?
 
-> **Jawab:** 15 arab / 50,000 = 3 lakh kilo, yaani 300 tonne chawal,
-> pachees trucks bhar ke. Itni cheezein nakhoon bhar jagah pe, bina
-> ek bhi galat lage, chhaapni hain. Isliye yeh duniya ki sabse
-> mushkil manufacturing hai: ek factory lagane ka kharcha ~2 lakh
-> crore rupaye, aur hunar sirf TSMC (Taiwan), Samsung (Korea), Intel
-> (US) ke paas. Scarcity itni oonchi ki desh iske liye jang ki
-> taiyari karte hain. Ab aap samajhte ho ki "chip war" news mein
-> kyun rehti hai.
+> **उत्तर:** 15 billion / 50,000 = 3 लाख किलो, म्हणजे 300 tonnes
+> तांदूळ, पंचवीस trucks भरून. एवढ्या गोष्टी नखाएवढ्या जागेवर, एकही
+> चुकीची न लागता, छापायच्या आहेत. म्हणून ही जगातली सगळ्यात अवघड
+> manufacturing आहे: एक factory उभारायचा खर्च ~20 billion dollars
+> (1.7 लाख कोटी रुपये), आणि हुनर फक्त TSMC (Taiwan), Samsung
+> (Korea), Intel (US) कडे. Scarcity इतकी उंच की देश यासाठी
+> युद्धाची तयारी करतात. आता समजेल "chip war" बातम्यांमध्ये का असतं.

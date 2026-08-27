@@ -1,105 +1,98 @@
-# Chapter 0.3 [SPINE]: Society ke chaar levels
+# Chapter 0.3 [SPINE]: समाजाचे चार levels
 
-Chapter 0.1 ke gaon mein wapas chalo, lekin ab poori duniya socho. Arabon
-log. Is bheed mein paisa kahan se shuru hota hai aur kahan jaata hai? Ek
-naksha banate hain, neeche se upar.
+Chapter 0.1 च्या गावात परत चला, पण आता पूर्ण जग विचार करा. Billions
+लोक. या गर्दीत पैसा कुठून सुरू होतो आणि कुठे जातो? एक नकाशा बनवू,
+खालून वर. इमारतीसारखा विचार करा: प्रत्येक मजला खालच्या मजल्यावर उभा
+असतो, आणि पाया नेहमी जमिनीत असतो.
 
-**Level 1: Insaan ki zaroorat.** Bhookh, pyaas, chhat, sehat, gyaan,
-suraksha, safar, judav, manoranjan, izzat. Yeh list hazaaron saal se
-lagbhag wahi hai. Yahi poori economy ki zameen hai. Har rupaya jo kahin
-bhi ghoom raha hai, aakhir mein kisi insaan ki kisi zaroorat se nikla hai.
+**Level 1: माणसाची गरज.** भूक, तहान, छप्पर, आरोग्य, ज्ञान, सुरक्षा,
+प्रवास, जोडलेपण, करमणूक, इज्जत. ही यादी हजारो वर्षांपासून जवळजवळ
+तीच आहे. हीच पूर्ण economy ची जमीन आहे. जगात फिरणारा प्रत्येक रुपया
+शेवटी कोणाच्यातरी कुठल्यातरी गरजेतून निघाला आहे.
 
-**Level 2: Business.** Ek insaan ki zaroorat ek baar poori karna kaam hai.
-Lakhon logon ki zaroorat baar baar poori karna intezaam maangta hai: log,
-saamaan, hisaab, bharosa. Us intezaam ka naam business hai. Restaurant
-bhookh pe khada hai, hospital sehat pe, school gyaan pe. Business zaroorat
-ko paise mein badalne ki machine hai.
+**Level 2: Business.** एका माणसाची गरज एकदा पूर्ण करणं म्हणजे काम.
+लाखो लोकांची गरज पुन्हा पुन्हा पूर्ण करणं व्यवस्था मागतं: माणसं,
+सामान, हिशोब, विश्वास. त्या व्यवस्थेचं नाव business. एक बाई घरात
+स्वयंपाक करते ते काम; तीच बाई रोज शंभर डबे पोहोचवते ती व्यवस्था,
+म्हणजे business. Restaurant भुकेवर उभं आहे, hospital आरोग्यावर,
+school ज्ञानावर. Business म्हणजे गरजेला पैशात बदलणारी व्यवस्था.
 
-**Level 3: Technology.** Business ko hamesha teen cheezon ki bhookh hoti
-hai: zyada log serve karo, kam kharche mein, kam galti ke saath. Jo bhi
-cheez yeh karti hai, woh technology hai. Tractor kisan ke liye, fridge
-restaurant ke liye, software har kisi ke liye. Technology business ki
-taakat badhaane wala level hai.
+**Level 3: Technology.** Business ला नेहमी तीन गोष्टींची भूक असते:
+जास्त लोक serve करा, कमी खर्चात, कमी चुकांसह. जी गोष्ट हे करते, ती
+technology. Tractor शेतकऱ्यासाठी, fridge restaurant साठी, software
+सगळ्यांसाठी. ढाब्याचा तंदूर पण technology आहे: एक cook च्या जागी
+एका वेळेस वीस रोट्या. Technology म्हणजे business ची ताकद वाढवणारा
+मजला.
 
-**Level 4: AI.** Ab technology khud ek zaroorat wali cheez ban gayi hai:
-usse sochna, likhna, decide karna, yeh sab abhi tak insaan karte the. Jo
-machine yeh kaam karne lagi hai, woh technology ki technology hai. AI
-Level 3 ko wahi deta hai jo Level 3 ne Level 2 ko diya tha: zyada, sasta,
-kam galti.
+**Level 4: AI.** आता technology स्वतः एक गरजवाली गोष्ट झाली आहे:
+तिच्यासाठी विचार करणं, लिहिणं, ठरवणं, हे आत्तापर्यंत माणसं करत होती.
+जी machine ही कामं करू लागली आहे, ती technology ची technology. AI
+Level 3 ला तेच देतो जे Level 3 ने Level 2 ला दिलं: जास्त, स्वस्त,
+कमी चुका.
 
-Ab sabse zaroori teer kheencho:
+आता सगळ्यात महत्त्वाचा बाण काढा:
 
 ```
 LEVEL 4   AI                    ^
-LEVEL 3   TECHNOLOGY            |  PAISA UPAR
-LEVEL 2   BUSINESS              |  KI TARAF
-LEVEL 1   INSAAN KI ZAROORAT    |  BEHTA HAI
+LEVEL 3   TECHNOLOGY            |  पैसा वरच्या
+LEVEL 2   BUSINESS              |  दिशेने वाहतो
+LEVEL 1   माणसाची गरज           |
 ```
 
-Paisa SIRF Level 1 pe ghusta hai, jab ek insaan apni zaroorat ke liye deta
-hai. Level 2 usmein se hissa leta hai. Level 3 ko Level 2 deta hai. Level 4
-ko Level 3 deta hai. Upar wale levels ka har rupaya neeche se hoke aaya hai.
+पैसा **फक्त Level 1 वर** घुसतो, जेव्हा एक माणूस आपल्या गरजेसाठी
+देतो. Level 2 त्यातला हिस्सा घेतो. Level 3 ला Level 2 देतो. Level 4
+ला Level 3 देतो. वरच्या मजल्यांचा प्रत्येक रुपया खालून चढत आलेला
+आहे. अशा एकावर-एक रचनेला engineers **stack** म्हणतात; पुढे "tech
+stack" ऐकाल तेव्हा हाच अर्थ: कोण कोणावर उभा आहे, कोण कोणाला पैसे
+देतो.
 
-Teen baatein check karlo, kyunki saaf naksha inhe chhupa deta hai:
+हे खऱ्या जगात असं दिसतं: **Zomato** घ्या. Level 1: भूक. Level 2:
+restaurant, आणि स्वतः Zomato चा business. Level 3: app, servers,
+नकाशा, payment system. Level 4: कोणतं खाणं कोणाला दाखवायचं,
+delivery चा रस्ता, मागणीचा अंदाज, हे AI करतो. तुम्ही 300 रुपयांचं
+जेवण मागवता: restaurant हिस्सा घेतं, Zomato हिस्सा घेतं, Zomato
+आपल्या cloud आणि software वाल्यांना देतं, ते AI चालवणाऱ्यांना
+देतात. एक भूक, चार मजल्यांची कमाई.
 
-Har zaroorat business se poori nahi hoti. Maa bachche ko khila rahi hai,
-Level 1 seedha serve ho raha hai, koi paisa nahi ghoom raha.
+तीन गोष्टी तपासून घ्या, कारण स्वच्छ नकाशा त्या लपवतो: प्रत्येक गरज
+business ने पूर्ण होत नाही (आई मुलाला जेवू घालते, कुठेही पैसा
+फिरत नाही). प्रत्येक business ला जास्त technology लागत नाही. आणि
+प्रत्येक technology ला AI चांगली करत नाही (पाण्याच्या pipe मध्ये
+विचार करणाऱ्या machine साठी काही कामच नाही). हा नकाशा कल दाखवतो,
+कायदा नाही.
 
-Har business ko technology zyada nahi chahiye. Kuch ko bas thodi si.
+## इथे लोक काय चुकीचं समजतात
 
-Har technology ko AI behtar nahi karta. Paani ki pipe technology hai,
-usmein sochne wali machine ke liye karne ko kuch nahi.
+लोकांना वाटतं पैसा technology मध्ये आहे, म्हणून tech शिका. उलटं
+आहे. पैसा **गरजेत** आहे. Technology फक्त ती गरज पकडण्याचा सगळ्यात
+लांब हात आहे. विहीर पाण्याने भरलेली असते; दोरी-पोहरा फक्त पाणी
+काढण्याचं साधन आहे. दोरी कितीही उत्तम असो, विहीर कोरडी असेल तर
+हाती काही येत नाही. जो माणूस Level 4 ची skill घेऊन बसला आहे पण
+कुठल्याही Level 1 गरजेशी जोडलेला नाही, तो काही कमावत नाही.
 
-Yeh naksha jhukav batata hai, kanoon nahi. Aur jahan koi level gayab hai,
-aksar wahi jagah sabse interesting hoti hai.
+## MAP वर
 
-## NAAM
+हा chapter स्वतःच नकाशा आहे. फोटोसारखा डोक्यात ठेवा. पुढे प्रत्येक
+chapter च्या शेवटी "MAP वर" याच नकाशावर बोट ठेवेल: ही गोष्ट कुठल्या
+level वर आहे, आणि पैसा हिच्यापर्यंत कसा पोहोचतो.
 
-Is tarah ke naksha ko log **stack** kehte hain: ek cheez doosre ke upar.
-Aage jab koi kahega "tech stack" ya "AI stack," toh wahi matlab hai: kaun
-kis ke upar khada hai, aur kaun kis ko paise deta hai.
+## स्वतः बघा (5 मिनिटं)
 
-## ASLI DUNIYA SE EK EXAMPLE
+Phone ची home screen उघडा. कुठलीही 3 apps निवडा. प्रत्येकासाठी
+लिहा: कुठली Level 1 गरज? कुठला Level 2 business? WhatsApp:
+जोडलेपणाची गरज, Meta चा business. असं app शोधा जे कुठल्याच गरजेवर
+उभं नाही. मिळणार नाही.
 
-Zomato lo. Level 1: bhookh. Level 2: restaurant, aur khud Zomato ka
-business. Level 3: app, servers, map, payment system. Level 4: kaunsa
-khaana kisko dikhaana, delivery ka rasta, demand ka andaaza, yeh AI karta
-hai. Aap 300 rupaye ka khaana mangwate ho: restaurant hissa leta hai,
-Zomato hissa leta hai, Zomato apne cloud aur software walon ko deta hai,
-woh AI chalane walon ko dete hain. Ek bhookh, chaar levels ki kamaai.
+## विचार करा
 
-## YAHAN LOG KYA GALAT SAMAJHTE HAIN
+1. (derivation) AI companies (Level 4) billions कमावतायत. पण पैसा
+फक्त Level 1 वर घुसतो. मग OpenAI चा पैसा कुठल्या रस्त्याने, कुठल्या
+levels मधून येतो? साखळी लिहा.
 
-Log sochte hain paisa technology mein hai, isliye tech seekho. Ulta hai.
-Paisa zaroorat mein hai. Technology sirf use pakadne ka sabse lamba haath
-hai. Jo aadmi Level 4 ki skill le kar baitha hai lekin kisi Level 1
-zaroorat se juda nahi hai, woh kuch nahi kamata. Yeh kitaab aapko Level 3
-aur 4 sikhayegi, lekin har chapter mein hum poochhte rahenge: neeche
-zaroorat kya hai?
-
-## MAP PE
-
-Yeh chapter khud map hai. Ise photo ki tarah dimaag mein rakho. Aage har
-chapter ke end mein "MAP PE" isi naksha pe ungli rakhega: yeh cheez kis
-level pe hai, aur paisa is tak kaise pahunchta hai.
-
-## KHUD DEKHO (5 minute)
-
-Apne phone ki home screen kholo. Koi 3 apps chuno. Har app ke liye likho:
-kaunsi Level 1 zaroorat? Kaunsa Level 2 business? WhatsApp: judav ki
-zaroorat, Meta ka business. Aisa app dhoondho jo kisi zaroorat pe khada
-NA ho. Nahi milega.
-
-## SOCHNE KE LIYE
-
-1. (derivation) AI companies (Level 4) arabon kama rahi hain. Lekin paisa
-sirf Level 1 pe ghusta hai. Toh OpenAI ka paisa kis raaste se, kin levels
-se hoke, aata hai? Chain likho.
-
-> **Jawab:** Ek chain aisi ho sakti hai: aap bhookh mein khaana order karte
-> ho (L1 se paisa ghusa). Zomato kamata hai (L2). Zomato apne software aur
-> cloud pe kharch karta hai (L3). Woh software banane wali team ChatGPT ka
-> subscription leti hai taaki code tez likhe (L4). Har AI ka rupaya aise
-> kisi na kisi chain se neeche ke levels se hoke aaya hai. Iska ulta bhi
-> sach hai: agar koi AI product kisi bhi chain se Level 1 tak nahi
-> pahunchta, toh uske paas aane wala paisa hai hi nahi.
+> **उत्तर:** एक साखळी अशी असू शकते: तुम्ही भुकेने जेवण order करता
+> (L1 पासून पैसा घुसला). Zomato कमावतं (L2). Zomato आपल्या software
+> आणि cloud वर खर्च करतं (L3). ते software बनवणारी team ChatGPT चं
+> subscription घेते, code वेगाने लिहिण्यासाठी (L4). AI चा प्रत्येक
+> रुपया अशा कुठल्यातरी साखळीने खालच्या levels मधून आलेला असतो. याचं
+> उलटंही खरं आहे: जर एखादं AI product कुठल्याच साखळीने Level 1
+> पर्यंत पोहोचत नसेल, तर त्याच्याकडे येणारा पैसाच नाही.
