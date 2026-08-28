@@ -54,3 +54,15 @@ Titles: "The Machine, Part N: <Marathi name>".
 Parts: 1 पैसा आणि Machine (16ch: cur. 0,1,2) | 2 Machine शी बोलणं
 (12ch: cur. 3,4) | 3 Machines चं जाळं (8ch: cur. 5) | 4 Data आणि आठवणी
 (7ch: cur. 6) | 5 जगाला Serve करणं (15ch: cur. 7,8).
+
+## Book 2 v2 plan (locked 2026-08-28)
+3 parts, same v3 style, FRESH writing (not translation), fresh Aug-2026
+facts (researched: GPT-5.6 Sol $5/$30 per M tokens, Claude 5 family,
+Gemini 3.x 1-2M context, ChatGPT ~900M weekly, OpenAI $25B+ annualized,
+Nvidia $5.5T, frontier training $100M-1B / ~3T tokens):
+- Part 1 "Andajacha Yantra" 17ch (cur. B2 1: 7 + 2: 10) + 2-page Book1
+  revision (~25 terms) in front matter.
+- Part 2 "Artha ani Uttar" 16ch (cur. B2 3: 11 + 4: 5).
+- Part 3 "Chuka, Haat ani Paisa" 21ch (cur. B2 5: 5 + 6: 8 + 7: 8) +
+  final test (both books) + master glossary + complete map.
+Old Hinglish book2 archived at archive/book2-v1-hinglish.
